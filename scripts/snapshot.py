@@ -65,7 +65,9 @@ def build(pages: list[str], title: str, today: dt.date | None = None, data_dir: 
     built = [page_blocks(p, today, data_dir) for p in pages]
     sections = "".join(f"<section>{to_html(b)}</section>" for b in built)
     charts = any(has_figure(b) for b in built)
-    script = f"<script>{get_plotlyjs()}</script>\n" if charts else ""
+    # Plotly's source holds one literal U+FFFD inside a regular expression; the escape is equivalent
+    # and keeps the file free of a character that publishing tools read as text damage.
+    script = "<script>" + get_plotlyjs().replace("\ufffd", "\\uFFFD") + "</script>\n" if charts else ""
     as_of = data.quality(data_dir).get("data_as_of")
     stamp = f"data as of {as_of[:16].replace('T', ' ')} UTC" if as_of else "configuration only, no polling data"
     # Charts are drawn for a light surface, as in the app, so a page with charts stays light.
