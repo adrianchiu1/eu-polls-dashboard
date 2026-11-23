@@ -92,8 +92,8 @@ def standings(contest: dict, averages: pd.DataFrame, results: pd.DataFrame, as_o
                          delta_election=float(now[p] - last[p]) if p in last.index else None,
                          delta_window=float(now[p] - before[p]) if p in before.index else None))
     rows.sort(key=lambda r: -r["average"])
-    if order == "lr" and rows and all(r["lr_score"] is not None for r in rows):
-        rows.sort(key=lambda r: r["lr_score"])
+    if order == "lr":
+        rows = spectrum_order(rows)
     if small:
         d = parties.display(cc, model.OTHERS)
         rows.append(dict(party_id=model.OTHERS, **d, average=float(now[small].sum()),
@@ -103,6 +103,35 @@ def standings(contest: dict, averages: pd.DataFrame, results: pd.DataFrame, as_o
                 window_days=int(first["window_days"]), weighting=first["weighting"],
                 flags=first["flags"] if isinstance(first["flags"], str) else "", folded=len(small) - (model.OTHERS in small))
     return pd.DataFrame(rows), meta
+
+
+def spectrum_order(rows: list[dict]) -> list[dict]:
+    """Left to right by score. Parties without a score keep their order of support and go last."""
+    scored = sorted((r for r in rows if r.get("lr_score") is not None and not pd.isna(r["lr_score"])),
+                    key=lambda r: r["lr_score"])
+    return scored + [r for r in rows if r not in scored]
+
+
+def coalition_totals(contest: dict, averages: pd.DataFrame, as_of: dt.date) -> list[dict]:
+    """Each configured coalition's total on the day: the sum of its members' averages.
+
+    Membership is configuration (a judgement entry), never inferred here. A member without an
+    average on the day is listed as missing and adds nothing.
+    """
+    cc = contest["country"]
+    series = headline_series(averages, contest["contest_id"])
+    series = series[series["date"] <= pd.Timestamp(as_of)]
+    if series.empty:
+        return []
+    now = series[series["date"] == series["date"].max()].set_index("party_id")["average"]
+    out = []
+    for c in parties.coalitions(cc):
+        members = c.get("members") or []
+        have = [m for m in members if m in now.index]
+        out.append({"short": c["short"], "name": c.get("name_en") or c["name"], "colour": c["colour"],
+                    "total": float(now[have].sum()), "members": [parties.display(cc, m)["short"] for m in have],
+                    "missing": [parties.display(cc, m)["short"] for m in members if m not in have]})
+    return out
 
 
 def matchup_rows(contest: dict, averages: pd.DataFrame, as_of: dt.date) -> pd.DataFrame:

@@ -73,3 +73,20 @@ def test_html_is_escaped():
 def test_stylesheets_hold_no_markup():
     """Streamlit's HTML sanitiser drops a whole stylesheet that contains an angle bracket."""
     assert "<" not in components.css(dark=True)
+
+
+def test_spectrum_order_puts_unscored_parties_last():
+    from app import logic
+    rows = [dict(party_id="a", lr_score=7.0, average=30), dict(party_id="b", lr_score=None, average=20),
+            dict(party_id="c", lr_score=2.0, average=10), dict(party_id="others", lr_score=None, average=5)]
+    assert [r["party_id"] for r in logic.spectrum_order(rows)] == ["c", "a", "b", "others"]
+
+
+def test_joint_list_lookup_ignores_coalitions(monkeypatch):
+    from pipeline import parties
+    rows = [dict(party_id="xx-a", type="party", short="A", name="A"), dict(party_id="xx-b", type="party", short="B", name="B"),
+            dict(party_id="xx-bloc", type="alliance", short="Bloc", name="Bloc", members=["xx-a", "xx-b"], coalition=True),
+            dict(party_id="xx-a-b", type="alliance", short="A+B", name="A+B", members=["xx-a", "xx-b"])]
+    monkeypatch.setattr(parties, "load", lambda cc: rows)
+    assert parties.Resolver("XX").alliance({"xx-a", "xx-b"}) == "xx-a-b"
+    assert [c["party_id"] for c in parties.coalitions("XX")] == ["xx-bloc"]

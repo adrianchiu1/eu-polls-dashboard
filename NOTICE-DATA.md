@@ -17,7 +17,7 @@ licence asks for as read on 23 Nov 2026. It is not legal advice.
 | Europolls (Giuseppe Forte), github.com/gfrt0/europolls | Parser approach and party mappings | Code MIT; data CC BY-SA 4.0 | Keep the MIT notice with reused code; credit and share-alike for reused data |
 | DAWUM, dawum.de | German federal and state polls | ODC Open Database License (ODbL) 1.0 | Name and link dawum.de and the licence; a published derived database is itself under ODbL |
 | SwedishPolls, github.com/MansMeg/SwedishPolls | Swedish polls | MIT and CC0 badges in its README | Credit as good practice |
-| Chapel Hill Expert Survey | Left-right scores | None stated on its page (read 23 Nov 2026); it asks for a citation | Not used yet. Republishing scores needs the owner's decision |
+| Chapel Hill Expert Survey 2024, chesdata.eu | Left-right scores (`lr_score` in `config/parties/`) | None stated on its page (read 23 Nov 2026); it asks for a citation | Owner's decision, 23 Nov 2026: republish the general left-right score per party with the citation. Cite Rovny et al. (2025), Electoral Studies 97, doi:10.1016/j.electstud.2025.102981, wherever scores are shown. The survey's file is not stored here |
 
 ## What this repository does about it
 

@@ -159,13 +159,30 @@ def contest_panel(contest: dict, country: dict, bundle: dict, today: dt.date, or
     blocks.append(_rg(f"<p>{escape(caption)}</p>{notes}"))
     blocks.append(Columns([left, right], [2, 3]) if not small else Columns([left, right], [1, 1]))
 
-    scored = rows["lr_score"].notna().all()
-    strip = rows if not scored else rows.sort_values("lr_score")
+    totals = logic.coalition_totals(contest, averages, as_of)
+    if totals:
+        suffix = "" if unit == "seats" else "%"
+        cells = "".join(
+            f'<div class="rg-stat"><span class="rg-muted">{escape(t["name"])}</span><b>{t["total"]:.1f}{suffix}</b>'
+            f'<span>{escape(" + ".join(t["members"]))}'
+            + (f' · not polled: {escape(", ".join(t["missing"]))}' if t["missing"] else "") + "</span></div>"
+            for t in totals)
+        blocks.append(_rg(f'<h4>Coalition totals</h4><div class="rg-status">{cells}</div>'
+                          '<p class="rg-muted">Sums of the member lists\' averages. Membership is this dashboard\'s '
+                          "definition; see how this tab is defined, below.</p>"))
+
+    own = rows[rows["party_id"] != model.OTHERS]
+    n_scored = int(own["lr_score"].notna().sum())
+    strip = pd.DataFrame(logic.spectrum_order(rows.to_dict("records"))) if n_scored else rows
     blocks.append(Figure(charts.spectrum_strip(strip, unit), f"strip-{cid}"))
-    blocks.append(_rg('<p class="rg-muted">' + (
-        "Parties ordered left to right by expert-survey score." if scored else
-        "Spectrum strip in order of support for now: left-right scores are pending a decision on the "
-        "Chapel Hill Expert Survey's terms of use.") + "</p>"))
+    if n_scored == 0:
+        note = "Spectrum strip in order of support: none of these has a left-right score yet."
+    else:
+        note = "Ordered left to right by Chapel Hill Expert Survey score; hover a segment for the score."
+        unplaced = [r.short for r in own.itertuples() if pd.isna(r.lr_score)]
+        if unplaced:
+            note += f" Not yet placed, shown at the end: {', '.join(unplaced)}."
+    blocks.append(_rg(f'<p class="rg-muted">{escape(note)}</p>'))
 
     pairs = logic.matchup_rows(contest, averages, as_of)
     if not pairs.empty:
@@ -201,6 +218,12 @@ def definitions(country: dict, contests: list[dict], bundle: dict) -> list:
                      '(<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>); each row links '
                      "its publication and records the article revision it was read from. Figures were produced by "
                      "the polling organisations named.")
+    if any(p.get("lr_source", "").startswith("ches") or p.get("lr_source") == "inherited" for p in parties.load(code)):
+        lines.append('Left-right scores: Chapel Hill Expert Survey 2024, general left-right position (0 left to 10 '
+                     'right). Rovny, Polk, Bakker, Hooghe, Jolly, Marks, Steenbergen and Vachudova (2025), "The 2024 '
+                     'Chapel Hill Expert Survey on political party positioning in Europe", Electoral Studies 97, '
+                     '<a href="https://doi.org/10.1016/j.electstud.2025.102981">doi:10.1016/j.electstud.2025.102981</a>; '
+                     'data from <a href="https://www.chesdata.eu/ches-europe">chesdata.eu</a>.')
     title = quote(f"Challenge: {code} — ")
     challenge = f"{components.REPO_URL}/issues/new?template=challenge-judgement.md&title={title}"
     html = (f"<h3>How this tab is defined ({len(own)})</h3>" + components.judgement_list_html(own)

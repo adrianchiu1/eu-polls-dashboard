@@ -87,11 +87,15 @@ Researched on 23 Nov 2026. Re-check anything marked unverified before relying on
 - **Party ids:** the file keys parties by CHES's own numeric `party_id` and a numeric `country`. It
   has no Party Facts column, so the join to Party Facts ids needs Party Facts' own linking table.
   That table has not been checked yet.
-- **Terms of use: not settled.** The page asks users to cite the survey's article (Rovny et al. 2025,
-  Electoral Studies 97, doi:10.1016/j.electstud.2025.102981). It states no licence, so whether scores
-  may be republished in a public repository is the owner's call to make or to ask the survey team.
-- **Rule until the owner decides:** leave `lr_score` empty with `lr_source: pending`. The file is not
-  stored in this repository.
+- **Terms of use.** The page asks users to cite the survey's article (Rovny et al. 2025, Electoral
+  Studies 97, doi:10.1016/j.electstud.2025.102981) and states no licence. The owner decided on
+  23 Nov 2026 to republish each party's general left-right score with that citation. The survey's
+  file is still not stored in this repository; only the one score per party is, in `config/parties/`.
+- **How scores get in:** `tools/propose_lr_scores.py` joins the 2024 file to the party files through
+  Party Facts' external-parties table (https://partyfacts.herokuapp.com/download/external-parties-csv/,
+  dataset `ches`). Party Facts has not linked the 2024 wave's new parties, so the tool also matches a
+  party when the survey prints the same label for it in the same country. Scores reach the party
+  files only through a judgement-proposal pull request.
 
 ## Considered and not used
 

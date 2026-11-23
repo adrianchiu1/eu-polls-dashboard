@@ -50,7 +50,7 @@ class Resolver:
     def alliance(self, members: set[str]) -> str | None:
         """The alliance whose members are exactly these party ids (a joint list in a source table)."""
         for p in load(self.country):
-            if p["type"] == "alliance" and set(p.get("members") or []) == set(members):
+            if p["type"] == "alliance" and not p.get("coalition") and set(p.get("members") or []) == set(members):
                 return p["party_id"]
         return None
 
@@ -76,3 +76,12 @@ def display(country: str, party_id: str) -> dict:
         return {"short": party_id, "name": party_id, "colour": OTHERS_COLOUR, "lr_score": None}
     return {"short": p["short"], "name": p.get("name_en") or p["name"], "colour": p["colour"],
             "lr_score": p.get("lr_score")}
+
+
+def coalitions(country: str) -> list[dict]:
+    """Alliances marked `coalition: true`: separately polled lists whose total the app shows."""
+    return [p for p in load(country) if p["type"] == "alliance" and p.get("coalition")]
+
+
+def is_coalition(country: str, party_id: str) -> bool:
+    return any(p["party_id"] == party_id for p in coalitions(country))
