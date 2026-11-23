@@ -61,3 +61,11 @@ def sources(contest_id: str | None = None) -> list[dict]:
     if contest_id is not None:
         rows = [s for s in rows if s["contest_id"] == contest_id]
     return sorted(rows, key=lambda s: (s["contest_id"], s["priority"]))
+
+
+def previous_contest_id(contest: dict) -> str | None:
+    """The id that results of the previous election to the same body are stored under in
+    data/results.csv: <cc>-<pres|parl|sub>-<year>. None when no previous date is configured."""
+    if not contest.get("previous_date"):
+        return None
+    return "-".join(contest["contest_id"].split("-")[:2] + [str(contest["previous_date"].year)])
