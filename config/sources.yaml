@@ -3,6 +3,7 @@
 #
 # verified: true   the locator was seen to exist on 2026-11-23
 #           false  best guess; resolve through the source's API and correct this file
+# Wikipedia locators are article titles after following redirects, so a fetch pins the right page.
 # priority: 1 is the primary source for the contest; higher numbers are cross-checks.
 schema_version: 1
 sources:
@@ -64,16 +65,21 @@ sources:
     selector: First-round tables by line-up; second-round match-up tables
     column_map: {}
     priority: 1
-    verified: false
-    notes: Candidate-keyed. Each tested field of candidates is one lineup_id.
+    verified: true
+    notes: >-
+      Candidate-keyed. Each tested field of candidates is one lineup_id. Title resolved through the
+      MediaWiki API on 2026-11-23 (revision 1387074180).
   - contest_id: fr-parl-next
     adapter: wikipedia
-    locator: Opinion polling for the 2027 French legislative election
-    selector: First-round table
+    locator: Next French legislative election
+    selector: Opinion polling section, first-round table
     column_map: {}
     priority: 1
     verified: true
-    notes: Article title seen in search results on 2026-11-23; table layout not inspected.
+    notes: >-
+      Resolved through the MediaWiki API on 2026-11-23 (revision 1383966200). The seeded title,
+      "Opinion polling for the 2027 French legislative election", is a redirect to the Opinion polling
+      section of this article; there is no dedicated polling article yet. Table layout not inspected.
 
   # ---------------------------------------------------------------- Italy (Wikipedia)
   - contest_id: it-parl-2027
@@ -84,8 +90,8 @@ sources:
     priority: 1
     verified: true
     notes: >-
-      Title seen in search results. Spot-check against the official register at
-      sondaggipoliticoelettorali.it (ondata mirror on GitHub).
+      Title resolved through the MediaWiki API on 2026-11-23 (revision 1387069782). Spot-check against
+      the official register at sondaggipoliticoelettorali.it (ondata mirror on GitHub).
 
   # ---------------------------------------------------------------- Spain (Wikipedia)
   - contest_id: es-parl-2026
@@ -94,8 +100,11 @@ sources:
     selector: Voting intention estimates table, with seat ranges
     column_map: {}
     priority: 1
-    verified: false
-    notes: After 29 Nov 2026 a new article for the next general election will start; add it for es-parl-next.
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-23 (revision 1387287578). "Opinion polling
+      for the next Spanish general election" currently redirects here. After 29 Nov 2026 a new article
+      for the next general election will start; add it for es-parl-next.
 
   # ---------------------------------------------------------------- United Kingdom (Wikipedia)
   - contest_id: uk-parl-next
@@ -105,7 +114,9 @@ sources:
     column_map: {}
     priority: 1
     verified: true
-    notes: Title seen in search results. Great Britain samples; keep Northern Ireland out of the headline.
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-23 (revision 1387130598). Great Britain
+      samples; keep Northern Ireland out of the headline.
   - contest_id: uk-sub-northern-ireland-2027
     adapter: wikipedia
     locator: Next Northern Ireland Assembly election
@@ -113,21 +124,30 @@ sources:
     column_map: {}
     priority: 1
     verified: true
-    notes: Polling sits inside the election article, not a dedicated polling article.
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-23 (revision 1386673736). Polling sits inside
+      the election article, not a dedicated polling article.
   - contest_id: uk-sub-scotland-next
     adapter: wikipedia
     locator: Opinion polling for the next Scottish Parliament election
     selector: Constituency vote and regional vote tables
     column_map: {}
     priority: 1
-    verified: false
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-23 (revision 1382983165). A short article so
+      far: the May 2026 election was recent. Table layout not inspected.
   - contest_id: uk-sub-wales-next
     adapter: wikipedia
-    locator: Opinion polling for the next Senedd election
-    selector: Voting intention table
+    locator: Next Senedd election
+    selector: Opinion polling section, voting intention table
     column_map: {}
     priority: 1
-    verified: false
+    verified: true
+    notes: >-
+      Resolved through the MediaWiki API on 2026-11-23 (revision 1386573063). The seeded title,
+      "Opinion polling for the next Senedd election", is a redirect to the Opinion polling section of
+      this article. Table layout not inspected.
 
   # ---------------------------------------------------------------- Sweden (SwedishPolls)
   - contest_id: se-parl-next

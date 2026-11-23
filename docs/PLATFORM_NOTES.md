@@ -23,6 +23,23 @@ Sources: [Manage your app](https://docs.streamlit.io/deploy/streamlit-community-
 - **Update rate.** Updates from GitHub are limited to five per minute. One data commit a day is far
   inside it; do not commit per country.
 
+## Checked in Phase 0 (23 Nov 2026)
+
+- **Tabs.** `st.tabs` in Streamlit 1.67 takes `key`, `default` and `bind="query-params"`. With the
+  binding set, each returned tab has an `open` property and the app skips the code of closed tabs.
+  `app/streamlit_app.py` uses this: the open tab is in the URL as `?tab=<label>`, for example
+  `?tab=France`, and only that tab's view runs. Confirmed in a browser against a local run. No
+  substitute selector is needed.
+- **Versions.** Streamlit 1.67.0 (released 5 Nov 2026) needs Python 3.11 or later. Community Cloud
+  defaults to Python 3.12 and supports only releases still receiving security updates. The Python
+  version is chosen in the deploy dialog, not in a file: choose 3.12. CI runs on 3.12 as well.
+  `requirements.txt` pins the app's packages; `requirements-dev.txt` adds the pipeline and test ones.
+- **Custom HTML.** `st.html` sanitises its input. A stylesheet passed as a `.css` path is applied to
+  the app, but a stylesheet containing an angle bracket anywhere, a comment included, is dropped
+  whole and silently. A test guards this.
+- **Theme.** `.streamlit/config.toml` pins the light theme, so the app's own styles carry light
+  values only. Snapshot pages add dark values and follow the viewer's theme.
+
 ## Implications for the app
 
 - Read data from the repository checkout (`data/*.csv`), not over the network.

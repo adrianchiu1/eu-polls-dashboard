@@ -11,7 +11,7 @@ licence asks for as read on 23 Nov 2026. It is not legal advice.
 | Europolls (Giuseppe Forte), github.com/gfrt0/europolls | Parser approach and party mappings | Code MIT; data CC BY-SA 4.0 | Keep the MIT notice with reused code; credit and share-alike for reused data |
 | DAWUM, dawum.de | German federal and state polls | ODC Open Database License (ODbL) 1.0 | Name and link dawum.de and the licence; a published derived database is itself under ODbL |
 | SwedishPolls, github.com/MansMeg/SwedishPolls | Swedish polls | MIT and CC0 badges in its README | Credit as good practice |
-| Chapel Hill Expert Survey | Left-right scores | Not yet checked | Do not use until the terms are read |
+| Chapel Hill Expert Survey | Left-right scores | None stated on its page (read 23 Nov 2026); it asks for a citation | Not used yet. Republishing scores needs the owner's decision |
 
 ## What this repository does about it
 
