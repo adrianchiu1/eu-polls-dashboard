@@ -16,7 +16,7 @@ import streamlit as st  # noqa: E402
 
 from app import components  # noqa: E402
 from app.views import country, method, overview  # noqa: E402
-from pipeline import config  # noqa: E402
+from pipeline import config, parties  # noqa: E402
 
 st.set_page_config(page_title="European election polling", layout="wide")
 st.html(components.STATIC / "register.css")  # a .css path is applied to the app as a stylesheet
@@ -35,4 +35,9 @@ for label, tab in zip(labels, tabs):
         elif label == "Method":
             method.render()
         else:
-            country.render(next(c["code"] for c in countries if c["name"] == label))
+            code = next(c["code"] for c in countries if c["name"] == label)
+            scored = any(p.get("lr_score") is not None for p in parties.load(code))
+            choice = st.segmented_control(
+                "Order parties by", ["Support", "Left to right"], default="Support", key=f"order-{code}",
+                disabled=not scored, help=None if scored else "Left-right scores are not loaded yet.")
+            country.render(code, order="lr" if choice == "Left to right" else "support")

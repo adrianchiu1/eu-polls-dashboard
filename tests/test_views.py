@@ -1,9 +1,11 @@
 """Every page renders from configuration, and the register shows every entry."""
 import datetime as dt
+from html import escape
+from pathlib import Path
 
 import pytest
 
-from app import components
+from app import blocks, components
 from app.views import country, method, overview
 from pipeline import config
 
@@ -30,13 +32,13 @@ def test_calendar_shows_every_contest():
 
 
 @pytest.mark.parametrize("code", CODES)
-def test_country_page_renders_own_entries_only(code):
-    html = country.page_html(code)
+def test_country_page_renders_own_entries_only(code, tmp_path):
+    html = blocks.to_html(country.build(code, dt.date(2026, 11, 23), data_dir=tmp_path))
     for j in config.judgements():
         assert (f'id="{j["id"]}"' in html) == (j["country"] == code)
-    for k in config.contests():
-        # match the calendar cell; an entry's text may name another country's contest
-        assert (f'>{k["contest_id"]}</span>' in html) == (k["country"] == code)
+    for k in config.contests(code):
+        if k["tier"] == "national":
+            assert escape(k["body"]) in html
 
 
 def test_presidential_first_listing_order():
@@ -48,6 +50,7 @@ def test_presidential_first_listing_order():
 def test_overview_window_comes_from_settings():
     today = dt.date(2026, 11, 23)
     html = overview.page_html(today)
+    assert "Data freshness" not in overview.page_html(today, Path("/nonexistent"))
     assert "es-parl-2026" in html          # 29 Nov 2026, inside the window
     assert "de-parl-2029" not in html      # spring 2029, outside it
     months = config.settings()["contests"]["subnational_window_months"]

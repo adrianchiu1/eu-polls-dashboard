@@ -11,6 +11,7 @@ from html import escape
 from pathlib import Path
 
 STATIC = Path(__file__).resolve().parent / "static"
+REPO_URL = "https://github.com/adrianchiu1/eu-polls-dashboard"
 
 STATUS_LABEL = {
     "active": "Active",
