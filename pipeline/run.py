@@ -126,11 +126,14 @@ def check_pull(pull: ContestPull, contest: dict, source: dict, country: dict, la
     rep = validate(pull.polls, chamber_size=country.get("chamber_size"), today=today, check_sums=not partial)
     cid = contest["contest_id"]
     n = rep.polls["poll_id"].nunique() if not rep.polls.empty else 0
+    before = last_good["poll_id"].nunique() if not last_good.empty else 0
+    if n == 0 and before == 0 and rep.checked == 0:
+        # The source answered and simply has no poll in this cycle yet (a body that has just voted).
+        return rep.polls, pull.warnings + ["no poll in this electoral cycle yet"]
     if n == 0:
         raise AdapterError(f"{cid}: no valid poll in the pull")
     if rep.checked and 100.0 * rep.dropped / rep.checked > v["fail_pull_if_dropped_above_pct"]:
         raise AdapterError(f"{cid}: {rep.dropped} of {rep.checked} polls failed validation")
-    before = last_good["poll_id"].nunique() if not last_good.empty else 0
     if before and 100.0 * n / before < v["fail_pull_if_polls_below_last_good_pct"]:
         raise AdapterError(f"{cid}: {n} polls, down from {before} in the last good file")
     return rep.polls, pull.warnings + rep.warnings
