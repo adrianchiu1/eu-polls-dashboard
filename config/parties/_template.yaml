@@ -14,6 +14,7 @@ parties:
     lr_source: pending              # ches2024 | ches2019 | manual | inherited | pending
     lr_judgement: null              # judgement id when lr_source is manual
     members: []                     # for alliances: party_ids of the members
+    # coalition: true               # an alliance of separately polled lists; the app shows its total
     valid_from: null                # ISO date, or null for "always"
     valid_to: null
     successor_of: []                # party_ids this one replaced

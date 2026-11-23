@@ -1,0 +1,650 @@
+# France. Drafted by tools/propose_parties.py from the pinned Wikipedia fixture(s) for fr-parl-next and fr-pres-2027:
+# short names, full names and colours are read from the polling tables' headers (CC BY-SA 4.0).
+# Party Facts ids, where present, come from Europolls (github.com/gfrt0/europolls,
+# config/party_mappings/FR.yaml; CC BY-SA 4.0) and are not yet checked against Party Facts itself.
+# Left-right scores are pending: see docs/DATA_SOURCES.md, Chapel Hill Expert Survey.
+# An alliance row with members is a joint list: one figure a pollster gives for several columns.
+# Candidates carry no nominating party yet: the tables do not state one consistently.
+schema_version: 1
+country: FR
+parties:
+  - party_id: fr-exg
+    type: party
+    short: EXG
+    name: Far-left politics in France
+    colour: '#BB0000'
+    partyfacts_id: 1594
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-lfi
+    type: party
+    short: LFI
+    name: La France Insoumise
+    colour: '#56277E'
+    partyfacts_id: 5858
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-le
+    type: party
+    short: LE
+    name: The Ecologists
+    colour: '#4BB166'
+    partyfacts_id: 5650
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-pcf
+    type: party
+    short: PCF
+    name: French Communist Party
+    colour: '#E4002A'
+    partyfacts_id: 1251
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-ps
+    type: party
+    short: PS
+    name: Socialist Party
+    colour: '#E3265B'
+    partyfacts_id: 1478
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-dvg
+    type: party
+    short: DVG
+    name: Miscellaneous left
+    colour: '#FFC0C0'
+    partyfacts_id: 2688
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-eco
+    type: party
+    short: ECO
+    name: Green politics
+    colour: '#8FBC8F'
+    partyfacts_id: 5953
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-ens
+    type: party
+    short: ENS
+    name: Ensemble
+    colour: '#FFEB00'
+    partyfacts_id: 5857
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-dvc
+    type: party
+    short: DVC
+    name: Miscellaneous centre
+    colour: '#FCDAA8'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-lr
+    type: party
+    short: LR
+    name: The Republicans
+    colour: '#0043B0'
+    partyfacts_id: 8168
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-dvd
+    type: party
+    short: DVD
+    name: Miscellaneous right
+    colour: '#ADC1FD'
+    partyfacts_id: 2688
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-dlf
+    type: party
+    short: DLF
+    name: Debout la France
+    colour: '#0087CD'
+    partyfacts_id: 3207
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-udr
+    type: party
+    short: UDR
+    name: Union of the Right for the Republic
+    colour: '#213045'
+    partyfacts_id: 8041
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-rn
+    type: party
+    short: RN
+    name: National Rally
+    colour: '#254671'
+    partyfacts_id: 433
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-rec
+    type: party
+    short: REC
+    name: Reconquête
+    colour: '#170066'
+    partyfacts_id: 9064
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-rn-allies
+    type: alliance
+    short: RN+allies
+    name: National Rally and allies
+    colour: '#213045'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    members:
+    - fr-udr
+    - fr-rn
+    aliases:
+    - RN and allies
+  - party_id: fr-nfp
+    type: alliance
+    short: NFP
+    name: New Popular Front
+    colour: '#56277E'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    members:
+    - fr-lfi
+    - fr-le
+    - fr-pcf
+    - fr-ps
+    aliases:
+    - Nouveau Front populaire
+  - party_id: fr-le-pcf-ps
+    type: alliance
+    short: LE+PCF+PS
+    name: 'Joint list: LE, PCF, PS'
+    colour: '#4BB166'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    members:
+    - fr-le
+    - fr-pcf
+    - fr-ps
+  - party_id: fr-lfi-le
+    type: alliance
+    short: LFI+LE
+    name: 'Joint list: LFI, LE'
+    colour: '#56277E'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    members:
+    - fr-lfi
+    - fr-le
+  - party_id: fr-pcf-ps
+    type: alliance
+    short: PCF+PS
+    name: 'Joint list: PCF, PS'
+    colour: '#E4002A'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    members:
+    - fr-pcf
+    - fr-ps
+  - party_id: fr-lfi-le-pcf
+    type: alliance
+    short: LFI+LE+PCF
+    name: 'Joint list: LFI, LE, PCF'
+    colour: '#56277E'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    members:
+    - fr-lfi
+    - fr-le
+    - fr-pcf
+  - party_id: fr-cand-arthaud
+    type: candidate
+    short: Arthaud
+    name: Nathalie Arthaud
+    colour: '#AA0000'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Nathalie Arthaud (LO)
+  - party_id: fr-cand-melenchon
+    type: candidate
+    short: Mélenchon
+    name: Jean-Luc Mélenchon
+    colour: '#56277E'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Jean-Luc Mélenchon (LFI)
+    - Mélenchon LFI
+  - party_id: fr-cand-roussel
+    type: candidate
+    short: Roussel
+    name: Fabien Roussel
+    colour: '#E4002A'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Fabien Roussel (PCF)
+  - party_id: fr-cand-polony
+    type: candidate
+    short: Polony
+    name: Natacha Polony
+    colour: '#D6232B'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-cand-ruffin
+    type: candidate
+    short: Ruffin
+    name: François Ruffin
+    colour: '#F13C46'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - François Ruffin (D!)
+    - Ruffin PD [ fr ]
+  - party_id: fr-cand-bouamrane
+    type: candidate
+    short: Bouamrane
+    name: Karim Bouamrane
+    colour: '#E3265B'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-cand-tondelier
+    type: candidate
+    short: Tondelier
+    name: Marine Tondelier
+    colour: '#79B41D'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Marine Tondelier (LE)
+  - party_id: fr-cand-glucksmann
+    type: candidate
+    short: Glucksmann
+    name: Raphaël Glucksmann
+    colour: '#FFF100'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Raphaël Glucksmann (PP)
+    - Glucksmann PP
+  - party_id: fr-cand-attal
+    type: candidate
+    short: Attal
+    name: Gabriel Attal
+    colour: '#FFD600'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Gabriel Attal (RE)
+    - Attal RE
+  - party_id: fr-cand-riner
+    type: candidate
+    short: Riner
+    name: Teddy Riner
+    colour: '#DCDCDC'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-cand-lagarde
+    type: candidate
+    short: Lagarde
+    name: Christine Lagarde
+    colour: '#FFD600'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-cand-philippe
+    type: candidate
+    short: Philippe
+    name: Édouard Philippe
+    colour: '#0000BA'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Édouard Philippe (HOR)
+    - Philippe HOR
+  - party_id: fr-cand-de-villepin
+    type: candidate
+    short: de Villepin
+    name: Dominique de Villepin
+    colour: '#687CD5'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-cand-lisnard
+    type: candidate
+    short: Lisnard
+    name: David Lisnard
+    colour: '#006992'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-cand-retailleau
+    type: candidate
+    short: Retailleau
+    name: Bruno Retailleau
+    colour: '#0043B0'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Bruno Retailleau (LR)
+    - Retailleau LR
+  - party_id: fr-cand-dupont-aignan
+    type: candidate
+    short: Dupont-Aignan
+    name: Nicolas Dupont-Aignan
+    colour: '#8040C0'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Nicolas Dupont-Aignan (DLF)
+  - party_id: fr-cand-le-pen
+    type: candidate
+    short: Le Pen
+    name: Marine Le Pen
+    colour: '#254671'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Marine Le Pen (RN)
+    - Le Pen RN
+  - party_id: fr-cand-philippot
+    type: candidate
+    short: Philippot
+    name: Florian Philippot
+    colour: '#ED8B00'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-cand-asselineau
+    type: candidate
+    short: Asselineau
+    name: François Asselineau
+    colour: '#057C85'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-cand-zemmour
+    type: candidate
+    short: Zemmour
+    name: Éric Zemmour
+    colour: '#170066'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Éric Zemmour (R!)
+  - party_id: fr-cand-hollande
+    type: candidate
+    short: Hollande
+    name: François Hollande
+    colour: '#E3265B'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - François Hollande (PS)
+    - Hollande PS
+  - party_id: fr-cand-maurel
+    type: candidate
+    short: Maurel
+    name: Emmanuel Maurel
+    colour: '#D53150'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-cand-royal
+    type: candidate
+    short: Royal
+    name: Ségolène Royal
+    colour: '#E3265B'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-cand-faure
+    type: candidate
+    short: Faure
+    name: Olivier Faure
+    colour: '#E3265B'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Olivier Faure (PS)
+  - party_id: fr-cand-guedj
+    type: candidate
+    short: Guedj
+    name: Jérôme Guedj
+    colour: '#E3265B'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-cand-le-maire
+    type: candidate
+    short: Le Maire
+    name: Bruno Le Maire
+    colour: '#FFD600'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Bruno Le Maire (RE)
+  - party_id: fr-cand-bertrand
+    type: candidate
+    short: Bertrand
+    name: Xavier Bertrand
+    colour: '#0043B0'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Xavier Bertrand (NF)
+  - party_id: fr-cand-knafo
+    type: candidate
+    short: Knafo
+    name: Sarah Knafo
+    colour: '#170066'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: fr-cand-wauquiez
+    type: candidate
+    short: Wauquiez
+    name: Laurent Wauquiez
+    colour: '#0043B0'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Laurent Wauquiez (LR)
+  - party_id: fr-cand-poutou
+    type: candidate
+    short: Poutou
+    name: Philippe Poutou
+    colour: '#C0081F'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Philippe Poutou (NPA)
+  - party_id: fr-cand-cazeneuve
+    type: candidate
+    short: Cazeneuve
+    name: Bernard Cazeneuve
+    colour: '#E3265B'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Bernard Cazeneuve (LC)
+  - party_id: fr-cand-delga
+    type: candidate
+    short: Delga
+    name: Carole Delga
+    colour: '#E3265B'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Carole Delga (PS)
+  - party_id: fr-cand-jadot
+    type: candidate
+    short: Jadot
+    name: Yannick Jadot
+    colour: '#79B41D'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Yannick Jadot (LE)
+  - party_id: fr-cand-rousseau
+    type: candidate
+    short: Rousseau
+    name: Sandrine Rousseau
+    colour: '#79B41D'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Sandrine Rousseau (LE)
+  - party_id: fr-cand-borne
+    type: candidate
+    short: Borne
+    name: Élisabeth Borne
+    colour: '#FFD600'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Élisabeth Borne (RE)
+  - party_id: fr-cand-braun-pivet
+    type: candidate
+    short: Braun-Pivet
+    name: Yaël Braun-Pivet
+    colour: '#FFD600'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Yaël Braun-Pivet (RE)
+  - party_id: fr-cand-castex
+    type: candidate
+    short: Castex
+    name: Jean Castex
+    colour: '#FFD600'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Jean Castex (IND)
+  - party_id: fr-cand-darmanin
+    type: candidate
+    short: Darmanin
+    name: Gérald Darmanin
+    colour: '#FFD600'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Gérald Darmanin (RE)
+  - party_id: fr-cand-bayrou
+    type: candidate
+    short: Bayrou
+    name: François Bayrou
+    colour: '#EF5327'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - François Bayrou (MD)
+  - party_id: fr-cand-lassalle
+    type: candidate
+    short: Lassalle
+    name: Jean Lassalle
+    colour: '#034EA1'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Jean Lassalle (RES)
+  - party_id: fr-cand-barnier
+    type: candidate
+    short: Barnier
+    name: Michel Barnier
+    colour: '#0043B0'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Michel Barnier (LR)
+  - party_id: fr-cand-bardella
+    type: candidate
+    short: Bardella
+    name: Jordan Bardella
+    colour: '#254671'
+    party_id_nominating: null
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Jordan Bardella (RN)

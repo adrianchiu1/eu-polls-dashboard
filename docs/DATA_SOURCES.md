@@ -19,7 +19,21 @@ Researched on 23 Nov 2026. Re-check anything marked unverified before relying on
   Scottish Parliament (constituency and list votes).
 - **Etiquette:** set a descriptive User-Agent with a contact address; one request per article per run;
   no parallel bursts.
-- **Unverified:** the article titles in `config/sources.yaml` marked `verified: false`.
+- **Checked on 23 Nov 2026:** every Wikipedia title in `config/sources.yaml` was resolved through the
+  API. Two seeded titles were redirects to a section of an election article and were replaced by the
+  article they point to (French legislative, Senedd). Table layouts are not inspected yet.
+- **Rate limits:** the API answered several single requests with HTTP 429 during the check, even a
+  few seconds apart. The adapter backs off and retries, and makes two requests per article per run:
+  one API query for the current revision id, then `index.php?oldid=<id>&action=render` for that
+  revision's content, which was throttled less often than `action=parse`.
+- **What the adapter reads (Phase 1):** the rendered page is cut down to headings, wikitables and
+  reference lists, then each table selected by the contest's `selector` is read as a grid with spans
+  expanded. Year-less dates take the year from the heading above the table. One figure spanning several
+  party columns is a joint list and maps to an alliance row in the party file. A row whose pollster cell
+  names an election is the official result and goes to `data/results.csv`. A table without a date
+  column, a pollster column or two party columns fails the pull.
+- **Not read yet:** seat figures printed under vote shares (Spain), the Italian coalition columns, and
+  polling for Spain before 2025, which sits in a separate article.
 
 ### Europolls (reuse of code and mappings, not of output)
 
@@ -45,7 +59,14 @@ Researched on 23 Nov 2026. Re-check anything marked unverified before relying on
 - **Licence:** ODC Open Database License (ODbL). Works that use the database must name and link
   dawum.de and the licence; a derived database that is published is itself under ODbL. DAWUM suggests
   the wording "Daten von dawum.de (Open Database License (ODbL))".
-- **Unverified:** the exact names of the JSON blocks and the parliament ids. Read them at run time.
+- **Checked on 23 Nov 2026:** the full file has seven top-level blocks: `Database`, `Parliaments`,
+  `Institutes`, `Taskers`, `Methods`, `Parties`, `Surveys`. `Database` carries the licence and
+  `Last_Update`. A survey has `Date` (publication), `Survey_Period` (`Date_Start`, `Date_End`),
+  `Surveyed_Persons`, `Parliament_ID`, `Institute_ID`, `Tasker_ID`, `Method_ID` and `Results`
+  (party id to percentage). All ids are strings. The file held 4,017 surveys, 22 institutes and
+  18 parliaments: the Bundestag, the 16 Landtage and the European Parliament.
+- **Parliament ids are still read at run time**, matched on the `Shortcut` field, and not stored in
+  configuration. One shortcut differs from the Land's name: `Nordrhein-Westfalen (NRW)`.
 
 ### SwedishPolls (Sweden)
 
@@ -58,12 +79,23 @@ Researched on 23 Nov 2026. Re-check anything marked unverified before relying on
 
 ### Chapel Hill Expert Survey (left-right scores)
 
-- A seventh wave covering 2024 exists and the project publishes its data. That is all that was
-  confirmed, and only from search results.
-- **Unverified:** the download location, file format, variable names (the general left-right variable
-  has been called `lrgen` in earlier waves), party ids, coverage of Norway and the UK in the 2024
-  wave, and the terms of use.
-- **Rule until verified:** leave `lr_score` empty with `lr_source: pending`.
+- **Checked on 23 Nov 2026:** https://www.chesdata.eu/ches-europe links the 2024 wave as CSV and Stata
+  files (`CHES_2024_final_v2.csv`) with a codebook, hosted as GitHub release assets of
+  `chesdata/chesdata.github.io`. The CSV has 279 parties in 31 countries and 53 columns. The general
+  left-right variable is `lrgen`, 0 to 10, with no missing values. Norway and the UK are both in it,
+  as are all 16 other countries here.
+- **Party ids:** the file keys parties by CHES's own numeric `party_id` and a numeric `country`. It
+  has no Party Facts column, so the join to Party Facts ids needs Party Facts' own linking table.
+  That table has not been checked yet.
+- **Terms of use.** The page asks users to cite the survey's article (Rovny et al. 2025, Electoral
+  Studies 97, doi:10.1016/j.electstud.2025.102981) and states no licence. The owner decided on
+  23 Nov 2026 to republish each party's general left-right score with that citation. The survey's
+  file is still not stored in this repository; only the one score per party is, in `config/parties/`.
+- **How scores get in:** `tools/propose_lr_scores.py` joins the 2024 file to the party files through
+  Party Facts' external-parties table (https://partyfacts.herokuapp.com/download/external-parties-csv/,
+  dataset `ches`). Party Facts has not linked the 2024 wave's new parties, so the tool also matches a
+  party when the survey prints the same label for it in the same country. Scores reach the party
+  files only through a judgement-proposal pull request.
 
 ## Considered and not used
 

@@ -18,8 +18,11 @@ wants the spec implemented, not redesigned. Read this file, then `SPEC.md`, befo
 4. `docs/PLATFORM_NOTES.md` — Streamlit Community Cloud limits and how review artifacts are made.
 5. `config/` — seeded configuration. `schemas/` — its JSON Schemas. `tools/validate_config.py` checks it.
 
-Current state: this is a starter kit. `config/`, `schemas/`, `docs/`, fixtures and templates exist.
-`pipeline/`, `app/`, `scripts/`, `data/` and the workflows do not exist yet. You create them.
+Current state: Phase 1 pilot (DE, FR, IT, ES, UK), awaiting AC's review. `pipeline/` has the DAWUM and
+Wikipedia adapters, validation, the average and the daily runner (`python -m pipeline.run`); `app/`
+has the six-zone country view, Overview and Method; `scripts/snapshot.py` renders the same pages.
+Not built yet: the SwedishPolls adapter, `pipeline/triggers.py`, left-right ordering (scores pending),
+Italian coalition totals, Spanish seat ranges, and parsers for the other 13 countries.
 
 ## Rules that do not bend
 

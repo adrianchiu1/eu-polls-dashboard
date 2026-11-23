@@ -74,12 +74,17 @@
     "validation": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["share_sum_min_pct", "share_sum_max_pct", "swing_flag_points", "cross_source_disagreement_points"],
+      "required": [
+        "share_sum_min_pct", "share_sum_max_pct", "swing_flag_points", "cross_source_disagreement_points",
+        "fail_pull_if_dropped_above_pct", "fail_pull_if_polls_below_last_good_pct"
+      ],
       "properties": {
         "share_sum_min_pct": { "type": "number" },
         "share_sum_max_pct": { "type": "number" },
         "swing_flag_points": { "$ref": "#/$defs/posnum" },
-        "cross_source_disagreement_points": { "$ref": "#/$defs/posnum" }
+        "cross_source_disagreement_points": { "$ref": "#/$defs/posnum" },
+        "fail_pull_if_dropped_above_pct": { "type": "number", "minimum": 0, "maximum": 100 },
+        "fail_pull_if_polls_below_last_good_pct": { "type": "number", "minimum": 0, "maximum": 100 }
       }
     },
     "staleness": {

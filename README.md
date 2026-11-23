@@ -1,8 +1,21 @@
 # European election polling dashboard
 
-Starter kit for a Streamlit dashboard of election polling in 17 European countries plus the UK.
-There is no application code here yet: this is the agreed spec, the seeded configuration and the test
-fixtures that Claude Code builds from.
+A Streamlit dashboard of election polling in 17 European countries plus the UK, built by Claude Code
+from the agreed spec. The Phase 1 pilot is in place for Germany, France, Italy, Spain and the UK: a
+daily pipeline fetches polls from DAWUM and Wikipedia, validates them and computes the
+volatility-weighted average, and the app shows each country in six zones. The other 13 tabs show
+their calendar and judgement entries until Phase 2.
+
+## Run it
+
+```bash
+pip install -r requirements-dev.txt
+python -m pytest -q
+streamlit run app/streamlit_app.py
+python scripts/snapshot.py --out snapshots/review.html overview DE FR method
+python -m pipeline.run                              # live fetch into data/
+python -m pipeline.run --offline tests/fixtures --data-dir /tmp/data   # same run on saved fixtures
+```
 
 ## How to use it
 
@@ -49,4 +62,4 @@ python tools/validate_config.py
 python tests/fixtures/averaging/build_fixtures.py --check
 ```
 
-Both commands should end with `OK`.
+Both commands should end with `OK`. `requirements-dev.txt` installs the same packages, pinned.

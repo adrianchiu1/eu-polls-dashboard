@@ -31,6 +31,7 @@
           "lr_source": { "type": "string", "pattern": "^(ches[0-9]{4}|manual|inherited|pending)$" },
           "lr_judgement": { "type": ["string", "null"] },
           "members": { "type": "array", "items": { "type": "string" } },
+          "coalition": { "type": "boolean" },
           "valid_from": { "$ref": "#/$defs/isodate_or_null" },
           "valid_to": { "$ref": "#/$defs/isodate_or_null" },
           "successor_of": { "type": "array", "items": { "type": "string" } },
