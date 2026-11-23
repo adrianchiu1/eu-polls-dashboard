@@ -1,0 +1,6 @@
+# Pipeline, tests and tools. Used by GitHub Actions and local development, not by the deployed app.
+-r requirements.txt
+jsonschema==4.26.0
+numpy==2.5.5
+requests==2.34.2
+pytest==9.1.1

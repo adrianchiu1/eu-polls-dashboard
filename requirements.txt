@@ -1,0 +1,6 @@
+# Runtime for the app on Streamlit Community Cloud. Pinned: an unpinned Streamlit can upgrade
+# without warning. Checked against PyPI on 2026-11-23; deploy with Python 3.12 (the platform default).
+streamlit==1.67.0
+pandas==3.1.1
+plotly==7.1.0
+PyYAML==6.0.3

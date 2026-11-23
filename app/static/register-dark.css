@@ -1,0 +1,15 @@
+/* Dark values for the tokens in register.css. Loaded by the snapshot only: the app pins a light theme. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --rg-bg: #12161d; --rg-surface: #1a202a; --rg-fg: #e6eaf0; --rg-muted: #9aa5b6; --rg-line: #303948;
+    --rg-accent: #7fb8de; --rg-watch-bg: #4a3a0c; --rg-watch-fg: #ffdf8a; --rg-draft-bg: #2a3240;
+    --rg-draft-fg: #c3cbd8; --rg-owner-bg: #173a2a; --rg-owner-fg: #9fdcbd; --rg-warn-fg: #ffab7a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --rg-bg: #12161d; --rg-surface: #1a202a; --rg-fg: #e6eaf0; --rg-muted: #9aa5b6; --rg-line: #303948;
+  --rg-accent: #7fb8de; --rg-watch-bg: #4a3a0c; --rg-watch-fg: #ffdf8a; --rg-draft-bg: #2a3240;
+  --rg-draft-fg: #c3cbd8; --rg-owner-bg: #173a2a; --rg-owner-fg: #9fdcbd; --rg-warn-fg: #ffab7a;
+  color-scheme: dark;
+}

@@ -18,8 +18,10 @@ wants the spec implemented, not redesigned. Read this file, then `SPEC.md`, befo
 4. `docs/PLATFORM_NOTES.md` — Streamlit Community Cloud limits and how review artifacts are made.
 5. `config/` — seeded configuration. `schemas/` — its JSON Schemas. `tools/validate_config.py` checks it.
 
-Current state: this is a starter kit. `config/`, `schemas/`, `docs/`, fixtures and templates exist.
-`pipeline/`, `app/`, `scripts/`, `data/` and the workflows do not exist yet. You create them.
+Current state: Phase 0 scaffold. The app shell (`app/`) shows the calendar and the judgement register
+from configuration, `scripts/snapshot.py` renders the same pages to HTML, and `tests.yml` runs the
+checks. `pipeline/` holds only the configuration loader: no adapter, validation or averaging code
+exists yet, and `data/` is empty.
 
 ## Rules that do not bend
 

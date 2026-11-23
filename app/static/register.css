@@ -1,0 +1,55 @@
+/* Register and calendar styles. Shared by the Streamlit views and scripts/snapshot.py.
+   Layout: one reading column; entries are native details elements, so nothing needs script. */
+:root {
+  --rg-bg: #f7f8fa;
+  --rg-surface: #ffffff;
+  --rg-fg: #1b2330;
+  --rg-muted: #5a6577;
+  --rg-line: #d9dee7;
+  --rg-accent: #1f5f8b;
+  --rg-watch-bg: #fff1cf;
+  --rg-watch-fg: #6b4a00;
+  --rg-draft-bg: #e8ebf1;
+  --rg-draft-fg: #3c4658;
+  --rg-owner-bg: #dcefe6;
+  --rg-owner-fg: #1d5239;
+  --rg-warn-fg: #9a3412;
+  --rg-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --rg-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+.rg { font-family: var(--rg-sans); color: var(--rg-fg); font-size: 15px; line-height: 1.5; }
+.rg a { color: var(--rg-accent); }
+.rg h2 { font-size: 1.25rem; margin: 2rem 0 0.25rem; text-wrap: balance; }
+.rg h3 { font-size: 1rem; margin: 1.5rem 0 0.5rem; }
+.rg p { margin: 0.4rem 0; max-width: 68ch; }
+.rg .rg-muted { color: var(--rg-muted); }
+.rg .rg-id { font-family: var(--rg-mono); font-size: 0.85em; color: var(--rg-muted); white-space: nowrap; }
+
+.rg-counts { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin: 0.75rem 0 0; padding: 0; list-style: none; }
+.rg-counts li { font-variant-numeric: tabular-nums; }
+.rg-counts b { font-size: 1.35rem; margin-right: 0.3rem; }
+
+.rg-list { display: flex; flex-direction: column; gap: 0.4rem; }
+.rg-entry { background: var(--rg-surface); border: 1px solid var(--rg-line); border-radius: 6px; }
+.rg-entry > summary { cursor: pointer; padding: 0.55rem 0.75rem; display: flex; flex-wrap: wrap; gap: 0.3rem 0.6rem; align-items: baseline; }
+.rg-entry > summary:focus-visible { outline: 2px solid var(--rg-accent); outline-offset: 2px; }
+.rg-entry .rg-q { flex: 1 1 16rem; min-width: 0; font-weight: 600; }
+.rg-entry .rg-short { flex: 1 1 100%; color: var(--rg-muted); }
+.rg-entry[open] .rg-short { display: none; }
+.rg-body { padding: 0 0.75rem 0.75rem; border-top: 1px solid var(--rg-line); }
+.rg-body dl { display: grid; grid-template-columns: minmax(6.5rem, max-content) minmax(0, 1fr); gap: 0.35rem 1rem; margin: 0.75rem 0 0; }
+.rg-body dt { color: var(--rg-muted); }
+.rg-body dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.rg-body ul { margin: 0; padding-left: 1.1rem; }
+@media (max-width: 480px) { .rg-body dl { grid-template-columns: minmax(0, 1fr); gap: 0.1rem; } .rg-body dd { margin-bottom: 0.5rem; } }
+
+.rg-pill { display: inline-block; font-size: 0.75rem; line-height: 1.5; padding: 0 0.5rem; border-radius: 999px; white-space: nowrap; background: var(--rg-draft-bg); color: var(--rg-draft-fg); }
+.rg-pill.rg-watch { background: var(--rg-watch-bg); color: var(--rg-watch-fg); font-weight: 600; }
+.rg-pill.rg-owner { background: var(--rg-owner-bg); color: var(--rg-owner-fg); }
+
+.rg-scroll { overflow-x: auto; }
+.rg-table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.rg-table th, .rg-table td { text-align: left; padding: 0.4rem 0.75rem 0.4rem 0; border-bottom: 1px solid var(--rg-line); vertical-align: top; }
+.rg-table th { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--rg-muted); }
+.rg-table td.rg-nowrap { white-space: nowrap; }
+.rg-flag { color: var(--rg-warn-fg); }
