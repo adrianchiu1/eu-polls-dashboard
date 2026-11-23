@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "config/contests.yaml",
+  "type": "object",
+  "required": ["schema_version", "contests"],
+  "additionalProperties": false,
+  "$defs": {
+    "isodate": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" }
+  },
+  "properties": {
+    "schema_version": { "const": 1 },
+    "contests": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "contest_id", "country", "tier", "kind", "body", "territory", "date", "date_status",
+          "rounds", "status", "source_url", "last_verified", "verification"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "contest_id": { "type": "string", "pattern": "^[a-z]{2}-(pres|parl|sub)-[a-z0-9-]+$" },
+          "country": { "type": "string", "pattern": "^[A-Z]{2}$" },
+          "tier": { "enum": ["national", "subnational"] },
+          "kind": { "enum": ["presidential", "parliamentary", "regional"] },
+          "body": { "type": "string", "minLength": 1 },
+          "territory": { "type": "string", "minLength": 1 },
+          "date": { "oneOf": [{ "$ref": "#/$defs/isodate" }, { "type": "null" }] },
+          "round_dates": { "type": "array", "items": { "$ref": "#/$defs/isodate" }, "minItems": 2, "maxItems": 2 },
+          "expected_window": { "type": "string" },
+          "deadline": { "$ref": "#/$defs/isodate" },
+          "date_status": { "enum": ["fixed", "expected", "deadline", "unscheduled", "unknown"] },
+          "rounds": { "enum": [1, 2] },
+          "status": { "enum": ["upcoming", "called", "held"] },
+          "previous_date": { "$ref": "#/$defs/isodate" },
+          "source_url": { "type": ["string", "null"] },
+          "last_verified": { "$ref": "#/$defs/isodate" },
+          "verification": { "enum": ["opened", "search", "legal_term", "unverified"] },
+          "notes": { "type": "string" }
+        },
+        "allOf": [
+          {
+            "if": { "properties": { "date_status": { "const": "fixed" } } },
+            "then": { "properties": { "date": { "$ref": "#/$defs/isodate" } } }
+          },
+          {
+            "if": { "properties": { "date_status": { "const": "deadline" } } },
+            "then": { "required": ["deadline"] }
+          },
+          {
+            "if": { "properties": { "tier": { "const": "subnational" } } },
+            "then": { "properties": { "kind": { "const": "regional" } } },
+            "else": { "properties": { "kind": { "enum": ["presidential", "parliamentary"] } } }
+          },
+          {
+            "if": { "properties": { "tier": { "const": "national" } } },
+            "then": { "required": ["previous_date"] }
+          }
+        ]
+      }
+    }
+  }
+}

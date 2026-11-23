@@ -1,0 +1,37 @@
+# Template for config/parties/<CC>.yaml. Copy, rename, replace the example rows.
+# The rows below are placeholders with invented names. They are not real parties.
+schema_version: 1
+country: XX
+parties:
+  - party_id: xx-example-a          # stable id, never reused
+    type: party                     # party | alliance | candidate
+    short: EXA                      # as the source tables print it
+    name: Example Party A
+    name_en: Example Party A
+    colour: "#888888"
+    partyfacts_id: null             # integer once mapped
+    lr_score: null                  # 0 (left) to 10 (right); null until sourced
+    lr_source: pending              # ches2024 | ches2019 | manual | inherited | pending
+    lr_judgement: null              # judgement id when lr_source is manual
+    members: []                     # for alliances: party_ids of the members
+    valid_from: null                # ISO date, or null for "always"
+    valid_to: null
+    successor_of: []                # party_ids this one replaced
+    aliases: [EX-A, Example A]      # other labels seen in source tables
+
+  - party_id: xx-cand-example
+    type: candidate
+    short: Example
+    name: Jane Example
+    name_en: Jane Example
+    colour: "#888888"
+    party_id_nominating: xx-example-a
+    partyfacts_id: null
+    lr_score: null
+    lr_source: inherited
+    lr_judgement: null
+    members: []
+    valid_from: null
+    valid_to: null
+    successor_of: []
+    aliases: []

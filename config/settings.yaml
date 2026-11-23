@@ -1,0 +1,55 @@
+# Thresholds. Every value here is a setting, not code. Change by pull request.
+schema_version: 1
+
+average:
+  window_days: 30                       # headline window: fieldwork_end within the last N days
+  widened_window_days: 60               # used when fewer than min_pollsters_in_window
+  min_pollsters_in_window: 3
+  lookback_days: 365                    # volatility lookback, same electoral cycle only
+  consensus_window_days: 30             # window for the leave-one-out consensus
+  min_other_pollsters_for_consensus: 2
+  min_polls_for_own_volatility: 6       # below this a pollster takes the median volatility
+  min_pollsters_with_volatility: 3      # below this the average is unweighted
+  weight_cap_multiple_of_median: 3.0
+  volatility_floor_points: 0.1          # avoids infinite weights
+  exclude_party_commissioned: true
+  rescale_to_100: false
+
+thin_polling:                           # all sub-national contests
+  window_days: 90
+  method: unweighted_latest_per_pollster
+
+parties:
+  own_line_min_average_pct: 2.0
+  own_line_if_seats_in_parliament: true
+
+contests:
+  subnational_window_months: 18
+  subnational_min_polls_12m: 3
+  presidential_min_polls_to_show: 3
+  presidential_polls_window_months: 12
+  post_election_view_days: 30
+  trend_min_history_months: 12
+
+validation:
+  share_sum_min_pct: 95.0
+  share_sum_max_pct: 105.0
+  swing_flag_points: 10.0
+  cross_source_disagreement_points: 1.0
+
+staleness:
+  fetch_interval_hours: 24
+  stale_after_multiple_of_interval: 2
+
+review:
+  default_review_months: 6
+  on_watch_review_months: 1
+  new_party_trigger_pct: 3.0
+  new_party_trigger_polls: 3
+  pollster_silent_days: 90
+
+spectrum:
+  scale_min: 0
+  scale_max: 10
+  preferred_source: ches
+  bloc_totals: false

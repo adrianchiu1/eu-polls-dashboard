@@ -1,0 +1,91 @@
+# Columns of the machine-written data files. The pipeline must write exactly these, in this order.
+# Types: str, int, float, date (ISO, UTC), datetime (ISO 8601, UTC), bool. A trailing ? means nullable.
+schema_version: 1
+files:
+  "data/polls_<CC>.csv":
+    one_row_is: One party's (or candidate's) figure in one poll, for one line-up and round
+    primary_key: [poll_id, lineup_id, round, party_id]
+    columns:
+      poll_id: str            # stable hash of contest_id, pollster, fieldwork_end, client, source
+      contest_id: str         # must exist in config/contests.yaml
+      round: int              # 1, or 2 for a second-round match-up
+      lineup_id: str          # "default", or a stable id for a tested field of candidates
+      is_headline_lineup: bool
+      pollster: str           # normalised pollster name
+      client: str?            # who commissioned it
+      fieldwork_start: date?
+      fieldwork_end: date     # the poll's date for every calculation
+      sample_size: int?
+      method: str?
+      party_id: str           # must exist in config/parties/<CC>.yaml, or "others"
+      value: float
+      unit: str               # pct | seats
+      flags: str              # semicolon-separated: party_commissioned; small_sample; swing; regional_cut
+      region: str?            # set only for a regional cut of a national contest
+      source_url: str         # the publication the figure comes from
+      adapter: str            # wikipedia | dawum | swedishpolls
+      source_rev: str         # pinned revision: Wikipedia oldid, DAWUM Last_Update, git commit
+      retrieved_at: datetime
+
+  "data/averages_<CC>.csv":
+    one_row_is: One party's average on one date in one contest
+    primary_key: [contest_id, lineup_id, round, date, party_id]
+    columns:
+      contest_id: str
+      lineup_id: str
+      round: int
+      date: date
+      party_id: str
+      average: float
+      n_polls: int
+      n_pollsters: int
+      window_days: int        # 30, 60 when widened, 90 for thin polling
+      weighting: str          # volatility | unweighted
+      flags: str              # low_coverage; thin_polling; unweighted_no_volatility
+
+  "data/pollster_weights.csv":
+    one_row_is: One pollster's weight in one contest on one date
+    primary_key: [contest_id, date, pollster]
+    columns:
+      contest_id: str
+      date: date
+      pollster: str
+      volatility: float       # in points, after the floor
+      volatility_source: str  # own | median
+      n_polls_lookback: int
+      n_polls_in_window: int
+      weight_share: float     # pollster's share of total weight in the window, sums to 1 per date
+
+  "data/results.csv":
+    one_row_is: A party's official result in a past contest
+    primary_key: [contest_id, round, party_id]
+    columns:
+      contest_id: str
+      round: int
+      party_id: str
+      vote_share: float?
+      seats: int?
+      source_url: str
+
+  "data/quality.json":
+    one_row_is: One contest's health
+    fields:
+      contest_id: str
+      latest_poll_date: date?
+      polls_90d: int
+      pollsters_90d: int
+      parser_status: str      # ok | stale | failed
+      validation_warnings: list
+      last_successful_pull: datetime?
+      data_as_of: datetime
+
+  "data/review_queue.json":
+    one_row_is: One fired trigger awaiting the weekly check
+    fields:
+      trigger: str            # new_party | pollster_new | pollster_silent | subnational_in_window | layout_change | validation_failed | source_disagreement | review_due
+      country: str
+      contest_id: str?
+      judgement_ids: list     # entries the trigger may reopen
+      evidence: str           # what fired it, with numbers
+      first_seen: date
+      last_seen: date

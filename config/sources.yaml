@@ -1,0 +1,147 @@
+# Which source feeds which contest. Pilot countries first (DE, FR, IT, ES, UK), plus Sweden,
+# whose source is already known.
+#
+# verified: true   the locator was seen to exist on 2026-11-23
+#           false  best guess; resolve through the source's API and correct this file
+# priority: 1 is the primary source for the contest; higher numbers are cross-checks.
+schema_version: 1
+sources:
+  # ---------------------------------------------------------------- Germany (DAWUM)
+  - contest_id: de-parl-2029
+    adapter: dawum
+    locator: https://api.dawum.de/
+    selector: "Parliaments block: the entry for the Bundestag; read its id at run time"
+    priority: 1
+    verified: true
+    notes: Full database is one JSON file. https://api.dawum.de/last_update.txt gives the last change.
+  - contest_id: de-sub-saarland-2027
+    adapter: dawum
+    locator: https://api.dawum.de/
+    selector: "Parliaments block: Saarland"
+    priority: 1
+    verified: true
+  - contest_id: de-sub-schleswig-holstein-2027
+    adapter: dawum
+    locator: https://api.dawum.de/
+    selector: "Parliaments block: Schleswig-Holstein"
+    priority: 1
+    verified: true
+  - contest_id: de-sub-nordrhein-westfalen-2027
+    adapter: dawum
+    locator: https://api.dawum.de/
+    selector: "Parliaments block: Nordrhein-Westfalen"
+    priority: 1
+    verified: true
+  - contest_id: de-sub-bremen-2027
+    adapter: dawum
+    locator: https://api.dawum.de/
+    selector: "Parliaments block: Bremen"
+    priority: 1
+    verified: true
+  - contest_id: de-sub-niedersachsen-2027
+    adapter: dawum
+    locator: https://api.dawum.de/
+    selector: "Parliaments block: Niedersachsen"
+    priority: 1
+    verified: true
+  - contest_id: de-sub-bayern-2028
+    adapter: dawum
+    locator: https://api.dawum.de/
+    selector: "Parliaments block: Bayern"
+    priority: 1
+    verified: true
+  - contest_id: de-sub-hessen-2028
+    adapter: dawum
+    locator: https://api.dawum.de/
+    selector: "Parliaments block: Hessen"
+    priority: 1
+    verified: true
+
+  # ---------------------------------------------------------------- France (Wikipedia)
+  - contest_id: fr-pres-2027
+    adapter: wikipedia
+    locator: Opinion polling for the 2027 French presidential election
+    selector: First-round tables by line-up; second-round match-up tables
+    column_map: {}
+    priority: 1
+    verified: false
+    notes: Candidate-keyed. Each tested field of candidates is one lineup_id.
+  - contest_id: fr-parl-next
+    adapter: wikipedia
+    locator: Opinion polling for the 2027 French legislative election
+    selector: First-round table
+    column_map: {}
+    priority: 1
+    verified: true
+    notes: Article title seen in search results on 2026-11-23; table layout not inspected.
+
+  # ---------------------------------------------------------------- Italy (Wikipedia)
+  - contest_id: it-parl-2027
+    adapter: wikipedia
+    locator: Opinion polling for the next Italian general election
+    selector: Party vote table for the current year, plus yearly sub-articles if split
+    column_map: {}
+    priority: 1
+    verified: true
+    notes: >-
+      Title seen in search results. Spot-check against the official register at
+      sondaggipoliticoelettorali.it (ondata mirror on GitHub).
+
+  # ---------------------------------------------------------------- Spain (Wikipedia)
+  - contest_id: es-parl-2026
+    adapter: wikipedia
+    locator: Opinion polling for the 2026 Spanish general election
+    selector: Voting intention estimates table, with seat ranges
+    column_map: {}
+    priority: 1
+    verified: false
+    notes: After 29 Nov 2026 a new article for the next general election will start; add it for es-parl-next.
+
+  # ---------------------------------------------------------------- United Kingdom (Wikipedia)
+  - contest_id: uk-parl-next
+    adapter: wikipedia
+    locator: Opinion polling for the next United Kingdom general election
+    selector: National poll results table for the current year
+    column_map: {}
+    priority: 1
+    verified: true
+    notes: Title seen in search results. Great Britain samples; keep Northern Ireland out of the headline.
+  - contest_id: uk-sub-northern-ireland-2027
+    adapter: wikipedia
+    locator: Next Northern Ireland Assembly election
+    selector: Opinion polling section, party table
+    column_map: {}
+    priority: 1
+    verified: true
+    notes: Polling sits inside the election article, not a dedicated polling article.
+  - contest_id: uk-sub-scotland-next
+    adapter: wikipedia
+    locator: Opinion polling for the next Scottish Parliament election
+    selector: Constituency vote and regional vote tables
+    column_map: {}
+    priority: 1
+    verified: false
+  - contest_id: uk-sub-wales-next
+    adapter: wikipedia
+    locator: Opinion polling for the next Senedd election
+    selector: Voting intention table
+    column_map: {}
+    priority: 1
+    verified: false
+
+  # ---------------------------------------------------------------- Sweden (SwedishPolls)
+  - contest_id: se-parl-next
+    adapter: swedishpolls
+    locator: https://github.com/MansMeg/SwedishPolls
+    selector: Data/Polls.csv
+    column_map:
+      pollster: house
+      fieldwork_start: collectPeriodFrom
+      fieldwork_end: collectPeriodTo
+      sample_size: n
+      published: PublDate
+    priority: 1
+    verified: true
+    notes: >-
+      Party columns M, L, C, KD, S, V, MP, SD, FI. Missing values are the literal NA. Keep only rows
+      whose collectPeriodTo is after 2026-09-13.

@@ -1,0 +1,364 @@
+{
+  "settings": {
+    "window_days": 30,
+    "widened_window_days": 60,
+    "min_pollsters_in_window": 3,
+    "lookback_days": 365,
+    "consensus_window_days": 30,
+    "min_other_pollsters_for_consensus": 2,
+    "min_polls_for_own_volatility": 6,
+    "min_pollsters_with_volatility": 3,
+    "weight_cap_multiple_of_median": 3.0,
+    "volatility_floor_points": 0.1,
+    "thin_window_days": 90
+  },
+  "tolerance": 1e-06,
+  "cases": {
+    "main_latest": {
+      "fixture": "main.csv",
+      "tier": "national",
+      "date": "2026-11-20",
+      "result": {
+        "date": "2026-11-20",
+        "weighting": "volatility",
+        "window_days": 30,
+        "flags": [],
+        "n_polls": 9,
+        "n_pollsters": 5,
+        "averages": {
+          "A": 27.49530465,
+          "B": 27.91571695,
+          "C": 15.62913134,
+          "D": 9.97576886
+        },
+        "pollsters": {
+          "Alpha": {
+            "volatility": 1.09637085,
+            "volatility_source": "own",
+            "n_polls_in_window": 3,
+            "capped": false,
+            "weight_share": 0.37870492
+          },
+          "Beta": {
+            "volatility": 1.49631639,
+            "volatility_source": "own",
+            "n_polls_in_window": 1,
+            "capped": false,
+            "weight_share": 0.20331482
+          },
+          "Delta": {
+            "volatility": 1.7163174,
+            "volatility_source": "own",
+            "n_polls_in_window": 1,
+            "capped": false,
+            "weight_share": 0.15453281
+          },
+          "Epsilon": {
+            "volatility": 1.6063169,
+            "volatility_source": "median",
+            "n_polls_in_window": 2,
+            "capped": false,
+            "weight_share": 0.17642229
+          },
+          "Gamma": {
+            "volatility": 2.28710193,
+            "volatility_source": "own",
+            "n_polls_in_window": 2,
+            "capped": false,
+            "weight_share": 0.08702517
+          }
+        }
+      }
+    },
+    "main_midcycle": {
+      "fixture": "main.csv",
+      "tier": "national",
+      "date": "2026-06-01",
+      "result": {
+        "date": "2026-06-01",
+        "weighting": "volatility",
+        "window_days": 30,
+        "flags": [],
+        "n_polls": 6,
+        "n_pollsters": 4,
+        "averages": {
+          "A": 28.93865207,
+          "B": 25.93355469,
+          "C": 14.72468153,
+          "D": 10.36656229
+        },
+        "pollsters": {
+          "Alpha": {
+            "volatility": 1.19317909,
+            "volatility_source": "own",
+            "n_polls_in_window": 2,
+            "capped": false,
+            "weight_share": 0.48704178
+          },
+          "Beta": {
+            "volatility": 1.66403214,
+            "volatility_source": "own",
+            "n_polls_in_window": 2,
+            "capped": false,
+            "weight_share": 0.25041138
+          },
+          "Delta": {
+            "volatility": 1.95462161,
+            "volatility_source": "own",
+            "n_polls_in_window": 1,
+            "capped": false,
+            "weight_share": 0.18148975
+          },
+          "Gamma": {
+            "volatility": 2.92478038,
+            "volatility_source": "own",
+            "n_polls_in_window": 1,
+            "capped": false,
+            "weight_share": 0.08105708
+          }
+        }
+      }
+    },
+    "main_no_lean_latest": {
+      "fixture": "main_no_lean.csv",
+      "tier": "national",
+      "date": "2026-11-20",
+      "result": {
+        "date": "2026-11-20",
+        "weighting": "volatility",
+        "window_days": 30,
+        "flags": [],
+        "n_polls": 9,
+        "n_pollsters": 5,
+        "averages": {
+          "A": 27.11210104,
+          "B": 28.29801257,
+          "C": 15.62653603,
+          "D": 9.97523206
+        },
+        "pollsters": {
+          "Alpha": {
+            "volatility": 1.08918457,
+            "volatility_source": "own",
+            "n_polls_in_window": 3,
+            "capped": false,
+            "weight_share": 0.38180628
+          },
+          "Beta": {
+            "volatility": 1.49646383,
+            "volatility_source": "own",
+            "n_polls_in_window": 1,
+            "capped": false,
+            "weight_share": 0.20226166
+          },
+          "Delta": {
+            "volatility": 1.7163174,
+            "volatility_source": "own",
+            "n_polls_in_window": 1,
+            "capped": false,
+            "weight_share": 0.15376264
+          },
+          "Epsilon": {
+            "volatility": 1.60639062,
+            "volatility_source": "median",
+            "n_polls_in_window": 2,
+            "capped": false,
+            "weight_share": 0.17552691
+          },
+          "Gamma": {
+            "volatility": 2.28642786,
+            "volatility_source": "own",
+            "n_polls_in_window": 2,
+            "capped": false,
+            "weight_share": 0.08664251
+          }
+        }
+      }
+    },
+    "early_cycle_unweighted": {
+      "fixture": "main.csv",
+      "tier": "national",
+      "date": "2025-12-31",
+      "result": {
+        "date": "2025-12-31",
+        "weighting": "unweighted",
+        "window_days": 30,
+        "flags": [
+          "unweighted_no_volatility"
+        ],
+        "n_polls": 4,
+        "n_pollsters": 4,
+        "averages": {
+          "A": 30.0,
+          "B": 23.85,
+          "C": 16.1,
+          "D": 10.5
+        },
+        "pollsters": {}
+      }
+    },
+    "low_coverage_widened": {
+      "fixture": "low_coverage.csv",
+      "tier": "national",
+      "date": "2026-11-20",
+      "result": {
+        "date": "2026-11-20",
+        "weighting": "volatility",
+        "window_days": 60,
+        "flags": [
+          "low_coverage"
+        ],
+        "n_polls": 10,
+        "n_pollsters": 4,
+        "averages": {
+          "A": 27.7018723,
+          "B": 28.32428667,
+          "C": 15.77187996,
+          "D": 9.93821034
+        },
+        "pollsters": {
+          "Alpha": {
+            "volatility": 1.12232389,
+            "volatility_source": "own",
+            "n_polls_in_window": 5,
+            "capped": false,
+            "weight_share": 0.45364026
+          },
+          "Beta": {
+            "volatility": 1.55365076,
+            "volatility_source": "own",
+            "n_polls_in_window": 3,
+            "capped": false,
+            "weight_share": 0.2367234
+          },
+          "Epsilon": {
+            "volatility": 1.66576787,
+            "volatility_source": "median",
+            "n_polls_in_window": 1,
+            "capped": false,
+            "weight_share": 0.20592973
+          },
+          "Gamma": {
+            "volatility": 2.34731176,
+            "volatility_source": "own",
+            "n_polls_in_window": 1,
+            "capped": false,
+            "weight_share": 0.10370661
+          }
+        }
+      }
+    },
+    "cap_binds": {
+      "fixture": "cap.csv",
+      "tier": "national",
+      "date": "2026-11-20",
+      "result": {
+        "date": "2026-11-20",
+        "weighting": "volatility",
+        "window_days": 30,
+        "flags": [],
+        "n_polls": 13,
+        "n_pollsters": 6,
+        "averages": {
+          "A": 27.14607778,
+          "B": 28.13173302,
+          "C": 14.73991013,
+          "D": 10.25820881
+        },
+        "pollsters": {
+          "Loud1": {
+            "volatility": 1.79180193,
+            "volatility_source": "own",
+            "n_polls_in_window": 2,
+            "capped": false,
+            "weight_share": 0.14795902
+          },
+          "Loud2": {
+            "volatility": 1.99602117,
+            "volatility_source": "own",
+            "n_polls_in_window": 2,
+            "capped": false,
+            "weight_share": 0.11923154
+          },
+          "Loud3": {
+            "volatility": 1.99139781,
+            "volatility_source": "own",
+            "n_polls_in_window": 2,
+            "capped": false,
+            "weight_share": 0.11978581
+          },
+          "Loud4": {
+            "volatility": 2.2442452,
+            "volatility_source": "own",
+            "n_polls_in_window": 2,
+            "capped": false,
+            "weight_share": 0.09431501
+          },
+          "Loud5": {
+            "volatility": 1.87159433,
+            "volatility_source": "own",
+            "n_polls_in_window": 2,
+            "capped": false,
+            "weight_share": 0.13561196
+          },
+          "Steady": {
+            "volatility": 0.76008443,
+            "volatility_source": "own",
+            "n_polls_in_window": 3,
+            "capped": true,
+            "weight_share": 0.38309666
+          }
+        }
+      }
+    },
+    "thin_subnational": {
+      "fixture": "thin_subnational.csv",
+      "tier": "subnational",
+      "date": "2026-11-20",
+      "result": {
+        "date": "2026-11-20",
+        "weighting": "unweighted",
+        "window_days": 90,
+        "flags": [
+          "thin_polling"
+        ],
+        "n_polls": 2,
+        "n_pollsters": 2,
+        "averages": {
+          "A": 28.35,
+          "B": 26.3,
+          "C": 16.05,
+          "D": 10.45
+        },
+        "pollsters": {}
+      }
+    }
+  },
+  "invariants": [
+    {
+      "name": "own_lean_costs_nothing",
+      "statement": "Delta carries a steady lean of +2.5 on A and -2.5 on B in main.csv and none in main_no_lean.csv. Delta's own volatility is identical in both.",
+      "cases": [
+        "main_latest",
+        "main_no_lean_latest"
+      ]
+    },
+    {
+      "name": "lean_leaks_into_others",
+      "statement": "Known property, not a bug: the OTHER pollsters' volatilities differ slightly between the two files, because Delta drops in and out of their 30-day consensus and its lean then looks like noise to them. The size of the leak in this fixture is recorded below; it must stay small.",
+      "cases": [
+        "main_latest",
+        "main_no_lean_latest"
+      ],
+      "max_abs_volatility_difference_points": 0.00718628,
+      "must_stay_below_points": 0.05
+    },
+    {
+      "name": "point_in_time",
+      "statement": "main_midcycle is unchanged if every poll after 2026-06-01 is deleted from main.csv.",
+      "cases": [
+        "main_midcycle"
+      ]
+    }
+  ]
+}

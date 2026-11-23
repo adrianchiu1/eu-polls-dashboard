@@ -1,0 +1,725 @@
+# The judgement register. Every classification call the dashboard makes is one entry here.
+# Entries change ONLY by pull request approved by AC (see SPEC.md section 8).
+#
+# status:      active | on_watch | proposed_change | retired
+# confidence:  high | medium | low
+# review_by:   six months from decided_on by default; one month for on_watch entries
+# decided_by:  owner (AC chose it in chat on the date given) | draft (proposed in the spec, not contested)
+schema_version: 1
+judgements:
+  # ------------------------------------------------------------------ rules for every tab
+  - id: G-001
+    country: ALL
+    scope: tiers
+    question: What separates a national contest from a sub-national one?
+    decision: >-
+      National if the whole national electorate votes in it. Sub-national if it elects a tier with its
+      own government below the national level (Länder, autonomous communities, regions, devolved
+      nations, provinces, counties).
+    rationale: One rule that can be applied to all 18 countries without case-by-case argument.
+    alternatives:
+      - Classify by constitutional status only; breaks on Dutch provinces and Norwegian counties.
+    evidence: [SPEC.md section 1]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: [A country reforms its territorial tiers]
+
+  - id: G-002
+    country: ALL
+    scope: headline
+    question: Which national contest headlines a tab when a country elects both a president and a parliament?
+    decision: >-
+      The presidential contest headlines in FR, AT, PT, IE, FI, CZ and PL. The parliamentary contest is
+      the first foldable subsection, open by default. With fewer than three presidential polls in 12
+      months the headline shows the next date and "not yet polled".
+    rationale: Owner's instruction. Keeps one rule across all countries with a directly elected president.
+    alternatives:
+      - Presidential-first only where the presidency holds executive power (France); leaves AT, PT, IE, FI, CZ, PL parliamentary-first.
+      - Presidential-first only when the presidential election is the next national vote due.
+    evidence: [SPEC.md sections 1 and 3]
+    confidence: medium
+    status: on_watch
+    decided_on: 2026-11-23
+    decided_by: owner
+    review_by: 2026-12-23
+    triggers:
+      - Finland's 18 Apr 2027 or Poland's 2027 parliamentary election approaches with no presidential polls
+      - A reader reports the unpolled headline as confusing
+
+  - id: G-003
+    country: ALL
+    scope: average
+    question: What is the headline number for a party?
+    decision: A 30-day rolling mean weighted by pollster volatility (docs/AVERAGING.md).
+    rationale: Owner's choice. Down-weights noisy pollsters without modelling house effects.
+    alternatives:
+      - Unweighted mean of each pollster's latest poll in 30 days; simpler, treats all pollsters alike.
+      - Latest poll only; noisy.
+      - Full house-effect model; more to build and defend.
+    evidence: [SPEC.md section 3, docs/AVERAGING.md]
+    confidence: medium
+    status: active
+    decided_on: 2026-11-23
+    decided_by: owner
+    review_by: 2027-05-23
+    triggers: [The weighted and unweighted means diverge by more than 2 points for any party for 14 days]
+
+  - id: G-004
+    country: ALL
+    scope: average
+    question: How is a pollster's volatility measured?
+    decision: >-
+      Standard deviation of its residuals against the leave-one-out consensus of other pollsters,
+      demeaned per pollster and party, pooled across parties, over a 12-month lookback. Noise only: a
+      steady house lean is neither penalised nor corrected.
+    rationale: Owner's choice. Separates noise from real opinion moves and avoids rewarding herding.
+    alternatives:
+      - Root mean square around zero, so lean counts; favours pollsters that herd to consensus.
+      - Own poll-to-poll changes; mixes real moves with noise.
+      - Sampling error from sample size only.
+    evidence: [docs/AVERAGING.md]
+    confidence: medium
+    status: on_watch
+    decided_on: 2026-11-23
+    decided_by: owner
+    review_by: 2026-12-23
+    triggers:
+      - A rolling tracker with overlapping samples takes the capped weight in any contest
+      - One pollster holds more than 40 percent of total weight for 30 days
+    notes: >-
+      Known biases. (1) Volatility weighting favours pollsters that smooth; a tracker looks quieter than
+      it is. (2) A pollster's own lean costs it nothing, but it adds a little measured volatility to
+      the others when it drops in and out of their consensus window. (3) Measured volatility is floored
+      by the noise of the consensus, which compresses the weights when pollsters are few. See
+      docs/AVERAGING.md, "Properties worth knowing".
+
+  - id: G-005
+    country: ALL
+    scope: average
+    question: How is weight shared when a pollster publishes many polls in the window?
+    decision: Each pollster's total weight is 1/volatility squared, capped at three times the median, split equally across its polls in the window.
+    rationale: Owner's choice. Publishing more often should not add weight.
+    alternatives:
+      - Weight per poll; frequent pollsters count for more.
+      - Latest poll per pollster only.
+    evidence: [docs/AVERAGING.md]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: owner
+    review_by: 2027-05-23
+    triggers: []
+
+  - id: G-006
+    country: ALL
+    scope: average
+    question: What is the headline number where polling is too thin for volatility weights?
+    decision: >-
+      Sub-national contests use the unweighted mean of each pollster's latest poll in 90 days, flagged.
+      A national contest with fewer than three pollsters holding a volatility estimate is also
+      unweighted and flagged.
+    rationale: Owner's choice. Two pollsters cannot support a volatility estimate.
+    alternatives:
+      - Latest poll only.
+      - No headline number, table only.
+    evidence: [docs/AVERAGING.md]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: owner
+    review_by: 2027-05-23
+    triggers: [A sub-national contest reaches five regular pollsters]
+
+  - id: G-007
+    country: ALL
+    scope: parties
+    question: At what unit are parties and alliances shown?
+    decision: As pollsters publish them, mapped to a stable party id with valid-from and valid-to dates for mergers and splits.
+    rationale: Splitting a joint list into members would invent numbers no pollster measured.
+    alternatives:
+      - Always split joint lists by last-election shares; fabricates precision.
+    evidence: [SPEC.md section 3]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: [A party merges, splits or renames, Pollsters change how they report an alliance]
+
+  - id: G-008
+    country: ALL
+    scope: parties
+    question: Which parties get their own line?
+    decision: A party with seats in the current parliament, or an average of 2 percent or more. The rest sum to Others.
+    rationale: Keeps charts readable while showing every party that can matter for seats.
+    alternatives:
+      - National electoral threshold per country; hides parties just below it.
+    evidence: [config/settings.yaml]
+    confidence: medium
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: [A party not in configuration reaches 3 percent in three polls]
+
+  - id: G-009
+    country: ALL
+    scope: polls
+    question: Which polls count toward a contest?
+    decision: Polls whose fieldwork ended after the previous election to the same body.
+    rationale: A new electoral cycle starts from the result, not from polls taken before it.
+    alternatives:
+      - A fixed 24-month window regardless of elections.
+    evidence: [SPEC.md section 3]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: []
+
+  - id: G-010
+    country: ALL
+    scope: polls
+    question: Which pollsters are included?
+    decision: None is excluded by default. Party-commissioned polls are shown and flagged, and left out of the average.
+    rationale: Exclusion lists are contestable; a visible flag is not.
+    alternatives:
+      - Keep only members of national polling councils; coverage differs too much by country.
+    evidence: [SPEC.md section 3]
+    confidence: medium
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: [A pollster appears, A pollster stops publishing for 90 days, A pollster changes method]
+
+  - id: G-011
+    country: ALL
+    scope: seats
+    question: Does the dashboard show seats?
+    decision: Only where pollsters themselves publish them. No seat projection of our own in v1.
+    rationale: Owner's choice. A projection model is a large extra scope with many new judgement calls.
+    alternatives:
+      - Vote shares only.
+      - Own seat projection per country.
+    evidence: [SPEC.md section 10]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: owner
+    review_by: 2027-05-23
+    triggers: []
+
+  - id: G-012
+    country: ALL
+    scope: spectrum
+    question: Where does a party's left-right position come from?
+    decision: >-
+      The Chapel Hill Expert Survey general left-right score (0 to 10), latest wave that rates the
+      party, joined through Party Facts ids. A party it lacks gets a hand-set score marked manual, with
+      its own register entry. Candidates inherit their party's score; independents are hand-set. Joint
+      lists take the vote-share-weighted mean of their members.
+    rationale: Owner's choice. An outside expert score is easier to defend than our own ordering.
+    alternatives:
+      - A hand-curated order per country.
+      - Two dimensions, economic and cultural, with a switch.
+    evidence: [SPEC.md section 3]
+    confidence: medium
+    status: active
+    decided_on: 2026-11-23
+    decided_by: owner
+    review_by: 2027-05-23
+    triggers: [A new survey wave is published, A party lacks a score]
+    notes: The 2024 file's terms of use and party ids are unverified. Do not fill lr_score until checked.
+
+  - id: G-013
+    country: ALL
+    scope: spectrum
+    question: Are left, centre and right bloc totals shown?
+    decision: "No. The spectrum orders parties; it does not add them up."
+    rationale: Owner's choice. Cut-off points on the scale are contestable.
+    alternatives:
+      - Fixed cut-offs at 4 and 6 in every country.
+      - Bloc membership set per country.
+    evidence: [SPEC.md section 10]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: owner
+    review_by: 2027-05-23
+    triggers: []
+
+  - id: G-014
+    country: ALL
+    scope: scope
+    question: Which elections are out of scope?
+    decision: >-
+      Municipal and mayoral elections (London and other capital cities included), the Faroe Islands and
+      Greenland, the European Parliament election of 2029, referendums, and indirect elections.
+    rationale: Owner's choice on London, the Faroe Islands, Greenland and capital-city mayors; the rest follows the tier rule.
+    alternatives:
+      - Include London as a devolved tier.
+      - Include capital-city mayors.
+    evidence: [SPEC.md sections 1 and 10]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: owner
+    review_by: 2027-05-23
+    triggers: [European Parliament polling starts in earnest, expected 2028]
+
+  - id: G-015
+    country: ALL
+    scope: calendar
+    question: When does a sub-national contest get a section?
+    decision: When its election is within 18 months, or it has at least 3 polls in the last 12 months.
+    rationale: Shows what is live without listing 100-plus regional bodies.
+    alternatives:
+      - Always list every sub-national body.
+    evidence: [config/settings.yaml]
+    confidence: medium
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: [A sub-national contest enters the 18-month window, A sub-national contest gets its third poll]
+
+  - id: G-016
+    country: ALL
+    scope: calendar
+    question: What happens to a contest after polling day?
+    decision: A result-versus-final-polls view for 30 days, then the contest rolls to the next cycle. The roll is confirmed by hand.
+    rationale: The comparison is useful briefly; after that the next cycle's polls are what matter.
+    alternatives:
+      - Roll immediately on polling day.
+    evidence: [SPEC.md section 1]
+    confidence: medium
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: [An election is held]
+
+  - id: G-017
+    country: ALL
+    scope: polls
+    question: Where does a regional poll of national voting intention belong?
+    decision: In the national panel as a regional breakdown, never in a sub-national section.
+    rationale: Westminster intention in Scotland is not a Scottish Parliament poll.
+    alternatives:
+      - Show it in the sub-national section; conflates two different elections.
+    evidence: [SPEC.md section 1]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: []
+
+  - id: G-018
+    country: ALL
+    scope: sources
+    question: Which data sources may be used?
+    decision: Open sources only. Wikipedia polling tables as backbone, DAWUM for Germany, SwedishPolls for Sweden.
+    rationale: Owner's choice. The dashboard is public, so every row must be redistributable.
+    alternatives:
+      - Add a licensed feed (PolitPro API, Europe Elects).
+    evidence: [SPEC.md section 4, docs/DATA_SOURCES.md]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: owner
+    review_by: 2027-05-23
+    triggers:
+      - A source table changes layout
+      - Two sources disagree by more than 1 point on the same poll
+      - Open coverage for a country proves too thin
+
+  - id: G-019
+    country: ALL
+    scope: display
+    question: How far back does the trend chart go?
+    decision: Since the last election to the same body, and at least 12 months.
+    rationale: Owner's choice. Matches the electoral cycle that the polls refer to.
+    alternatives:
+      - A fixed 24 months on every tab.
+      - Everything available, with a zoom control.
+    evidence: [SPEC.md section 10]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: owner
+    review_by: 2027-05-23
+    triggers: []
+
+  # ------------------------------------------------------------------ country calls
+  - id: DE-001
+    country: DE
+    scope: parties
+    question: Are CDU and CSU one line or two?
+    decision: One Union line, as pollsters report.
+    rationale: National pollsters publish CDU/CSU together.
+    alternatives:
+      - Split by a fixed ratio; no pollster measures it.
+    evidence: [https://dawum.de/API/]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: [Pollsters start reporting CDU and CSU separately]
+
+  - id: FR-001
+    country: FR
+    scope: presidential line-ups
+    question: Which candidate line-up headlines when a pollster tests several?
+    decision: The line-up closest to the declared field of candidates. One line-up per pollster enters the average.
+    rationale: Averaging across hypothetical fields would mix different questions.
+    alternatives:
+      - Average every tested line-up.
+      - Show only line-ups common to all pollsters; often none exists.
+    evidence: [SPEC.md section 3]
+    confidence: low
+    status: on_watch
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2026-12-23
+    triggers: [A candidate declares or withdraws, A party selects its nominee, The official candidate list is published]
+
+  - id: FR-002
+    country: FR
+    scope: parliamentary subsection
+    question: Is National Assembly polling shown although no election is scheduled?
+    decision: Yes, as the subsection under the presidential headline, marked unscheduled.
+    rationale: Owner's choice. A dissolution after the presidential vote is widely expected.
+    alternatives:
+      - Hide it until an election is called.
+    evidence: [config/contests.yaml fr-parl-next]
+    confidence: medium
+    status: on_watch
+    decided_on: 2026-11-23
+    decided_by: owner
+    review_by: 2026-12-23
+    triggers: [The Assembly is dissolved, An election date is set]
+
+  - id: IT-001
+    country: IT
+    scope: coalitions and date
+    question: Which parties make up each coalition total, and when is the election?
+    decision: >-
+      Coalition membership is defined in config/parties/IT.yaml and revisited when alliances are
+      formally filed. The contest carries only its legal deadline of 22 Dec 2027.
+    rationale: Alliances are fluid before filing; an early spring 2027 vote is discussed but not called.
+    alternatives:
+      - Show parties only, with no coalition totals.
+    evidence: [config/contests.yaml it-parl-2027]
+    confidence: low
+    status: on_watch
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2026-12-23
+    triggers: [Parliament is dissolved, An election date is set, A coalition agreement is announced, The electoral law ruling is published]
+
+  - id: ES-001
+    country: ES
+    scope: pollsters
+    question: Is the state pollster CIS included?
+    decision: Included and flagged, not excluded.
+    rationale: Excluding a pollster is a bigger claim than flagging it; volatility weights and readers can judge.
+    alternatives:
+      - Exclude CIS from the average.
+    evidence: [SPEC.md section 3]
+    confidence: medium
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: [CIS changes method]
+
+  - id: ES-002
+    country: ES
+    scope: calendar
+    question: How does the Spanish tab roll after the 29 Nov 2026 election?
+    decision: Result-versus-final-polls for 30 days, then a new contest es-parl-next with polls taken after 29 Nov.
+    rationale: First live test of rule G-016.
+    alternatives:
+      - Keep pre-election polls on the trend chart.
+    evidence: [config/contests.yaml es-parl-2026]
+    confidence: medium
+    status: on_watch
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2026-12-23
+    triggers: [The official result is published, A government is formed or a repeat election is called]
+
+  - id: NL-001
+    country: NL
+    scope: unit
+    question: Are Dutch polls shown in seats or percent?
+    decision: Seats out of 150, the unit Dutch pollsters publish.
+    rationale: Converting seats to percent would add false precision.
+    alternatives:
+      - Convert to percent for comparability with other tabs.
+    evidence: [config/countries.yaml]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: []
+
+  - id: NL-002
+    country: NL
+    scope: sub-national
+    question: Are the 12 provinces separate contests?
+    decision: One contest, Provincial States 2027, because polling is national.
+    rationale: Province-level polls are rare; the national total decides the Senate.
+    alternatives:
+      - Twelve sections, mostly empty.
+    evidence: [config/contests.yaml nl-sub-provincial-2027]
+    confidence: medium
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: [Province-level polls are published for three or more provinces]
+
+  - id: NL-003
+    country: NL
+    scope: calendar
+    question: Is an early Dutch general election likely enough to flag?
+    decision: Contest stays at its scheduled 2029 date with an on-watch flag.
+    rationale: The cabinet is a minority one and the March 2027 provincial vote decides its Senate position.
+    alternatives: []
+    evidence: [config/contests.yaml nl-parl-next]
+    confidence: low
+    status: on_watch
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2026-12-23
+    triggers: [The cabinet falls, An election is called]
+
+  - id: BE-001
+    country: BE
+    scope: headline
+    question: What headlines the Belgian tab when no national percentage exists?
+    decision: Three regional panels, Flanders, Wallonia and Brussels.
+    rationale: Belgian polls are published by region; parties do not compete nationwide.
+    alternatives:
+      - A seat-weighted national composite; no pollster publishes one.
+    evidence: [SPEC.md section 3]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: []
+
+  - id: AT-001
+    country: AT
+    scope: sub-national
+    question: Is Vienna a Land or a municipality?
+    decision: A Land.
+    rationale: Its council sits as a Landtag as well as a municipal council.
+    alternatives:
+      - Exclude as municipal.
+    evidence: [SPEC.md section 3]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: []
+
+  - id: PT-001
+    country: PT
+    scope: scope
+    question: Are Portuguese municipal elections shown?
+    decision: No. Only the Azores and Madeira regional elections are sub-national.
+    rationale: Follows G-014 although municipal contests are widely polled.
+    alternatives:
+      - Include Lisbon and Porto.
+    evidence: [SPEC.md section 3]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: []
+
+  - id: IE-001
+    country: IE
+    scope: scope
+    question: Where does Northern Ireland sit?
+    decision: In the UK tab, as a sub-national contest.
+    rationale: The Assembly is a devolved body of the United Kingdom.
+    alternatives: []
+    evidence: [config/contests.yaml uk-sub-northern-ireland-2027]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: []
+
+  - id: GR-001
+    country: GR
+    scope: polls
+    question: Which Greek series is used, raw intention or vote estimate?
+    decision: The pollsters' vote estimate, which removes undecided voters.
+    rationale: Comparable with other countries and with election results.
+    alternatives:
+      - Raw intention including undecideds.
+    evidence: [SPEC.md section 3]
+    confidence: medium
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: [A pollster publishes only raw intention]
+
+  - id: PL-001
+    country: PL
+    scope: parties
+    question: Are Polish joint lists split into member parties?
+    decision: No. Shown as polled.
+    rationale: Follows G-007.
+    alternatives:
+      - Split by last-election shares.
+    evidence: [SPEC.md section 3]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: [A joint list forms or dissolves]
+
+  - id: HU-001
+    country: HU
+    scope: polls
+    question: Which base is used for Hungarian polls?
+    decision: Decided voters, not all respondents.
+    rationale: Comparable with election results.
+    alternatives:
+      - All respondents, including undecided.
+    evidence: [SPEC.md section 3]
+    confidence: medium
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: []
+
+  - id: CZ-001
+    country: CZ
+    scope: scope
+    question: Is the Czech Senate shown?
+    decision: No.
+    rationale: Staggered, majoritarian, and not polled nationally.
+    alternatives: []
+    evidence: [SPEC.md section 3]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: []
+
+  - id: NO-001
+    country: "NO"
+    scope: sub-national
+    question: Which Norwegian local polls are shown?
+    decision: County-council polls as one nationwide section. Municipal polls are excluded.
+    rationale: Counties are the sub-national tier; municipalities are out by G-014.
+    alternatives:
+      - Include nationwide municipal voting intention.
+    evidence: [config/contests.yaml no-sub-county-2027]
+    confidence: medium
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: []
+
+  - id: SE-001
+    country: SE
+    scope: calendar
+    question: Which contest do Swedish polls taken since 13 Sep 2026 count toward?
+    decision: The next Riksdag contest, whichever date it lands on. The tab carries a government-formation banner.
+    rationale: No government yet; an extra election in early 2027 is possible.
+    alternatives: []
+    evidence: [https://en.wikipedia.org/wiki/2026_Swedish_government_formation]
+    confidence: low
+    status: on_watch
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2026-12-23
+    triggers: [A prime minister is elected, A fourth prime-minister vote fails, An extra election is called]
+
+  - id: FI-001
+    country: FI
+    scope: sub-national
+    question: Do Finnish county councils count as sub-national?
+    decision: Yes, hidden until polled. Åland is shown.
+    rationale: They are elected regional bodies, although their powers are narrow.
+    alternatives:
+      - Treat as local and exclude.
+    evidence: [SPEC.md section 3]
+    confidence: medium
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: []
+
+  - id: DK-001
+    country: DK
+    scope: scope
+    question: Are the Faroe Islands and Greenland shown?
+    decision: No.
+    rationale: Owner's choice. Separate party systems and sparse polling.
+    alternatives:
+      - Show their parliaments as sub-national contests.
+    evidence: [SPEC.md section 10]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: owner
+    review_by: 2027-05-23
+    triggers: []
+
+  - id: UK-001
+    country: UK
+    scope: headline
+    question: What is the geography of the UK headline?
+    decision: Great Britain voting intention. Northern Ireland is excluded from the headline, as in the polls.
+    rationale: Nationwide pollsters sample Great Britain.
+    alternatives:
+      - Rescale to a United Kingdom total; no pollster publishes one.
+    evidence: [SPEC.md section 3]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: draft
+    review_by: 2027-05-23
+    triggers: []
+
+  - id: UK-002
+    country: UK
+    scope: scope
+    question: Is London a sub-national contest?
+    decision: No. Out as municipal.
+    rationale: Owner's choice.
+    alternatives:
+      - Treat the mayor and Assembly as a devolved tier.
+    evidence: [SPEC.md section 10]
+    confidence: high
+    status: active
+    decided_on: 2026-11-23
+    decided_by: owner
+    review_by: 2027-05-23
+    triggers: []

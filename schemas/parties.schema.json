@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "config/parties/<CC>.yaml",
+  "type": "object",
+  "required": ["schema_version", "country", "parties"],
+  "additionalProperties": false,
+  "$defs": {
+    "isodate_or_null": {
+      "oneOf": [{ "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" }, { "type": "null" }]
+    }
+  },
+  "properties": {
+    "schema_version": { "const": 1 },
+    "country": { "type": "string", "pattern": "^[A-Z]{2}$" },
+    "parties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["party_id", "type", "short", "name", "colour", "lr_score", "lr_source"],
+        "additionalProperties": false,
+        "properties": {
+          "party_id": { "type": "string", "pattern": "^[a-z]{2}-[a-z0-9-]+$" },
+          "type": { "enum": ["party", "alliance", "candidate"] },
+          "short": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 },
+          "name_en": { "type": "string" },
+          "colour": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+          "partyfacts_id": { "type": ["integer", "null"] },
+          "party_id_nominating": { "type": ["string", "null"] },
+          "lr_score": { "oneOf": [{ "type": "number", "minimum": 0, "maximum": 10 }, { "type": "null" }] },
+          "lr_source": { "type": "string", "pattern": "^(ches[0-9]{4}|manual|inherited|pending)$" },
+          "lr_judgement": { "type": ["string", "null"] },
+          "members": { "type": "array", "items": { "type": "string" } },
+          "valid_from": { "$ref": "#/$defs/isodate_or_null" },
+          "valid_to": { "$ref": "#/$defs/isodate_or_null" },
+          "successor_of": { "type": "array", "items": { "type": "string" } },
+          "aliases": { "type": "array", "items": { "type": "string" } }
+        },
+        "allOf": [
+          {
+            "if": { "properties": { "lr_source": { "const": "manual" } } },
+            "then": { "properties": { "lr_judgement": { "type": "string" }, "lr_score": { "type": "number" } }, "required": ["lr_judgement"] }
+          },
+          {
+            "if": { "properties": { "lr_source": { "const": "pending" } } },
+            "then": { "properties": { "lr_score": { "type": "null" } } }
+          },
+          {
+            "if": { "properties": { "type": { "const": "candidate" } } },
+            "then": { "required": ["party_id_nominating"] }
+          }
+        ]
+      }
+    }
+  }
+}

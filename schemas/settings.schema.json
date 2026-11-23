@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "config/settings.yaml",
+  "type": "object",
+  "required": [
+    "schema_version", "average", "thin_polling", "parties", "contests", "validation", "staleness",
+    "review", "spectrum"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "posint": { "type": "integer", "minimum": 1 },
+    "posnum": { "type": "number", "exclusiveMinimum": 0 }
+  },
+  "properties": {
+    "schema_version": { "const": 1 },
+    "average": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "window_days", "widened_window_days", "min_pollsters_in_window", "lookback_days",
+        "consensus_window_days", "min_other_pollsters_for_consensus", "min_polls_for_own_volatility",
+        "min_pollsters_with_volatility", "weight_cap_multiple_of_median", "volatility_floor_points",
+        "exclude_party_commissioned", "rescale_to_100"
+      ],
+      "properties": {
+        "window_days": { "$ref": "#/$defs/posint" },
+        "widened_window_days": { "$ref": "#/$defs/posint" },
+        "min_pollsters_in_window": { "$ref": "#/$defs/posint" },
+        "lookback_days": { "$ref": "#/$defs/posint" },
+        "consensus_window_days": { "$ref": "#/$defs/posint" },
+        "min_other_pollsters_for_consensus": { "$ref": "#/$defs/posint" },
+        "min_polls_for_own_volatility": { "$ref": "#/$defs/posint" },
+        "min_pollsters_with_volatility": { "$ref": "#/$defs/posint" },
+        "weight_cap_multiple_of_median": { "$ref": "#/$defs/posnum" },
+        "volatility_floor_points": { "$ref": "#/$defs/posnum" },
+        "exclude_party_commissioned": { "type": "boolean" },
+        "rescale_to_100": { "type": "boolean" }
+      }
+    },
+    "thin_polling": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["window_days", "method"],
+      "properties": {
+        "window_days": { "$ref": "#/$defs/posint" },
+        "method": { "enum": ["unweighted_latest_per_pollster"] }
+      }
+    },
+    "parties": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["own_line_min_average_pct", "own_line_if_seats_in_parliament"],
+      "properties": {
+        "own_line_min_average_pct": { "type": "number", "minimum": 0 },
+        "own_line_if_seats_in_parliament": { "type": "boolean" }
+      }
+    },
+    "contests": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "subnational_window_months", "subnational_min_polls_12m", "presidential_min_polls_to_show",
+        "presidential_polls_window_months", "post_election_view_days", "trend_min_history_months"
+      ],
+      "properties": {
+        "subnational_window_months": { "$ref": "#/$defs/posint" },
+        "subnational_min_polls_12m": { "$ref": "#/$defs/posint" },
+        "presidential_min_polls_to_show": { "$ref": "#/$defs/posint" },
+        "presidential_polls_window_months": { "$ref": "#/$defs/posint" },
+        "post_election_view_days": { "$ref": "#/$defs/posint" },
+        "trend_min_history_months": { "$ref": "#/$defs/posint" }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["share_sum_min_pct", "share_sum_max_pct", "swing_flag_points", "cross_source_disagreement_points"],
+      "properties": {
+        "share_sum_min_pct": { "type": "number" },
+        "share_sum_max_pct": { "type": "number" },
+        "swing_flag_points": { "$ref": "#/$defs/posnum" },
+        "cross_source_disagreement_points": { "$ref": "#/$defs/posnum" }
+      }
+    },
+    "staleness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fetch_interval_hours", "stale_after_multiple_of_interval"],
+      "properties": {
+        "fetch_interval_hours": { "$ref": "#/$defs/posint" },
+        "stale_after_multiple_of_interval": { "$ref": "#/$defs/posnum" }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "default_review_months", "on_watch_review_months", "new_party_trigger_pct",
+        "new_party_trigger_polls", "pollster_silent_days"
+      ],
+      "properties": {
+        "default_review_months": { "$ref": "#/$defs/posint" },
+        "on_watch_review_months": { "$ref": "#/$defs/posint" },
+        "new_party_trigger_pct": { "$ref": "#/$defs/posnum" },
+        "new_party_trigger_polls": { "$ref": "#/$defs/posint" },
+        "pollster_silent_days": { "$ref": "#/$defs/posint" }
+      }
+    },
+    "spectrum": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scale_min", "scale_max", "preferred_source", "bloc_totals"],
+      "properties": {
+        "scale_min": { "type": "number" },
+        "scale_max": { "type": "number" },
+        "preferred_source": { "enum": ["ches"] },
+        "bloc_totals": { "const": false }
+      }
+    }
+  }
+}

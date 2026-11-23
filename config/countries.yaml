@@ -1,0 +1,154 @@
+# One entry per country tab, in tab order.
+# headline_kind: presidential where the president is directly elected in a separate election
+#                (the parliamentary contest then becomes the first subsection, open by default);
+#                parliamentary elsewhere.
+# unit: pct (vote share) or seats.
+schema_version: 1
+countries:
+  - code: DE
+    name: Germany
+    tab_order: 1
+    unit: pct
+    headline_kind: parliamentary
+    parliament: Bundestag
+    subnational_tier: Länder
+    notes: CDU and CSU shown as one Union line.
+  - code: FR
+    name: France
+    tab_order: 2
+    unit: pct
+    headline_kind: presidential
+    parliament: National Assembly
+    subnational_tier: Regions
+    notes: Presidential polls come in candidate line-ups; first round plus second-round match-ups.
+  - code: IT
+    name: Italy
+    tab_order: 3
+    unit: pct
+    headline_kind: parliamentary
+    parliament: Chamber of Deputies
+    subnational_tier: Regions
+    notes: Show coalition totals beside party figures.
+  - code: ES
+    name: Spain
+    tab_order: 4
+    unit: pct
+    headline_kind: parliamentary
+    parliament: Congress of Deputies
+    subnational_tier: Autonomous communities
+    notes: Show seat ranges where pollsters publish them. CIS included and flagged.
+  - code: NL
+    name: Netherlands
+    tab_order: 5
+    unit: seats
+    chamber_size: 150
+    headline_kind: parliamentary
+    parliament: Tweede Kamer
+    subnational_tier: Provinces
+    notes: Polls are published in seats. Provincial States are one nationwide contest.
+  - code: BE
+    name: Belgium
+    tab_order: 6
+    unit: pct
+    headline_kind: parliamentary
+    parliament: Chamber of Representatives
+    subnational_tier: Regions
+    special: regional_headline
+    headline_regions: [Flanders, Wallonia, Brussels]
+    notes: No national percentage exists. The headline is three regional panels.
+  - code: AT
+    name: Austria
+    tab_order: 7
+    unit: pct
+    headline_kind: presidential
+    parliament: Nationalrat
+    subnational_tier: Länder
+    notes: Vienna counts as a Land.
+  - code: PT
+    name: Portugal
+    tab_order: 8
+    unit: pct
+    headline_kind: presidential
+    parliament: Assembleia da República
+    subnational_tier: Autonomous regions
+    notes: Azores and Madeira only.
+  - code: IE
+    name: Ireland
+    tab_order: 9
+    unit: pct
+    headline_kind: presidential
+    parliament: Dáil Éireann
+    subnational_tier: null
+    notes: First-preference vote. No regional tier. Northern Ireland sits in the UK tab.
+  - code: GR
+    name: Greece
+    tab_order: 10
+    unit: pct
+    headline_kind: parliamentary
+    parliament: Hellenic Parliament
+    subnational_tier: Regions
+    notes: Use pollsters' vote-estimate series, not raw intention with undecideds.
+  - code: PL
+    name: Poland
+    tab_order: 11
+    unit: pct
+    headline_kind: presidential
+    parliament: Sejm
+    subnational_tier: Regional assemblies
+    notes: Joint lists shown as polled.
+  - code: HU
+    name: Hungary
+    tab_order: 12
+    unit: pct
+    headline_kind: parliamentary
+    parliament: National Assembly
+    subnational_tier: null
+    notes: Base is decided voters.
+  - code: CZ
+    name: Czech Republic
+    tab_order: 13
+    unit: pct
+    headline_kind: presidential
+    parliament: Chamber of Deputies
+    subnational_tier: Regions
+    notes: Senate excluded.
+  - code: "NO"
+    name: Norway
+    tab_order: 14
+    unit: pct
+    headline_kind: parliamentary
+    parliament: Storting
+    subnational_tier: Counties
+    notes: County councils shown as one nationwide section. Quote the code; YAML reads bare NO as false.
+  - code: SE
+    name: Sweden
+    tab_order: 15
+    unit: pct
+    headline_kind: parliamentary
+    parliament: Riksdag
+    subnational_tier: Regions
+    notes: Government-formation banner while no government is in place.
+  - code: FI
+    name: Finland
+    tab_order: 16
+    unit: pct
+    headline_kind: presidential
+    parliament: Eduskunta
+    subnational_tier: Åland and county councils
+    notes: Parliamentary election on 18 Apr 2027 runs as the open subsection.
+  - code: DK
+    name: Denmark
+    tab_order: 17
+    unit: pct
+    headline_kind: parliamentary
+    parliament: Folketing
+    subnational_tier: Regions
+    notes: Faroe Islands and Greenland out of scope.
+  - code: UK
+    name: United Kingdom
+    tab_order: 18
+    unit: pct
+    headline_kind: parliamentary
+    parliament: House of Commons
+    subnational_tier: Devolved nations
+    notes: Headline is Great Britain voting intention. London out as municipal.

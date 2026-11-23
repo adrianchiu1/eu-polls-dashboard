@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "config/countries.yaml",
+  "type": "object",
+  "required": ["schema_version", "countries"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": 1 },
+    "countries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["code", "name", "tab_order", "unit", "headline_kind", "parliament", "subnational_tier"],
+        "additionalProperties": false,
+        "properties": {
+          "code": { "type": "string", "pattern": "^[A-Z]{2}$" },
+          "name": { "type": "string", "minLength": 1 },
+          "tab_order": { "type": "integer", "minimum": 1 },
+          "unit": { "enum": ["pct", "seats"] },
+          "chamber_size": { "type": "integer", "minimum": 1 },
+          "headline_kind": { "enum": ["presidential", "parliamentary"] },
+          "parliament": { "type": "string", "minLength": 1 },
+          "subnational_tier": { "type": ["string", "null"] },
+          "special": { "enum": ["regional_headline"] },
+          "headline_regions": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+          "notes": { "type": "string" }
+        },
+        "allOf": [
+          {
+            "if": { "properties": { "unit": { "const": "seats" } }, "required": ["unit"] },
+            "then": { "required": ["chamber_size"] }
+          },
+          {
+            "if": { "required": ["special"] },
+            "then": { "required": ["headline_regions"] }
+          }
+        ]
+      }
+    }
+  }
+}

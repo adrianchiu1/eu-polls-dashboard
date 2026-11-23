@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "config/judgements.yaml",
+  "type": "object",
+  "required": ["schema_version", "judgements"],
+  "additionalProperties": false,
+  "$defs": {
+    "isodate": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" }
+  },
+  "properties": {
+    "schema_version": { "const": 1 },
+    "judgements": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id", "country", "scope", "question", "decision", "rationale", "alternatives", "evidence",
+          "confidence", "status", "decided_on", "decided_by", "review_by", "triggers"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^(G|[A-Z]{2})-[0-9]{3}$" },
+          "country": { "type": "string", "pattern": "^(ALL|[A-Z]{2})$" },
+          "scope": { "type": "string", "minLength": 1 },
+          "question": { "type": "string", "minLength": 1 },
+          "decision": { "type": "string", "minLength": 1 },
+          "rationale": { "type": "string", "minLength": 1 },
+          "alternatives": { "type": "array", "items": { "type": "string" } },
+          "evidence": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+          "confidence": { "enum": ["high", "medium", "low"] },
+          "status": { "enum": ["active", "on_watch", "proposed_change", "retired"] },
+          "decided_on": { "$ref": "#/$defs/isodate" },
+          "decided_by": { "enum": ["owner", "draft"] },
+          "review_by": { "$ref": "#/$defs/isodate" },
+          "triggers": { "type": "array", "items": { "type": "string" } },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,788 @@
+# The election calendar as of 2026-11-23.
+#
+# date_status:  fixed        an official date exists
+#               expected     a likely date or season, not yet official
+#               deadline     only the legal latest date is known (see `deadline`)
+#               unscheduled  no election is due, but polls exist and one may be called
+#               unknown      not researched yet
+# verification: opened        read on a source page on last_verified
+#               search        taken from search-result text, page not opened
+#               legal_term    derived from the legal maximum term, no published date
+#               unverified    placeholder; check before use
+# Dates are ISO. `expected_window` is free text when no single date exists.
+schema_version: 1
+contests:
+  # ---------------------------------------------------------------- Germany
+  - contest_id: de-parl-2029
+    country: DE
+    tier: national
+    kind: parliamentary
+    body: Bundestag
+    territory: Germany
+    date: null
+    expected_window: spring 2029
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    previous_date: 2025-02-23
+    source_url: https://www.bundeswahlleiterin.de/service/wahltermine.html
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: de-sub-saarland-2027
+    country: DE
+    tier: subnational
+    kind: regional
+    body: Landtag
+    territory: Saarland
+    date: 2027-04-18
+    date_status: fixed
+    rounds: 1
+    status: upcoming
+    source_url: https://www.bundeswahlleiterin.de/service/wahltermine.html
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: de-sub-schleswig-holstein-2027
+    country: DE
+    tier: subnational
+    kind: regional
+    body: Landtag
+    territory: Schleswig-Holstein
+    date: 2027-04-18
+    date_status: fixed
+    rounds: 1
+    status: upcoming
+    source_url: https://www.bundeswahlleiterin.de/service/wahltermine.html
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: de-sub-nordrhein-westfalen-2027
+    country: DE
+    tier: subnational
+    kind: regional
+    body: Landtag
+    territory: Nordrhein-Westfalen
+    date: 2027-04-25
+    date_status: fixed
+    rounds: 1
+    status: upcoming
+    source_url: https://www.bundeswahlleiterin.de/service/wahltermine.html
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: de-sub-bremen-2027
+    country: DE
+    tier: subnational
+    kind: regional
+    body: Bürgerschaft
+    territory: Bremen
+    date: 2027-05-30
+    date_status: fixed
+    rounds: 1
+    status: upcoming
+    source_url: https://www.bundeswahlleiterin.de/service/wahltermine.html
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: de-sub-niedersachsen-2027
+    country: DE
+    tier: subnational
+    kind: regional
+    body: Landtag
+    territory: Niedersachsen
+    date: 2027-09-26
+    date_status: fixed
+    rounds: 1
+    status: upcoming
+    source_url: https://www.bundeswahlleiterin.de/service/wahltermine.html
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: de-sub-bayern-2028
+    country: DE
+    tier: subnational
+    kind: regional
+    body: Landtag
+    territory: Bayern
+    date: null
+    expected_window: autumn 2028
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    source_url: https://www.bundeswahlleiterin.de/service/wahltermine.html
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: de-sub-hessen-2028
+    country: DE
+    tier: subnational
+    kind: regional
+    body: Landtag
+    territory: Hessen
+    date: null
+    expected_window: autumn 2028
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    source_url: https://www.bundeswahlleiterin.de/service/wahltermine.html
+    last_verified: 2026-11-23
+    verification: opened
+    notes: The other nine Länder are not seeded. Add them from DAWUM's parliament list in Phase 1.
+
+  # ---------------------------------------------------------------- France
+  - contest_id: fr-pres-2027
+    country: FR
+    tier: national
+    kind: presidential
+    body: President of the Republic
+    territory: France
+    date: 2027-04-18
+    round_dates: [2027-04-18, 2027-05-02]
+    date_status: fixed
+    rounds: 2
+    status: upcoming
+    previous_date: 2022-04-10
+    source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: fr-parl-next
+    country: FR
+    tier: national
+    kind: parliamentary
+    body: National Assembly
+    territory: France
+    date: null
+    deadline: 2029-06-30
+    date_status: unscheduled
+    rounds: 2
+    status: upcoming
+    previous_date: 2024-06-30
+    source_url: https://www.everycrsreport.com/files/2026-02-26_R46858_05b0f97b2d304143cf4752c78cfa48b7c1380459.html
+    last_verified: 2026-11-23
+    verification: opened
+    notes: Term runs to June 2029. A dissolution after the 2027 presidential vote is widely expected, not scheduled.
+
+  # ---------------------------------------------------------------- Italy
+  - contest_id: it-parl-2027
+    country: IT
+    tier: national
+    kind: parliamentary
+    body: Chamber of Deputies and Senate
+    territory: Italy
+    date: null
+    deadline: 2027-12-22
+    date_status: deadline
+    rounds: 1
+    status: upcoming
+    previous_date: 2022-09-25
+    source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
+    last_verified: 2026-11-23
+    verification: opened
+    notes: A spring 2027 vote is openly discussed in the Italian press.
+  - contest_id: it-sub-sicilia-2027
+    country: IT
+    tier: subnational
+    kind: regional
+    body: Regional Assembly
+    territory: Sicilia
+    date: null
+    expected_window: September 2027, date to confirm
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    source_url: https://rm.coe.int/calendar-elections-2027/48802e15c4
+    last_verified: 2026-11-23
+    verification: opened
+
+  # ---------------------------------------------------------------- Spain
+  - contest_id: es-parl-2026
+    country: ES
+    tier: national
+    kind: parliamentary
+    body: Congress of Deputies and Senate
+    territory: Spain
+    date: 2026-11-29
+    date_status: fixed
+    rounds: 1
+    status: called
+    previous_date: 2023-07-23
+    source_url: https://aljazeera.com/news/2026/10/5/spanish-prime-minister-pedro-sanchez-announces-snap-election
+    last_verified: 2026-11-23
+    verification: opened
+    notes: Snap election announced 2026-10-05. After polling day, roll to es-parl-next (see judgement ES-002).
+  - contest_id: es-sub-asturias-2027
+    country: ES
+    tier: subnational
+    kind: regional
+    body: Regional parliament
+    territory: Asturias
+    date: 2027-05-23
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: es-sub-illes-balears-2027
+    country: ES
+    tier: subnational
+    kind: regional
+    body: Regional parliament
+    territory: Balearic Islands
+    date: 2027-05-23
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: es-sub-canarias-2027
+    country: ES
+    tier: subnational
+    kind: regional
+    body: Regional parliament
+    territory: Canary Islands
+    date: 2027-05-23
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: es-sub-cantabria-2027
+    country: ES
+    tier: subnational
+    kind: regional
+    body: Regional parliament
+    territory: Cantabria
+    date: 2027-05-23
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: es-sub-castilla-la-mancha-2027
+    country: ES
+    tier: subnational
+    kind: regional
+    body: Regional parliament
+    territory: Castilla-La Mancha
+    date: 2027-05-23
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: es-sub-la-rioja-2027
+    country: ES
+    tier: subnational
+    kind: regional
+    body: Regional parliament
+    territory: La Rioja
+    date: 2027-05-23
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: es-sub-madrid-2027
+    country: ES
+    tier: subnational
+    kind: regional
+    body: Regional parliament
+    territory: Madrid
+    date: 2027-05-23
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: es-sub-murcia-2027
+    country: ES
+    tier: subnational
+    kind: regional
+    body: Regional parliament
+    territory: Murcia
+    date: 2027-05-23
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: es-sub-navarra-2027
+    country: ES
+    tier: subnational
+    kind: regional
+    body: Regional parliament
+    territory: Navarre
+    date: 2027-05-23
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: es-sub-comunitat-valenciana-2027
+    country: ES
+    tier: subnational
+    kind: regional
+    body: Regional parliament
+    territory: Valencian Community
+    date: 2027-05-23
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
+    last_verified: 2026-11-23
+    verification: opened
+    notes: >-
+      The list of ten communities voting on 23 May 2027 follows Wikipedia. The Council of Europe
+      calendar marks the list "to be confirmed" and also names Extremadura. Re-check.
+
+  # ---------------------------------------------------------------- Netherlands
+  - contest_id: nl-parl-next
+    country: NL
+    tier: national
+    kind: parliamentary
+    body: Tweede Kamer
+    territory: Netherlands
+    date: null
+    expected_window: "2029"
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    previous_date: 2025-10-29
+    source_url: https://www.everycrsreport.com/files/2026-02-26_R46858_05b0f97b2d304143cf4752c78cfa48b7c1380459.html
+    last_verified: 2026-11-23
+    verification: opened
+    notes: Minority cabinet; on watch (judgement NL-003).
+  - contest_id: nl-sub-provincial-2027
+    country: NL
+    tier: subnational
+    kind: regional
+    body: Provincial States
+    territory: Netherlands (12 provinces, one contest)
+    date: 2027-03-17
+    date_status: fixed
+    rounds: 1
+    status: upcoming
+    source_url: https://rm.coe.int/calendar-elections-2027/48802e15c4
+    last_verified: 2026-11-23
+    verification: opened
+    notes: The Provincial States elect the Senate (indirect, out of scope) later in spring 2027.
+
+  # ---------------------------------------------------------------- Belgium
+  - contest_id: be-parl-2029
+    country: BE
+    tier: national
+    kind: parliamentary
+    body: Chamber of Representatives
+    territory: Belgium
+    date: null
+    expected_window: June 2029
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    previous_date: 2024-06-09
+    source_url: https://www.everycrsreport.com/files/2026-02-26_R46858_05b0f97b2d304143cf4752c78cfa48b7c1380459.html
+    last_verified: 2026-11-23
+    verification: opened
+
+  # ---------------------------------------------------------------- Austria
+  - contest_id: at-pres-2028
+    country: AT
+    tier: national
+    kind: presidential
+    body: Federal President
+    territory: Austria
+    date: null
+    expected_window: autumn 2028
+    date_status: expected
+    rounds: 2
+    status: upcoming
+    previous_date: 2022-10-09
+    source_url: https://www.tt.com/artikel/30944217/wahlen-in-einem-jahr-startet-der-landtagswahl-reigen
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: at-parl-2029
+    country: AT
+    tier: national
+    kind: parliamentary
+    body: Nationalrat
+    territory: Austria
+    date: null
+    expected_window: autumn 2029
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    previous_date: 2024-09-29
+    source_url: https://www.tt.com/artikel/30944217/wahlen-in-einem-jahr-startet-der-landtagswahl-reigen
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: at-sub-oberoesterreich-2027
+    country: AT
+    tier: subnational
+    kind: regional
+    body: Landtag
+    territory: Oberösterreich
+    date: null
+    expected_window: about 2027-09-26 (likely, not fixed)
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    source_url: https://www.tt.com/artikel/30944217/wahlen-in-einem-jahr-startet-der-landtagswahl-reigen
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: at-sub-tirol-2027
+    country: AT
+    tier: subnational
+    kind: regional
+    body: Landtag
+    territory: Tirol
+    date: null
+    expected_window: about 2027-10-10 (likely, not fixed)
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    source_url: https://www.tt.com/artikel/30944217/wahlen-in-einem-jahr-startet-der-landtagswahl-reigen
+    last_verified: 2026-11-23
+    verification: opened
+    notes: Lower Austria, Carinthia and Salzburg follow in early 2028; not seeded.
+
+  # ---------------------------------------------------------------- Portugal
+  - contest_id: pt-pres-2031
+    country: PT
+    tier: national
+    kind: presidential
+    body: President of the Republic
+    territory: Portugal
+    date: null
+    expected_window: January 2031
+    date_status: expected
+    rounds: 2
+    status: upcoming
+    previous_date: 2026-01-18
+    source_url: https://www.everycrsreport.com/files/2026-02-26_R46858_05b0f97b2d304143cf4752c78cfa48b7c1380459.html
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: pt-parl-2029
+    country: PT
+    tier: national
+    kind: parliamentary
+    body: Assembleia da República
+    territory: Portugal
+    date: null
+    expected_window: May 2029
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    previous_date: 2025-05-18
+    source_url: https://www.everycrsreport.com/files/2026-02-26_R46858_05b0f97b2d304143cf4752c78cfa48b7c1380459.html
+    last_verified: 2026-11-23
+    verification: opened
+    notes: Azores and Madeira regional election dates are not seeded; to confirm.
+
+  # ---------------------------------------------------------------- Ireland
+  - contest_id: ie-pres-2032
+    country: IE
+    tier: national
+    kind: presidential
+    body: President of Ireland
+    territory: Ireland
+    date: null
+    expected_window: October 2032
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    previous_date: 2025-10-24
+    source_url: https://www.everycrsreport.com/files/2026-02-26_R46858_05b0f97b2d304143cf4752c78cfa48b7c1380459.html
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: ie-parl-next
+    country: IE
+    tier: national
+    kind: parliamentary
+    body: Dáil Éireann
+    territory: Ireland
+    date: null
+    deadline: 2030-01-31
+    date_status: deadline
+    rounds: 1
+    status: upcoming
+    previous_date: 2024-11-29
+    source_url: https://www.everycrsreport.com/files/2026-02-26_R46858_05b0f97b2d304143cf4752c78cfa48b7c1380459.html
+    last_verified: 2026-11-23
+    verification: legal_term
+    notes: The source page gives November 2029; the deadline here is an approximate legal latest, to confirm.
+
+  # ---------------------------------------------------------------- Greece
+  - contest_id: gr-parl-2027
+    country: GR
+    tier: national
+    kind: parliamentary
+    body: Hellenic Parliament
+    territory: Greece
+    date: null
+    deadline: 2027-07-25
+    expected_window: spring 2027, per the prime minister
+    date_status: deadline
+    rounds: 1
+    status: upcoming
+    previous_date: 2023-06-25
+    source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
+    last_verified: 2026-11-23
+    verification: opened
+
+  # ---------------------------------------------------------------- Poland
+  - contest_id: pl-pres-2030
+    country: PL
+    tier: national
+    kind: presidential
+    body: President of Poland
+    territory: Poland
+    date: null
+    expected_window: May 2030
+    date_status: expected
+    rounds: 2
+    status: upcoming
+    previous_date: 2025-05-18
+    source_url: https://www.everycrsreport.com/files/2026-02-26_R46858_05b0f97b2d304143cf4752c78cfa48b7c1380459.html
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: pl-parl-2027
+    country: PL
+    tier: national
+    kind: parliamentary
+    body: Sejm and Senate
+    territory: Poland
+    date: null
+    deadline: 2027-11-11
+    date_status: deadline
+    rounds: 1
+    status: upcoming
+    previous_date: 2023-10-15
+    source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
+    last_verified: 2026-11-23
+    verification: opened
+
+  # ---------------------------------------------------------------- Hungary
+  - contest_id: hu-parl-2030
+    country: HU
+    tier: national
+    kind: parliamentary
+    body: National Assembly
+    territory: Hungary
+    date: null
+    expected_window: "2030"
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    previous_date: 2026-04-12
+    source_url: https://www.cor.europa.eu/sites/default/files/2026-05/Elections%20Calendar%202024-2029%20UPDATE%20END%20MAY%202026.pdf
+    last_verified: 2026-11-23
+    verification: opened
+    notes: The 2030 date is inferred from the four-year term.
+
+  # ---------------------------------------------------------------- Czech Republic
+  - contest_id: cz-pres-2028
+    country: CZ
+    tier: national
+    kind: presidential
+    body: President of the Czech Republic
+    territory: Czech Republic
+    date: null
+    expected_window: January 2028
+    date_status: expected
+    rounds: 2
+    status: upcoming
+    previous_date: 2023-01-13
+    source_url: https://www.everycrsreport.com/files/2026-02-26_R46858_05b0f97b2d304143cf4752c78cfa48b7c1380459.html
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: cz-parl-2029
+    country: CZ
+    tier: national
+    kind: parliamentary
+    body: Chamber of Deputies
+    territory: Czech Republic
+    date: null
+    expected_window: October 2029
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    previous_date: 2025-10-03
+    source_url: https://www.everycrsreport.com/files/2026-02-26_R46858_05b0f97b2d304143cf4752c78cfa48b7c1380459.html
+    last_verified: 2026-11-23
+    verification: opened
+
+  # ---------------------------------------------------------------- Norway
+  - contest_id: no-parl-2029
+    country: "NO"
+    tier: national
+    kind: parliamentary
+    body: Storting
+    territory: Norway
+    date: null
+    expected_window: September 2029
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    previous_date: 2025-09-08
+    source_url: https://www.everycrsreport.com/files/2026-02-26_R46858_05b0f97b2d304143cf4752c78cfa48b7c1380459.html
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: no-sub-county-2027
+    country: "NO"
+    tier: subnational
+    kind: regional
+    body: County councils
+    territory: Norway (all counties, one contest)
+    date: 2027-09-13
+    date_status: fixed
+    rounds: 1
+    status: upcoming
+    source_url: https://rm.coe.int/calendar-elections-2027/48802e15c4
+    last_verified: 2026-11-23
+    verification: opened
+
+  # ---------------------------------------------------------------- Sweden
+  - contest_id: se-parl-next
+    country: SE
+    tier: national
+    kind: parliamentary
+    body: Riksdag
+    territory: Sweden
+    date: null
+    expected_window: September 2030, or an extra election in early 2027
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    previous_date: 2026-09-13
+    source_url: https://en.wikipedia.org/wiki/2026_Swedish_government_formation
+    last_verified: 2026-11-23
+    verification: opened
+    notes: >-
+      No government as of mid-November 2026. Two of four prime-minister votes used; a fourth failure
+      forces an election within three months. On watch (judgement SE-001).
+
+  # ---------------------------------------------------------------- Finland
+  - contest_id: fi-pres-2030
+    country: FI
+    tier: national
+    kind: presidential
+    body: President of Finland
+    territory: Finland
+    date: null
+    expected_window: January 2030
+    date_status: expected
+    rounds: 2
+    status: upcoming
+    previous_date: 2024-01-28
+    source_url: https://www.everycrsreport.com/files/2026-02-26_R46858_05b0f97b2d304143cf4752c78cfa48b7c1380459.html
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: fi-parl-2027
+    country: FI
+    tier: national
+    kind: parliamentary
+    body: Eduskunta
+    territory: Finland
+    date: 2027-04-18
+    date_status: fixed
+    rounds: 1
+    status: upcoming
+    previous_date: 2023-04-02
+    source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: fi-sub-aland-2027
+    country: FI
+    tier: subnational
+    kind: regional
+    body: Parliament of Åland
+    territory: Åland
+    date: null
+    deadline: 2027-10-31
+    date_status: deadline
+    rounds: 1
+    status: upcoming
+    source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
+    last_verified: 2026-11-23
+    verification: opened
+
+  # ---------------------------------------------------------------- Denmark
+  - contest_id: dk-parl-next
+    country: DK
+    tier: national
+    kind: parliamentary
+    body: Folketing
+    territory: Denmark
+    date: null
+    deadline: 2030-03-24
+    date_status: deadline
+    rounds: 1
+    status: upcoming
+    previous_date: 2026-03-24
+    source_url: https://www.robert-schuman.eu/en/observatoire/6772
+    last_verified: 2026-11-23
+    verification: search
+    notes: Previous date from search results; the deadline is the four-year legal term, to confirm.
+
+  # ---------------------------------------------------------------- United Kingdom
+  - contest_id: uk-parl-next
+    country: UK
+    tier: national
+    kind: parliamentary
+    body: House of Commons
+    territory: United Kingdom (polled as Great Britain)
+    date: null
+    deadline: 2029-08-15
+    date_status: deadline
+    rounds: 1
+    status: upcoming
+    previous_date: 2024-07-04
+    source_url: https://www.everycrsreport.com/files/2026-02-26_R46858_05b0f97b2d304143cf4752c78cfa48b7c1380459.html
+    last_verified: 2026-11-23
+    verification: legal_term
+    notes: The source page gives July 2029; the deadline here is the legal latest, to confirm.
+  - contest_id: uk-sub-northern-ireland-2027
+    country: UK
+    tier: subnational
+    kind: regional
+    body: Northern Ireland Assembly
+    territory: Northern Ireland
+    date: 2027-05-06
+    date_status: fixed
+    rounds: 1
+    status: upcoming
+    source_url: https://rm.coe.int/calendar-elections-2027/48802e15c4
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: uk-sub-scotland-next
+    country: UK
+    tier: subnational
+    kind: regional
+    body: Scottish Parliament
+    territory: Scotland
+    date: null
+    date_status: unknown
+    rounds: 1
+    status: upcoming
+    previous_date: 2026-05-07
+    source_url: null
+    last_verified: 2026-11-23
+    verification: search
+    notes: Constituency and regional-list votes are polled separately; carry both as line-ups.
+  - contest_id: uk-sub-wales-next
+    country: UK
+    tier: subnational
+    kind: regional
+    body: Senedd
+    territory: Wales
+    date: null
+    date_status: unknown
+    rounds: 1
+    status: upcoming
+    previous_date: 2026-05-07
+    source_url: null
+    last_verified: 2026-11-23
+    verification: search
