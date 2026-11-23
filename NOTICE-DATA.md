@@ -1,5 +1,11 @@
 # Data notice (draft)
 
+> Phase 1 status: `data/` now holds DAWUM-derived rows (`polls_DE.csv`) and Wikipedia-derived rows
+> (`polls_FR.csv`, `polls_IT.csv`, `polls_ES.csv`, `polls_UK.csv`). No file mixes the two. Party
+> files under `config/parties/` reuse Europolls' Party Facts ids and take names and colours from
+> Wikipedia table headers; `tests/fixtures/wikipedia/` holds reduced copies of five article
+> revisions and `tests/fixtures/dawum/` a cut of the DAWUM database, each under its source's licence.
+
 Draft for the owner to confirm before the repository is published. It records what each source's
 licence asks for as read on 23 Nov 2026. It is not legal advice.
 
@@ -27,4 +33,7 @@ licence asks for as read on 23 Nov 2026. It is not legal advice.
 
 - The licence for the code in this repository (`LICENSE` is not included in the starter kit).
 - Whether mixing CC BY-SA and ODbL rows in one file is acceptable, or whether DAWUM-derived data should
-  sit in files of its own. The safe default is separate files per adapter.
+  sit in files of its own. The safe default is separate files per adapter. So far no file mixes them:
+  each country file comes from one adapter. `averages_<CC>.csv` and `pollster_weights.csv` are computed
+  from those rows and carry the same terms; `pollster_weights.csv` and `results.csv` hold rows from
+  both sources, keyed by contest, and need this decision before Phase 5.

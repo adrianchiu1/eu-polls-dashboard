@@ -23,8 +23,17 @@ Researched on 23 Nov 2026. Re-check anything marked unverified before relying on
   API. Two seeded titles were redirects to a section of an election article and were replaced by the
   article they point to (French legislative, Senedd). Table layouts are not inspected yet.
 - **Rate limits:** the API answered several single requests with HTTP 429 during the check, even a
-  few seconds apart. The adapter must back off and retry, and the daily run should keep to one
-  request per article.
+  few seconds apart. The adapter backs off and retries, and makes two requests per article per run:
+  one API query for the current revision id, then `index.php?oldid=<id>&action=render` for that
+  revision's content, which was throttled less often than `action=parse`.
+- **What the adapter reads (Phase 1):** the rendered page is cut down to headings, wikitables and
+  reference lists, then each table selected by the contest's `selector` is read as a grid with spans
+  expanded. Year-less dates take the year from the heading above the table. One figure spanning several
+  party columns is a joint list and maps to an alliance row in the party file. A row whose pollster cell
+  names an election is the official result and goes to `data/results.csv`. A table without a date
+  column, a pollster column or two party columns fails the pull.
+- **Not read yet:** seat figures printed under vote shares (Spain), the Italian coalition columns, and
+  polling for Spain before 2025, which sits in a separate article.
 
 ### Europolls (reuse of code and mappings, not of output)
 
