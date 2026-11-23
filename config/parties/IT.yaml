@@ -14,48 +14,48 @@ parties:
     name: Brothers of Italy
     colour: '#03386A'
     partyfacts_id: 2280
-    lr_score: null
-    lr_source: pending
+    lr_score: 8.47
+    lr_source: ches2024
   - party_id: it-pd
     type: party
     short: PD
     name: Democratic Party
     colour: '#EF1C27'
     partyfacts_id: 802
-    lr_score: null
-    lr_source: pending
+    lr_score: 2.93
+    lr_source: ches2024
   - party_id: it-m5s
     type: party
     short: M5S
     name: Five Star Movement
     colour: '#FFEB3B'
     partyfacts_id: 2046
-    lr_score: null
-    lr_source: pending
+    lr_score: 3.33
+    lr_source: ches2024
   - party_id: it-lega
     type: party
     short: Lega
     name: Lega
     colour: '#008000'
     partyfacts_id: 1221
-    lr_score: null
-    lr_source: pending
+    lr_score: 8.67
+    lr_source: ches2024
   - party_id: it-fi
     type: party
     short: FI
     name: Forza Italia
     colour: '#0087DC'
     partyfacts_id: 8058
-    lr_score: null
-    lr_source: pending
+    lr_score: 6.73
+    lr_source: ches2024
   - party_id: it-a
     type: party
     short: A
     name: Action
     colour: '#0039AA'
     partyfacts_id: 9082
-    lr_score: null
-    lr_source: pending
+    lr_score: 4.43
+    lr_source: ches2024
   - party_id: it-iv
     type: party
     short: IV
@@ -78,8 +78,8 @@ parties:
     name: More Europe
     colour: '#888888'
     partyfacts_id: 6155
-    lr_score: null
-    lr_source: pending
+    lr_score: 4.33
+    lr_source: ches2024
   - party_id: it-nm
     type: party
     short: NM

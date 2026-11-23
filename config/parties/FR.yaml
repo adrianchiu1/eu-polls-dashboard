@@ -22,32 +22,32 @@ parties:
     name: La France Insoumise
     colour: '#56277E'
     partyfacts_id: 5858
-    lr_score: null
-    lr_source: pending
+    lr_score: 0.82
+    lr_source: ches2024
   - party_id: fr-le
     type: party
     short: LE
     name: The Ecologists
     colour: '#4BB166'
     partyfacts_id: 5650
-    lr_score: null
-    lr_source: pending
+    lr_score: 2.3
+    lr_source: ches2024
   - party_id: fr-pcf
     type: party
     short: PCF
     name: French Communist Party
     colour: '#E4002A'
     partyfacts_id: 1251
-    lr_score: null
-    lr_source: pending
+    lr_score: 1.73
+    lr_source: ches2024
   - party_id: fr-ps
     type: party
     short: PS
     name: Socialist Party
     colour: '#E3265B'
     partyfacts_id: 1478
-    lr_score: null
-    lr_source: pending
+    lr_score: 3.45
+    lr_source: ches2024
   - party_id: fr-dvg
     type: party
     short: DVG
@@ -70,8 +70,10 @@ parties:
     name: Ensemble
     colour: '#FFEB00'
     partyfacts_id: 5857
-    lr_score: null
-    lr_source: pending
+    lr_score: 6.27
+    lr_source: ches2024
+    aliases:
+    - RE
   - party_id: fr-dvc
     type: party
     short: DVC
@@ -86,8 +88,8 @@ parties:
     name: The Republicans
     colour: '#0043B0'
     partyfacts_id: 8168
-    lr_score: null
-    lr_source: pending
+    lr_score: 7.73
+    lr_source: ches2024
   - party_id: fr-dvd
     type: party
     short: DVD
@@ -118,16 +120,28 @@ parties:
     name: National Rally
     colour: '#254671'
     partyfacts_id: 433
-    lr_score: null
-    lr_source: pending
+    lr_score: 8.82
+    lr_source: ches2024
   - party_id: fr-rec
     type: party
     short: REC
     name: Reconquête
     colour: '#170066'
     partyfacts_id: 9064
-    lr_score: null
-    lr_source: pending
+    lr_score: 9.73
+    lr_source: ches2024
+    aliases:
+    - R!
+  - party_id: fr-hor
+    type: party
+    short: HOR
+    name: Horizons
+    colour: '#0000BA'
+    partyfacts_id: null
+    lr_score: 6.6
+    lr_source: ches2024
+    aliases:
+    - Horizons
   - party_id: fr-rn-allies
     type: alliance
     short: RN+allies
@@ -218,10 +232,10 @@ parties:
     short: Mélenchon
     name: Jean-Luc Mélenchon
     colour: '#56277E'
-    party_id_nominating: null
+    party_id_nominating: fr-lfi
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 0.82
+    lr_source: inherited
     aliases:
     - Jean-Luc Mélenchon (LFI)
     - Mélenchon LFI
@@ -230,10 +244,10 @@ parties:
     short: Roussel
     name: Fabien Roussel
     colour: '#E4002A'
-    party_id_nominating: null
+    party_id_nominating: fr-pcf
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 1.73
+    lr_source: inherited
     aliases:
     - Fabien Roussel (PCF)
   - party_id: fr-cand-polony
@@ -271,10 +285,10 @@ parties:
     short: Tondelier
     name: Marine Tondelier
     colour: '#79B41D'
-    party_id_nominating: null
+    party_id_nominating: fr-le
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 2.3
+    lr_source: inherited
     aliases:
     - Marine Tondelier (LE)
   - party_id: fr-cand-glucksmann
@@ -294,10 +308,10 @@ parties:
     short: Attal
     name: Gabriel Attal
     colour: '#FFD600'
-    party_id_nominating: null
+    party_id_nominating: fr-ens
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 6.27
+    lr_source: inherited
     aliases:
     - Gabriel Attal (RE)
     - Attal RE
@@ -324,10 +338,10 @@ parties:
     short: Philippe
     name: Édouard Philippe
     colour: '#0000BA'
-    party_id_nominating: null
+    party_id_nominating: fr-hor
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 6.6
+    lr_source: inherited
     aliases:
     - Édouard Philippe (HOR)
     - Philippe HOR
@@ -354,10 +368,10 @@ parties:
     short: Retailleau
     name: Bruno Retailleau
     colour: '#0043B0'
-    party_id_nominating: null
+    party_id_nominating: fr-lr
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 7.73
+    lr_source: inherited
     aliases:
     - Bruno Retailleau (LR)
     - Retailleau LR
@@ -366,7 +380,7 @@ parties:
     short: Dupont-Aignan
     name: Nicolas Dupont-Aignan
     colour: '#8040C0'
-    party_id_nominating: null
+    party_id_nominating: fr-dlf
     partyfacts_id: null
     lr_score: null
     lr_source: pending
@@ -377,10 +391,10 @@ parties:
     short: Le Pen
     name: Marine Le Pen
     colour: '#254671'
-    party_id_nominating: null
+    party_id_nominating: fr-rn
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 8.82
+    lr_source: inherited
     aliases:
     - Marine Le Pen (RN)
     - Le Pen RN
@@ -407,10 +421,10 @@ parties:
     short: Zemmour
     name: Éric Zemmour
     colour: '#170066'
-    party_id_nominating: null
+    party_id_nominating: fr-rec
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 9.73
+    lr_source: inherited
     aliases:
     - Éric Zemmour (R!)
   - party_id: fr-cand-hollande
@@ -418,10 +432,10 @@ parties:
     short: Hollande
     name: François Hollande
     colour: '#E3265B'
-    party_id_nominating: null
+    party_id_nominating: fr-ps
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 3.45
+    lr_source: inherited
     aliases:
     - François Hollande (PS)
     - Hollande PS
@@ -448,10 +462,10 @@ parties:
     short: Faure
     name: Olivier Faure
     colour: '#E3265B'
-    party_id_nominating: null
+    party_id_nominating: fr-ps
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 3.45
+    lr_source: inherited
     aliases:
     - Olivier Faure (PS)
   - party_id: fr-cand-guedj
@@ -468,10 +482,10 @@ parties:
     short: Le Maire
     name: Bruno Le Maire
     colour: '#FFD600'
-    party_id_nominating: null
+    party_id_nominating: fr-ens
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 6.27
+    lr_source: inherited
     aliases:
     - Bruno Le Maire (RE)
   - party_id: fr-cand-bertrand
@@ -499,10 +513,10 @@ parties:
     short: Wauquiez
     name: Laurent Wauquiez
     colour: '#0043B0'
-    party_id_nominating: null
+    party_id_nominating: fr-lr
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 7.73
+    lr_source: inherited
     aliases:
     - Laurent Wauquiez (LR)
   - party_id: fr-cand-poutou
@@ -532,10 +546,10 @@ parties:
     short: Delga
     name: Carole Delga
     colour: '#E3265B'
-    party_id_nominating: null
+    party_id_nominating: fr-ps
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 3.45
+    lr_source: inherited
     aliases:
     - Carole Delga (PS)
   - party_id: fr-cand-jadot
@@ -543,10 +557,10 @@ parties:
     short: Jadot
     name: Yannick Jadot
     colour: '#79B41D'
-    party_id_nominating: null
+    party_id_nominating: fr-le
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 2.3
+    lr_source: inherited
     aliases:
     - Yannick Jadot (LE)
   - party_id: fr-cand-rousseau
@@ -554,10 +568,10 @@ parties:
     short: Rousseau
     name: Sandrine Rousseau
     colour: '#79B41D'
-    party_id_nominating: null
+    party_id_nominating: fr-le
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 2.3
+    lr_source: inherited
     aliases:
     - Sandrine Rousseau (LE)
   - party_id: fr-cand-borne
@@ -565,10 +579,10 @@ parties:
     short: Borne
     name: Élisabeth Borne
     colour: '#FFD600'
-    party_id_nominating: null
+    party_id_nominating: fr-ens
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 6.27
+    lr_source: inherited
     aliases:
     - Élisabeth Borne (RE)
   - party_id: fr-cand-braun-pivet
@@ -576,10 +590,10 @@ parties:
     short: Braun-Pivet
     name: Yaël Braun-Pivet
     colour: '#FFD600'
-    party_id_nominating: null
+    party_id_nominating: fr-ens
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 6.27
+    lr_source: inherited
     aliases:
     - Yaël Braun-Pivet (RE)
   - party_id: fr-cand-castex
@@ -598,10 +612,10 @@ parties:
     short: Darmanin
     name: Gérald Darmanin
     colour: '#FFD600'
-    party_id_nominating: null
+    party_id_nominating: fr-ens
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 6.27
+    lr_source: inherited
     aliases:
     - Gérald Darmanin (RE)
   - party_id: fr-cand-bayrou
@@ -631,10 +645,10 @@ parties:
     short: Barnier
     name: Michel Barnier
     colour: '#0043B0'
-    party_id_nominating: null
+    party_id_nominating: fr-lr
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 7.73
+    lr_source: inherited
     aliases:
     - Michel Barnier (LR)
   - party_id: fr-cand-bardella
@@ -642,9 +656,9 @@ parties:
     short: Bardella
     name: Jordan Bardella
     colour: '#254671'
-    party_id_nominating: null
+    party_id_nominating: fr-rn
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 8.82
+    lr_source: inherited
     aliases:
     - Jordan Bardella (RN)

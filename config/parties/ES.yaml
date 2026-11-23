@@ -13,24 +13,24 @@ parties:
     name: PP
     colour: '#1D84CE'
     partyfacts_id: 441
-    lr_score: null
-    lr_source: pending
+    lr_score: 7.19
+    lr_source: ches2024
   - party_id: es-psoe
     type: party
     short: PSOE
     name: PSOE
     colour: '#EF1C27'
     partyfacts_id: 1338
-    lr_score: null
-    lr_source: pending
+    lr_score: 3.81
+    lr_source: ches2024
   - party_id: es-vox
     type: party
     short: Vox
     name: Vox
     colour: '#63BE21'
     partyfacts_id: 3218
-    lr_score: null
-    lr_source: pending
+    lr_score: 9.38
+    lr_source: ches2024
   - party_id: es-fa
     type: party
     short: FA
@@ -53,48 +53,48 @@ parties:
     name: ERC
     colour: '#FFB232'
     partyfacts_id: 848
-    lr_score: null
-    lr_source: pending
+    lr_score: 3.4
+    lr_source: ches2024
   - party_id: es-junts
     type: party
     short: Junts
     name: Junts
     colour: '#00C7AE'
     partyfacts_id: 7421
-    lr_score: null
-    lr_source: pending
+    lr_score: 6.6
+    lr_source: ches2024
   - party_id: es-eh-bildu
     type: party
     short: EH Bildu
     name: EH Bildu
     colour: '#00AC8E'
     partyfacts_id: 5668
-    lr_score: null
-    lr_source: pending
+    lr_score: 2.38
+    lr_source: ches2024
   - party_id: es-pnv
     type: party
     short: PNV
     name: PNV
     colour: '#4AAE4A'
     partyfacts_id: 1637
-    lr_score: null
-    lr_source: pending
+    lr_score: 6.12
+    lr_source: ches2024
   - party_id: es-bng
     type: party
     short: BNG
     name: BNG
     colour: '#ADCFEF'
     partyfacts_id: 1011
-    lr_score: null
-    lr_source: pending
+    lr_score: 2.69
+    lr_source: ches2024
   - party_id: es-cca
     type: party
     short: CCa
     name: CCa
     colour: '#FFD700'
     partyfacts_id: 81
-    lr_score: null
-    lr_source: pending
+    lr_score: 6.0
+    lr_source: ches2024
   - party_id: es-adelante-andalucia
     type: party
     short: Adelante Andalucía
@@ -111,32 +111,32 @@ parties:
     name: Podemos
     colour: '#9269F5'
     partyfacts_id: 3203
-    lr_score: null
-    lr_source: pending
+    lr_score: 1.56
+    lr_source: ches2024
   - party_id: es-salf
     type: party
     short: SALF
     name: Se Acabó La Fiesta
     colour: '#785A46'
     partyfacts_id: 9816
-    lr_score: null
-    lr_source: pending
+    lr_score: 8.93
+    lr_source: ches2024
   - party_id: es-sumar
     type: party
     short: Sumar
     name: Sumar
     colour: '#EF4B91'
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 2.31
+    lr_source: ches2024
   - party_id: es-upn
     type: party
     short: UPN
     name: UPN
     colour: '#00599B'
     partyfacts_id: 722
-    lr_score: null
-    lr_source: pending
+    lr_score: 7.62
+    lr_source: ches2024
   - party_id: es-alianca-cat
     type: party
     short: Aliança.cat
