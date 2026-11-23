@@ -166,7 +166,8 @@ def contest_panel(contest: dict, country: dict, bundle: dict, today: dt.date, or
     if meta.get("folded"):
         floor = config.settings()["parties"]["own_line_min_average_pct"]
         limit = f"{floor * country['chamber_size'] / 100:g} seats" if unit == "seats" else f"{floor:g}%"
-        notes += f'<p class="rg-muted">{meta["folded"]} parties under {limit} are summed into Others.</p>'
+        small_n = "1 party" if meta["folded"] == 1 else f'{meta["folded"]} parties'
+        notes += f'<p class="rg-muted">{small_n} under {limit} {"is" if meta["folded"] == 1 else "are"} summed into Others.</p>'
 
     party_ids = list(rows["party_id"])
     shown = [dict(party_id=r.party_id, short=r.short, name=r.name, colour=r.colour) for r in rows.itertuples()
