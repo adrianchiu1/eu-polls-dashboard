@@ -1,0 +1,49 @@
+# Hungary. Drafted by tools/propose_parties.py from the pinned Wikipedia fixture for hu-parl-2030:
+# short names, full names and colours are read from the polling table's header (CC BY-SA 4.0).
+# Party Facts ids, where present, come from Europolls (github.com/gfrt0/europolls,
+# config/party_mappings/HU.yaml; CC BY-SA 4.0) and are not yet checked against Party Facts itself.
+# Left-right scores are pending. An alliance row with members is a joint list: one figure a pollster
+# gives for several columns.
+schema_version: 1
+country: HU
+parties:
+  - party_id: hu-tisza
+    type: party
+    short: TISZA
+    name: TISZA
+    colour: '#88E8FF'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: hu-fidesz-kdnp
+    type: party
+    short: Fidesz–KDNP
+    name: Fidesz–KDNP
+    colour: '#FF6A00'
+    partyfacts_id: 6366
+    lr_score: null
+    lr_source: pending
+  - party_id: hu-mh
+    type: party
+    short: MH
+    name: Our Homeland Movement
+    colour: '#688D1B'
+    partyfacts_id: 7349
+    lr_score: null
+    lr_source: pending
+  - party_id: hu-dk
+    type: party
+    short: DK
+    name: DK
+    colour: '#2A61A4'
+    partyfacts_id: 469
+    lr_score: null
+    lr_source: pending
+  - party_id: hu-mkkp
+    type: party
+    short: MKKP
+    name: MKKP
+    colour: '#808080'
+    partyfacts_id: 6129
+    lr_score: null
+    lr_source: pending

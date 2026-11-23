@@ -1,0 +1,81 @@
+# Portugal. Drafted by tools/propose_parties.py from the pinned Wikipedia fixture for pt-parl-2029:
+# short names, full names and colours are read from the polling table's header (CC BY-SA 4.0).
+# Party Facts ids, where present, come from Europolls (github.com/gfrt0/europolls,
+# config/party_mappings/PT.yaml; CC BY-SA 4.0) and are not yet checked against Party Facts itself.
+# Left-right scores are pending. An alliance row with members is a joint list: one figure a pollster
+# gives for several columns.
+schema_version: 1
+country: PT
+parties:
+  - party_id: pt-ad
+    type: party
+    short: AD
+    name: AD
+    colour: '#3777BC'
+    partyfacts_id: 1742
+    lr_score: null
+    lr_source: pending
+  - party_id: pt-ps
+    type: party
+    short: PS
+    name: PS
+    colour: '#FF66FF'
+    partyfacts_id: 655
+    lr_score: null
+    lr_source: pending
+  - party_id: pt-ch
+    type: party
+    short: CH
+    name: CH
+    colour: '#202056'
+    partyfacts_id: 8182
+    lr_score: null
+    lr_source: pending
+  - party_id: pt-il
+    type: party
+    short: IL
+    name: IL
+    colour: '#00ADEF'
+    partyfacts_id: 8640
+    lr_score: null
+    lr_source: pending
+  - party_id: pt-l
+    type: party
+    short: L
+    name: L
+    colour: '#C2D216'
+    partyfacts_id: 3225
+    lr_score: null
+    lr_source: pending
+  - party_id: pt-cdu
+    type: party
+    short: CDU
+    name: CDU
+    colour: '#FF0000'
+    partyfacts_id: 284
+    lr_score: null
+    lr_source: pending
+  - party_id: pt-be
+    type: party
+    short: BE
+    name: BE
+    colour: '#8B0000'
+    partyfacts_id: 1310
+    lr_score: null
+    lr_source: pending
+  - party_id: pt-pan
+    type: party
+    short: PAN
+    name: PAN
+    colour: '#008080'
+    partyfacts_id: 97
+    lr_score: null
+    lr_source: pending
+  - party_id: pt-together-for-the-people
+    type: party
+    short: Together for the People
+    name: Together for the People
+    colour: '#00A28B'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending

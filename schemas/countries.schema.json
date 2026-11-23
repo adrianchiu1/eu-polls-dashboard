@@ -22,7 +22,7 @@
           "headline_kind": { "enum": ["presidential", "parliamentary"] },
           "parliament": { "type": "string", "minLength": 1 },
           "subnational_tier": { "type": ["string", "null"] },
-          "special": { "enum": ["regional_headline"] },
+          "special": { "enum": ["regional_headline", "government_formation"] },
           "headline_regions": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
           "notes": { "type": "string" }
         },
@@ -32,7 +32,7 @@
             "then": { "required": ["chamber_size"] }
           },
           {
-            "if": { "required": ["special"] },
+            "if": { "properties": { "special": { "const": "regional_headline" } }, "required": ["special"] },
             "then": { "required": ["headline_regions"] }
           }
         ]

@@ -57,7 +57,7 @@ def _is_party_client(client: str | None, resolver: Resolver) -> bool:
     if not client:
         return False
     words = client.split()
-    return any(resolver.resolve(" ".join(words[:n])) not in (None, model.OTHERS) for n in (1, 2))
+    return any(resolver.is_party_name(" ".join(words[:n])) for n in (1, 2))
 
 
 def parse(db: dict, contest: dict, resolver: Resolver, retrieved_at: dt.datetime, since: dt.date) -> ContestPull:

@@ -26,7 +26,7 @@ def settings() -> dict:
     return dict(s["average"], thin_window_days=s["thin_polling"]["window_days"])
 
 
-def eligible_wide(polls: pd.DataFrame, s: dict | None = None) -> pd.DataFrame:
+def eligible_wide(polls: pd.DataFrame, s: dict | None = None, keep_regions: bool = False) -> pd.DataFrame:
     """Long poll rows of ONE contest, line-up and round, to the wide frame of eligible polls.
 
     Drops party-commissioned polls (when the setting says so) and regional cuts. The caller picks the
@@ -36,7 +36,8 @@ def eligible_wide(polls: pd.DataFrame, s: dict | None = None) -> pd.DataFrame:
     rows = polls
     if s.get("exclude_party_commissioned", True):
         rows = rows[~model.has_flag(rows["flags"], "party_commissioned")]
-    rows = rows[rows["region"].isna() | (rows["region"] == "")]
+    if not keep_regions:                                   # the caller has already picked one regional panel
+        rows = rows[rows["region"].isna() | (rows["region"] == "")]
     if rows.empty:
         return pd.DataFrame(columns=META)
     meta = rows.drop_duplicates("poll_id").set_index("poll_id")[["pollster", "fieldwork_start", "fieldwork_end"]]

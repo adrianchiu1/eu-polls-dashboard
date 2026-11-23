@@ -37,9 +37,11 @@ def slug(text: str) -> str:
 
 
 def label_of(table, c) -> tuple[str, list[str]]:
-    path = table.header_path(c)
-    links = [l for cell in table.header_cells(c) for l in cell.links]
-    return (path[-1] if path else (links[0] if links else "")), links
+    cell = table.leaf(c)
+    if cell is None:
+        return "", []
+    links = cell.links if not cell.text else [l for h in table.header_cells(c) for l in h.links]
+    return cell.text or cell.links[0], links
 
 
 def main() -> int:
@@ -55,6 +57,8 @@ def main() -> int:
     sel = W.parse_selector(source["selector"])
     all_tables = wikitable.tables(html)
     tables = W.select(all_tables, sel) + (W.select(all_tables, sel, "round2_top") if "round2_top" in sel else [])
+    tables = [t for t in tables if t.n_header_rows > 0 and ("panels" not in sel or t.path[-1] in sel["panels"])]
+    blank = type("NoParties", (), {"resolve": staticmethod(lambda *a, **k: None)})()
 
     pf = {}
     if args.europolls:
@@ -67,10 +71,10 @@ def main() -> int:
     info: dict[str, dict] = {}
     spans: Counter = Counter()
     for t in tables:
+        roles = W.classify(t, source.get("column_map") or {}, blank, None)
         for c in range(t.width):
             leaf, links = label_of(t, c)
-            path = t.header_path(c)
-            if not leaf or leaf.lower().startswith(META) or (len(path) > 1 and path[0] == "Coalitions"):
+            if not leaf or roles[c] != ("party", None):     # a role column, or one mapped in column_map
                 continue
             key = links[0] if args.candidates and links else leaf
             d = info.setdefault(key, {"links": [], "colour": None, "labels": []})
@@ -86,6 +90,7 @@ def main() -> int:
                     continue
                 done.add(id(cell))
                 cols = [k for k in range(len(row)) if row[k] is cell]
+                cols = [k for k in cols if roles[k] == ("party", None)]
                 if W.parse_value(cell.text) is not None and 1 < len(cols) <= 6:
                     spans[tuple(label_of(t, k)[0] for k in cols)] += 1
 

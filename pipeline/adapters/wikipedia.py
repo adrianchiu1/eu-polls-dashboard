@@ -11,6 +11,8 @@ Selector: `key=value` pairs separated by semicolons.
     lineups=field        every row of a poll is a tested field of candidates (French presidential);
                          default: the first row of a poll is the headline, later rows are alternatives
     sums=partial         the tables do not list every party, so share sums are not checked
+    panels=<heading>|... each named table is a separate regional panel of the contest (Belgium):
+                         its rows get that panel as line-up and region
 
 A layout the parser does not recognise raises AdapterError: nothing is published from a table it
 cannot read in full.
@@ -24,7 +26,7 @@ import re
 import pandas as pd
 
 from pipeline import model
-from pipeline.config import previous_contest_id
+from pipeline.config import panel_id, previous_contest_id
 from pipeline.adapters import wikitable
 from pipeline.adapters.base import AdapterError, ContestPull, get, session
 from pipeline.parties import Resolver, norm_label
@@ -70,7 +72,8 @@ def parse_selector(selector: str) -> dict:
                 raise AdapterError(f"selector part '{part.strip()}' is not key=value")
             continue
         key, value = part.split("=", 1)
-        out[key.strip()] = [v.strip() for v in value.split("|")] if key.strip() != "lineups" and key.strip() != "sums" else value.strip()
+        key = key.strip()
+        out[key] = value.strip() if key in ("lineups", "sums") else [v.strip() for v in value.split("|")]
     return out
 
 
@@ -133,6 +136,49 @@ def parse_dates(text: str, default_year: int | None) -> tuple[dt.date | None, dt
         return None
 
 
+def infer_years(texts: list[str], heading_year: int | None, this_year: int) -> list[int | None]:
+    """The year to read each date cell with, for tables that print it only on some rows.
+
+    A cell that names its year needs none. Otherwise the heading's year is used. Without either, the
+    table is taken to run newest first: a row takes the year of the nearest dated row below it, or the
+    year after when that would put it earlier than that row. Rows under the last dated row take the
+    year of the row above, or the year before when that would put them later. With no dated row at
+    all, this year.
+    """
+    if heading_year is not None:
+        return [heading_year] * len(texts)
+    explicit = [parse_dates(t, None) for t in texts]
+    out: list[int | None] = [None] * len(texts)
+    ends: list[dt.date | None] = [e[1] if e else None for e in explicit]
+    below: dt.date | None = None
+    for i in range(len(texts) - 1, -1, -1):               # upward: lean on the dated row below
+        if ends[i] is not None:
+            below = ends[i]
+            continue
+        if below is None:
+            continue
+        guess = below.year
+        got = parse_dates(texts[i], guess)
+        if got is not None and got[1] < below:
+            guess += 1
+            got = parse_dates(texts[i], guess)
+        if got is not None:
+            out[i], ends[i], below = guess, got[1], got[1]
+    above: dt.date | None = None
+    for i in range(len(texts)):                           # downward: the rows under the last dated row
+        if ends[i] is not None:
+            above = ends[i]
+            continue
+        guess = above.year if above else this_year
+        got = parse_dates(texts[i], guess)
+        if got is not None and above and got[1] > above:
+            guess -= 1
+            got = parse_dates(texts[i], guess)
+        if got is not None:
+            out[i], ends[i], above = guess, got[1], got[1]
+    return out
+
+
 def _heading_year(path: tuple[str, ...]) -> int | None:
     for heading in reversed(path):
         m = re.match(r"^\s*(?:[A-Za-z]+\s+)?(\d{4})\b", heading)
@@ -143,13 +189,17 @@ def _heading_year(path: tuple[str, ...]) -> int | None:
 
 # --------------------------------------------------------------------------- columns
 ROLE_WORDS = {
-    "pollster": ("pollingfirm", "pollster", "pollingorganisation", "pollingorganization"),
+    "pollster": ("pollingfirm", "pollster", "pollingorganisation", "pollingorganization", "agency"),
     "date": ("fieldworkdate", "datesconducted", "dateconducted", "date"),
     "sample": ("samplesize", "sample"),
     "client": ("client", "commissioner"),
     "area": ("area",),
-    "ignore": ("lead", "turnout", "notes", "majority"),
+    "method": ("method",),
+    "source": ("ref", "refs", "source", "sources"),
+    "ignore": ("lead", "turnout", "notes", "majority", "resp", "gov", "opp", "sup", "maj", "marginoferror",
+               "dontknow", "net"),
 }
+IGNORED_GROUPS = ("coalitions", "blocs")      # column groups that sum parties: never read (no bloc totals)
 
 
 def _norm(text: str) -> str:
@@ -166,19 +216,22 @@ def classify(table: wikitable.Table, column_map: dict, resolver: Resolver, on: d
     out = []
     for c in range(table.width):
         path = table.header_path(c)
-        leaf = path[-1] if path else ""
-        links = [l for cell in table.header_cells(c) for l in cell.links]
-        group = path[0] if len(path) > 1 else ""
+        cell = table.leaf(c)
+        leaf = cell.text if cell else ""
+        links = (cell.links if cell and not leaf else [l for h in table.header_cells(c) for l in h.links])
+        group = path[0] if path and (len(path) > 1 or not leaf) else ""
         mapped = cmap.get(norm_label(leaf)) if leaf else None
         if mapped is None and not leaf:
             mapped = next((cmap[norm_label(l)] for l in links if norm_label(l) in cmap), None)
         if mapped in ROLE_WORDS:
             out.append((mapped, None)); continue
+        if mapped == model.OTHERS:
+            out.append(("party", model.OTHERS)); continue
         if mapped:
             out.append(("party", mapped)); continue
         n = _norm(leaf)
         role = None
-        if _norm(group) in ("coalitions",):
+        if _norm(group) in IGNORED_GROUPS:
             role = "ignore"
         elif n.startswith("pollingfirm") and "commissioner" in n:
             role = "pollster+client"
@@ -187,6 +240,8 @@ def classify(table: wikitable.Table, column_map: dict, resolver: Resolver, on: d
                 if n and any(n == w or (name in ("pollster", "sample") and n.startswith(w)) or (name == "date" and w in n) for w in words):
                     role = name
                     break
+        if role == "source" and resolver.resolve(leaf, on) is not None:
+            role = None                                   # 'Ref' is Reform UK in the British tables
         if role:
             out.append((role, None)); continue
         if not leaf and not links:
@@ -202,11 +257,10 @@ def classify(table: wikitable.Table, column_map: dict, resolver: Resolver, on: d
 
 
 def _label(table: wikitable.Table, c: int) -> str:
-    path = table.header_path(c)
-    if path:
-        return path[-1]
-    links = [l for cell in table.header_cells(c) for l in cell.links]
-    return links[0] if links else f"column {c}"
+    cell = table.leaf(c)
+    if cell is None:
+        return f"column {c}"
+    return cell.text or cell.links[0]
 
 
 # --------------------------------------------------------------------------- tables
@@ -232,7 +286,8 @@ def _lineup_id(parties: set[str]) -> str:
 
 
 def parse_table(table: wikitable.Table, contest: dict, source: dict, resolver: Resolver, sel: dict,
-                cites: dict, title: str, revision: str, retrieved_at: dt.datetime, round_: int = 1):
+                cites: dict, title: str, revision: str, retrieved_at: dt.datetime, round_: int = 1,
+                unit: str = "pct", panel: str | None = None):
     """One table to poll rows, result rows and warnings."""
     cid = contest["contest_id"]
     since = contest.get("previous_date")
@@ -258,12 +313,14 @@ def parse_table(table: wikitable.Table, contest: dict, source: dict, resolver: R
     results: list[dict] = []
     seen_rows: dict[tuple, int] = {}
     unread = 0
+    body = [r + [None] * (table.width - len(r)) for r in table.body()]
+    years = infer_years([r[col["date"]].text if r[col["date"]] is not None else "" for r in body],
+                        year, retrieved_at.year)
 
-    for row in table.body():
+    for row, row_year in zip(body, years):
         cells = [c for c in row if c is not None]
         if not cells:
             continue
-        row = row + [None] * (table.width - len(row))     # a header may be wider than the rows
         p_cell, d_cell = row[p_col], row[col["date"]]
         if p_cell is None or d_cell is None:
             continue
@@ -272,10 +329,12 @@ def parse_table(table: wikitable.Table, contest: dict, source: dict, resolver: R
         if wide > max(len(party_cols) // 2, 2) and wide > 2 and not any(
                 id(row[c]) != id(row[party_cols[0]]) for c in party_cols if row[c] is not None):
             continue
-        if p_cell is d_cell:
-            continue
-        dates = parse_dates(d_cell.text, year)
         is_result = bool(RESULT_ROW.search(p_cell.text))
+        if p_cell is d_cell and not is_result:
+            continue
+        dates = parse_dates(d_cell.text, row_year)
+        if p_cell is d_cell:                              # '2026 election' stretched over firm and date
+            dates = (None, since) if since else None
         values: dict[str, float] = {}
         done: set[int] = set()
         any_value = False
@@ -311,7 +370,7 @@ def parse_table(table: wikitable.Table, contest: dict, source: dict, resolver: R
         if is_result:
             area = row[col["area"]].text if "area" in col and row[col["area"]] is not None else ""
             if area in ("", "GB") and end in (since, contest.get("date")):
-                results.append({"values": values, "date": end})
+                results.append({"values": values, "date": end, "panel": panel})
             continue
         if since is not None and end <= since:
             continue
@@ -319,8 +378,8 @@ def parse_table(table: wikitable.Table, contest: dict, source: dict, resolver: R
             continue                                      # belongs to the next cycle
         text = p_cell.text
         client = None
-        if roles[p_col] == "pollster+client" and "/" in text:
-            text, client = (x.strip() for x in text.split("/", 1))
+        if (roles[p_col] == "pollster+client" and "/" in text) or " / " in text:
+            text, client = (x.strip().strip('"“”') for x in text.split("/", 1))
         if "client" in col and row[col["client"]] is not None:
             raw = row[col["client"]].text.strip()
             client = raw if raw.lower() not in NOT_REPORTED else None
@@ -329,7 +388,10 @@ def parse_table(table: wikitable.Table, contest: dict, source: dict, resolver: R
             unread += 1
             continue
         sample = parse_sample(row[col["sample"]].text) if "sample" in col and row[col["sample"]] is not None else None
-        url = next(iter(p_cell.urls), None) or next((cites[r] for r in p_cell.refs if r in cites), None)
+        linked = [p_cell] + ([row[col["source"]]] if "source" in col and row[col["source"]] is not None else [])
+        url = next((u for c in linked for u in c.urls), None) or next(
+            (cites[r] for c in linked for r in c.refs if r in cites), None)
+        method = row[col["method"]].text.strip() if "method" in col and row[col["method"]] is not None else ""
         if url and url.startswith("//"):
             url = "https:" + url
         group = (id(p_cell), id(d_cell)) if p_cell.rowspan > 1 else (id(p_cell), id(d_cell), len(polls))
@@ -338,10 +400,12 @@ def parse_table(table: wikitable.Table, contest: dict, source: dict, resolver: R
         flags = "party_commissioned" if client and _is_party(client, resolver) else ""
         polls.append({
             "poll_id": model.poll_id(cid, pollster, end, client, url or f"{where}|{p_cell.origin}"),
-            "contest_id": cid, "round": round_, "lineup_id": "default" if index == 0 else f"alt-{index + 1}",
+            "contest_id": cid, "round": round_,
+            "lineup_id": (panel_id(panel) if panel else "default") if index == 0 else f"alt-{index + 1}",
             "is_headline_lineup": index == 0, "pollster": pollster, "client": client,
-            "fieldwork_start": start, "fieldwork_end": end, "sample_size": sample, "method": None,
-            "unit": "pct", "flags": flags, "region": None,
+            "fieldwork_start": start, "fieldwork_end": end, "sample_size": sample,
+            "method": method if method.lower() not in NOT_REPORTED else None,
+            "unit": unit, "flags": flags, "region": panel,
             "source_url": url or permalink(title, revision), "adapter": "wikipedia",
             "source_rev": revision, "retrieved_at": retrieved_at.strftime("%Y-%m-%dT%H:%M:%SZ"),
             "_values": values,
@@ -356,7 +420,7 @@ def parse_table(table: wikitable.Table, contest: dict, source: dict, resolver: R
 
 def _is_party(client: str, resolver: Resolver) -> bool:
     words = client.split()
-    return any(resolver.resolve(" ".join(words[:n])) not in (None, model.OTHERS) for n in (1, 2, 3) if len(words) >= n)
+    return any(resolver.is_party_name(" ".join(words[:n])) for n in (1, 2, 3) if len(words) >= n)
 
 
 def _assign_fields(polls: list[dict], window_days: int) -> None:
@@ -395,7 +459,7 @@ def _assign_fields(polls: list[dict], window_days: int) -> None:
 
 
 def parse(html: str, contest: dict, source: dict, resolver: Resolver, revision: str,
-          retrieved_at: dt.datetime, window_days: int = 30) -> ContestPull:
+          retrieved_at: dt.datetime, window_days: int = 30, unit: str = "pct") -> ContestPull:
     """All of one contest's polls in the current electoral cycle from one article revision."""
     cid = contest["contest_id"]
     sel = parse_selector(source["selector"])
@@ -406,8 +470,18 @@ def parse(html: str, contest: dict, source: dict, resolver: Resolver, revision: 
     if not chosen:
         raise AdapterError(f"{cid}: no table matches selector '{source['selector']}' in '{title}'")
     polls, results, warnings = [], [], []
+    chosen = [t for t in chosen if t.n_header_rows > 0]      # a legend or key table has no header row
+    panels = sel.get("panels")
+    if panels:
+        chosen = [t for t in chosen if t.path[-1] in panels]
+        missing = [p for p in panels if p not in {t.path[-1] for t in chosen}]
+        if missing:
+            raise AdapterError(f"{cid}: no table for panel(s) {missing} in '{title}'")
+    if not chosen:
+        raise AdapterError(f"{cid}: the tables selected by '{source['selector']}' in '{title}' have no header")
     for t in chosen:
-        p, r, w = parse_table(t, contest, source, resolver, sel, cites, title, revision, retrieved_at)
+        p, r, w = parse_table(t, contest, source, resolver, sel, cites, title, revision, retrieved_at,
+                              unit=unit, panel=t.path[-1] if panels else None)
         polls += p; results += r; warnings += w
     if sel.get("lineups") == "field":
         _assign_fields(polls, window_days)
@@ -430,8 +504,14 @@ def parse(html: str, contest: dict, source: dict, resolver: Resolver, revision: 
         for r in results:
             # the contest's own result once it is held; otherwise the previous election to the body
             past = cid if r["date"] == contest.get("date") else previous_contest_id(contest)
-            rows += [{"contest_id": past, "round": 1, "party_id": party, "vote_share": value,
-                      "seats": None, "source_url": permalink(title, revision)}
+            if past is None:
+                continue
+            if r.get("panel"):                            # results.csv has no region column: one id per panel
+                past = f"{past}-{panel_id(r['panel'])}"
+            rows += [{"contest_id": past, "round": 1, "party_id": party,
+                      "vote_share": value if unit != "seats" else None,
+                      "seats": int(value) if unit == "seats" else None, "source_url": permalink(title, revision)}
                      for party, value in r["values"].items()]
         res = pd.DataFrame(rows, columns=model.RESULT_COLUMNS).drop_duplicates(["contest_id", "round", "party_id"])
+        res = res if len(res) else None
     return ContestPull(cid, frame, results=res, warnings=warnings)

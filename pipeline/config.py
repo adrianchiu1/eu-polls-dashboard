@@ -69,3 +69,10 @@ def previous_contest_id(contest: dict) -> str | None:
     if not contest.get("previous_date"):
         return None
     return "-".join(contest["contest_id"].split("-")[:2] + [str(contest["previous_date"].year)])
+
+
+def panel_id(panel: str) -> str:
+    """The line-up id of a regional panel of a contest: 'Flanders' -> 'flanders'."""
+    import re
+
+    return re.sub(r"[^a-z0-9]+", "-", panel.lower()).strip("-")

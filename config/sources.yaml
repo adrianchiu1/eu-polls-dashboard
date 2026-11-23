@@ -153,6 +153,110 @@ sources:
       "Opinion polling for the next Senedd election", is a redirect to the Opinion polling section of
       this article. Table layout not inspected.
 
+  # ---------------------------------------------------------------- Phase 2: the other national contests (Wikipedia)
+  - contest_id: nl-parl-next
+    adapter: wikipedia
+    locator: Next Dutch general election
+    selector: top=Opinion polls; under=Seats
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-23 (revision 1387074173). Seats out of 150 (judgement NL-001). The article also has a vote-share table, not read.
+  - contest_id: be-parl-2029
+    adapter: wikipedia
+    locator: Opinion polling for the 2029 Belgian elections
+    selector: top=Federal election; panels=Flanders|Wallonia|Brussels
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-23 (revision 1385877817). Three regional panels (judgement BE-001). The seat-projection table is not read.
+  - contest_id: at-parl-2029
+    adapter: wikipedia
+    locator: Next Austrian legislative election
+    selector: top=Opinion polls; under=Nationwide
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-23 (revision 1385698731). The By state tables are regional cuts and are not read.
+  - contest_id: pt-parl-2029
+    adapter: wikipedia
+    locator: Opinion polling for the next Portuguese legislative election
+    selector: top=Nationwide polling; under=Polling; exclude=Other scenarios
+    column_map:
+      "O": others
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-23 (revision 1386857083).
+  - contest_id: ie-parl-next
+    adapter: wikipedia
+    locator: Next Irish general election
+    selector: top=Opinion polls; under=Polls
+    column_map:
+      "O/I": others
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-23 (revision 1386790578). O/I is Others and Independents, read as others.
+  - contest_id: gr-parl-2027
+    adapter: wikipedia
+    locator: Opinion polling for the next Greek parliamentary election
+    selector: top=Voting intention estimates; under=Polling; sums=partial
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-23 (revision 1387055332). Vote estimates (judgement GR-001). No Others column, so share sums are not checked.
+  - contest_id: pl-parl-2027
+    adapter: wikipedia
+    locator: Opinion polling for the next Polish parliamentary election
+    selector: top=Poll results; exclude=Alternative scenarios; sums=partial
+    column_map:
+      "Don't know": ignore
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-23 (revision 1387317758). Some pollsters publish undecided voters in a Don't know column; it is not read, so share sums are not checked.
+  - contest_id: hu-parl-2030
+    adapter: wikipedia
+    locator: Opinion polling for the 2030 Hungarian parliamentary election
+    selector: top=Polling
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-23 (revision 1387136550). Base is decided voters (judgement HU-001).
+  - contest_id: cz-parl-2029
+    adapter: wikipedia
+    locator: Next Czech parliamentary election
+    selector: top=Opinion polls; under=Party polls; sums=partial
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-23 (revision 1384852774). The Coalition polls table is not read.
+  - contest_id: no-parl-2029
+    adapter: wikipedia
+    locator: 2029 Norwegian parliamentary election
+    selector: top=Opinion polls
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-23 (revision 1383761362). The Red and Blue bloc columns are not read.
+  - contest_id: fi-parl-2027
+    adapter: wikipedia
+    locator: Opinion polling for the 2027 Finnish parliamentary election
+    selector: top=National opinion polls; under=Vote share
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-23 (revision 1386385183).
+  - contest_id: dk-parl-next
+    adapter: wikipedia
+    locator: Next Danish general election
+    selector: top=Opinion polls
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-23 (revision 1387310225). The bloc columns are not read.
+
   # ---------------------------------------------------------------- Sweden (SwedishPolls)
   - contest_id: se-parl-next
     adapter: swedishpolls

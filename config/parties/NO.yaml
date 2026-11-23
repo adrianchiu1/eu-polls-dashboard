@@ -1,0 +1,81 @@
+# Norway. Drafted by tools/propose_parties.py from the pinned Wikipedia fixture for no-parl-2029:
+# short names, full names and colours are read from the polling table's header (CC BY-SA 4.0).
+# Party Facts ids, where present, come from Europolls (github.com/gfrt0/europolls,
+# config/party_mappings/NO.yaml; CC BY-SA 4.0) and are not yet checked against Party Facts itself.
+# Left-right scores are pending. An alliance row with members is a joint list: one figure a pollster
+# gives for several columns.
+schema_version: 1
+country: "NO"
+parties:
+  - party_id: no-r
+    type: party
+    short: R
+    name: Red Party
+    colour: '#871212'
+    partyfacts_id: 3698
+    lr_score: null
+    lr_source: pending
+  - party_id: no-sv
+    type: party
+    short: SV
+    name: Socialist Left Party
+    colour: '#B5317C'
+    partyfacts_id: 719
+    lr_score: null
+    lr_source: pending
+  - party_id: no-mdg
+    type: party
+    short: MDG
+    name: Green Party
+    colour: '#6A9325'
+    partyfacts_id: 1963
+    lr_score: null
+    lr_source: pending
+  - party_id: no-ap
+    type: party
+    short: Ap
+    name: Labour Party
+    colour: '#E11926'
+    partyfacts_id: 448
+    lr_score: null
+    lr_source: pending
+  - party_id: no-sp
+    type: party
+    short: Sp
+    name: Centre Party
+    colour: '#00843D'
+    partyfacts_id: 1072
+    lr_score: null
+    lr_source: pending
+  - party_id: no-v
+    type: party
+    short: V
+    name: Liberal Party
+    colour: '#006666'
+    partyfacts_id: 1173
+    lr_score: null
+    lr_source: pending
+  - party_id: no-krf
+    type: party
+    short: KrF
+    name: Christian Democratic Party
+    colour: '#FDED34'
+    partyfacts_id: 705
+    lr_score: null
+    lr_source: pending
+  - party_id: no-h
+    type: party
+    short: H
+    name: Conservative Party
+    colour: '#0065F1'
+    partyfacts_id: 503
+    lr_score: null
+    lr_source: pending
+  - party_id: no-frp
+    type: party
+    short: FrP
+    name: Progress Party
+    colour: '#004F80'
+    partyfacts_id: 101
+    lr_score: null
+    lr_source: pending

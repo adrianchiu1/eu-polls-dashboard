@@ -1,0 +1,57 @@
+# Austria. Drafted by tools/propose_parties.py from the pinned Wikipedia fixture for at-parl-2029:
+# short names, full names and colours are read from the polling table's header (CC BY-SA 4.0).
+# Party Facts ids, where present, come from Europolls (github.com/gfrt0/europolls,
+# config/party_mappings/AT.yaml; CC BY-SA 4.0) and are not yet checked against Party Facts itself.
+# Left-right scores are pending. An alliance row with members is a joint list: one figure a pollster
+# gives for several columns.
+schema_version: 1
+country: AT
+parties:
+  - party_id: at-fpo
+    type: party
+    short: FPÖ
+    name: Freedom Party of Austria
+    colour: '#0056A2'
+    partyfacts_id: 463
+    lr_score: null
+    lr_source: pending
+  - party_id: at-ovp
+    type: party
+    short: ÖVP
+    name: Austrian People's Party
+    colour: '#63C3D0'
+    partyfacts_id: 1329
+    lr_score: null
+    lr_source: pending
+  - party_id: at-spo
+    type: party
+    short: SPÖ
+    name: Social Democratic Party of Austria
+    colour: '#E42712'
+    partyfacts_id: 1384
+    lr_score: null
+    lr_source: pending
+  - party_id: at-neos
+    type: party
+    short: NEOS
+    name: NEOS
+    colour: '#CB1667'
+    partyfacts_id: 1970
+    lr_score: null
+    lr_source: pending
+  - party_id: at-grune
+    type: party
+    short: Grüne
+    name: The Greens
+    colour: '#87B529'
+    partyfacts_id: 1659
+    lr_score: null
+    lr_source: pending
+  - party_id: at-kpo
+    type: party
+    short: KPÖ
+    name: Communist Party of Austria
+    colour: '#AA0000'
+    partyfacts_id: 996
+    lr_score: null
+    lr_source: pending

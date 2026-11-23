@@ -1,0 +1,81 @@
+# Finland. Drafted by tools/propose_parties.py from the pinned Wikipedia fixture for fi-parl-2027:
+# short names, full names and colours are read from the polling table's header (CC BY-SA 4.0).
+# Party Facts ids, where present, come from Europolls (github.com/gfrt0/europolls,
+# config/party_mappings/FI.yaml; CC BY-SA 4.0) and are not yet checked against Party Facts itself.
+# Left-right scores are pending. An alliance row with members is a joint list: one figure a pollster
+# gives for several columns.
+schema_version: 1
+country: FI
+parties:
+  - party_id: fi-kok
+    type: party
+    short: KOK
+    name: National Coalition Party
+    colour: '#006288'
+    partyfacts_id: 495
+    lr_score: null
+    lr_source: pending
+  - party_id: fi-ps
+    type: party
+    short: PS
+    name: Finns Party
+    colour: '#FFDE55'
+    partyfacts_id: 1689
+    lr_score: null
+    lr_source: pending
+  - party_id: fi-sdp
+    type: party
+    short: SDP
+    name: Social Democratic Party of Finland
+    colour: '#F54B4B'
+    partyfacts_id: 1303
+    lr_score: null
+    lr_source: pending
+  - party_id: fi-kesk
+    type: party
+    short: KESK
+    name: Centre Party
+    colour: '#3AAD2E'
+    partyfacts_id: 901
+    lr_score: null
+    lr_source: pending
+  - party_id: fi-vas
+    type: party
+    short: VAS
+    name: Left Alliance
+    colour: '#F00A64'
+    partyfacts_id: 1044
+    lr_score: null
+    lr_source: pending
+  - party_id: fi-vihr
+    type: party
+    short: VIHR
+    name: Green League
+    colour: '#006845'
+    partyfacts_id: 479
+    lr_score: null
+    lr_source: pending
+  - party_id: fi-sfp
+    type: party
+    short: SFP
+    name: Swedish People's Party of Finland
+    colour: '#FFDD93'
+    partyfacts_id: 1229
+    lr_score: null
+    lr_source: pending
+  - party_id: fi-kd
+    type: party
+    short: KD
+    name: Christian Democrats
+    colour: '#2B67C9'
+    partyfacts_id: 703
+    lr_score: null
+    lr_source: pending
+  - party_id: fi-liik
+    type: party
+    short: LIIK
+    name: Movement Now
+    colour: '#AE2375'
+    partyfacts_id: 8639
+    lr_score: null
+    lr_source: pending

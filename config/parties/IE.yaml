@@ -1,0 +1,81 @@
+# Ireland. Drafted by tools/propose_parties.py from the pinned Wikipedia fixture for ie-parl-next:
+# short names, full names and colours are read from the polling table's header (CC BY-SA 4.0).
+# Party Facts ids, where present, come from Europolls (github.com/gfrt0/europolls,
+# config/party_mappings/IE.yaml; CC BY-SA 4.0) and are not yet checked against Party Facts itself.
+# Left-right scores are pending. An alliance row with members is a joint list: one figure a pollster
+# gives for several columns.
+schema_version: 1
+country: IE
+parties:
+  - party_id: ie-ff
+    type: party
+    short: FF
+    name: Fianna Fáil
+    colour: '#66BB66'
+    partyfacts_id: 1055
+    lr_score: null
+    lr_source: pending
+  - party_id: ie-fg
+    type: party
+    short: FG
+    name: Fine Gael
+    colour: '#6699FF'
+    partyfacts_id: 1288
+    lr_score: null
+    lr_source: pending
+  - party_id: ie-sf
+    type: party
+    short: SF
+    name: Sinn Féin
+    colour: '#326760'
+    partyfacts_id: 4
+    lr_score: null
+    lr_source: pending
+  - party_id: ie-sd
+    type: party
+    short: SD
+    name: Social Democrats
+    colour: '#752F8B'
+    partyfacts_id: 4870
+    lr_score: null
+    lr_source: pending
+  - party_id: ie-lab
+    type: party
+    short: Lab
+    name: Labour Party
+    colour: '#CC0000'
+    partyfacts_id: 562
+    lr_score: null
+    lr_source: pending
+  - party_id: ie-aon
+    type: party
+    short: Aon
+    name: Aontú
+    colour: '#44532A'
+    partyfacts_id: 8642
+    lr_score: null
+    lr_source: pending
+  - party_id: ie-ii
+    type: party
+    short: II
+    name: Independent Ireland
+    colour: '#3BEE56'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: ie-gp
+    type: party
+    short: GP
+    name: Green Party
+    colour: '#22AC6F'
+    partyfacts_id: 1775
+    lr_score: null
+    lr_source: pending
+  - party_id: ie-pbp-s
+    type: party
+    short: PBP–S
+    name: People Before Profit–Solidarity
+    colour: '#FF0090'
+    partyfacts_id: 242
+    lr_score: null
+    lr_source: pending
