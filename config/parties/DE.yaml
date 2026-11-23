@@ -1,0 +1,111 @@
+# Germany. Labels as DAWUM prints them. Party Facts ids and most colours come from Europolls
+# (github.com/gfrt0/europolls: config/party_mappings/DE.yaml, config/party_colors.yaml; CC BY-SA 4.0).
+# Left-right scores are pending: see docs/DATA_SOURCES.md, Chapel Hill Expert Survey.
+# DAWUM parties without a row here (Piraten, Volt, Tierschutzpartei and others) are folded into Others.
+schema_version: 1
+country: DE
+parties:
+  - party_id: de-union
+    type: alliance
+    short: CDU/CSU
+    name: Christlich Demokratische Union / Christlich-Soziale Union
+    name_en: CDU/CSU (Union)
+    colour: "#000000"
+    partyfacts_id: 211
+    lr_score: null
+    lr_source: pending
+    members: [de-cdu, de-csu]
+    aliases: [Union]
+  - party_id: de-cdu
+    type: party
+    short: CDU
+    name: Christlich Demokratische Union
+    name_en: Christian Democratic Union
+    colour: "#000000"
+    partyfacts_id: 1375
+    lr_score: null
+    lr_source: pending
+  - party_id: de-csu
+    type: party
+    short: CSU
+    name: Christlich-Soziale Union
+    name_en: Christian Social Union
+    colour: "#008AC5"
+    partyfacts_id: 1731
+    lr_score: null
+    lr_source: pending
+  - party_id: de-afd
+    type: party
+    short: AfD
+    name: Alternative für Deutschland
+    name_en: Alternative for Germany
+    colour: "#009EE0"
+    partyfacts_id: 1976
+    lr_score: null
+    lr_source: pending
+  - party_id: de-spd
+    type: party
+    short: SPD
+    name: Sozialdemokratische Partei Deutschlands
+    name_en: Social Democratic Party
+    colour: "#E3000F"
+    partyfacts_id: 383
+    lr_score: null
+    lr_source: pending
+  - party_id: de-gruene
+    type: party
+    short: Grüne
+    name: Bündnis 90/Die Grünen
+    name_en: Greens
+    colour: "#46962B"
+    partyfacts_id: 1816
+    lr_score: null
+    lr_source: pending
+    aliases: [Die Grünen, B90/Grüne]
+  - party_id: de-linke
+    type: party
+    short: Linke
+    name: Die Linke
+    name_en: The Left
+    colour: "#BE3075"
+    partyfacts_id: 1545
+    lr_score: null
+    lr_source: pending
+  - party_id: de-bsw
+    type: party
+    short: BSW
+    name: Bündnis für soziale Gerechtigkeit und wirtschaftliche Vernunft
+    name_en: BSW
+    colour: "#7A1A6F"
+    partyfacts_id: 9646
+    lr_score: null
+    lr_source: pending
+    aliases: [Bündnis Sahra Wagenknecht]
+  - party_id: de-fdp
+    type: party
+    short: FDP
+    name: Freie Demokratische Partei
+    name_en: Free Democratic Party
+    colour: "#FFED00"
+    partyfacts_id: 573
+    lr_score: null
+    lr_source: pending
+  - party_id: de-fw
+    type: party
+    short: Freie Wähler
+    name: Freie Wähler
+    name_en: Free Voters
+    colour: "#F29204"
+    partyfacts_id: 1090
+    lr_score: null
+    lr_source: pending
+    aliases: [FW]
+  - party_id: de-ssw
+    type: party
+    short: SSW
+    name: Südschleswigscher Wählerverband
+    name_en: South Schleswig Voters' Association
+    colour: "#003C8F"
+    partyfacts_id: 50
+    lr_score: null
+    lr_source: pending

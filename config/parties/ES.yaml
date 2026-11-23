@@ -1,0 +1,158 @@
+# Spain. Drafted by tools/propose_parties.py from the pinned Wikipedia fixture(s) for es-parl-2026:
+# short names, full names and colours are read from the polling tables' headers (CC BY-SA 4.0).
+# Party Facts ids, where present, come from Europolls (github.com/gfrt0/europolls,
+# config/party_mappings/ES.yaml; CC BY-SA 4.0) and are not yet checked against Party Facts itself.
+# Left-right scores are pending: see docs/DATA_SOURCES.md, Chapel Hill Expert Survey.
+# An alliance row with members is a joint list: one figure a pollster gives for several columns.
+schema_version: 1
+country: ES
+parties:
+  - party_id: es-pp
+    type: party
+    short: PP
+    name: PP
+    colour: '#1D84CE'
+    partyfacts_id: 441
+    lr_score: null
+    lr_source: pending
+  - party_id: es-psoe
+    type: party
+    short: PSOE
+    name: PSOE
+    colour: '#EF1C27'
+    partyfacts_id: 1338
+    lr_score: null
+    lr_source: pending
+  - party_id: es-vox
+    type: party
+    short: Vox
+    name: Vox
+    colour: '#63BE21'
+    partyfacts_id: 3218
+    lr_score: null
+    lr_source: pending
+  - party_id: es-fa
+    type: party
+    short: FA
+    name: FA
+    colour: '#F07901'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-fv
+    type: party
+    short: FV
+    name: FV
+    colour: '#E84D00'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-erc
+    type: party
+    short: ERC
+    name: ERC
+    colour: '#FFB232'
+    partyfacts_id: 848
+    lr_score: null
+    lr_source: pending
+  - party_id: es-junts
+    type: party
+    short: Junts
+    name: Junts
+    colour: '#00C7AE'
+    partyfacts_id: 7421
+    lr_score: null
+    lr_source: pending
+  - party_id: es-eh-bildu
+    type: party
+    short: EH Bildu
+    name: EH Bildu
+    colour: '#00AC8E'
+    partyfacts_id: 5668
+    lr_score: null
+    lr_source: pending
+  - party_id: es-pnv
+    type: party
+    short: PNV
+    name: PNV
+    colour: '#4AAE4A'
+    partyfacts_id: 1637
+    lr_score: null
+    lr_source: pending
+  - party_id: es-bng
+    type: party
+    short: BNG
+    name: BNG
+    colour: '#ADCFEF'
+    partyfacts_id: 1011
+    lr_score: null
+    lr_source: pending
+  - party_id: es-cca
+    type: party
+    short: CCa
+    name: CCa
+    colour: '#FFD700'
+    partyfacts_id: 81
+    lr_score: null
+    lr_source: pending
+  - party_id: es-adelante-andalucia
+    type: party
+    short: Adelante Andalucía
+    name: Adelante Andalucía
+    colour: '#24C87E'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Adelante Andalucía (2021)
+  - party_id: es-podemos
+    type: party
+    short: Podemos
+    name: Podemos
+    colour: '#9269F5'
+    partyfacts_id: 3203
+    lr_score: null
+    lr_source: pending
+  - party_id: es-salf
+    type: party
+    short: SALF
+    name: Se Acabó La Fiesta
+    colour: '#785A46'
+    partyfacts_id: 9816
+    lr_score: null
+    lr_source: pending
+  - party_id: es-sumar
+    type: party
+    short: Sumar
+    name: Sumar
+    colour: '#EF4B91'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-upn
+    type: party
+    short: UPN
+    name: UPN
+    colour: '#00599B'
+    partyfacts_id: 722
+    lr_score: null
+    lr_source: pending
+  - party_id: es-alianca-cat
+    type: party
+    short: Aliança.cat
+    name: Aliança.cat
+    colour: '#064A81'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-fa-fv
+    type: alliance
+    short: FA+FV
+    name: 'Joint list: FA, FV'
+    colour: '#F07901'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    members:
+    - es-fa
+    - es-fv

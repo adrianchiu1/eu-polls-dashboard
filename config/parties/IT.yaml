@@ -1,0 +1,189 @@
+# Italy. Drafted by tools/propose_parties.py from the pinned Wikipedia fixture(s) for it-parl-2027:
+# short names, full names and colours are read from the polling tables' headers (CC BY-SA 4.0).
+# Party Facts ids, where present, come from Europolls (github.com/gfrt0/europolls,
+# config/party_mappings/IT.yaml; CC BY-SA 4.0) and are not yet checked against Party Facts itself.
+# Left-right scores are pending: see docs/DATA_SOURCES.md, Chapel Hill Expert Survey.
+# An alliance row with members is a joint list: one figure a pollster gives for several columns.
+# Coalition totals (CSX, CDX) are not defined here yet: membership is judgement IT-001 and waits for AC.
+schema_version: 1
+country: IT
+parties:
+  - party_id: it-fdi
+    type: party
+    short: FdI
+    name: Brothers of Italy
+    colour: '#03386A'
+    partyfacts_id: 2280
+    lr_score: null
+    lr_source: pending
+  - party_id: it-pd
+    type: party
+    short: PD
+    name: Democratic Party
+    colour: '#EF1C27'
+    partyfacts_id: 802
+    lr_score: null
+    lr_source: pending
+  - party_id: it-m5s
+    type: party
+    short: M5S
+    name: Five Star Movement
+    colour: '#FFEB3B'
+    partyfacts_id: 2046
+    lr_score: null
+    lr_source: pending
+  - party_id: it-lega
+    type: party
+    short: Lega
+    name: Lega
+    colour: '#008000'
+    partyfacts_id: 1221
+    lr_score: null
+    lr_source: pending
+  - party_id: it-fi
+    type: party
+    short: FI
+    name: Forza Italia
+    colour: '#0087DC'
+    partyfacts_id: 8058
+    lr_score: null
+    lr_source: pending
+  - party_id: it-a
+    type: party
+    short: A
+    name: Action
+    colour: '#0039AA'
+    partyfacts_id: 9082
+    lr_score: null
+    lr_source: pending
+  - party_id: it-iv
+    type: party
+    short: IV
+    name: Italia Viva
+    colour: '#D6418C'
+    partyfacts_id: 8641
+    lr_score: null
+    lr_source: pending
+  - party_id: it-avs
+    type: party
+    short: AVS
+    name: Greens and Left Alliance
+    colour: '#BE3457'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: it-pluse
+    type: party
+    short: +E
+    name: More Europe
+    colour: '#888888'
+    partyfacts_id: 6155
+    lr_score: null
+    lr_source: pending
+  - party_id: it-nm
+    type: party
+    short: NM
+    name: Us Moderates
+    colour: '#43528F'
+    partyfacts_id: 9513
+    lr_score: null
+    lr_source: pending
+  - party_id: it-scn
+    type: party
+    short: ScN
+    name: South calls North
+    colour: '#F2AB14'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: it-pld
+    type: party
+    short: PLD
+    name: Liberal Democratic Party
+    colour: '#43B8E0'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: it-fn
+    type: party
+    short: FN
+    name: National Future
+    colour: '#20293D'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: it-dsp
+    type: party
+    short: DSP
+    name: Sovereign Popular Democracy
+    colour: '#690A26'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: it-ptd
+    type: party
+    short: PTD
+    name: Peace Land Dignity
+    colour: '#C20008'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: it-sue
+    type: party
+    short: SUE
+    name: United States of Europe
+    colour: '#FDC010'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: it-liberta
+    type: party
+    short: Libertà
+    name: Freedom
+    colour: '#075271'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: it-ap
+    type: party
+    short: AP
+    name: Popular Alternative
+    colour: '#0158A8'
+    partyfacts_id: 9090
+    lr_score: null
+    lr_source: pending
+  - party_id: it-italexit
+    type: party
+    short: Italexit
+    name: Italexit
+    colour: '#366A9F'
+    partyfacts_id: 9081
+    lr_score: null
+    lr_source: pending
+  - party_id: it-up
+    type: party
+    short: UP
+    name: People's Union
+    colour: '#71256A'
+    partyfacts_id: 9081
+    lr_score: null
+    lr_source: pending
+  - party_id: it-a-iv
+    type: alliance
+    short: A–IV
+    name: Action – Italia Viva
+    colour: '#243683'
+    partyfacts_id: 9082
+    lr_score: null
+    lr_source: pending
+    members:
+    - it-a
+    - it-iv
+  - party_id: it-isp
+    type: party
+    short: ISP
+    name: Sovereign and Popular Italy
+    colour: '#B04E4E'
+    partyfacts_id: 9127
+    lr_score: null
+    lr_source: pending

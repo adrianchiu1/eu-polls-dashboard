@@ -5,6 +5,10 @@
 #           false  best guess; resolve through the source's API and correct this file
 # Wikipedia locators are article titles after following redirects, so a fetch pins the right page.
 # priority: 1 is the primary source for the contest; higher numbers are cross-checks.
+# selector: for the wikipedia adapter, key=value pairs read by pipeline/adapters/wikipedia.py (its
+#           docstring lists the keys). Entries still in prose have no parser yet (Phase 3).
+# column_map: header label -> party id, or a role (pollster, date, sample, client, area, ignore),
+#           for labels the party file's short names and aliases do not already cover.
 schema_version: 1
 sources:
   # ---------------------------------------------------------------- Germany (DAWUM)
@@ -62,7 +66,7 @@ sources:
   - contest_id: fr-pres-2027
     adapter: wikipedia
     locator: Opinion polling for the 2027 French presidential election
-    selector: First-round tables by line-up; second-round match-up tables
+    selector: top=First round; round2_top=Second round; exclude=No longer candidates; lineups=field
     column_map: {}
     priority: 1
     verified: true
@@ -72,7 +76,7 @@ sources:
   - contest_id: fr-parl-next
     adapter: wikipedia
     locator: Next French legislative election
-    selector: Opinion polling section, first-round table
+    selector: top=Opinion polls
     column_map: {}
     priority: 1
     verified: true
@@ -85,7 +89,7 @@ sources:
   - contest_id: it-parl-2027
     adapter: wikipedia
     locator: Opinion polling for the next Italian general election
-    selector: Party vote table for the current year, plus yearly sub-articles if split
+    selector: top=Party vote; exclude=Graphical summary
     column_map: {}
     priority: 1
     verified: true
@@ -97,7 +101,7 @@ sources:
   - contest_id: es-parl-2026
     adapter: wikipedia
     locator: Opinion polling for the 2026 Spanish general election
-    selector: Voting intention estimates table, with seat ranges
+    selector: under=Voting intention estimates; sums=partial
     column_map: {}
     priority: 1
     verified: true
@@ -110,7 +114,7 @@ sources:
   - contest_id: uk-parl-next
     adapter: wikipedia
     locator: Opinion polling for the next United Kingdom general election
-    selector: National poll results table for the current year
+    selector: top=National poll results
     column_map: {}
     priority: 1
     verified: true

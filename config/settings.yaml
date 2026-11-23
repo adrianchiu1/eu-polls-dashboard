@@ -36,6 +36,8 @@ validation:
   share_sum_max_pct: 105.0
   swing_flag_points: 10.0
   cross_source_disagreement_points: 1.0
+  fail_pull_if_dropped_above_pct: 20.0        # more polls than this failing a hard rule fails the pull
+  fail_pull_if_polls_below_last_good_pct: 80.0  # a pull with fewer polls than this share of the last good file fails
 
 staleness:
   fetch_interval_hours: 24
