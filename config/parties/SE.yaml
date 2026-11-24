@@ -1,5 +1,7 @@
 # Sweden. Short names are the column names of SwedishPolls' Data/Polls.csv (github.com/MansMeg/SwedishPolls).
-# Colours and Party Facts ids come from Europolls (github.com/gfrt0/europolls; CC BY-SA 4.0).
+# Party Facts ids come from Europolls (github.com/gfrt0/europolls; CC BY-SA 4.0). Colours are the party
+# colours in the header of Wikipedia's "Opinion polling for the 2026 Swedish general election"
+# (revision 1383958946), read on 24 Nov 2026.
 # Left-right scores are pending. The FI column has no row here; its figures fold into Others.
 schema_version: 1
 country: SE
@@ -9,7 +11,7 @@ parties:
     short: S
     name: Socialdemokraterna
     name_en: Social Democrats
-    colour: '#CB1B25'
+    colour: '#ED1B34'
     partyfacts_id: 487
     lr_score: null
     lr_source: pending
@@ -18,7 +20,7 @@ parties:
     short: M
     name: Moderaterna
     name_en: Moderates
-    colour: '#52BDEC'
+    colour: '#019CDB'
     partyfacts_id: 690
     lr_score: null
     lr_source: pending
@@ -27,7 +29,7 @@ parties:
     short: SD
     name: Sverigedemokraterna
     name_en: Sweden Democrats
-    colour: '#0E274C'
+    colour: '#FEDF09'
     partyfacts_id: 409
     lr_score: null
     lr_source: pending
@@ -36,7 +38,7 @@ parties:
     short: C
     name: Centerpartiet
     name_en: Centre Party
-    colour: '#006A33'
+    colour: '#114838'
     partyfacts_id: 199
     lr_score: null
     lr_source: pending
@@ -45,7 +47,7 @@ parties:
     short: V
     name: Vänsterpartiet
     name_en: Left Party
-    colour: '#BC2026'
+    colour: '#B00000'
     partyfacts_id: 830
     lr_score: null
     lr_source: pending
@@ -54,7 +56,7 @@ parties:
     short: KD
     name: Kristdemokraterna
     name_en: Christian Democrats
-    colour: '#072D5B'
+    colour: '#231977'
     partyfacts_id: 651
     lr_score: null
     lr_source: pending
@@ -63,7 +65,7 @@ parties:
     short: L
     name: Liberalerna
     name_en: Liberals
-    colour: '#006AB4'
+    colour: '#006AB3'
     partyfacts_id: 1274
     lr_score: null
     lr_source: pending
@@ -72,7 +74,7 @@ parties:
     short: MP
     name: Miljöpartiet
     name_en: Green Party
-    colour: '#538234'
+    colour: '#2B912C'
     partyfacts_id: 456
     lr_score: null
     lr_source: pending

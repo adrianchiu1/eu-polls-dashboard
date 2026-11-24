@@ -159,7 +159,7 @@ parties:
     type: alliance
     short: NFP
     name: New Popular Front
-    colour: '#56277E'
+    colour: '#E50241'
     partyfacts_id: null
     lr_score: null
     lr_source: pending
