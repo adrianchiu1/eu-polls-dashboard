@@ -12,8 +12,8 @@ parties:
     name_en: CDU/CSU (Union)
     colour: "#000000"
     partyfacts_id: 211
-    lr_score: null
-    lr_source: pending
+    lr_score: 6.79
+    lr_source: ches2024
     members: [de-cdu, de-csu]
     aliases: [Union]
   - party_id: de-cdu
