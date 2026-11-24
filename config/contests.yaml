@@ -355,6 +355,7 @@ contests:
     date_status: expected
     rounds: 1
     status: upcoming
+    previous_date: 2023-05-28
     source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
     last_verified: 2026-11-23
     verification: opened
@@ -368,6 +369,7 @@ contests:
     date_status: expected
     rounds: 1
     status: upcoming
+    previous_date: 2023-05-28
     source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
     last_verified: 2026-11-23
     verification: opened
@@ -381,6 +383,7 @@ contests:
     date_status: expected
     rounds: 1
     status: upcoming
+    previous_date: 2023-05-28
     source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
     last_verified: 2026-11-23
     verification: opened
@@ -394,6 +397,7 @@ contests:
     date_status: expected
     rounds: 1
     status: upcoming
+    previous_date: 2023-05-28
     source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
     last_verified: 2026-11-23
     verification: opened
@@ -407,6 +411,7 @@ contests:
     date_status: expected
     rounds: 1
     status: upcoming
+    previous_date: 2023-05-28
     source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
     last_verified: 2026-11-23
     verification: opened
@@ -420,6 +425,7 @@ contests:
     date_status: expected
     rounds: 1
     status: upcoming
+    previous_date: 2023-05-28
     source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
     last_verified: 2026-11-23
     verification: opened
@@ -433,6 +439,7 @@ contests:
     date_status: expected
     rounds: 1
     status: upcoming
+    previous_date: 2023-05-28
     source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
     last_verified: 2026-11-23
     verification: opened
@@ -446,6 +453,7 @@ contests:
     date_status: expected
     rounds: 1
     status: upcoming
+    previous_date: 2023-05-28
     source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
     last_verified: 2026-11-23
     verification: opened
@@ -459,6 +467,7 @@ contests:
     date_status: expected
     rounds: 1
     status: upcoming
+    previous_date: 2023-05-28
     source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
     last_verified: 2026-11-23
     verification: opened
@@ -472,6 +481,7 @@ contests:
     date_status: expected
     rounds: 1
     status: upcoming
+    previous_date: 2023-05-28
     source_url: https://en.wikipedia.org/wiki/2027_elections_in_the_European_Union
     last_verified: 2026-11-23
     verification: opened
@@ -584,6 +594,7 @@ contests:
     date_status: expected
     rounds: 1
     status: upcoming
+    previous_date: 2022-09-25
     source_url: https://www.tt.com/artikel/30944217/wahlen-in-einem-jahr-startet-der-landtagswahl-reigen
     last_verified: 2026-11-23
     verification: opened
@@ -897,6 +908,7 @@ contests:
     date_status: fixed
     rounds: 1
     status: upcoming
+    previous_date: 2022-05-05
     source_url: https://rm.coe.int/calendar-elections-2027/48802e15c4
     last_verified: 2026-11-23
     verification: opened
