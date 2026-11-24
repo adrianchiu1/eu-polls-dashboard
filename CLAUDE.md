@@ -18,13 +18,16 @@ wants the spec implemented, not redesigned. Read this file, then `SPEC.md`, befo
 4. `docs/PLATFORM_NOTES.md` — Streamlit Community Cloud limits and how review artifacts are made.
 5. `config/` — seeded configuration. `schemas/` — its JSON Schemas. `tools/validate_config.py` checks it.
 
-Current state: Phase 2 (all 18 national panels), awaiting AC's review. `pipeline/` has the DAWUM,
+Current state: Phase 3 (sub-national contests), awaiting AC's review. Phases 0 to 2 are on `main`. `pipeline/` has the DAWUM,
 Wikipedia and SwedishPolls adapters, validation, the average and the daily runner
 (`python -m pipeline.run`); `app/` has the six-zone country view, Overview and Method;
 `scripts/snapshot.py` renders the same pages. Belgium headlines three regional panels, the Netherlands
 is in seats, and six presidential-first tabs show "not yet polled" above their parliament.
-Not built yet: `pipeline/triggers.py`, Spanish seat ranges, sub-national contests outside Germany
-(Phase 3), and a source for any presidential contest other than France's.
+Sub-national sections cover the German Länder (DAWUM) and, from Wikipedia, Northern Ireland, Scotland
+(two panels), Wales, Tyrol and ten Spanish communities; the Dutch provinces, Upper Austria, the
+Norwegian counties, Sicily and Åland have no article yet and read "not yet polled".
+Not built yet: `pipeline/triggers.py` and the weekly check (Phase 4), seat figures, and a source for
+any presidential contest other than France's.
 
 ## Rules that do not bend
 
