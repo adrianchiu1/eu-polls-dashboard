@@ -4169,3 +4169,13 @@ no-parl-2029,default,1,2026-11-23,no-sp,5.3345,10,6,60,volatility,low_coverage
 no-parl-2029,default,1,2026-11-23,no-sv,4.8352,10,6,60,volatility,low_coverage
 no-parl-2029,default,1,2026-11-23,no-v,3.5896,10,6,60,volatility,low_coverage
 no-parl-2029,default,1,2026-11-23,others,2.2397,10,6,60,volatility,low_coverage
+no-parl-2029,default,1,2026-11-24,no-ap,21.6233,10,6,60,volatility,low_coverage
+no-parl-2029,default,1,2026-11-24,no-frp,33.3605,10,6,60,volatility,low_coverage
+no-parl-2029,default,1,2026-11-24,no-h,13.3003,10,6,60,volatility,low_coverage
+no-parl-2029,default,1,2026-11-24,no-krf,3.6688,10,6,60,volatility,low_coverage
+no-parl-2029,default,1,2026-11-24,no-mdg,4.1621,10,6,60,volatility,low_coverage
+no-parl-2029,default,1,2026-11-24,no-r,7.8517,10,6,60,volatility,low_coverage
+no-parl-2029,default,1,2026-11-24,no-sp,5.3345,10,6,60,volatility,low_coverage
+no-parl-2029,default,1,2026-11-24,no-sv,4.8352,10,6,60,volatility,low_coverage
+no-parl-2029,default,1,2026-11-24,no-v,3.5896,10,6,60,volatility,low_coverage
+no-parl-2029,default,1,2026-11-24,others,2.2397,10,6,60,volatility,low_coverage

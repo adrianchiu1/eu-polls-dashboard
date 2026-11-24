@@ -23,6 +23,10 @@ parties:
     partyfacts_id: 1338
     lr_score: 3.81
     lr_source: ches2024
+    aliases:
+    - PSPV
+    - PSIB–PSOE
+    - PSN–PSOE
   - party_id: es-vox
     type: party
     short: Vox
@@ -156,3 +160,204 @@ parties:
     members:
     - es-fa
     - es-fv
+  # Regional parties, drafted from the sub-national polling tables (Phase 3).
+  - party_id: es-cxast
+    type: party
+    short: CxAst
+    name: CxAst
+    colour: '#A70E25'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-foro
+    type: party
+    short: Foro
+    name: Foro
+    colour: '#4AC0FF'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-sos
+    type: party
+    short: SOS
+    name: Empty Spain
+    colour: '#1A222F'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-cs
+    type: party
+    short: CS
+    name: CS
+    colour: '#EB6109'
+    partyfacts_id: 3217
+    lr_score: null
+    lr_source: pending
+  - party_id: es-nca
+    type: party
+    short: NCa
+    name: NCa
+    colour: '#639E42'
+    partyfacts_id: 2538
+    lr_score: null
+    lr_source: pending
+  - party_id: es-usp
+    type: party
+    short: USP
+    name: Podemos
+    colour: '#9269F5'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-dvc
+    type: party
+    short: DVC
+    name: DVC
+    colour: '#232323'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-uxgc
+    type: party
+    short: UxGC
+    name: UxGC
+    colour: '#26348C'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-asg
+    type: party
+    short: ASG
+    name: ASG
+    colour: '#B61414'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-ahi
+    type: party
+    short: AHI
+    name: AHI
+    colour: '#29AA4D'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-1o-can
+    type: party
+    short: 1º CAN
+    name: 1º CAN
+    colour: '#0099A9'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-prc
+    type: party
+    short: PRC
+    name: PRC
+    colour: '#C2CE0C'
+    partyfacts_id: 2538
+    lr_score: null
+    lr_source: pending
+  - party_id: es-unidas-podemos
+    type: party
+    short: Unidas Podemos
+    name: Podemos
+    colour: '#9269F5'
+    partyfacts_id: 7656
+    lr_score: null
+    lr_source: pending
+  - party_id: es-c
+    type: party
+    short: C
+    name: C
+    colour: '#7D002E'
+    partyfacts_id: 3217
+    lr_score: null
+    lr_source: pending
+  - party_id: es-compromis
+    type: party
+    short: Compromís
+    name: Compromís
+    colour: '#EC8953'
+    partyfacts_id: 5623
+    lr_score: null
+    lr_source: pending
+  - party_id: es-mes
+    type: party
+    short: Més
+    name: Més
+    colour: '#D8DE40'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-el-pi
+    type: party
+    short: El Pi
+    name: El Pi
+    colour: '#0BD5AE'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-mxme
+    type: party
+    short: MxMe
+    name: MxMe
+    colour: '#BCD500'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-sa-unio
+    type: party
+    short: Sa Unió
+    name: Sa Unió
+    colour: '#009FDD'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-gxf
+    type: party
+    short: GxF
+    name: GxF
+    colour: '#96104E'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-prplus
+    type: party
+    short: PR+
+    name: PR+
+    colour: '#00AA42'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-mas-madrid
+    type: party
+    short: Más Madrid
+    name: Más Madrid
+    colour: '#45BB89'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-mcc
+    type: party
+    short: MCC
+    name: MCC
+    colour: '#87305B'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: es-gbai
+    type: party
+    short: GBai
+    name: GBai
+    colour: '#F75E42'
+    partyfacts_id: 8358
+    lr_score: null
+    lr_source: pending
+  - party_id: es-c-z
+    type: party
+    short: C/Z
+    name: Contigo Navarra
+    colour: '#9A568F'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending

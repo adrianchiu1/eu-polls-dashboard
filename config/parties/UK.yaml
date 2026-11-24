@@ -39,6 +39,8 @@ parties:
     partyfacts_id: 1388
     lr_score: 3.86
     lr_source: ches2024
+    aliases:
+    - Lib Dems
   - party_id: uk-grn
     type: party
     short: Grn
@@ -69,5 +71,104 @@ parties:
     name: Restore Britain
     colour: '#051D3F'
     partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  # Regional parties, drafted from the sub-national polling tables (Phase 3).
+  - party_id: uk-sf
+    type: party
+    short: SF
+    name: Sinn Féin
+    colour: '#326760'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - SF N
+  - party_id: uk-dup
+    type: party
+    short: DUP
+    name: Democratic Unionist Party
+    colour: '#D46A4C'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - DUP U
+  - party_id: uk-apni
+    type: party
+    short: APNI
+    name: Alliance Party of Northern Ireland
+    colour: '#F6CB2F'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - APNI O
+  - party_id: uk-uup
+    type: party
+    short: UUP
+    name: Ulster Unionist Party
+    colour: '#6CA8C9'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - UUP U
+  - party_id: uk-sdlp
+    type: party
+    short: SDLP
+    name: Social Democratic and Labour Party
+    colour: '#FF0000'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - SDLP N
+  - party_id: uk-tuv
+    type: party
+    short: TUV
+    name: Traditional Unionist Voice
+    colour: '#201863'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - TUV U
+  - party_id: uk-green
+    type: party
+    short: Green
+    name: Green Party Northern Ireland
+    colour: '#8DC63F'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Green O
+  - party_id: uk-aont
+    type: party
+    short: Aontú
+    name: Aontú
+    colour: '#44532A'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Aontú N
+  - party_id: uk-pbp
+    type: party
+    short: PBP
+    name: People Before Profit
+    colour: '#E91D50'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - PBP O
+  - party_id: uk-greens
+    type: party
+    short: Greens
+    name: Scottish Greens
+    colour: '#00B140'
+    partyfacts_id: 1794
     lr_score: null
     lr_source: pending

@@ -35,9 +35,38 @@ def country(code: str) -> dict:
     raise KeyError(code)
 
 
+_MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october",
+           "november", "december"]
+_SEASON_END = {"winter": (3, 31), "spring": (6, 30), "summer": (9, 30), "autumn": (12, 31)}
+
+
+def window_end(text: str) -> dt.date | None:
+    """The latest day an `expected_window` allows: an ISO date in it, else the end of the month,
+    season or year it names. 'about 2027-09-26 (likely)' -> 26 Sep 2027; 'autumn 2028' -> 31 Dec 2028."""
+    import calendar
+    import re
+
+    iso = re.search(r"\b(\d{4})-(\d{2})-(\d{2})\b", text)
+    if iso:
+        return dt.date(*map(int, iso.groups()))
+    year = re.search(r"\b(20\d{2})\b", text)
+    if not year:
+        return None
+    y, low = int(year.group(1)), text.lower()
+    for i, month in enumerate(_MONTHS, start=1):
+        if month in low:
+            return dt.date(y, i, calendar.monthrange(y, i)[1])
+    for season, (m, d) in _SEASON_END.items():
+        if season in low:
+            return dt.date(y, m, d)
+    return dt.date(y, 12, 31)
+
+
 def contest_sort_date(contest: dict) -> dt.date:
-    """The date a contest sorts by: its date, else its legal deadline, else last."""
-    return contest.get("date") or contest.get("deadline") or FAR_FUTURE
+    """The date a contest sorts by and is counted in a window by: its date, else its legal
+    deadline, else the end of its expected window, else last."""
+    return (contest.get("date") or contest.get("deadline")
+            or window_end(contest.get("expected_window") or "") or FAR_FUTURE)
 
 
 def contests(country_code: str | None = None) -> list[dict]:
@@ -76,3 +105,14 @@ def panel_id(panel: str) -> str:
     import re
 
     return re.sub(r"[^a-z0-9]+", "-", panel.lower()).strip("-")
+
+
+def panels(contest_id: str) -> list[str]:
+    """The named panels a contest is polled in (Belgium's regions, Scotland's two votes), in source
+    order; empty for an ordinary contest. Read from the `panels=` key of the contest's selector."""
+    for source in sources(contest_id):
+        for part in source["selector"].split(";"):
+            key, _, value = part.partition("=")
+            if key.strip() == "panels":
+                return [v.strip() for v in value.split("|") if v.strip()]
+    return []

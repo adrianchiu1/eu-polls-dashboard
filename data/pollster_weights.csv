@@ -1,97 +1,96 @@
 contest_id,date,pollster,volatility,volatility_source,n_polls_lookback,n_polls_in_window,weight_share
-de-parl-2029,2026-11-23,Forsa,0.7582,own,50,4,0.115349
-de-parl-2029,2026-11-23,Forschungsgruppe Wahlen,0.7891,own,17,1,0.106474
-de-parl-2029,2026-11-23,INSA,0.5946,own,102,8,0.18752
-de-parl-2029,2026-11-23,Infratest dimap,0.6928,own,12,1,0.138159
-de-parl-2029,2026-11-23,Ipsos,0.753,own,12,1,0.11694
-de-parl-2029,2026-11-23,Verian (Emnid),0.5221,own,13,1,0.243257
-de-parl-2029,2026-11-23,YouGov,0.8476,own,12,1,0.0923
-es-parl-2026,2026-11-23,40dB,0.6663,own,22,11,0.016965
-es-parl-2026,2026-11-23,Ateneo del Dato,0.4908,median,0,1,0.031267
-es-parl-2026,2026-11-23,CIS,0.7399,own,12,2,0.013759
-es-parl-2026,2026-11-23,CIS (Ateneo del Dato),0.9937,own,8,1,0.007627
-es-parl-2026,2026-11-23,CIS (Descifrando la Guerra),0.4908,median,0,1,0.031267
-es-parl-2026,2026-11-23,CIS (Opina 360),0.4908,median,0,1,0.031267
-es-parl-2026,2026-11-23,Celeste-Tel,0.4908,median,0,1,0.031267
-es-parl-2026,2026-11-23,Cluster17,0.4908,median,0,2,0.031267
-es-parl-2026,2026-11-23,Convergent Opinion,0.4908,median,0,1,0.031267
-es-parl-2026,2026-11-23,DYM,0.6516,own,9,2,0.01774
-es-parl-2026,2026-11-23,Data10,0.4622,own,11,8,0.03526
-es-parl-2026,2026-11-23,EM-Analytics,0.4644,own,64,15,0.034922
-es-parl-2026,2026-11-23,GAD3,0.4908,median,0,2,0.031267
-es-parl-2026,2026-11-23,GESOP,0.4908,median,0,1,0.031267
-es-parl-2026,2026-11-23,Hamalgama Métrica,0.4908,median,0,2,0.031267
-es-parl-2026,2026-11-23,IMOP,0.4908,median,0,3,0.031267
-es-parl-2026,2026-11-23,InvyMark,0.491,own,8,2,0.031236
-es-parl-2026,2026-11-23,Ipsos,0.4908,median,0,1,0.031267
-es-parl-2026,2026-11-23,Metroscopia,0.4908,median,0,1,0.031267
-es-parl-2026,2026-11-23,More in Common,0.4908,median,0,2,0.031267
-es-parl-2026,2026-11-23,NC Report,0.4357,own,13,4,0.039676
-es-parl-2026,2026-11-23,PSOE,0.4908,median,0,1,0.031267
-es-parl-2026,2026-11-23,Public First,0.4908,median,0,1,0.031267
-es-parl-2026,2026-11-23,SW Demoscopia,0.2301,own,18,18,0.093801
-es-parl-2026,2026-11-23,Sigma Dos,0.4387,own,25,12,0.039135
-es-parl-2026,2026-11-23,SocioMétrica,0.3529,own,17,6,0.060479
-es-parl-2026,2026-11-23,Sondaxe,0.4906,own,11,11,0.031298
-es-parl-2026,2026-11-23,Target Point,0.7018,own,11,3,0.015294
-es-parl-2026,2026-11-23,Vox,0.4908,median,0,1,0.031267
-es-parl-2026,2026-11-23,Winston,0.4908,median,0,2,0.031267
-es-parl-2026,2026-11-23,YouGov,0.4908,median,0,1,0.031267
-fr-pres-2027,2026-11-23,Cluster17,0.8824,own,6,1,0.235463
-fr-pres-2027,2026-11-23,Elabe,1.055,median,0,1,0.164737
-fr-pres-2027,2026-11-23,Harris Interactive,0.8577,own,6,2,0.249252
-fr-pres-2027,2026-11-23,Ifop,1.6908,own,7,3,0.064134
-fr-pres-2027,2026-11-23,OpinionWay,1.2276,own,9,2,0.121678
-fr-pres-2027,2026-11-23,YouGov,1.055,median,0,1,0.164737
-gr-parl-2027,2026-11-23,Alco,0.6309,own,13,2,0.140264
-gr-parl-2027,2026-11-23,Interview,1.1264,own,21,2,0.044001
-gr-parl-2027,2026-11-23,Marc,0.5241,own,9,1,0.203216
-gr-parl-2027,2026-11-23,Metron Analysis,0.7396,own,10,1,0.10206
-gr-parl-2027,2026-11-23,Opinion Poll,0.7302,own,8,1,0.104698
-gr-parl-2027,2026-11-23,Palmos Analysis,0.6309,median,0,1,0.140264
-gr-parl-2027,2026-11-23,Pulse,0.4958,own,10,1,0.22714
-gr-parl-2027,2026-11-23,Real Polls,1.2064,own,9,1,0.038357
-it-parl-2027,2026-11-23,BiDiMedia,0.3507,own,19,2,0.082185
-it-parl-2027,2026-11-23,EMG,0.4515,own,31,2,0.049594
-it-parl-2027,2026-11-23,Eumetra,0.2544,own,25,4,0.156216
-it-parl-2027,2026-11-23,Ipsos,0.493,own,12,2,0.041606
-it-parl-2027,2026-11-23,Ixè,0.4047,own,7,1,0.061728
-it-parl-2027,2026-11-23,Lab21,0.3822,median,0,2,0.069198
-it-parl-2027,2026-11-23,Only Numbers,0.3402,own,22,2,0.087383
-it-parl-2027,2026-11-23,Pieopoli,0.3822,median,0,1,0.069198
-it-parl-2027,2026-11-23,Piepoli,0.3889,own,11,1,0.066838
-it-parl-2027,2026-11-23,Quorum,0.5449,own,20,3,0.034057
-it-parl-2027,2026-11-23,SWG,0.3756,own,46,4,0.071685
-it-parl-2027,2026-11-23,Sigma Piave,0.4569,own,6,1,0.048439
-it-parl-2027,2026-11-23,Termometro Politico,0.2499,own,38,4,0.161873
-nl-parl-next,2026-11-23,Ipsos I&O,1.2802,own,11,1,0.32169
-nl-parl-next,2026-11-23,Peil.nl,1.3204,own,13,3,0.302391
-nl-parl-next,2026-11-23,Verian,1.1842,own,8,1,0.375919
-no-parl-2029,2026-11-23,InFact,1.0718,own,12,2,0.134916
-no-parl-2029,2026-11-23,Norfakta,1.0417,own,11,1,0.142806
-no-parl-2029,2026-11-23,Norstat,1.0618,own,10,1,0.13747
-no-parl-2029,2026-11-23,Opinion,0.9677,own,19,3,0.165495
-no-parl-2029,2026-11-23,Respons Analyse,0.7688,own,10,1,0.26217
-no-parl-2029,2026-11-23,Verian,0.9931,own,12,2,0.157143
-pl-parl-2027,2026-11-23,CBOS,1.2796,own,12,1,0.090873
-pl-parl-2027,2026-11-23,IBRiS,1.0339,own,20,1,0.139196
-pl-parl-2027,2026-11-23,OGB,1.09,own,13,1,0.125228
-pl-parl-2027,2026-11-23,Opinia24,1.0954,own,15,1,0.124007
-pl-parl-2027,2026-11-23,Pollster,1.0206,own,17,3,0.142833
-pl-parl-2027,2026-11-23,Research Partner,1.09,median,0,1,0.125228
-pl-parl-2027,2026-11-23,Social Changes,1.0646,own,12,1,0.131285
-pl-parl-2027,2026-11-23,United Surveys,1.1073,own,28,2,0.12135
-pt-parl-2029,2026-11-23,Aximage,1.0871,own,6,2,0.242169
-pt-parl-2029,2026-11-23,ICS/ISCTE,1.0871,median,0,1,0.242169
-pt-parl-2029,2026-11-23,Intercampus,1.5,own,7,1,0.127206
-pt-parl-2029,2026-11-23,Pitagórica,0.8584,own,10,3,0.388455
-uk-parl-next,2026-11-23,BMG Research,1.113,own,11,1,0.105673
-uk-parl-next,2026-11-23,Deltapoll,1.1196,own,14,4,0.104434
-uk-parl-next,2026-11-23,Find Out Now,1.1931,own,53,4,0.091967
-uk-parl-next,2026-11-23,Freshwater Strategy,1.3474,own,12,1,0.072108
-uk-parl-next,2026-11-23,Lord Ashcroft Polls,1.089,own,11,1,0.11039
-uk-parl-next,2026-11-23,More in Common,1.1285,own,51,4,0.102791
-uk-parl-next,2026-11-23,Opinium,0.9289,own,33,3,0.151713
-uk-parl-next,2026-11-23,Survation,1.0638,own,16,1,0.115677
-uk-parl-next,2026-11-23,Trajectory Partnership,1.5507,own,9,1,0.054439
-uk-parl-next,2026-11-23,YouGov,1.2006,own,53,4,0.090808
+de-parl-2029,2026-11-24,Forsa,0.7626,own,49,4,0.114275
+de-parl-2029,2026-11-24,Forschungsgruppe Wahlen,0.7891,own,17,1,0.106716
+de-parl-2029,2026-11-24,INSA,0.5961,own,101,8,0.187013
+de-parl-2029,2026-11-24,Infratest dimap,0.6928,own,12,1,0.138472
+de-parl-2029,2026-11-24,Ipsos,0.753,own,12,1,0.117205
+de-parl-2029,2026-11-24,Verian (Emnid),0.5221,own,13,1,0.243809
+de-parl-2029,2026-11-24,YouGov,0.8476,own,12,1,0.09251
+es-parl-2026,2026-11-24,40dB,0.6533,own,22,11,0.020229
+es-parl-2026,2026-11-24,Ateneo del Dato,0.9735,own,6,2,0.00911
+es-parl-2026,2026-11-24,AtlasIntel,0.5382,median,0,1,0.029808
+es-parl-2026,2026-11-24,CIS,0.7361,own,12,2,0.015932
+es-parl-2026,2026-11-24,CIS (Ateneo del Dato),0.9136,own,9,2,0.010344
+es-parl-2026,2026-11-24,CIS (Descifrando la Guerra),0.5382,median,0,1,0.029808
+es-parl-2026,2026-11-24,CIS (Opina 360),0.5382,median,0,1,0.029808
+es-parl-2026,2026-11-24,Celeste-Tel,0.5382,median,0,2,0.029808
+es-parl-2026,2026-11-24,Cluster17,0.5382,median,0,2,0.029808
+es-parl-2026,2026-11-24,Convergent Opinion,0.5382,median,0,1,0.029808
+es-parl-2026,2026-11-24,DYM,0.6522,own,9,2,0.020297
+es-parl-2026,2026-11-24,Data10,0.4525,own,12,9,0.042158
+es-parl-2026,2026-11-24,EM-Analytics,0.4609,own,65,16,0.040646
+es-parl-2026,2026-11-24,GAD3,0.5382,median,0,2,0.029808
+es-parl-2026,2026-11-24,GESOP,0.5382,median,0,1,0.029808
+es-parl-2026,2026-11-24,Hamalgama Métrica,0.5382,median,0,2,0.029808
+es-parl-2026,2026-11-24,IMOP,0.5382,median,0,3,0.029808
+es-parl-2026,2026-11-24,InvyMark,0.4923,own,8,2,0.035622
+es-parl-2026,2026-11-24,Ipsos,0.5382,median,0,1,0.029808
+es-parl-2026,2026-11-24,Metroscopia,0.5382,median,0,1,0.029808
+es-parl-2026,2026-11-24,More in Common,0.5382,median,0,1,0.029808
+es-parl-2026,2026-11-24,NC Report,0.4383,own,13,4,0.044943
+es-parl-2026,2026-11-24,Public First,0.5382,median,0,1,0.029808
+es-parl-2026,2026-11-24,SW Demoscopia,0.2267,own,19,19,0.089423
+es-parl-2026,2026-11-24,Sigma Dos,0.4336,own,26,13,0.045924
+es-parl-2026,2026-11-24,SocioMétrica,0.3495,own,18,6,0.070664
+es-parl-2026,2026-11-24,Sondaxe,0.5382,own,12,12,0.029808
+es-parl-2026,2026-11-24,Target Point,0.6893,own,11,3,0.018171
+es-parl-2026,2026-11-24,Vox,0.5382,median,0,1,0.029808
+es-parl-2026,2026-11-24,Winston,0.5382,median,0,2,0.029808
+es-parl-2026,2026-11-24,YouGov,0.5382,median,0,1,0.029808
+fr-pres-2027,2026-11-24,Cluster17,0.8824,own,6,1,0.235463
+fr-pres-2027,2026-11-24,Elabe,1.055,median,0,1,0.164737
+fr-pres-2027,2026-11-24,Harris Interactive,0.8577,own,6,2,0.249252
+fr-pres-2027,2026-11-24,Ifop,1.6908,own,7,3,0.064134
+fr-pres-2027,2026-11-24,OpinionWay,1.2276,own,9,2,0.121678
+fr-pres-2027,2026-11-24,YouGov,1.055,median,0,1,0.164737
+gr-parl-2027,2026-11-24,Alco,0.6309,own,13,2,0.140403
+gr-parl-2027,2026-11-24,Interview,1.1393,own,20,1,0.043051
+gr-parl-2027,2026-11-24,Marc,0.5241,own,9,1,0.203418
+gr-parl-2027,2026-11-24,Metron Analysis,0.7396,own,10,1,0.102161
+gr-parl-2027,2026-11-24,Opinion Poll,0.7302,own,8,1,0.104802
+gr-parl-2027,2026-11-24,Palmos Analysis,0.6309,median,0,1,0.140403
+gr-parl-2027,2026-11-24,Pulse,0.4958,own,10,1,0.227366
+gr-parl-2027,2026-11-24,Real Polls,1.2064,own,9,1,0.038395
+it-parl-2027,2026-11-24,BiDiMedia,0.3512,own,19,2,0.087444
+it-parl-2027,2026-11-24,EMG,0.4508,own,31,2,0.053077
+it-parl-2027,2026-11-24,Eumetra,0.2546,own,25,4,0.166416
+it-parl-2027,2026-11-24,Ipsos,0.493,own,12,2,0.04439
+it-parl-2027,2026-11-24,Ixè,0.4045,own,7,1,0.06592
+it-parl-2027,2026-11-24,Lab21,0.3778,own,6,3,0.075593
+it-parl-2027,2026-11-24,Only Numbers,0.3402,own,22,2,0.093206
+it-parl-2027,2026-11-24,Piepoli,0.3769,own,12,2,0.07593
+it-parl-2027,2026-11-24,Quorum,0.5446,own,20,3,0.036374
+it-parl-2027,2026-11-24,SWG,0.3704,own,46,5,0.078612
+it-parl-2027,2026-11-24,Sigma Piave,0.4584,own,6,1,0.051337
+it-parl-2027,2026-11-24,Termometro Politico,0.2506,own,38,4,0.171702
+nl-parl-next,2026-11-24,Ipsos I&O,1.2802,own,11,1,0.32169
+nl-parl-next,2026-11-24,Peil.nl,1.3204,own,13,3,0.302391
+nl-parl-next,2026-11-24,Verian,1.1842,own,8,1,0.375919
+no-parl-2029,2026-11-24,InFact,1.0718,own,12,2,0.134916
+no-parl-2029,2026-11-24,Norfakta,1.0417,own,11,1,0.142806
+no-parl-2029,2026-11-24,Norstat,1.0618,own,10,1,0.13747
+no-parl-2029,2026-11-24,Opinion,0.9677,own,19,3,0.165495
+no-parl-2029,2026-11-24,Respons Analyse,0.7688,own,10,1,0.26217
+no-parl-2029,2026-11-24,Verian,0.9931,own,12,2,0.157143
+pl-parl-2027,2026-11-24,CBOS,1.2796,own,12,1,0.090873
+pl-parl-2027,2026-11-24,IBRiS,1.0339,own,20,1,0.139196
+pl-parl-2027,2026-11-24,OGB,1.09,own,13,1,0.125228
+pl-parl-2027,2026-11-24,Opinia24,1.0954,own,15,1,0.124007
+pl-parl-2027,2026-11-24,Pollster,1.0206,own,17,3,0.142833
+pl-parl-2027,2026-11-24,Research Partner,1.09,median,0,1,0.125228
+pl-parl-2027,2026-11-24,Social Changes,1.0646,own,12,1,0.131285
+pl-parl-2027,2026-11-24,United Surveys,1.1073,own,28,2,0.12135
+pt-parl-2029,2026-11-24,Aximage,1.0871,own,6,2,0.247067
+pt-parl-2029,2026-11-24,CESOP–UCP,1.0871,median,0,1,0.247067
+pt-parl-2029,2026-11-24,Intercampus,1.5,own,7,1,0.129779
+pt-parl-2029,2026-11-24,Pitagórica,0.8811,own,11,4,0.376088
+uk-parl-next,2026-11-24,BMG Research,1.113,own,11,1,0.10571
+uk-parl-next,2026-11-24,Deltapoll,1.1196,own,14,4,0.104471
+uk-parl-next,2026-11-24,Find Out Now,1.1931,own,53,4,0.091999
+uk-parl-next,2026-11-24,Freshwater Strategy,1.3474,own,12,1,0.072134
+uk-parl-next,2026-11-24,Lord Ashcroft Polls,1.089,own,11,1,0.110429
+uk-parl-next,2026-11-24,More in Common,1.1347,own,50,4,0.101699
+uk-parl-next,2026-11-24,Opinium,0.9289,own,33,3,0.151766
+uk-parl-next,2026-11-24,Survation,1.0638,own,16,1,0.115717
+uk-parl-next,2026-11-24,Trajectory Partnership,1.5507,own,9,1,0.054458
+uk-parl-next,2026-11-24,YouGov,1.1955,own,52,4,0.091618

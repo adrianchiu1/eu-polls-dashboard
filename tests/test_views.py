@@ -90,3 +90,12 @@ def test_joint_list_lookup_ignores_coalitions(monkeypatch):
     monkeypatch.setattr(parties, "load", lambda cc: rows)
     assert parties.Resolver("XX").alliance({"xx-a", "xx-b"}) == "xx-a-b"
     assert [c["party_id"] for c in parties.coalitions("XX")] == ["xx-bloc"]
+
+
+def test_expected_windows_place_a_contest_in_time():
+    assert config.window_end("about 2027-09-26 (likely, not fixed)") == dt.date(2027, 9, 26)
+    assert config.window_end("September 2027, date to confirm") == dt.date(2027, 9, 30)
+    assert config.window_end("autumn 2028") == dt.date(2028, 12, 31)
+    assert config.window_end("spring 2029") == dt.date(2029, 6, 30)
+    assert config.window_end("2029") == dt.date(2029, 12, 31)
+    assert config.window_end("not known") is None

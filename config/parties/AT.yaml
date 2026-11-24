@@ -57,3 +57,12 @@ parties:
     partyfacts_id: 996
     lr_score: null
     lr_source: pending
+  # Regional parties, drafted from the sub-national polling tables (Phase 3).
+  - party_id: at-fritz
+    type: party
+    short: FRITZ
+    name: Citizens' Forum Austria
+    colour: '#E43226'
+    partyfacts_id: 439
+    lr_score: null
+    lr_source: pending

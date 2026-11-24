@@ -175,37 +175,6 @@ sources:
     notes: >-
       Title resolved through the MediaWiki API on 2026-11-23 (revision 1387130598). Great Britain
       samples; keep Northern Ireland out of the headline.
-  - contest_id: uk-sub-northern-ireland-2027
-    adapter: wikipedia
-    locator: Next Northern Ireland Assembly election
-    selector: Opinion polling section, party table
-    column_map: {}
-    priority: 1
-    verified: true
-    notes: >-
-      Title resolved through the MediaWiki API on 2026-11-23 (revision 1386673736). Polling sits inside
-      the election article, not a dedicated polling article.
-  - contest_id: uk-sub-scotland-next
-    adapter: wikipedia
-    locator: Opinion polling for the next Scottish Parliament election
-    selector: Constituency vote and regional vote tables
-    column_map: {}
-    priority: 1
-    verified: true
-    notes: >-
-      Title resolved through the MediaWiki API on 2026-11-23 (revision 1382983165). A short article so
-      far: the May 2026 election was recent. Table layout not inspected.
-  - contest_id: uk-sub-wales-next
-    adapter: wikipedia
-    locator: Next Senedd election
-    selector: Opinion polling section, voting intention table
-    column_map: {}
-    priority: 1
-    verified: true
-    notes: >-
-      Resolved through the MediaWiki API on 2026-11-23 (revision 1386573063). The seeded title,
-      "Opinion polling for the next Senedd election", is a redirect to the Opinion polling section of
-      this article. Table layout not inspected.
 
   # ---------------------------------------------------------------- Phase 2: the other national contests (Wikipedia)
   - contest_id: nl-parl-next
@@ -310,6 +279,124 @@ sources:
     verified: true
     notes: >-
       Title resolved through the MediaWiki API on 2026-11-23 (revision 1387310225). The bloc columns are not read.
+
+  # ---------------------------------------------------------------- Phase 3: sub-national contests (Wikipedia)
+  - contest_id: uk-sub-northern-ireland-2027
+    adapter: wikipedia
+    locator: Next Northern Ireland Assembly election
+    selector: top=Opinion polling; under=Voting intention
+    column_map:
+      "N": ignore
+      "U": ignore
+      "O": ignore
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-24 (revision 1386673736). Polling sits inside the election article. The N, U and O columns sum the nationalist, unionist and other designations and are not read.
+  - contest_id: uk-sub-scotland-next
+    adapter: wikipedia
+    locator: Opinion polling for the next Scottish Parliament election
+    selector: under=Constituency vote|Regional vote; panels=Constituency vote|Regional vote
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-24 (revision 1382983165). Two panels, the constituency vote and the regional list vote, as pollsters publish them.
+  - contest_id: uk-sub-wales-next
+    adapter: wikipedia
+    locator: Next Senedd election
+    selector: top=Opinion polling
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-24 (revision 1386573063). Polling sits inside the election article.
+  - contest_id: at-sub-tirol-2027
+    adapter: wikipedia
+    locator: 2027 Tyrolean state election
+    selector: top=Opinion polling
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-24 (revision 1381389044). Polling sits inside the election article.
+  - contest_id: es-sub-asturias-2027
+    adapter: wikipedia
+    locator: 2027 Asturian regional election
+    selector: top=Opinion polls; under=Voting intention estimates; sums=partial
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-24 (revision 1380881073). Seat figures under the vote shares are not read.
+  - contest_id: es-sub-illes-balears-2027
+    adapter: wikipedia
+    locator: 2027 Balearic regional election
+    selector: top=Opinion polls; under=Voting intention estimates; sums=partial
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-24 (revision 1387302372). Seat figures under the vote shares are not read.
+  - contest_id: es-sub-canarias-2027
+    adapter: wikipedia
+    locator: 2027 Canarian regional election
+    selector: top=Opinion polls; under=Voting intention estimates; sums=partial
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-24 (revision 1387302444). Seat figures under the vote shares are not read.
+  - contest_id: es-sub-cantabria-2027
+    adapter: wikipedia
+    locator: 2027 Cantabrian regional election
+    selector: top=Opinion polls; under=Voting intention estimates; sums=partial
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-24 (revision 1380881268). Seat figures under the vote shares are not read.
+  - contest_id: es-sub-castilla-la-mancha-2027
+    adapter: wikipedia
+    locator: 2027 Castilian-Manchegan regional election
+    selector: top=Opinion polls; under=Voting intention estimates; sums=partial
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-24 (revision 1380881488). Seat figures under the vote shares are not read.
+  - contest_id: es-sub-la-rioja-2027
+    adapter: wikipedia
+    locator: 2027 Riojan regional election
+    selector: top=Opinion polls; under=Voting intention estimates; sums=partial
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-24 (revision 1380881585). Seat figures under the vote shares are not read.
+  - contest_id: es-sub-madrid-2027
+    adapter: wikipedia
+    locator: 2027 Madrilenian regional election
+    selector: top=Opinion polls; under=Voting intention estimates; sums=partial
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-24 (revision 1380881673). Seat figures under the vote shares are not read.
+  - contest_id: es-sub-murcia-2027
+    adapter: wikipedia
+    locator: 2027 Murcian regional election
+    selector: top=Opinion polls; under=Voting intention estimates; sums=partial
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-24 (revision 1380881783). Seat figures under the vote shares are not read.
+  - contest_id: es-sub-navarra-2027
+    adapter: wikipedia
+    locator: 2027 Navarrese regional election
+    selector: top=Opinion polls; under=Voting intention estimates; sums=partial
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-24 (revision 1383567581). Seat figures under the vote shares are not read.
+  - contest_id: es-sub-comunitat-valenciana-2027
+    adapter: wikipedia
+    locator: 2027 Valencian regional election
+    selector: top=Opinion polls; under=Voting intention estimates; sums=partial
+    priority: 1
+    verified: true
+    notes: >-
+      Title resolved through the MediaWiki API on 2026-11-24 (revision 1387302536). Seat figures under the vote shares are not read.
 
   # ---------------------------------------------------------------- Sweden (SwedishPolls)
   - contest_id: se-parl-next
