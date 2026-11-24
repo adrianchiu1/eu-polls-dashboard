@@ -1,0 +1,145 @@
+# Czech Republic. Drafted by tools/propose_parties.py from the pinned Wikipedia fixture for cz-parl-2029:
+# short names, full names and colours are read from the polling table's header (CC BY-SA 4.0).
+# Party Facts ids, where present, come from Europolls (github.com/gfrt0/europolls,
+# config/party_mappings/CZ.yaml; CC BY-SA 4.0) and are not yet checked against Party Facts itself.
+# Left-right scores are pending. An alliance row with members is a joint list: one figure a pollster
+# gives for several columns.
+schema_version: 1
+country: CZ
+parties:
+  - party_id: cz-ano
+    type: party
+    short: ANO
+    name: ANO
+    colour: '#261060'
+    partyfacts_id: 2141
+    lr_score: null
+    lr_source: pending
+  - party_id: cz-ods
+    type: party
+    short: ODS
+    name: ODS
+    colour: '#034EA2'
+    partyfacts_id: 466
+    lr_score: null
+    lr_source: pending
+  - party_id: cz-kdu-csl
+    type: party
+    short: KDU–ČSL
+    name: KDU–ČSL
+    colour: '#FFDC00'
+    partyfacts_id: 676
+    lr_score: null
+    lr_source: pending
+  - party_id: cz-top-09
+    type: party
+    short: TOP 09
+    name: TOP 09
+    colour: '#993366'
+    partyfacts_id: 223
+    lr_score: null
+    lr_source: pending
+  - party_id: cz-stan
+    type: party
+    short: STAN
+    name: STAN
+    colour: '#CD0F69'
+    partyfacts_id: 1707
+    lr_score: null
+    lr_source: pending
+  - party_id: cz-pirati
+    type: party
+    short: Piráti
+    name: Piráti
+    colour: '#000000'
+    partyfacts_id: 2047
+    lr_score: null
+    lr_source: pending
+  - party_id: cz-z
+    type: party
+    short: Z
+    name: Z
+    colour: '#00AD43'
+    partyfacts_id: 1554
+    lr_score: null
+    lr_source: pending
+  - party_id: cz-spd
+    type: party
+    short: SPD
+    name: SPD
+    colour: '#004C82'
+    partyfacts_id: 6125
+    lr_score: null
+    lr_source: pending
+  - party_id: cz-svobodni
+    type: party
+    short: Svobodní
+    name: Svobodní
+    colour: '#009682'
+    partyfacts_id: 254
+    lr_score: null
+    lr_source: pending
+  - party_id: cz-pro
+    type: party
+    short: PRO
+    name: PRO
+    colour: '#009FBF'
+    partyfacts_id: 9813
+    lr_score: null
+    lr_source: pending
+  - party_id: cz-tricolour
+    type: party
+    short: Tricolour
+    name: Tricolour
+    colour: '#2738CD'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: cz-motorists-for-themselves
+    type: party
+    short: Motorists for Themselves
+    name: Motorists for Themselves
+    colour: '#009EE3'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: cz-stacilo
+    type: party
+    short: Stačilo!
+    name: Stačilo!
+    colour: '#C4161C'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: cz-kscm
+    type: party
+    short: KSČM
+    name: KSČM
+    colour: '#C10506'
+    partyfacts_id: 1728
+    lr_score: null
+    lr_source: pending
+  - party_id: cz-socdem
+    type: party
+    short: SOCDEM
+    name: SOCDEM
+    colour: '#FF5F61'
+    partyfacts_id: 5236
+    lr_score: null
+    lr_source: pending
+  - party_id: cz-prisaha
+    type: party
+    short: Přísaha
+    name: Přísaha
+    colour: '#0033FF'
+    partyfacts_id: 9002
+    lr_score: null
+    lr_source: pending
+  - party_id: cz-our-czechia
+    type: party
+    short: Our Czechia
+    name: Our Czechia
+    colour: '#D7141A'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending

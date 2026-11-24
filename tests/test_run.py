@@ -153,3 +153,16 @@ def test_method_lists_weights_and_rules(data_dir):
 def test_country_without_data_still_renders(tmp_path):
     page = html("DE", tmp_path)
     assert "Not yet polled" in page and "How this tab is defined" in page
+
+
+def test_a_cycle_with_no_poll_yet_is_not_a_failure(tmp_path, monkeypatch):
+    """A body that has just voted has no poll in its new cycle: nothing to publish, nothing failed."""
+    real = config.contests
+    fresh = lambda cc=None: [dict(k, previous_date=dt.date(2026, 11, 22)) if k["contest_id"] == "de-sub-hessen-2028" else k
+                             for k in real(cc)]
+    monkeypatch.setattr(config, "contests", fresh)
+    out = run(["DE"], tmp_path, now=NOW, offline=FIX, log=lambda *_: None)
+    assert out["failures"] == []
+    entry = out["quality"]["contests"]["de-sub-hessen-2028"]
+    assert entry["parser_status"] == "ok" and entry["polls_90d"] == 0
+    assert "de-sub-hessen-2028" not in set(pd.read_csv(tmp_path / "polls_DE.csv")["contest_id"])

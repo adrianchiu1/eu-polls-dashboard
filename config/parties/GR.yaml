@@ -1,0 +1,129 @@
+# Greece. Drafted by tools/propose_parties.py from the pinned Wikipedia fixture for gr-parl-2027:
+# short names, full names and colours are read from the polling table's header (CC BY-SA 4.0).
+# Party Facts ids, where present, come from Europolls (github.com/gfrt0/europolls,
+# config/party_mappings/GR.yaml; CC BY-SA 4.0) and are not yet checked against Party Facts itself.
+# Left-right scores are pending. An alliance row with members is a joint list: one figure a pollster
+# gives for several columns.
+schema_version: 1
+country: GR
+parties:
+  - party_id: gr-nd
+    type: party
+    short: ND
+    name: New Democracy
+    colour: '#1B5CC7'
+    partyfacts_id: 794
+    lr_score: null
+    lr_source: pending
+  - party_id: gr-syriza
+    type: party
+    short: SYRIZA
+    name: SYRIZA
+    colour: '#EE808F'
+    partyfacts_id: 301
+    lr_score: null
+    lr_source: pending
+  - party_id: gr-pasok
+    type: party
+    short: PASOK
+    name: PASOK – Movement for Change
+    colour: '#007934'
+    partyfacts_id: 1468
+    lr_score: null
+    lr_source: pending
+  - party_id: gr-kke
+    type: party
+    short: KKE
+    name: Communist Party of Greece
+    colour: '#E30301'
+    partyfacts_id: 48
+    lr_score: null
+    lr_source: pending
+  - party_id: gr-sp
+    type: party
+    short: SP
+    name: Spartans
+    colour: '#E9B460'
+    partyfacts_id: 9129
+    lr_score: null
+    lr_source: pending
+  - party_id: gr-el
+    type: party
+    short: EL
+    name: Greek Solution
+    colour: '#6BB6E6'
+    partyfacts_id: 7347
+    lr_score: null
+    lr_source: pending
+  - party_id: gr-niki
+    type: party
+    short: NIKI
+    name: Victory
+    colour: '#910048'
+    partyfacts_id: 9126
+    lr_score: null
+    lr_source: pending
+  - party_id: gr-pe
+    type: party
+    short: PE
+    name: Course of Freedom
+    colour: '#9F1897'
+    partyfacts_id: 9088
+    lr_score: null
+    lr_source: pending
+  - party_id: gr-m25
+    type: party
+    short: M25
+    name: MeRA25
+    colour: '#EF3F24'
+    partyfacts_id: 7348
+    lr_score: null
+    lr_source: pending
+  - party_id: gr-fl
+    type: party
+    short: FL
+    name: Voice of Reason
+    colour: '#020C6A'
+    partyfacts_id: 9814
+    lr_score: null
+    lr_source: pending
+  - party_id: gr-na
+    type: party
+    short: NA
+    name: New Left
+    colour: '#E11B22'
+    partyfacts_id: 9316
+    lr_score: null
+    lr_source: pending
+  - party_id: gr-se
+    type: party
+    short: SE
+    name: Alliance of Greeks
+    colour: '#1C2971'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: gr-dpk
+    type: party
+    short: DPK
+    name: Movement for Democracy
+    colour: '#FF6600'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: gr-elpida
+    type: party
+    short: ELPIDA
+    name: Hope for Democracy
+    colour: '#E0B959'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: gr-elas
+    type: party
+    short: ELAS
+    name: Greek Left Alliance
+    colour: '#A40044'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending

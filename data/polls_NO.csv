@@ -1,0 +1,881 @@
+poll_id,contest_id,round,lineup_id,is_headline_lineup,pollster,client,fieldwork_start,fieldwork_end,sample_size,method,party_id,value,unit,flags,region,source_url,adapter,source_rev,retrieved_at
+0dba5ba391b7,no-parl-2029,1,default,True,InFact,,,2026-11-02,1181,,no-ap,21.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5734,wikipedia,1383761362,2026-11-23T13:08:58Z
+0dba5ba391b7,no-parl-2029,1,default,True,InFact,,,2026-11-02,1181,,no-frp,34.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5734,wikipedia,1383761362,2026-11-23T13:08:58Z
+0dba5ba391b7,no-parl-2029,1,default,True,InFact,,,2026-11-02,1181,,no-h,11.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5734,wikipedia,1383761362,2026-11-23T13:08:58Z
+0dba5ba391b7,no-parl-2029,1,default,True,InFact,,,2026-11-02,1181,,no-krf,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5734,wikipedia,1383761362,2026-11-23T13:08:58Z
+0dba5ba391b7,no-parl-2029,1,default,True,InFact,,,2026-11-02,1181,,no-mdg,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5734,wikipedia,1383761362,2026-11-23T13:08:58Z
+0dba5ba391b7,no-parl-2029,1,default,True,InFact,,,2026-11-02,1181,,no-r,9.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5734,wikipedia,1383761362,2026-11-23T13:08:58Z
+0dba5ba391b7,no-parl-2029,1,default,True,InFact,,,2026-11-02,1181,,no-sp,4.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5734,wikipedia,1383761362,2026-11-23T13:08:58Z
+0dba5ba391b7,no-parl-2029,1,default,True,InFact,,,2026-11-02,1181,,no-sv,5.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5734,wikipedia,1383761362,2026-11-23T13:08:58Z
+0dba5ba391b7,no-parl-2029,1,default,True,InFact,,,2026-11-02,1181,,no-v,3.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5734,wikipedia,1383761362,2026-11-23T13:08:58Z
+0dba5ba391b7,no-parl-2029,1,default,True,InFact,,,2026-11-02,1181,,others,1.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5734,wikipedia,1383761362,2026-11-23T13:08:58Z
+901db43183a1,no-parl-2029,1,default,True,Verian,,2026-10-26,2026-10-30,983,,no-ap,22.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5733,wikipedia,1383761362,2026-11-23T13:08:58Z
+901db43183a1,no-parl-2029,1,default,True,Verian,,2026-10-26,2026-10-30,983,,no-frp,32.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5733,wikipedia,1383761362,2026-11-23T13:08:58Z
+901db43183a1,no-parl-2029,1,default,True,Verian,,2026-10-26,2026-10-30,983,,no-h,13.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5733,wikipedia,1383761362,2026-11-23T13:08:58Z
+901db43183a1,no-parl-2029,1,default,True,Verian,,2026-10-26,2026-10-30,983,,no-krf,2.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5733,wikipedia,1383761362,2026-11-23T13:08:58Z
+901db43183a1,no-parl-2029,1,default,True,Verian,,2026-10-26,2026-10-30,983,,no-mdg,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5733,wikipedia,1383761362,2026-11-23T13:08:58Z
+901db43183a1,no-parl-2029,1,default,True,Verian,,2026-10-26,2026-10-30,983,,no-r,8.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5733,wikipedia,1383761362,2026-11-23T13:08:58Z
+901db43183a1,no-parl-2029,1,default,True,Verian,,2026-10-26,2026-10-30,983,,no-sp,5.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5733,wikipedia,1383761362,2026-11-23T13:08:58Z
+901db43183a1,no-parl-2029,1,default,True,Verian,,2026-10-26,2026-10-30,983,,no-sv,5.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5733,wikipedia,1383761362,2026-11-23T13:08:58Z
+901db43183a1,no-parl-2029,1,default,True,Verian,,2026-10-26,2026-10-30,983,,no-v,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5733,wikipedia,1383761362,2026-11-23T13:08:58Z
+901db43183a1,no-parl-2029,1,default,True,Verian,,2026-10-26,2026-10-30,983,,others,1.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5733,wikipedia,1383761362,2026-11-23T13:08:58Z
+6b5d75883f44,no-parl-2029,1,default,True,Opinion,,2026-10-19,2026-10-23,1000,,no-ap,20.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5732,wikipedia,1383761362,2026-11-23T13:08:58Z
+6b5d75883f44,no-parl-2029,1,default,True,Opinion,,2026-10-19,2026-10-23,1000,,no-frp,37.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5732,wikipedia,1383761362,2026-11-23T13:08:58Z
+6b5d75883f44,no-parl-2029,1,default,True,Opinion,,2026-10-19,2026-10-23,1000,,no-h,12.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5732,wikipedia,1383761362,2026-11-23T13:08:58Z
+6b5d75883f44,no-parl-2029,1,default,True,Opinion,,2026-10-19,2026-10-23,1000,,no-krf,3.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5732,wikipedia,1383761362,2026-11-23T13:08:58Z
+6b5d75883f44,no-parl-2029,1,default,True,Opinion,,2026-10-19,2026-10-23,1000,,no-mdg,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5732,wikipedia,1383761362,2026-11-23T13:08:58Z
+6b5d75883f44,no-parl-2029,1,default,True,Opinion,,2026-10-19,2026-10-23,1000,,no-r,6.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5732,wikipedia,1383761362,2026-11-23T13:08:58Z
+6b5d75883f44,no-parl-2029,1,default,True,Opinion,,2026-10-19,2026-10-23,1000,,no-sp,5.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5732,wikipedia,1383761362,2026-11-23T13:08:58Z
+6b5d75883f44,no-parl-2029,1,default,True,Opinion,,2026-10-19,2026-10-23,1000,,no-sv,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5732,wikipedia,1383761362,2026-11-23T13:08:58Z
+6b5d75883f44,no-parl-2029,1,default,True,Opinion,,2026-10-19,2026-10-23,1000,,no-v,3.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5732,wikipedia,1383761362,2026-11-23T13:08:58Z
+6b5d75883f44,no-parl-2029,1,default,True,Opinion,,2026-10-19,2026-10-23,1000,,others,1.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5732,wikipedia,1383761362,2026-11-23T13:08:58Z
+5abaa3faf01c,no-parl-2029,1,default,True,Norstat,,,2026-10-21,1000,,no-ap,22.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5730,wikipedia,1383761362,2026-11-23T13:08:58Z
+5abaa3faf01c,no-parl-2029,1,default,True,Norstat,,,2026-10-21,1000,,no-frp,31.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5730,wikipedia,1383761362,2026-11-23T13:08:58Z
+5abaa3faf01c,no-parl-2029,1,default,True,Norstat,,,2026-10-21,1000,,no-h,13.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5730,wikipedia,1383761362,2026-11-23T13:08:58Z
+5abaa3faf01c,no-parl-2029,1,default,True,Norstat,,,2026-10-21,1000,,no-krf,3.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5730,wikipedia,1383761362,2026-11-23T13:08:58Z
+5abaa3faf01c,no-parl-2029,1,default,True,Norstat,,,2026-10-21,1000,,no-mdg,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5730,wikipedia,1383761362,2026-11-23T13:08:58Z
+5abaa3faf01c,no-parl-2029,1,default,True,Norstat,,,2026-10-21,1000,,no-r,8.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5730,wikipedia,1383761362,2026-11-23T13:08:58Z
+5abaa3faf01c,no-parl-2029,1,default,True,Norstat,,,2026-10-21,1000,,no-sp,5.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5730,wikipedia,1383761362,2026-11-23T13:08:58Z
+5abaa3faf01c,no-parl-2029,1,default,True,Norstat,,,2026-10-21,1000,,no-sv,5.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5730,wikipedia,1383761362,2026-11-23T13:08:58Z
+5abaa3faf01c,no-parl-2029,1,default,True,Norstat,,,2026-10-21,1000,,no-v,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5730,wikipedia,1383761362,2026-11-23T13:08:58Z
+5abaa3faf01c,no-parl-2029,1,default,True,Norstat,,,2026-10-21,1000,,others,2.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5730,wikipedia,1383761362,2026-11-23T13:08:58Z
+c1fa22005623,no-parl-2029,1,default,True,Respons Analyse,,2026-10-07,2026-10-12,1000,,no-ap,21.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5723,wikipedia,1383761362,2026-11-23T13:08:58Z
+c1fa22005623,no-parl-2029,1,default,True,Respons Analyse,,2026-10-07,2026-10-12,1000,,no-frp,33.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5723,wikipedia,1383761362,2026-11-23T13:08:58Z
+c1fa22005623,no-parl-2029,1,default,True,Respons Analyse,,2026-10-07,2026-10-12,1000,,no-h,14.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5723,wikipedia,1383761362,2026-11-23T13:08:58Z
+c1fa22005623,no-parl-2029,1,default,True,Respons Analyse,,2026-10-07,2026-10-12,1000,,no-krf,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5723,wikipedia,1383761362,2026-11-23T13:08:58Z
+c1fa22005623,no-parl-2029,1,default,True,Respons Analyse,,2026-10-07,2026-10-12,1000,,no-mdg,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5723,wikipedia,1383761362,2026-11-23T13:08:58Z
+c1fa22005623,no-parl-2029,1,default,True,Respons Analyse,,2026-10-07,2026-10-12,1000,,no-r,7.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5723,wikipedia,1383761362,2026-11-23T13:08:58Z
+c1fa22005623,no-parl-2029,1,default,True,Respons Analyse,,2026-10-07,2026-10-12,1000,,no-sp,4.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5723,wikipedia,1383761362,2026-11-23T13:08:58Z
+c1fa22005623,no-parl-2029,1,default,True,Respons Analyse,,2026-10-07,2026-10-12,1000,,no-sv,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5723,wikipedia,1383761362,2026-11-23T13:08:58Z
+c1fa22005623,no-parl-2029,1,default,True,Respons Analyse,,2026-10-07,2026-10-12,1000,,no-v,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5723,wikipedia,1383761362,2026-11-23T13:08:58Z
+c1fa22005623,no-parl-2029,1,default,True,Respons Analyse,,2026-10-07,2026-10-12,1000,,others,1.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5723,wikipedia,1383761362,2026-11-23T13:08:58Z
+3f237a591027,no-parl-2029,1,default,True,Opinion,,2026-10-05,2026-10-10,1000,,no-ap,22.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5724,wikipedia,1383761362,2026-11-23T13:08:58Z
+3f237a591027,no-parl-2029,1,default,True,Opinion,,2026-10-05,2026-10-10,1000,,no-frp,32.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5724,wikipedia,1383761362,2026-11-23T13:08:58Z
+3f237a591027,no-parl-2029,1,default,True,Opinion,,2026-10-05,2026-10-10,1000,,no-h,12.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5724,wikipedia,1383761362,2026-11-23T13:08:58Z
+3f237a591027,no-parl-2029,1,default,True,Opinion,,2026-10-05,2026-10-10,1000,,no-krf,3.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5724,wikipedia,1383761362,2026-11-23T13:08:58Z
+3f237a591027,no-parl-2029,1,default,True,Opinion,,2026-10-05,2026-10-10,1000,,no-mdg,3.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5724,wikipedia,1383761362,2026-11-23T13:08:58Z
+3f237a591027,no-parl-2029,1,default,True,Opinion,,2026-10-05,2026-10-10,1000,,no-r,9.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5724,wikipedia,1383761362,2026-11-23T13:08:58Z
+3f237a591027,no-parl-2029,1,default,True,Opinion,,2026-10-05,2026-10-10,1000,,no-sp,5.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5724,wikipedia,1383761362,2026-11-23T13:08:58Z
+3f237a591027,no-parl-2029,1,default,True,Opinion,,2026-10-05,2026-10-10,1000,,no-sv,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5724,wikipedia,1383761362,2026-11-23T13:08:58Z
+3f237a591027,no-parl-2029,1,default,True,Opinion,,2026-10-05,2026-10-10,1000,,no-v,3.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5724,wikipedia,1383761362,2026-11-23T13:08:58Z
+3f237a591027,no-parl-2029,1,default,True,Opinion,,2026-10-05,2026-10-10,1000,,others,3.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5724,wikipedia,1383761362,2026-11-23T13:08:58Z
+94267499706a,no-parl-2029,1,default,True,Norfakta,,2026-10-06,2026-10-07,1000,,no-ap,21.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5722,wikipedia,1383761362,2026-11-23T13:08:58Z
+94267499706a,no-parl-2029,1,default,True,Norfakta,,2026-10-06,2026-10-07,1000,,no-frp,33.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5722,wikipedia,1383761362,2026-11-23T13:08:58Z
+94267499706a,no-parl-2029,1,default,True,Norfakta,,2026-10-06,2026-10-07,1000,,no-h,12.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5722,wikipedia,1383761362,2026-11-23T13:08:58Z
+94267499706a,no-parl-2029,1,default,True,Norfakta,,2026-10-06,2026-10-07,1000,,no-krf,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5722,wikipedia,1383761362,2026-11-23T13:08:58Z
+94267499706a,no-parl-2029,1,default,True,Norfakta,,2026-10-06,2026-10-07,1000,,no-mdg,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5722,wikipedia,1383761362,2026-11-23T13:08:58Z
+94267499706a,no-parl-2029,1,default,True,Norfakta,,2026-10-06,2026-10-07,1000,,no-r,6.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5722,wikipedia,1383761362,2026-11-23T13:08:58Z
+94267499706a,no-parl-2029,1,default,True,Norfakta,,2026-10-06,2026-10-07,1000,,no-sp,6.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5722,wikipedia,1383761362,2026-11-23T13:08:58Z
+94267499706a,no-parl-2029,1,default,True,Norfakta,,2026-10-06,2026-10-07,1000,,no-sv,5.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5722,wikipedia,1383761362,2026-11-23T13:08:58Z
+94267499706a,no-parl-2029,1,default,True,Norfakta,,2026-10-06,2026-10-07,1000,,no-v,3.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5722,wikipedia,1383761362,2026-11-23T13:08:58Z
+94267499706a,no-parl-2029,1,default,True,Norfakta,,2026-10-06,2026-10-07,1000,,others,3.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5722,wikipedia,1383761362,2026-11-23T13:08:58Z
+871f3cd8f8cb,no-parl-2029,1,default,True,Verian,,2026-10-01,2026-10-07,983,,no-ap,21.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5721,wikipedia,1383761362,2026-11-23T13:08:58Z
+871f3cd8f8cb,no-parl-2029,1,default,True,Verian,,2026-10-01,2026-10-07,983,,no-frp,31.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5721,wikipedia,1383761362,2026-11-23T13:08:58Z
+871f3cd8f8cb,no-parl-2029,1,default,True,Verian,,2026-10-01,2026-10-07,983,,no-h,14.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5721,wikipedia,1383761362,2026-11-23T13:08:58Z
+871f3cd8f8cb,no-parl-2029,1,default,True,Verian,,2026-10-01,2026-10-07,983,,no-krf,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5721,wikipedia,1383761362,2026-11-23T13:08:58Z
+871f3cd8f8cb,no-parl-2029,1,default,True,Verian,,2026-10-01,2026-10-07,983,,no-mdg,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5721,wikipedia,1383761362,2026-11-23T13:08:58Z
+871f3cd8f8cb,no-parl-2029,1,default,True,Verian,,2026-10-01,2026-10-07,983,,no-r,7.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5721,wikipedia,1383761362,2026-11-23T13:08:58Z
+871f3cd8f8cb,no-parl-2029,1,default,True,Verian,,2026-10-01,2026-10-07,983,,no-sp,5.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5721,wikipedia,1383761362,2026-11-23T13:08:58Z
+871f3cd8f8cb,no-parl-2029,1,default,True,Verian,,2026-10-01,2026-10-07,983,,no-sv,5.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5721,wikipedia,1383761362,2026-11-23T13:08:58Z
+871f3cd8f8cb,no-parl-2029,1,default,True,Verian,,2026-10-01,2026-10-07,983,,no-v,4.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5721,wikipedia,1383761362,2026-11-23T13:08:58Z
+871f3cd8f8cb,no-parl-2029,1,default,True,Verian,,2026-10-01,2026-10-07,983,,others,2.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5721,wikipedia,1383761362,2026-11-23T13:08:58Z
+7aeaf916f837,no-parl-2029,1,default,True,InFact,,2026-10-01,2026-10-01,2907,,no-ap,21.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5719,wikipedia,1383761362,2026-11-23T13:08:58Z
+7aeaf916f837,no-parl-2029,1,default,True,InFact,,2026-10-01,2026-10-01,2907,,no-frp,35.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5719,wikipedia,1383761362,2026-11-23T13:08:58Z
+7aeaf916f837,no-parl-2029,1,default,True,InFact,,2026-10-01,2026-10-01,2907,,no-h,11.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5719,wikipedia,1383761362,2026-11-23T13:08:58Z
+7aeaf916f837,no-parl-2029,1,default,True,InFact,,2026-10-01,2026-10-01,2907,,no-krf,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5719,wikipedia,1383761362,2026-11-23T13:08:58Z
+7aeaf916f837,no-parl-2029,1,default,True,InFact,,2026-10-01,2026-10-01,2907,,no-mdg,4.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5719,wikipedia,1383761362,2026-11-23T13:08:58Z
+7aeaf916f837,no-parl-2029,1,default,True,InFact,,2026-10-01,2026-10-01,2907,,no-r,8.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5719,wikipedia,1383761362,2026-11-23T13:08:58Z
+7aeaf916f837,no-parl-2029,1,default,True,InFact,,2026-10-01,2026-10-01,2907,,no-sp,5.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5719,wikipedia,1383761362,2026-11-23T13:08:58Z
+7aeaf916f837,no-parl-2029,1,default,True,InFact,,2026-10-01,2026-10-01,2907,,no-sv,3.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5719,wikipedia,1383761362,2026-11-23T13:08:58Z
+7aeaf916f837,no-parl-2029,1,default,True,InFact,,2026-10-01,2026-10-01,2907,,no-v,2.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5719,wikipedia,1383761362,2026-11-23T13:08:58Z
+7aeaf916f837,no-parl-2029,1,default,True,InFact,,2026-10-01,2026-10-01,2907,,others,2.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5719,wikipedia,1383761362,2026-11-23T13:08:58Z
+f43dcfca4e51,no-parl-2029,1,default,True,Opinion,,2026-09-21,2026-09-27,1001,,no-ap,22.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5714,wikipedia,1383761362,2026-11-23T13:08:58Z
+f43dcfca4e51,no-parl-2029,1,default,True,Opinion,,2026-09-21,2026-09-27,1001,,no-frp,32.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5714,wikipedia,1383761362,2026-11-23T13:08:58Z
+f43dcfca4e51,no-parl-2029,1,default,True,Opinion,,2026-09-21,2026-09-27,1001,,no-h,13.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5714,wikipedia,1383761362,2026-11-23T13:08:58Z
+f43dcfca4e51,no-parl-2029,1,default,True,Opinion,,2026-09-21,2026-09-27,1001,,no-krf,3.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5714,wikipedia,1383761362,2026-11-23T13:08:58Z
+f43dcfca4e51,no-parl-2029,1,default,True,Opinion,,2026-09-21,2026-09-27,1001,,no-mdg,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5714,wikipedia,1383761362,2026-11-23T13:08:58Z
+f43dcfca4e51,no-parl-2029,1,default,True,Opinion,,2026-09-21,2026-09-27,1001,,no-r,8.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5714,wikipedia,1383761362,2026-11-23T13:08:58Z
+f43dcfca4e51,no-parl-2029,1,default,True,Opinion,,2026-09-21,2026-09-27,1001,,no-sp,5.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5714,wikipedia,1383761362,2026-11-23T13:08:58Z
+f43dcfca4e51,no-parl-2029,1,default,True,Opinion,,2026-09-21,2026-09-27,1001,,no-sv,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5714,wikipedia,1383761362,2026-11-23T13:08:58Z
+f43dcfca4e51,no-parl-2029,1,default,True,Opinion,,2026-09-21,2026-09-27,1001,,no-v,2.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5714,wikipedia,1383761362,2026-11-23T13:08:58Z
+f43dcfca4e51,no-parl-2029,1,default,True,Opinion,,2026-09-21,2026-09-27,1001,,others,3.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5714,wikipedia,1383761362,2026-11-23T13:08:58Z
+1ff729ce0ed4,no-parl-2029,1,default,True,Respons Analyse,,2026-09-10,2026-09-14,1003,,no-ap,24.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5698,wikipedia,1383761362,2026-11-23T13:08:58Z
+1ff729ce0ed4,no-parl-2029,1,default,True,Respons Analyse,,2026-09-10,2026-09-14,1003,,no-frp,30.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5698,wikipedia,1383761362,2026-11-23T13:08:58Z
+1ff729ce0ed4,no-parl-2029,1,default,True,Respons Analyse,,2026-09-10,2026-09-14,1003,,no-h,16.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5698,wikipedia,1383761362,2026-11-23T13:08:58Z
+1ff729ce0ed4,no-parl-2029,1,default,True,Respons Analyse,,2026-09-10,2026-09-14,1003,,no-krf,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5698,wikipedia,1383761362,2026-11-23T13:08:58Z
+1ff729ce0ed4,no-parl-2029,1,default,True,Respons Analyse,,2026-09-10,2026-09-14,1003,,no-mdg,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5698,wikipedia,1383761362,2026-11-23T13:08:58Z
+1ff729ce0ed4,no-parl-2029,1,default,True,Respons Analyse,,2026-09-10,2026-09-14,1003,,no-r,6.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5698,wikipedia,1383761362,2026-11-23T13:08:58Z
+1ff729ce0ed4,no-parl-2029,1,default,True,Respons Analyse,,2026-09-10,2026-09-14,1003,,no-sp,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5698,wikipedia,1383761362,2026-11-23T13:08:58Z
+1ff729ce0ed4,no-parl-2029,1,default,True,Respons Analyse,,2026-09-10,2026-09-14,1003,,no-sv,5.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5698,wikipedia,1383761362,2026-11-23T13:08:58Z
+1ff729ce0ed4,no-parl-2029,1,default,True,Respons Analyse,,2026-09-10,2026-09-14,1003,,no-v,3.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5698,wikipedia,1383761362,2026-11-23T13:08:58Z
+1ff729ce0ed4,no-parl-2029,1,default,True,Respons Analyse,,2026-09-10,2026-09-14,1003,,others,0.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5698,wikipedia,1383761362,2026-11-23T13:08:58Z
+e8dc3225890f,no-parl-2029,1,default,True,Opinion,,2026-09-07,2026-09-12,1000,,no-ap,20.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5700,wikipedia,1383761362,2026-11-23T13:08:58Z
+e8dc3225890f,no-parl-2029,1,default,True,Opinion,,2026-09-07,2026-09-12,1000,,no-frp,32.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5700,wikipedia,1383761362,2026-11-23T13:08:58Z
+e8dc3225890f,no-parl-2029,1,default,True,Opinion,,2026-09-07,2026-09-12,1000,,no-h,14.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5700,wikipedia,1383761362,2026-11-23T13:08:58Z
+e8dc3225890f,no-parl-2029,1,default,True,Opinion,,2026-09-07,2026-09-12,1000,,no-krf,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5700,wikipedia,1383761362,2026-11-23T13:08:58Z
+e8dc3225890f,no-parl-2029,1,default,True,Opinion,,2026-09-07,2026-09-12,1000,,no-mdg,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5700,wikipedia,1383761362,2026-11-23T13:08:58Z
+e8dc3225890f,no-parl-2029,1,default,True,Opinion,,2026-09-07,2026-09-12,1000,,no-r,7.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5700,wikipedia,1383761362,2026-11-23T13:08:58Z
+e8dc3225890f,no-parl-2029,1,default,True,Opinion,,2026-09-07,2026-09-12,1000,,no-sp,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5700,wikipedia,1383761362,2026-11-23T13:08:58Z
+e8dc3225890f,no-parl-2029,1,default,True,Opinion,,2026-09-07,2026-09-12,1000,,no-sv,5.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5700,wikipedia,1383761362,2026-11-23T13:08:58Z
+e8dc3225890f,no-parl-2029,1,default,True,Opinion,,2026-09-07,2026-09-12,1000,,no-v,3.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5700,wikipedia,1383761362,2026-11-23T13:08:58Z
+e8dc3225890f,no-parl-2029,1,default,True,Opinion,,2026-09-07,2026-09-12,1000,,others,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5700,wikipedia,1383761362,2026-11-23T13:08:58Z
+f1c0b9d2d3b8,no-parl-2029,1,default,True,Verian,,2026-09-02,2026-09-08,985,,no-ap,25.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5689,wikipedia,1383761362,2026-11-23T13:08:58Z
+f1c0b9d2d3b8,no-parl-2029,1,default,True,Verian,,2026-09-02,2026-09-08,985,,no-frp,29.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5689,wikipedia,1383761362,2026-11-23T13:08:58Z
+f1c0b9d2d3b8,no-parl-2029,1,default,True,Verian,,2026-09-02,2026-09-08,985,,no-h,15.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5689,wikipedia,1383761362,2026-11-23T13:08:58Z
+f1c0b9d2d3b8,no-parl-2029,1,default,True,Verian,,2026-09-02,2026-09-08,985,,no-krf,3.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5689,wikipedia,1383761362,2026-11-23T13:08:58Z
+f1c0b9d2d3b8,no-parl-2029,1,default,True,Verian,,2026-09-02,2026-09-08,985,,no-mdg,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5689,wikipedia,1383761362,2026-11-23T13:08:58Z
+f1c0b9d2d3b8,no-parl-2029,1,default,True,Verian,,2026-09-02,2026-09-08,985,,no-r,6.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5689,wikipedia,1383761362,2026-11-23T13:08:58Z
+f1c0b9d2d3b8,no-parl-2029,1,default,True,Verian,,2026-09-02,2026-09-08,985,,no-sp,4.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5689,wikipedia,1383761362,2026-11-23T13:08:58Z
+f1c0b9d2d3b8,no-parl-2029,1,default,True,Verian,,2026-09-02,2026-09-08,985,,no-sv,5.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5689,wikipedia,1383761362,2026-11-23T13:08:58Z
+f1c0b9d2d3b8,no-parl-2029,1,default,True,Verian,,2026-09-02,2026-09-08,985,,no-v,3.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5689,wikipedia,1383761362,2026-11-23T13:08:58Z
+f1c0b9d2d3b8,no-parl-2029,1,default,True,Verian,,2026-09-02,2026-09-08,985,,others,2.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5689,wikipedia,1383761362,2026-11-23T13:08:58Z
+14665f8c846f,no-parl-2029,1,default,True,Norstat,,2026-08-31,2026-09-05,1001,,no-ap,22.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5688,wikipedia,1383761362,2026-11-23T13:08:58Z
+14665f8c846f,no-parl-2029,1,default,True,Norstat,,2026-08-31,2026-09-05,1001,,no-frp,30.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5688,wikipedia,1383761362,2026-11-23T13:08:58Z
+14665f8c846f,no-parl-2029,1,default,True,Norstat,,2026-08-31,2026-09-05,1001,,no-h,15.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5688,wikipedia,1383761362,2026-11-23T13:08:58Z
+14665f8c846f,no-parl-2029,1,default,True,Norstat,,2026-08-31,2026-09-05,1001,,no-krf,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5688,wikipedia,1383761362,2026-11-23T13:08:58Z
+14665f8c846f,no-parl-2029,1,default,True,Norstat,,2026-08-31,2026-09-05,1001,,no-mdg,4.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5688,wikipedia,1383761362,2026-11-23T13:08:58Z
+14665f8c846f,no-parl-2029,1,default,True,Norstat,,2026-08-31,2026-09-05,1001,,no-r,7.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5688,wikipedia,1383761362,2026-11-23T13:08:58Z
+14665f8c846f,no-parl-2029,1,default,True,Norstat,,2026-08-31,2026-09-05,1001,,no-sp,6.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5688,wikipedia,1383761362,2026-11-23T13:08:58Z
+14665f8c846f,no-parl-2029,1,default,True,Norstat,,2026-08-31,2026-09-05,1001,,no-sv,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5688,wikipedia,1383761362,2026-11-23T13:08:58Z
+14665f8c846f,no-parl-2029,1,default,True,Norstat,,2026-08-31,2026-09-05,1001,,no-v,2.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5688,wikipedia,1383761362,2026-11-23T13:08:58Z
+14665f8c846f,no-parl-2029,1,default,True,Norstat,,2026-08-31,2026-09-05,1001,,others,2.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5688,wikipedia,1383761362,2026-11-23T13:08:58Z
+654a6e5cedb9,no-parl-2029,1,default,True,InFact,,,2026-09-02,,,no-ap,22.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5683,wikipedia,1383761362,2026-11-23T13:08:58Z
+654a6e5cedb9,no-parl-2029,1,default,True,InFact,,,2026-09-02,,,no-frp,31.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5683,wikipedia,1383761362,2026-11-23T13:08:58Z
+654a6e5cedb9,no-parl-2029,1,default,True,InFact,,,2026-09-02,,,no-h,13.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5683,wikipedia,1383761362,2026-11-23T13:08:58Z
+654a6e5cedb9,no-parl-2029,1,default,True,InFact,,,2026-09-02,,,no-krf,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5683,wikipedia,1383761362,2026-11-23T13:08:58Z
+654a6e5cedb9,no-parl-2029,1,default,True,InFact,,,2026-09-02,,,no-mdg,4.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5683,wikipedia,1383761362,2026-11-23T13:08:58Z
+654a6e5cedb9,no-parl-2029,1,default,True,InFact,,,2026-09-02,,,no-r,7.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5683,wikipedia,1383761362,2026-11-23T13:08:58Z
+654a6e5cedb9,no-parl-2029,1,default,True,InFact,,,2026-09-02,,,no-sp,5.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5683,wikipedia,1383761362,2026-11-23T13:08:58Z
+654a6e5cedb9,no-parl-2029,1,default,True,InFact,,,2026-09-02,,,no-sv,5.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5683,wikipedia,1383761362,2026-11-23T13:08:58Z
+654a6e5cedb9,no-parl-2029,1,default,True,InFact,,,2026-09-02,,,no-v,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5683,wikipedia,1383761362,2026-11-23T13:08:58Z
+654a6e5cedb9,no-parl-2029,1,default,True,InFact,,,2026-09-02,,,others,1.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5683,wikipedia,1383761362,2026-11-23T13:08:58Z
+c41fc012d25a,no-parl-2029,1,default,True,Norfakta,,2026-09-01,2026-09-02,1003,,no-ap,24.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5685,wikipedia,1383761362,2026-11-23T13:08:58Z
+c41fc012d25a,no-parl-2029,1,default,True,Norfakta,,2026-09-01,2026-09-02,1003,,no-frp,33.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5685,wikipedia,1383761362,2026-11-23T13:08:58Z
+c41fc012d25a,no-parl-2029,1,default,True,Norfakta,,2026-09-01,2026-09-02,1003,,no-h,13.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5685,wikipedia,1383761362,2026-11-23T13:08:58Z
+c41fc012d25a,no-parl-2029,1,default,True,Norfakta,,2026-09-01,2026-09-02,1003,,no-krf,3.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5685,wikipedia,1383761362,2026-11-23T13:08:58Z
+c41fc012d25a,no-parl-2029,1,default,True,Norfakta,,2026-09-01,2026-09-02,1003,,no-mdg,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5685,wikipedia,1383761362,2026-11-23T13:08:58Z
+c41fc012d25a,no-parl-2029,1,default,True,Norfakta,,2026-09-01,2026-09-02,1003,,no-r,6.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5685,wikipedia,1383761362,2026-11-23T13:08:58Z
+c41fc012d25a,no-parl-2029,1,default,True,Norfakta,,2026-09-01,2026-09-02,1003,,no-sp,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5685,wikipedia,1383761362,2026-11-23T13:08:58Z
+c41fc012d25a,no-parl-2029,1,default,True,Norfakta,,2026-09-01,2026-09-02,1003,,no-sv,4.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5685,wikipedia,1383761362,2026-11-23T13:08:58Z
+c41fc012d25a,no-parl-2029,1,default,True,Norfakta,,2026-09-01,2026-09-02,1003,,no-v,3.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5685,wikipedia,1383761362,2026-11-23T13:08:58Z
+c41fc012d25a,no-parl-2029,1,default,True,Norfakta,,2026-09-01,2026-09-02,1003,,others,2.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5685,wikipedia,1383761362,2026-11-23T13:08:58Z
+aa68125a4270,no-parl-2029,1,default,True,Opinion,,2026-08-24,2026-08-29,1000,,no-ap,22.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5682,wikipedia,1383761362,2026-11-23T13:08:58Z
+aa68125a4270,no-parl-2029,1,default,True,Opinion,,2026-08-24,2026-08-29,1000,,no-frp,31.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5682,wikipedia,1383761362,2026-11-23T13:08:58Z
+aa68125a4270,no-parl-2029,1,default,True,Opinion,,2026-08-24,2026-08-29,1000,,no-h,14.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5682,wikipedia,1383761362,2026-11-23T13:08:58Z
+aa68125a4270,no-parl-2029,1,default,True,Opinion,,2026-08-24,2026-08-29,1000,,no-krf,3.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5682,wikipedia,1383761362,2026-11-23T13:08:58Z
+aa68125a4270,no-parl-2029,1,default,True,Opinion,,2026-08-24,2026-08-29,1000,,no-mdg,4.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5682,wikipedia,1383761362,2026-11-23T13:08:58Z
+aa68125a4270,no-parl-2029,1,default,True,Opinion,,2026-08-24,2026-08-29,1000,,no-r,7.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5682,wikipedia,1383761362,2026-11-23T13:08:58Z
+aa68125a4270,no-parl-2029,1,default,True,Opinion,,2026-08-24,2026-08-29,1000,,no-sp,4.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5682,wikipedia,1383761362,2026-11-23T13:08:58Z
+aa68125a4270,no-parl-2029,1,default,True,Opinion,,2026-08-24,2026-08-29,1000,,no-sv,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5682,wikipedia,1383761362,2026-11-23T13:08:58Z
+aa68125a4270,no-parl-2029,1,default,True,Opinion,,2026-08-24,2026-08-29,1000,,no-v,3.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5682,wikipedia,1383761362,2026-11-23T13:08:58Z
+aa68125a4270,no-parl-2029,1,default,True,Opinion,,2026-08-24,2026-08-29,1000,,others,2.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5682,wikipedia,1383761362,2026-11-23T13:08:58Z
+c64b4ed91f43,no-parl-2029,1,default,True,Opinion,,2026-08-10,2026-08-16,1000,,no-ap,20.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5681,wikipedia,1383761362,2026-11-23T13:08:58Z
+c64b4ed91f43,no-parl-2029,1,default,True,Opinion,,2026-08-10,2026-08-16,1000,,no-frp,29.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5681,wikipedia,1383761362,2026-11-23T13:08:58Z
+c64b4ed91f43,no-parl-2029,1,default,True,Opinion,,2026-08-10,2026-08-16,1000,,no-h,15.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5681,wikipedia,1383761362,2026-11-23T13:08:58Z
+c64b4ed91f43,no-parl-2029,1,default,True,Opinion,,2026-08-10,2026-08-16,1000,,no-krf,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5681,wikipedia,1383761362,2026-11-23T13:08:58Z
+c64b4ed91f43,no-parl-2029,1,default,True,Opinion,,2026-08-10,2026-08-16,1000,,no-mdg,5.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5681,wikipedia,1383761362,2026-11-23T13:08:58Z
+c64b4ed91f43,no-parl-2029,1,default,True,Opinion,,2026-08-10,2026-08-16,1000,,no-r,7.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5681,wikipedia,1383761362,2026-11-23T13:08:58Z
+c64b4ed91f43,no-parl-2029,1,default,True,Opinion,,2026-08-10,2026-08-16,1000,,no-sp,5.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5681,wikipedia,1383761362,2026-11-23T13:08:58Z
+c64b4ed91f43,no-parl-2029,1,default,True,Opinion,,2026-08-10,2026-08-16,1000,,no-sv,5.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5681,wikipedia,1383761362,2026-11-23T13:08:58Z
+c64b4ed91f43,no-parl-2029,1,default,True,Opinion,,2026-08-10,2026-08-16,1000,,no-v,2.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5681,wikipedia,1383761362,2026-11-23T13:08:58Z
+c64b4ed91f43,no-parl-2029,1,default,True,Opinion,,2026-08-10,2026-08-16,1000,,others,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5681,wikipedia,1383761362,2026-11-23T13:08:58Z
+3beb4c09786b,no-parl-2029,1,default,True,Norstat,,,2026-08-11,1001,,no-ap,22.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5678,wikipedia,1383761362,2026-11-23T13:08:58Z
+3beb4c09786b,no-parl-2029,1,default,True,Norstat,,,2026-08-11,1001,,no-frp,30.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5678,wikipedia,1383761362,2026-11-23T13:08:58Z
+3beb4c09786b,no-parl-2029,1,default,True,Norstat,,,2026-08-11,1001,,no-h,14.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5678,wikipedia,1383761362,2026-11-23T13:08:58Z
+3beb4c09786b,no-parl-2029,1,default,True,Norstat,,,2026-08-11,1001,,no-krf,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5678,wikipedia,1383761362,2026-11-23T13:08:58Z
+3beb4c09786b,no-parl-2029,1,default,True,Norstat,,,2026-08-11,1001,,no-mdg,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5678,wikipedia,1383761362,2026-11-23T13:08:58Z
+3beb4c09786b,no-parl-2029,1,default,True,Norstat,,,2026-08-11,1001,,no-r,7.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5678,wikipedia,1383761362,2026-11-23T13:08:58Z
+3beb4c09786b,no-parl-2029,1,default,True,Norstat,,,2026-08-11,1001,,no-sp,5.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5678,wikipedia,1383761362,2026-11-23T13:08:58Z
+3beb4c09786b,no-parl-2029,1,default,True,Norstat,,,2026-08-11,1001,,no-sv,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5678,wikipedia,1383761362,2026-11-23T13:08:58Z
+3beb4c09786b,no-parl-2029,1,default,True,Norstat,,,2026-08-11,1001,,no-v,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5678,wikipedia,1383761362,2026-11-23T13:08:58Z
+3beb4c09786b,no-parl-2029,1,default,True,Norstat,,,2026-08-11,1001,,others,2.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5678,wikipedia,1383761362,2026-11-23T13:08:58Z
+72dbb69ecca8,no-parl-2029,1,default,True,Respons Analyse,,2026-08-05,2026-08-10,1000,,no-ap,22.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5679,wikipedia,1383761362,2026-11-23T13:08:58Z
+72dbb69ecca8,no-parl-2029,1,default,True,Respons Analyse,,2026-08-05,2026-08-10,1000,,no-frp,29.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5679,wikipedia,1383761362,2026-11-23T13:08:58Z
+72dbb69ecca8,no-parl-2029,1,default,True,Respons Analyse,,2026-08-05,2026-08-10,1000,,no-h,16.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5679,wikipedia,1383761362,2026-11-23T13:08:58Z
+72dbb69ecca8,no-parl-2029,1,default,True,Respons Analyse,,2026-08-05,2026-08-10,1000,,no-krf,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5679,wikipedia,1383761362,2026-11-23T13:08:58Z
+72dbb69ecca8,no-parl-2029,1,default,True,Respons Analyse,,2026-08-05,2026-08-10,1000,,no-mdg,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5679,wikipedia,1383761362,2026-11-23T13:08:58Z
+72dbb69ecca8,no-parl-2029,1,default,True,Respons Analyse,,2026-08-05,2026-08-10,1000,,no-r,8.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5679,wikipedia,1383761362,2026-11-23T13:08:58Z
+72dbb69ecca8,no-parl-2029,1,default,True,Respons Analyse,,2026-08-05,2026-08-10,1000,,no-sp,5.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5679,wikipedia,1383761362,2026-11-23T13:08:58Z
+72dbb69ecca8,no-parl-2029,1,default,True,Respons Analyse,,2026-08-05,2026-08-10,1000,,no-sv,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5679,wikipedia,1383761362,2026-11-23T13:08:58Z
+72dbb69ecca8,no-parl-2029,1,default,True,Respons Analyse,,2026-08-05,2026-08-10,1000,,no-v,3.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5679,wikipedia,1383761362,2026-11-23T13:08:58Z
+72dbb69ecca8,no-parl-2029,1,default,True,Respons Analyse,,2026-08-05,2026-08-10,1000,,others,1.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5679,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a782b0a36a4,no-parl-2029,1,default,True,Verian,,2026-08-03,2026-08-07,988,,no-ap,22.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5677,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a782b0a36a4,no-parl-2029,1,default,True,Verian,,2026-08-03,2026-08-07,988,,no-frp,29.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5677,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a782b0a36a4,no-parl-2029,1,default,True,Verian,,2026-08-03,2026-08-07,988,,no-h,15.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5677,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a782b0a36a4,no-parl-2029,1,default,True,Verian,,2026-08-03,2026-08-07,988,,no-krf,2.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5677,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a782b0a36a4,no-parl-2029,1,default,True,Verian,,2026-08-03,2026-08-07,988,,no-mdg,3.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5677,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a782b0a36a4,no-parl-2029,1,default,True,Verian,,2026-08-03,2026-08-07,988,,no-r,6.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5677,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a782b0a36a4,no-parl-2029,1,default,True,Verian,,2026-08-03,2026-08-07,988,,no-sp,5.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5677,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a782b0a36a4,no-parl-2029,1,default,True,Verian,,2026-08-03,2026-08-07,988,,no-sv,8.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5677,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a782b0a36a4,no-parl-2029,1,default,True,Verian,,2026-08-03,2026-08-07,988,,no-v,3.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5677,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a782b0a36a4,no-parl-2029,1,default,True,Verian,,2026-08-03,2026-08-07,988,,others,3.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5677,wikipedia,1383761362,2026-11-23T13:08:58Z
+03445b8d2961,no-parl-2029,1,default,True,Norfakta,,2026-08-04,2026-08-05,1004,,no-ap,25.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5676,wikipedia,1383761362,2026-11-23T13:08:58Z
+03445b8d2961,no-parl-2029,1,default,True,Norfakta,,2026-08-04,2026-08-05,1004,,no-frp,28.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5676,wikipedia,1383761362,2026-11-23T13:08:58Z
+03445b8d2961,no-parl-2029,1,default,True,Norfakta,,2026-08-04,2026-08-05,1004,,no-h,15.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5676,wikipedia,1383761362,2026-11-23T13:08:58Z
+03445b8d2961,no-parl-2029,1,default,True,Norfakta,,2026-08-04,2026-08-05,1004,,no-krf,3.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5676,wikipedia,1383761362,2026-11-23T13:08:58Z
+03445b8d2961,no-parl-2029,1,default,True,Norfakta,,2026-08-04,2026-08-05,1004,,no-mdg,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5676,wikipedia,1383761362,2026-11-23T13:08:58Z
+03445b8d2961,no-parl-2029,1,default,True,Norfakta,,2026-08-04,2026-08-05,1004,,no-r,6.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5676,wikipedia,1383761362,2026-11-23T13:08:58Z
+03445b8d2961,no-parl-2029,1,default,True,Norfakta,,2026-08-04,2026-08-05,1004,,no-sp,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5676,wikipedia,1383761362,2026-11-23T13:08:58Z
+03445b8d2961,no-parl-2029,1,default,True,Norfakta,,2026-08-04,2026-08-05,1004,,no-sv,5.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5676,wikipedia,1383761362,2026-11-23T13:08:58Z
+03445b8d2961,no-parl-2029,1,default,True,Norfakta,,2026-08-04,2026-08-05,1004,,no-v,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5676,wikipedia,1383761362,2026-11-23T13:08:58Z
+03445b8d2961,no-parl-2029,1,default,True,Norfakta,,2026-08-04,2026-08-05,1004,,others,2.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5676,wikipedia,1383761362,2026-11-23T13:08:58Z
+5fb3038f58ee,no-parl-2029,1,default,True,InFact,,,2026-08-04,1132,,no-ap,24.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5674,wikipedia,1383761362,2026-11-23T13:08:58Z
+5fb3038f58ee,no-parl-2029,1,default,True,InFact,,,2026-08-04,1132,,no-frp,32.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5674,wikipedia,1383761362,2026-11-23T13:08:58Z
+5fb3038f58ee,no-parl-2029,1,default,True,InFact,,,2026-08-04,1132,,no-h,13.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5674,wikipedia,1383761362,2026-11-23T13:08:58Z
+5fb3038f58ee,no-parl-2029,1,default,True,InFact,,,2026-08-04,1132,,no-krf,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5674,wikipedia,1383761362,2026-11-23T13:08:58Z
+5fb3038f58ee,no-parl-2029,1,default,True,InFact,,,2026-08-04,1132,,no-mdg,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5674,wikipedia,1383761362,2026-11-23T13:08:58Z
+5fb3038f58ee,no-parl-2029,1,default,True,InFact,,,2026-08-04,1132,,no-r,7.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5674,wikipedia,1383761362,2026-11-23T13:08:58Z
+5fb3038f58ee,no-parl-2029,1,default,True,InFact,,,2026-08-04,1132,,no-sp,5.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5674,wikipedia,1383761362,2026-11-23T13:08:58Z
+5fb3038f58ee,no-parl-2029,1,default,True,InFact,,,2026-08-04,1132,,no-sv,3.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5674,wikipedia,1383761362,2026-11-23T13:08:58Z
+5fb3038f58ee,no-parl-2029,1,default,True,InFact,,,2026-08-04,1132,,no-v,2.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5674,wikipedia,1383761362,2026-11-23T13:08:58Z
+5fb3038f58ee,no-parl-2029,1,default,True,InFact,,,2026-08-04,1132,,others,2.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5674,wikipedia,1383761362,2026-11-23T13:08:58Z
+777ed189675d,no-parl-2029,1,default,True,Opinion,,2026-07-27,2026-08-01,1001,,no-ap,21.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5675,wikipedia,1383761362,2026-11-23T13:08:58Z
+777ed189675d,no-parl-2029,1,default,True,Opinion,,2026-07-27,2026-08-01,1001,,no-frp,31.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5675,wikipedia,1383761362,2026-11-23T13:08:58Z
+777ed189675d,no-parl-2029,1,default,True,Opinion,,2026-07-27,2026-08-01,1001,,no-h,14.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5675,wikipedia,1383761362,2026-11-23T13:08:58Z
+777ed189675d,no-parl-2029,1,default,True,Opinion,,2026-07-27,2026-08-01,1001,,no-krf,3.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5675,wikipedia,1383761362,2026-11-23T13:08:58Z
+777ed189675d,no-parl-2029,1,default,True,Opinion,,2026-07-27,2026-08-01,1001,,no-mdg,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5675,wikipedia,1383761362,2026-11-23T13:08:58Z
+777ed189675d,no-parl-2029,1,default,True,Opinion,,2026-07-27,2026-08-01,1001,,no-r,8.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5675,wikipedia,1383761362,2026-11-23T13:08:58Z
+777ed189675d,no-parl-2029,1,default,True,Opinion,,2026-07-27,2026-08-01,1001,,no-sp,4.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5675,wikipedia,1383761362,2026-11-23T13:08:58Z
+777ed189675d,no-parl-2029,1,default,True,Opinion,,2026-07-27,2026-08-01,1001,,no-sv,4.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5675,wikipedia,1383761362,2026-11-23T13:08:58Z
+777ed189675d,no-parl-2029,1,default,True,Opinion,,2026-07-27,2026-08-01,1001,,no-v,3.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5675,wikipedia,1383761362,2026-11-23T13:08:58Z
+777ed189675d,no-parl-2029,1,default,True,Opinion,,2026-07-27,2026-08-01,1001,,others,3.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5675,wikipedia,1383761362,2026-11-23T13:08:58Z
+20d60ec8f5f7,no-parl-2029,1,default,True,Norfakta,,2026-07-07,2026-07-08,1003,,no-ap,22.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5673,wikipedia,1383761362,2026-11-23T13:08:58Z
+20d60ec8f5f7,no-parl-2029,1,default,True,Norfakta,,2026-07-07,2026-07-08,1003,,no-frp,28.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5673,wikipedia,1383761362,2026-11-23T13:08:58Z
+20d60ec8f5f7,no-parl-2029,1,default,True,Norfakta,,2026-07-07,2026-07-08,1003,,no-h,15.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5673,wikipedia,1383761362,2026-11-23T13:08:58Z
+20d60ec8f5f7,no-parl-2029,1,default,True,Norfakta,,2026-07-07,2026-07-08,1003,,no-krf,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5673,wikipedia,1383761362,2026-11-23T13:08:58Z
+20d60ec8f5f7,no-parl-2029,1,default,True,Norfakta,,2026-07-07,2026-07-08,1003,,no-mdg,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5673,wikipedia,1383761362,2026-11-23T13:08:58Z
+20d60ec8f5f7,no-parl-2029,1,default,True,Norfakta,,2026-07-07,2026-07-08,1003,,no-r,8.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5673,wikipedia,1383761362,2026-11-23T13:08:58Z
+20d60ec8f5f7,no-parl-2029,1,default,True,Norfakta,,2026-07-07,2026-07-08,1003,,no-sp,5.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5673,wikipedia,1383761362,2026-11-23T13:08:58Z
+20d60ec8f5f7,no-parl-2029,1,default,True,Norfakta,,2026-07-07,2026-07-08,1003,,no-sv,5.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5673,wikipedia,1383761362,2026-11-23T13:08:58Z
+20d60ec8f5f7,no-parl-2029,1,default,True,Norfakta,,2026-07-07,2026-07-08,1003,,no-v,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5673,wikipedia,1383761362,2026-11-23T13:08:58Z
+20d60ec8f5f7,no-parl-2029,1,default,True,Norfakta,,2026-07-07,2026-07-08,1003,,others,2.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5673,wikipedia,1383761362,2026-11-23T13:08:58Z
+da84d7dc700a,no-parl-2029,1,default,True,InFact,,,2026-06-30,1172,,no-ap,21.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5671,wikipedia,1383761362,2026-11-23T13:08:58Z
+da84d7dc700a,no-parl-2029,1,default,True,InFact,,,2026-06-30,1172,,no-frp,31.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5671,wikipedia,1383761362,2026-11-23T13:08:58Z
+da84d7dc700a,no-parl-2029,1,default,True,InFact,,,2026-06-30,1172,,no-h,14.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5671,wikipedia,1383761362,2026-11-23T13:08:58Z
+da84d7dc700a,no-parl-2029,1,default,True,InFact,,,2026-06-30,1172,,no-krf,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5671,wikipedia,1383761362,2026-11-23T13:08:58Z
+da84d7dc700a,no-parl-2029,1,default,True,InFact,,,2026-06-30,1172,,no-mdg,5.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5671,wikipedia,1383761362,2026-11-23T13:08:58Z
+da84d7dc700a,no-parl-2029,1,default,True,InFact,,,2026-06-30,1172,,no-r,6.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5671,wikipedia,1383761362,2026-11-23T13:08:58Z
+da84d7dc700a,no-parl-2029,1,default,True,InFact,,,2026-06-30,1172,,no-sp,4.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5671,wikipedia,1383761362,2026-11-23T13:08:58Z
+da84d7dc700a,no-parl-2029,1,default,True,InFact,,,2026-06-30,1172,,no-sv,5.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5671,wikipedia,1383761362,2026-11-23T13:08:58Z
+da84d7dc700a,no-parl-2029,1,default,True,InFact,,,2026-06-30,1172,,no-v,5.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5671,wikipedia,1383761362,2026-11-23T13:08:58Z
+da84d7dc700a,no-parl-2029,1,default,True,InFact,,,2026-06-30,1172,,others,2.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5671,wikipedia,1383761362,2026-11-23T13:08:58Z
+d7e6ef6ae206,no-parl-2029,1,default,True,Verian,,2026-06-24,2026-06-30,987,,no-ap,23.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5672,wikipedia,1383761362,2026-11-23T13:08:58Z
+d7e6ef6ae206,no-parl-2029,1,default,True,Verian,,2026-06-24,2026-06-30,987,,no-frp,29.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5672,wikipedia,1383761362,2026-11-23T13:08:58Z
+d7e6ef6ae206,no-parl-2029,1,default,True,Verian,,2026-06-24,2026-06-30,987,,no-h,14.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5672,wikipedia,1383761362,2026-11-23T13:08:58Z
+d7e6ef6ae206,no-parl-2029,1,default,True,Verian,,2026-06-24,2026-06-30,987,,no-krf,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5672,wikipedia,1383761362,2026-11-23T13:08:58Z
+d7e6ef6ae206,no-parl-2029,1,default,True,Verian,,2026-06-24,2026-06-30,987,,no-mdg,5.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5672,wikipedia,1383761362,2026-11-23T13:08:58Z
+d7e6ef6ae206,no-parl-2029,1,default,True,Verian,,2026-06-24,2026-06-30,987,,no-r,6.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5672,wikipedia,1383761362,2026-11-23T13:08:58Z
+d7e6ef6ae206,no-parl-2029,1,default,True,Verian,,2026-06-24,2026-06-30,987,,no-sp,4.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5672,wikipedia,1383761362,2026-11-23T13:08:58Z
+d7e6ef6ae206,no-parl-2029,1,default,True,Verian,,2026-06-24,2026-06-30,987,,no-sv,5.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5672,wikipedia,1383761362,2026-11-23T13:08:58Z
+d7e6ef6ae206,no-parl-2029,1,default,True,Verian,,2026-06-24,2026-06-30,987,,no-v,3.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5672,wikipedia,1383761362,2026-11-23T13:08:58Z
+d7e6ef6ae206,no-parl-2029,1,default,True,Verian,,2026-06-24,2026-06-30,987,,others,3.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5672,wikipedia,1383761362,2026-11-23T13:08:58Z
+ede81df97251,no-parl-2029,1,default,True,Norstat,,,2026-06-16,1005,,no-ap,22.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5669,wikipedia,1383761362,2026-11-23T13:08:58Z
+ede81df97251,no-parl-2029,1,default,True,Norstat,,,2026-06-16,1005,,no-frp,30.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5669,wikipedia,1383761362,2026-11-23T13:08:58Z
+ede81df97251,no-parl-2029,1,default,True,Norstat,,,2026-06-16,1005,,no-h,13.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5669,wikipedia,1383761362,2026-11-23T13:08:58Z
+ede81df97251,no-parl-2029,1,default,True,Norstat,,,2026-06-16,1005,,no-krf,2.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5669,wikipedia,1383761362,2026-11-23T13:08:58Z
+ede81df97251,no-parl-2029,1,default,True,Norstat,,,2026-06-16,1005,,no-mdg,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5669,wikipedia,1383761362,2026-11-23T13:08:58Z
+ede81df97251,no-parl-2029,1,default,True,Norstat,,,2026-06-16,1005,,no-r,7.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5669,wikipedia,1383761362,2026-11-23T13:08:58Z
+ede81df97251,no-parl-2029,1,default,True,Norstat,,,2026-06-16,1005,,no-sp,5.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5669,wikipedia,1383761362,2026-11-23T13:08:58Z
+ede81df97251,no-parl-2029,1,default,True,Norstat,,,2026-06-16,1005,,no-sv,5.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5669,wikipedia,1383761362,2026-11-23T13:08:58Z
+ede81df97251,no-parl-2029,1,default,True,Norstat,,,2026-06-16,1005,,no-v,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5669,wikipedia,1383761362,2026-11-23T13:08:58Z
+ede81df97251,no-parl-2029,1,default,True,Norstat,,,2026-06-16,1005,,others,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5669,wikipedia,1383761362,2026-11-23T13:08:58Z
+4af08db21cde,no-parl-2029,1,default,True,Opinion,,2026-06-02,2026-06-08,1000,,no-ap,19.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5664,wikipedia,1383761362,2026-11-23T13:08:58Z
+4af08db21cde,no-parl-2029,1,default,True,Opinion,,2026-06-02,2026-06-08,1000,,no-frp,31.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5664,wikipedia,1383761362,2026-11-23T13:08:58Z
+4af08db21cde,no-parl-2029,1,default,True,Opinion,,2026-06-02,2026-06-08,1000,,no-h,16.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5664,wikipedia,1383761362,2026-11-23T13:08:58Z
+4af08db21cde,no-parl-2029,1,default,True,Opinion,,2026-06-02,2026-06-08,1000,,no-krf,3.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5664,wikipedia,1383761362,2026-11-23T13:08:58Z
+4af08db21cde,no-parl-2029,1,default,True,Opinion,,2026-06-02,2026-06-08,1000,,no-mdg,4.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5664,wikipedia,1383761362,2026-11-23T13:08:58Z
+4af08db21cde,no-parl-2029,1,default,True,Opinion,,2026-06-02,2026-06-08,1000,,no-r,8.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5664,wikipedia,1383761362,2026-11-23T13:08:58Z
+4af08db21cde,no-parl-2029,1,default,True,Opinion,,2026-06-02,2026-06-08,1000,,no-sp,5.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5664,wikipedia,1383761362,2026-11-23T13:08:58Z
+4af08db21cde,no-parl-2029,1,default,True,Opinion,,2026-06-02,2026-06-08,1000,,no-sv,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5664,wikipedia,1383761362,2026-11-23T13:08:58Z
+4af08db21cde,no-parl-2029,1,default,True,Opinion,,2026-06-02,2026-06-08,1000,,no-v,3.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5664,wikipedia,1383761362,2026-11-23T13:08:58Z
+4af08db21cde,no-parl-2029,1,default,True,Opinion,,2026-06-02,2026-06-08,1000,,others,2.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5664,wikipedia,1383761362,2026-11-23T13:08:58Z
+ece3785f3b14,no-parl-2029,1,default,True,Respons Analyse,,2026-06-03,2026-06-08,1003,,no-ap,21.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5663,wikipedia,1383761362,2026-11-23T13:08:58Z
+ece3785f3b14,no-parl-2029,1,default,True,Respons Analyse,,2026-06-03,2026-06-08,1003,,no-frp,31.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5663,wikipedia,1383761362,2026-11-23T13:08:58Z
+ece3785f3b14,no-parl-2029,1,default,True,Respons Analyse,,2026-06-03,2026-06-08,1003,,no-h,16.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5663,wikipedia,1383761362,2026-11-23T13:08:58Z
+ece3785f3b14,no-parl-2029,1,default,True,Respons Analyse,,2026-06-03,2026-06-08,1003,,no-krf,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5663,wikipedia,1383761362,2026-11-23T13:08:58Z
+ece3785f3b14,no-parl-2029,1,default,True,Respons Analyse,,2026-06-03,2026-06-08,1003,,no-mdg,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5663,wikipedia,1383761362,2026-11-23T13:08:58Z
+ece3785f3b14,no-parl-2029,1,default,True,Respons Analyse,,2026-06-03,2026-06-08,1003,,no-r,7.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5663,wikipedia,1383761362,2026-11-23T13:08:58Z
+ece3785f3b14,no-parl-2029,1,default,True,Respons Analyse,,2026-06-03,2026-06-08,1003,,no-sp,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5663,wikipedia,1383761362,2026-11-23T13:08:58Z
+ece3785f3b14,no-parl-2029,1,default,True,Respons Analyse,,2026-06-03,2026-06-08,1003,,no-sv,5.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5663,wikipedia,1383761362,2026-11-23T13:08:58Z
+ece3785f3b14,no-parl-2029,1,default,True,Respons Analyse,,2026-06-03,2026-06-08,1003,,no-v,2.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5663,wikipedia,1383761362,2026-11-23T13:08:58Z
+ece3785f3b14,no-parl-2029,1,default,True,Respons Analyse,,2026-06-03,2026-06-08,1003,,others,2.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5663,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a9f7ca04e58,no-parl-2029,1,default,True,Norfakta,,2026-06-02,2026-06-03,1000,,no-ap,21.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5661,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a9f7ca04e58,no-parl-2029,1,default,True,Norfakta,,2026-06-02,2026-06-03,1000,,no-frp,28.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5661,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a9f7ca04e58,no-parl-2029,1,default,True,Norfakta,,2026-06-02,2026-06-03,1000,,no-h,17.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5661,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a9f7ca04e58,no-parl-2029,1,default,True,Norfakta,,2026-06-02,2026-06-03,1000,,no-krf,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5661,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a9f7ca04e58,no-parl-2029,1,default,True,Norfakta,,2026-06-02,2026-06-03,1000,,no-mdg,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5661,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a9f7ca04e58,no-parl-2029,1,default,True,Norfakta,,2026-06-02,2026-06-03,1000,,no-r,7.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5661,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a9f7ca04e58,no-parl-2029,1,default,True,Norfakta,,2026-06-02,2026-06-03,1000,,no-sp,5.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5661,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a9f7ca04e58,no-parl-2029,1,default,True,Norfakta,,2026-06-02,2026-06-03,1000,,no-sv,5.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5661,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a9f7ca04e58,no-parl-2029,1,default,True,Norfakta,,2026-06-02,2026-06-03,1000,,no-v,3.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5661,wikipedia,1383761362,2026-11-23T13:08:58Z
+7a9f7ca04e58,no-parl-2029,1,default,True,Norfakta,,2026-06-02,2026-06-03,1000,,others,3.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5661,wikipedia,1383761362,2026-11-23T13:08:58Z
+311d9352e91e,no-parl-2029,1,default,True,InFact,,,2026-06-01,1145,,no-ap,22.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5657,wikipedia,1383761362,2026-11-23T13:08:58Z
+311d9352e91e,no-parl-2029,1,default,True,InFact,,,2026-06-01,1145,,no-frp,33.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5657,wikipedia,1383761362,2026-11-23T13:08:58Z
+311d9352e91e,no-parl-2029,1,default,True,InFact,,,2026-06-01,1145,,no-h,12.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5657,wikipedia,1383761362,2026-11-23T13:08:58Z
+311d9352e91e,no-parl-2029,1,default,True,InFact,,,2026-06-01,1145,,no-krf,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5657,wikipedia,1383761362,2026-11-23T13:08:58Z
+311d9352e91e,no-parl-2029,1,default,True,InFact,,,2026-06-01,1145,,no-mdg,5.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5657,wikipedia,1383761362,2026-11-23T13:08:58Z
+311d9352e91e,no-parl-2029,1,default,True,InFact,,,2026-06-01,1145,,no-r,7.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5657,wikipedia,1383761362,2026-11-23T13:08:58Z
+311d9352e91e,no-parl-2029,1,default,True,InFact,,,2026-06-01,1145,,no-sp,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5657,wikipedia,1383761362,2026-11-23T13:08:58Z
+311d9352e91e,no-parl-2029,1,default,True,InFact,,,2026-06-01,1145,,no-sv,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5657,wikipedia,1383761362,2026-11-23T13:08:58Z
+311d9352e91e,no-parl-2029,1,default,True,InFact,,,2026-06-01,1145,,no-v,4.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5657,wikipedia,1383761362,2026-11-23T13:08:58Z
+311d9352e91e,no-parl-2029,1,default,True,InFact,,,2026-06-01,1145,,others,2.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5657,wikipedia,1383761362,2026-11-23T13:08:58Z
+fbd856906944,no-parl-2029,1,default,True,Verian,,2026-05-26,2026-05-29,991,,no-ap,22.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5658,wikipedia,1383761362,2026-11-23T13:08:58Z
+fbd856906944,no-parl-2029,1,default,True,Verian,,2026-05-26,2026-05-29,991,,no-frp,30.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5658,wikipedia,1383761362,2026-11-23T13:08:58Z
+fbd856906944,no-parl-2029,1,default,True,Verian,,2026-05-26,2026-05-29,991,,no-h,18.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5658,wikipedia,1383761362,2026-11-23T13:08:58Z
+fbd856906944,no-parl-2029,1,default,True,Verian,,2026-05-26,2026-05-29,991,,no-krf,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5658,wikipedia,1383761362,2026-11-23T13:08:58Z
+fbd856906944,no-parl-2029,1,default,True,Verian,,2026-05-26,2026-05-29,991,,no-mdg,3.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5658,wikipedia,1383761362,2026-11-23T13:08:58Z
+fbd856906944,no-parl-2029,1,default,True,Verian,,2026-05-26,2026-05-29,991,,no-r,7.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5658,wikipedia,1383761362,2026-11-23T13:08:58Z
+fbd856906944,no-parl-2029,1,default,True,Verian,,2026-05-26,2026-05-29,991,,no-sp,5.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5658,wikipedia,1383761362,2026-11-23T13:08:58Z
+fbd856906944,no-parl-2029,1,default,True,Verian,,2026-05-26,2026-05-29,991,,no-sv,5.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5658,wikipedia,1383761362,2026-11-23T13:08:58Z
+fbd856906944,no-parl-2029,1,default,True,Verian,,2026-05-26,2026-05-29,991,,no-v,2.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5658,wikipedia,1383761362,2026-11-23T13:08:58Z
+fbd856906944,no-parl-2029,1,default,True,Verian,,2026-05-26,2026-05-29,991,,others,1.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5658,wikipedia,1383761362,2026-11-23T13:08:58Z
+0c95497da8be,no-parl-2029,1,default,True,Opinion,,2026-05-18,2026-05-25,1001,,no-ap,22.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5656,wikipedia,1383761362,2026-11-23T13:08:58Z
+0c95497da8be,no-parl-2029,1,default,True,Opinion,,2026-05-18,2026-05-25,1001,,no-frp,29.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5656,wikipedia,1383761362,2026-11-23T13:08:58Z
+0c95497da8be,no-parl-2029,1,default,True,Opinion,,2026-05-18,2026-05-25,1001,,no-h,16.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5656,wikipedia,1383761362,2026-11-23T13:08:58Z
+0c95497da8be,no-parl-2029,1,default,True,Opinion,,2026-05-18,2026-05-25,1001,,no-krf,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5656,wikipedia,1383761362,2026-11-23T13:08:58Z
+0c95497da8be,no-parl-2029,1,default,True,Opinion,,2026-05-18,2026-05-25,1001,,no-mdg,3.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5656,wikipedia,1383761362,2026-11-23T13:08:58Z
+0c95497da8be,no-parl-2029,1,default,True,Opinion,,2026-05-18,2026-05-25,1001,,no-r,7.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5656,wikipedia,1383761362,2026-11-23T13:08:58Z
+0c95497da8be,no-parl-2029,1,default,True,Opinion,,2026-05-18,2026-05-25,1001,,no-sp,4.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5656,wikipedia,1383761362,2026-11-23T13:08:58Z
+0c95497da8be,no-parl-2029,1,default,True,Opinion,,2026-05-18,2026-05-25,1001,,no-sv,5.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5656,wikipedia,1383761362,2026-11-23T13:08:58Z
+0c95497da8be,no-parl-2029,1,default,True,Opinion,,2026-05-18,2026-05-25,1001,,no-v,2.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5656,wikipedia,1383761362,2026-11-23T13:08:58Z
+0c95497da8be,no-parl-2029,1,default,True,Opinion,,2026-05-18,2026-05-25,1001,,others,3.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5656,wikipedia,1383761362,2026-11-23T13:08:58Z
+519b501a4ec1,no-parl-2029,1,default,True,Norstat,,2026-05-11,2026-05-18,1000,,no-ap,21.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5654,wikipedia,1383761362,2026-11-23T13:08:58Z
+519b501a4ec1,no-parl-2029,1,default,True,Norstat,,2026-05-11,2026-05-18,1000,,no-frp,31.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5654,wikipedia,1383761362,2026-11-23T13:08:58Z
+519b501a4ec1,no-parl-2029,1,default,True,Norstat,,2026-05-11,2026-05-18,1000,,no-h,16.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5654,wikipedia,1383761362,2026-11-23T13:08:58Z
+519b501a4ec1,no-parl-2029,1,default,True,Norstat,,2026-05-11,2026-05-18,1000,,no-krf,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5654,wikipedia,1383761362,2026-11-23T13:08:58Z
+519b501a4ec1,no-parl-2029,1,default,True,Norstat,,2026-05-11,2026-05-18,1000,,no-mdg,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5654,wikipedia,1383761362,2026-11-23T13:08:58Z
+519b501a4ec1,no-parl-2029,1,default,True,Norstat,,2026-05-11,2026-05-18,1000,,no-r,7.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5654,wikipedia,1383761362,2026-11-23T13:08:58Z
+519b501a4ec1,no-parl-2029,1,default,True,Norstat,,2026-05-11,2026-05-18,1000,,no-sp,5.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5654,wikipedia,1383761362,2026-11-23T13:08:58Z
+519b501a4ec1,no-parl-2029,1,default,True,Norstat,,2026-05-11,2026-05-18,1000,,no-sv,4.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5654,wikipedia,1383761362,2026-11-23T13:08:58Z
+519b501a4ec1,no-parl-2029,1,default,True,Norstat,,2026-05-11,2026-05-18,1000,,no-v,2.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5654,wikipedia,1383761362,2026-11-23T13:08:58Z
+519b501a4ec1,no-parl-2029,1,default,True,Norstat,,2026-05-11,2026-05-18,1000,,others,3.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5654,wikipedia,1383761362,2026-11-23T13:08:58Z
+03c9b2af805b,no-parl-2029,1,default,True,Respons Analyse,,2026-05-06,2026-05-11,1001,,no-ap,22.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5652,wikipedia,1383761362,2026-11-23T13:08:58Z
+03c9b2af805b,no-parl-2029,1,default,True,Respons Analyse,,2026-05-06,2026-05-11,1001,,no-frp,27.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5652,wikipedia,1383761362,2026-11-23T13:08:58Z
+03c9b2af805b,no-parl-2029,1,default,True,Respons Analyse,,2026-05-06,2026-05-11,1001,,no-h,18.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5652,wikipedia,1383761362,2026-11-23T13:08:58Z
+03c9b2af805b,no-parl-2029,1,default,True,Respons Analyse,,2026-05-06,2026-05-11,1001,,no-krf,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5652,wikipedia,1383761362,2026-11-23T13:08:58Z
+03c9b2af805b,no-parl-2029,1,default,True,Respons Analyse,,2026-05-06,2026-05-11,1001,,no-mdg,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5652,wikipedia,1383761362,2026-11-23T13:08:58Z
+03c9b2af805b,no-parl-2029,1,default,True,Respons Analyse,,2026-05-06,2026-05-11,1001,,no-r,6.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5652,wikipedia,1383761362,2026-11-23T13:08:58Z
+03c9b2af805b,no-parl-2029,1,default,True,Respons Analyse,,2026-05-06,2026-05-11,1001,,no-sp,5.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5652,wikipedia,1383761362,2026-11-23T13:08:58Z
+03c9b2af805b,no-parl-2029,1,default,True,Respons Analyse,,2026-05-06,2026-05-11,1001,,no-sv,5.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5652,wikipedia,1383761362,2026-11-23T13:08:58Z
+03c9b2af805b,no-parl-2029,1,default,True,Respons Analyse,,2026-05-06,2026-05-11,1001,,no-v,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5652,wikipedia,1383761362,2026-11-23T13:08:58Z
+03c9b2af805b,no-parl-2029,1,default,True,Respons Analyse,,2026-05-06,2026-05-11,1001,,others,2.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5652,wikipedia,1383761362,2026-11-23T13:08:58Z
+61ed86379488,no-parl-2029,1,default,True,Opinion,,2026-05-04,2026-05-10,1000,,no-ap,22.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5653,wikipedia,1383761362,2026-11-23T13:08:58Z
+61ed86379488,no-parl-2029,1,default,True,Opinion,,2026-05-04,2026-05-10,1000,,no-frp,31.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5653,wikipedia,1383761362,2026-11-23T13:08:58Z
+61ed86379488,no-parl-2029,1,default,True,Opinion,,2026-05-04,2026-05-10,1000,,no-h,15.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5653,wikipedia,1383761362,2026-11-23T13:08:58Z
+61ed86379488,no-parl-2029,1,default,True,Opinion,,2026-05-04,2026-05-10,1000,,no-krf,3.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5653,wikipedia,1383761362,2026-11-23T13:08:58Z
+61ed86379488,no-parl-2029,1,default,True,Opinion,,2026-05-04,2026-05-10,1000,,no-mdg,5.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5653,wikipedia,1383761362,2026-11-23T13:08:58Z
+61ed86379488,no-parl-2029,1,default,True,Opinion,,2026-05-04,2026-05-10,1000,,no-r,6.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5653,wikipedia,1383761362,2026-11-23T13:08:58Z
+61ed86379488,no-parl-2029,1,default,True,Opinion,,2026-05-04,2026-05-10,1000,,no-sp,5.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5653,wikipedia,1383761362,2026-11-23T13:08:58Z
+61ed86379488,no-parl-2029,1,default,True,Opinion,,2026-05-04,2026-05-10,1000,,no-sv,4.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5653,wikipedia,1383761362,2026-11-23T13:08:58Z
+61ed86379488,no-parl-2029,1,default,True,Opinion,,2026-05-04,2026-05-10,1000,,no-v,3.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5653,wikipedia,1383761362,2026-11-23T13:08:58Z
+61ed86379488,no-parl-2029,1,default,True,Opinion,,2026-05-04,2026-05-10,1000,,others,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5653,wikipedia,1383761362,2026-11-23T13:08:58Z
+824e1c7f0068,no-parl-2029,1,default,True,Norfakta,,2026-05-06,2026-05-07,1001,,no-ap,22.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5650,wikipedia,1383761362,2026-11-23T13:08:58Z
+824e1c7f0068,no-parl-2029,1,default,True,Norfakta,,2026-05-06,2026-05-07,1001,,no-frp,28.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5650,wikipedia,1383761362,2026-11-23T13:08:58Z
+824e1c7f0068,no-parl-2029,1,default,True,Norfakta,,2026-05-06,2026-05-07,1001,,no-h,17.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5650,wikipedia,1383761362,2026-11-23T13:08:58Z
+824e1c7f0068,no-parl-2029,1,default,True,Norfakta,,2026-05-06,2026-05-07,1001,,no-krf,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5650,wikipedia,1383761362,2026-11-23T13:08:58Z
+824e1c7f0068,no-parl-2029,1,default,True,Norfakta,,2026-05-06,2026-05-07,1001,,no-mdg,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5650,wikipedia,1383761362,2026-11-23T13:08:58Z
+824e1c7f0068,no-parl-2029,1,default,True,Norfakta,,2026-05-06,2026-05-07,1001,,no-r,7.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5650,wikipedia,1383761362,2026-11-23T13:08:58Z
+824e1c7f0068,no-parl-2029,1,default,True,Norfakta,,2026-05-06,2026-05-07,1001,,no-sp,4.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5650,wikipedia,1383761362,2026-11-23T13:08:58Z
+824e1c7f0068,no-parl-2029,1,default,True,Norfakta,,2026-05-06,2026-05-07,1001,,no-sv,4.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5650,wikipedia,1383761362,2026-11-23T13:08:58Z
+824e1c7f0068,no-parl-2029,1,default,True,Norfakta,,2026-05-06,2026-05-07,1001,,no-v,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5650,wikipedia,1383761362,2026-11-23T13:08:58Z
+824e1c7f0068,no-parl-2029,1,default,True,Norfakta,,2026-05-06,2026-05-07,1001,,others,2.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5650,wikipedia,1383761362,2026-11-23T13:08:58Z
+e955e07ab466,no-parl-2029,1,default,True,Verian,,2026-05-04,2026-05-07,594,,no-ap,24.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5648,wikipedia,1383761362,2026-11-23T13:08:58Z
+e955e07ab466,no-parl-2029,1,default,True,Verian,,2026-05-04,2026-05-07,594,,no-frp,28.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5648,wikipedia,1383761362,2026-11-23T13:08:58Z
+e955e07ab466,no-parl-2029,1,default,True,Verian,,2026-05-04,2026-05-07,594,,no-h,16.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5648,wikipedia,1383761362,2026-11-23T13:08:58Z
+e955e07ab466,no-parl-2029,1,default,True,Verian,,2026-05-04,2026-05-07,594,,no-krf,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5648,wikipedia,1383761362,2026-11-23T13:08:58Z
+e955e07ab466,no-parl-2029,1,default,True,Verian,,2026-05-04,2026-05-07,594,,no-mdg,3.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5648,wikipedia,1383761362,2026-11-23T13:08:58Z
+e955e07ab466,no-parl-2029,1,default,True,Verian,,2026-05-04,2026-05-07,594,,no-r,6.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5648,wikipedia,1383761362,2026-11-23T13:08:58Z
+e955e07ab466,no-parl-2029,1,default,True,Verian,,2026-05-04,2026-05-07,594,,no-sp,5.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5648,wikipedia,1383761362,2026-11-23T13:08:58Z
+e955e07ab466,no-parl-2029,1,default,True,Verian,,2026-05-04,2026-05-07,594,,no-sv,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5648,wikipedia,1383761362,2026-11-23T13:08:58Z
+e955e07ab466,no-parl-2029,1,default,True,Verian,,2026-05-04,2026-05-07,594,,no-v,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5648,wikipedia,1383761362,2026-11-23T13:08:58Z
+e955e07ab466,no-parl-2029,1,default,True,Verian,,2026-05-04,2026-05-07,594,,others,3.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5648,wikipedia,1383761362,2026-11-23T13:08:58Z
+210137761ae4,no-parl-2029,1,default,True,InFact,,,2026-05-04,1124,,no-ap,23.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5647,wikipedia,1383761362,2026-11-23T13:08:58Z
+210137761ae4,no-parl-2029,1,default,True,InFact,,,2026-05-04,1124,,no-frp,30.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5647,wikipedia,1383761362,2026-11-23T13:08:58Z
+210137761ae4,no-parl-2029,1,default,True,InFact,,,2026-05-04,1124,,no-h,14.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5647,wikipedia,1383761362,2026-11-23T13:08:58Z
+210137761ae4,no-parl-2029,1,default,True,InFact,,,2026-05-04,1124,,no-krf,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5647,wikipedia,1383761362,2026-11-23T13:08:58Z
+210137761ae4,no-parl-2029,1,default,True,InFact,,,2026-05-04,1124,,no-mdg,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5647,wikipedia,1383761362,2026-11-23T13:08:58Z
+210137761ae4,no-parl-2029,1,default,True,InFact,,,2026-05-04,1124,,no-r,6.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5647,wikipedia,1383761362,2026-11-23T13:08:58Z
+210137761ae4,no-parl-2029,1,default,True,InFact,,,2026-05-04,1124,,no-sp,6.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5647,wikipedia,1383761362,2026-11-23T13:08:58Z
+210137761ae4,no-parl-2029,1,default,True,InFact,,,2026-05-04,1124,,no-sv,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5647,wikipedia,1383761362,2026-11-23T13:08:58Z
+210137761ae4,no-parl-2029,1,default,True,InFact,,,2026-05-04,1124,,no-v,3.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5647,wikipedia,1383761362,2026-11-23T13:08:58Z
+210137761ae4,no-parl-2029,1,default,True,InFact,,,2026-05-04,1124,,others,1.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5647,wikipedia,1383761362,2026-11-23T13:08:58Z
+329955c0951b,no-parl-2029,1,default,True,Opinion,,2026-04-20,2026-04-25,1001,,no-ap,19.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5646,wikipedia,1383761362,2026-11-23T13:08:58Z
+329955c0951b,no-parl-2029,1,default,True,Opinion,,2026-04-20,2026-04-25,1001,,no-frp,29.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5646,wikipedia,1383761362,2026-11-23T13:08:58Z
+329955c0951b,no-parl-2029,1,default,True,Opinion,,2026-04-20,2026-04-25,1001,,no-h,19.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5646,wikipedia,1383761362,2026-11-23T13:08:58Z
+329955c0951b,no-parl-2029,1,default,True,Opinion,,2026-04-20,2026-04-25,1001,,no-krf,3.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5646,wikipedia,1383761362,2026-11-23T13:08:58Z
+329955c0951b,no-parl-2029,1,default,True,Opinion,,2026-04-20,2026-04-25,1001,,no-mdg,4.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5646,wikipedia,1383761362,2026-11-23T13:08:58Z
+329955c0951b,no-parl-2029,1,default,True,Opinion,,2026-04-20,2026-04-25,1001,,no-r,6.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5646,wikipedia,1383761362,2026-11-23T13:08:58Z
+329955c0951b,no-parl-2029,1,default,True,Opinion,,2026-04-20,2026-04-25,1001,,no-sp,5.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5646,wikipedia,1383761362,2026-11-23T13:08:58Z
+329955c0951b,no-parl-2029,1,default,True,Opinion,,2026-04-20,2026-04-25,1001,,no-sv,5.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5646,wikipedia,1383761362,2026-11-23T13:08:58Z
+329955c0951b,no-parl-2029,1,default,True,Opinion,,2026-04-20,2026-04-25,1001,,no-v,3.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5646,wikipedia,1383761362,2026-11-23T13:08:58Z
+329955c0951b,no-parl-2029,1,default,True,Opinion,,2026-04-20,2026-04-25,1001,,others,3.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5646,wikipedia,1383761362,2026-11-23T13:08:58Z
+afb99e9eaadf,no-parl-2029,1,default,True,Norstat,,2026-04-13,2026-04-18,1000,,no-ap,21.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5645,wikipedia,1383761362,2026-11-23T13:08:58Z
+afb99e9eaadf,no-parl-2029,1,default,True,Norstat,,2026-04-13,2026-04-18,1000,,no-frp,29.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5645,wikipedia,1383761362,2026-11-23T13:08:58Z
+afb99e9eaadf,no-parl-2029,1,default,True,Norstat,,2026-04-13,2026-04-18,1000,,no-h,17.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5645,wikipedia,1383761362,2026-11-23T13:08:58Z
+afb99e9eaadf,no-parl-2029,1,default,True,Norstat,,2026-04-13,2026-04-18,1000,,no-krf,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5645,wikipedia,1383761362,2026-11-23T13:08:58Z
+afb99e9eaadf,no-parl-2029,1,default,True,Norstat,,2026-04-13,2026-04-18,1000,,no-mdg,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5645,wikipedia,1383761362,2026-11-23T13:08:58Z
+afb99e9eaadf,no-parl-2029,1,default,True,Norstat,,2026-04-13,2026-04-18,1000,,no-r,7.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5645,wikipedia,1383761362,2026-11-23T13:08:58Z
+afb99e9eaadf,no-parl-2029,1,default,True,Norstat,,2026-04-13,2026-04-18,1000,,no-sp,5.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5645,wikipedia,1383761362,2026-11-23T13:08:58Z
+afb99e9eaadf,no-parl-2029,1,default,True,Norstat,,2026-04-13,2026-04-18,1000,,no-sv,5.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5645,wikipedia,1383761362,2026-11-23T13:08:58Z
+afb99e9eaadf,no-parl-2029,1,default,True,Norstat,,2026-04-13,2026-04-18,1000,,no-v,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5645,wikipedia,1383761362,2026-11-23T13:08:58Z
+afb99e9eaadf,no-parl-2029,1,default,True,Norstat,,2026-04-13,2026-04-18,1000,,others,2.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5645,wikipedia,1383761362,2026-11-23T13:08:58Z
+b98faf914bc8,no-parl-2029,1,default,True,Opinion,,2026-04-07,2026-04-13,1000,,no-ap,20.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5642,wikipedia,1383761362,2026-11-23T13:08:58Z
+b98faf914bc8,no-parl-2029,1,default,True,Opinion,,2026-04-07,2026-04-13,1000,,no-frp,29.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5642,wikipedia,1383761362,2026-11-23T13:08:58Z
+b98faf914bc8,no-parl-2029,1,default,True,Opinion,,2026-04-07,2026-04-13,1000,,no-h,18.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5642,wikipedia,1383761362,2026-11-23T13:08:58Z
+b98faf914bc8,no-parl-2029,1,default,True,Opinion,,2026-04-07,2026-04-13,1000,,no-krf,3.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5642,wikipedia,1383761362,2026-11-23T13:08:58Z
+b98faf914bc8,no-parl-2029,1,default,True,Opinion,,2026-04-07,2026-04-13,1000,,no-mdg,3.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5642,wikipedia,1383761362,2026-11-23T13:08:58Z
+b98faf914bc8,no-parl-2029,1,default,True,Opinion,,2026-04-07,2026-04-13,1000,,no-r,9.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5642,wikipedia,1383761362,2026-11-23T13:08:58Z
+b98faf914bc8,no-parl-2029,1,default,True,Opinion,,2026-04-07,2026-04-13,1000,,no-sp,4.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5642,wikipedia,1383761362,2026-11-23T13:08:58Z
+b98faf914bc8,no-parl-2029,1,default,True,Opinion,,2026-04-07,2026-04-13,1000,,no-sv,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5642,wikipedia,1383761362,2026-11-23T13:08:58Z
+b98faf914bc8,no-parl-2029,1,default,True,Opinion,,2026-04-07,2026-04-13,1000,,no-v,3.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5642,wikipedia,1383761362,2026-11-23T13:08:58Z
+b98faf914bc8,no-parl-2029,1,default,True,Opinion,,2026-04-07,2026-04-13,1000,,others,3.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5642,wikipedia,1383761362,2026-11-23T13:08:58Z
+16ee63a2738f,no-parl-2029,1,default,True,Respons Analyse,,2026-04-08,2026-04-13,1001,,no-ap,23.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5641,wikipedia,1383761362,2026-11-23T13:08:58Z
+16ee63a2738f,no-parl-2029,1,default,True,Respons Analyse,,2026-04-08,2026-04-13,1001,,no-frp,26.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5641,wikipedia,1383761362,2026-11-23T13:08:58Z
+16ee63a2738f,no-parl-2029,1,default,True,Respons Analyse,,2026-04-08,2026-04-13,1001,,no-h,18.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5641,wikipedia,1383761362,2026-11-23T13:08:58Z
+16ee63a2738f,no-parl-2029,1,default,True,Respons Analyse,,2026-04-08,2026-04-13,1001,,no-krf,3.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5641,wikipedia,1383761362,2026-11-23T13:08:58Z
+16ee63a2738f,no-parl-2029,1,default,True,Respons Analyse,,2026-04-08,2026-04-13,1001,,no-mdg,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5641,wikipedia,1383761362,2026-11-23T13:08:58Z
+16ee63a2738f,no-parl-2029,1,default,True,Respons Analyse,,2026-04-08,2026-04-13,1001,,no-r,7.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5641,wikipedia,1383761362,2026-11-23T13:08:58Z
+16ee63a2738f,no-parl-2029,1,default,True,Respons Analyse,,2026-04-08,2026-04-13,1001,,no-sp,5.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5641,wikipedia,1383761362,2026-11-23T13:08:58Z
+16ee63a2738f,no-parl-2029,1,default,True,Respons Analyse,,2026-04-08,2026-04-13,1001,,no-sv,4.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5641,wikipedia,1383761362,2026-11-23T13:08:58Z
+16ee63a2738f,no-parl-2029,1,default,True,Respons Analyse,,2026-04-08,2026-04-13,1001,,no-v,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5641,wikipedia,1383761362,2026-11-23T13:08:58Z
+16ee63a2738f,no-parl-2029,1,default,True,Respons Analyse,,2026-04-08,2026-04-13,1001,,others,2.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5641,wikipedia,1383761362,2026-11-23T13:08:58Z
+adb47ee2a948,no-parl-2029,1,default,True,Verian,,2026-04-07,2026-04-10,987,,no-ap,23.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5643,wikipedia,1383761362,2026-11-23T13:08:58Z
+adb47ee2a948,no-parl-2029,1,default,True,Verian,,2026-04-07,2026-04-10,987,,no-frp,28.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5643,wikipedia,1383761362,2026-11-23T13:08:58Z
+adb47ee2a948,no-parl-2029,1,default,True,Verian,,2026-04-07,2026-04-10,987,,no-h,16.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5643,wikipedia,1383761362,2026-11-23T13:08:58Z
+adb47ee2a948,no-parl-2029,1,default,True,Verian,,2026-04-07,2026-04-10,987,,no-krf,3.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5643,wikipedia,1383761362,2026-11-23T13:08:58Z
+adb47ee2a948,no-parl-2029,1,default,True,Verian,,2026-04-07,2026-04-10,987,,no-mdg,4.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5643,wikipedia,1383761362,2026-11-23T13:08:58Z
+adb47ee2a948,no-parl-2029,1,default,True,Verian,,2026-04-07,2026-04-10,987,,no-r,6.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5643,wikipedia,1383761362,2026-11-23T13:08:58Z
+adb47ee2a948,no-parl-2029,1,default,True,Verian,,2026-04-07,2026-04-10,987,,no-sp,5.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5643,wikipedia,1383761362,2026-11-23T13:08:58Z
+adb47ee2a948,no-parl-2029,1,default,True,Verian,,2026-04-07,2026-04-10,987,,no-sv,6.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5643,wikipedia,1383761362,2026-11-23T13:08:58Z
+adb47ee2a948,no-parl-2029,1,default,True,Verian,,2026-04-07,2026-04-10,987,,no-v,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5643,wikipedia,1383761362,2026-11-23T13:08:58Z
+adb47ee2a948,no-parl-2029,1,default,True,Verian,,2026-04-07,2026-04-10,987,,others,2.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5643,wikipedia,1383761362,2026-11-23T13:08:58Z
+657b4bb16466,no-parl-2029,1,default,True,Norfakta,,2026-04-07,2026-04-08,1002,,no-ap,21.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5640,wikipedia,1383761362,2026-11-23T13:08:58Z
+657b4bb16466,no-parl-2029,1,default,True,Norfakta,,2026-04-07,2026-04-08,1002,,no-frp,27.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5640,wikipedia,1383761362,2026-11-23T13:08:58Z
+657b4bb16466,no-parl-2029,1,default,True,Norfakta,,2026-04-07,2026-04-08,1002,,no-h,18.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5640,wikipedia,1383761362,2026-11-23T13:08:58Z
+657b4bb16466,no-parl-2029,1,default,True,Norfakta,,2026-04-07,2026-04-08,1002,,no-krf,3.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5640,wikipedia,1383761362,2026-11-23T13:08:58Z
+657b4bb16466,no-parl-2029,1,default,True,Norfakta,,2026-04-07,2026-04-08,1002,,no-mdg,3.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5640,wikipedia,1383761362,2026-11-23T13:08:58Z
+657b4bb16466,no-parl-2029,1,default,True,Norfakta,,2026-04-07,2026-04-08,1002,,no-r,7.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5640,wikipedia,1383761362,2026-11-23T13:08:58Z
+657b4bb16466,no-parl-2029,1,default,True,Norfakta,,2026-04-07,2026-04-08,1002,,no-sp,5.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5640,wikipedia,1383761362,2026-11-23T13:08:58Z
+657b4bb16466,no-parl-2029,1,default,True,Norfakta,,2026-04-07,2026-04-08,1002,,no-sv,5.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5640,wikipedia,1383761362,2026-11-23T13:08:58Z
+657b4bb16466,no-parl-2029,1,default,True,Norfakta,,2026-04-07,2026-04-08,1002,,no-v,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5640,wikipedia,1383761362,2026-11-23T13:08:58Z
+657b4bb16466,no-parl-2029,1,default,True,Norfakta,,2026-04-07,2026-04-08,1002,,others,3.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5640,wikipedia,1383761362,2026-11-23T13:08:58Z
+0ffd35dc14f8,no-parl-2029,1,default,True,InFact,,,2026-03-30,1117,,no-ap,20.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5639,wikipedia,1383761362,2026-11-23T13:08:58Z
+0ffd35dc14f8,no-parl-2029,1,default,True,InFact,,,2026-03-30,1117,,no-frp,30.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5639,wikipedia,1383761362,2026-11-23T13:08:58Z
+0ffd35dc14f8,no-parl-2029,1,default,True,InFact,,,2026-03-30,1117,,no-h,17.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5639,wikipedia,1383761362,2026-11-23T13:08:58Z
+0ffd35dc14f8,no-parl-2029,1,default,True,InFact,,,2026-03-30,1117,,no-krf,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5639,wikipedia,1383761362,2026-11-23T13:08:58Z
+0ffd35dc14f8,no-parl-2029,1,default,True,InFact,,,2026-03-30,1117,,no-mdg,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5639,wikipedia,1383761362,2026-11-23T13:08:58Z
+0ffd35dc14f8,no-parl-2029,1,default,True,InFact,,,2026-03-30,1117,,no-r,7.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5639,wikipedia,1383761362,2026-11-23T13:08:58Z
+0ffd35dc14f8,no-parl-2029,1,default,True,InFact,,,2026-03-30,1117,,no-sp,5.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5639,wikipedia,1383761362,2026-11-23T13:08:58Z
+0ffd35dc14f8,no-parl-2029,1,default,True,InFact,,,2026-03-30,1117,,no-sv,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5639,wikipedia,1383761362,2026-11-23T13:08:58Z
+0ffd35dc14f8,no-parl-2029,1,default,True,InFact,,,2026-03-30,1117,,no-v,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5639,wikipedia,1383761362,2026-11-23T13:08:58Z
+0ffd35dc14f8,no-parl-2029,1,default,True,InFact,,,2026-03-30,1117,,others,2.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5639,wikipedia,1383761362,2026-11-23T13:08:58Z
+26864b753b7c,no-parl-2029,1,default,True,Opinion,,2026-03-23,2026-03-24,1000,,no-ap,21.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5638,wikipedia,1383761362,2026-11-23T13:08:58Z
+26864b753b7c,no-parl-2029,1,default,True,Opinion,,2026-03-23,2026-03-24,1000,,no-frp,27.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5638,wikipedia,1383761362,2026-11-23T13:08:58Z
+26864b753b7c,no-parl-2029,1,default,True,Opinion,,2026-03-23,2026-03-24,1000,,no-h,17.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5638,wikipedia,1383761362,2026-11-23T13:08:58Z
+26864b753b7c,no-parl-2029,1,default,True,Opinion,,2026-03-23,2026-03-24,1000,,no-krf,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5638,wikipedia,1383761362,2026-11-23T13:08:58Z
+26864b753b7c,no-parl-2029,1,default,True,Opinion,,2026-03-23,2026-03-24,1000,,no-mdg,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5638,wikipedia,1383761362,2026-11-23T13:08:58Z
+26864b753b7c,no-parl-2029,1,default,True,Opinion,,2026-03-23,2026-03-24,1000,,no-r,6.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5638,wikipedia,1383761362,2026-11-23T13:08:58Z
+26864b753b7c,no-parl-2029,1,default,True,Opinion,,2026-03-23,2026-03-24,1000,,no-sp,4.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5638,wikipedia,1383761362,2026-11-23T13:08:58Z
+26864b753b7c,no-parl-2029,1,default,True,Opinion,,2026-03-23,2026-03-24,1000,,no-sv,5.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5638,wikipedia,1383761362,2026-11-23T13:08:58Z
+26864b753b7c,no-parl-2029,1,default,True,Opinion,,2026-03-23,2026-03-24,1000,,no-v,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5638,wikipedia,1383761362,2026-11-23T13:08:58Z
+26864b753b7c,no-parl-2029,1,default,True,Opinion,,2026-03-23,2026-03-24,1000,,others,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5638,wikipedia,1383761362,2026-11-23T13:08:58Z
+624db789c974,no-parl-2029,1,default,True,Norstat,,2026-03-16,2026-03-21,1000,,no-ap,21.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5636,wikipedia,1383761362,2026-11-23T13:08:58Z
+624db789c974,no-parl-2029,1,default,True,Norstat,,2026-03-16,2026-03-21,1000,,no-frp,28.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5636,wikipedia,1383761362,2026-11-23T13:08:58Z
+624db789c974,no-parl-2029,1,default,True,Norstat,,2026-03-16,2026-03-21,1000,,no-h,19.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5636,wikipedia,1383761362,2026-11-23T13:08:58Z
+624db789c974,no-parl-2029,1,default,True,Norstat,,2026-03-16,2026-03-21,1000,,no-krf,2.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5636,wikipedia,1383761362,2026-11-23T13:08:58Z
+624db789c974,no-parl-2029,1,default,True,Norstat,,2026-03-16,2026-03-21,1000,,no-mdg,5.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5636,wikipedia,1383761362,2026-11-23T13:08:58Z
+624db789c974,no-parl-2029,1,default,True,Norstat,,2026-03-16,2026-03-21,1000,,no-r,8.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5636,wikipedia,1383761362,2026-11-23T13:08:58Z
+624db789c974,no-parl-2029,1,default,True,Norstat,,2026-03-16,2026-03-21,1000,,no-sp,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5636,wikipedia,1383761362,2026-11-23T13:08:58Z
+624db789c974,no-parl-2029,1,default,True,Norstat,,2026-03-16,2026-03-21,1000,,no-sv,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5636,wikipedia,1383761362,2026-11-23T13:08:58Z
+624db789c974,no-parl-2029,1,default,True,Norstat,,2026-03-16,2026-03-21,1000,,no-v,2.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5636,wikipedia,1383761362,2026-11-23T13:08:58Z
+624db789c974,no-parl-2029,1,default,True,Norstat,,2026-03-16,2026-03-21,1000,,others,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5636,wikipedia,1383761362,2026-11-23T13:08:58Z
+e53dc816f6d6,no-parl-2029,1,default,True,Opinion,,2026-03-09,2026-03-16,1000,,no-ap,22.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+e53dc816f6d6,no-parl-2029,1,default,True,Opinion,,2026-03-09,2026-03-16,1000,,no-frp,26.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+e53dc816f6d6,no-parl-2029,1,default,True,Opinion,,2026-03-09,2026-03-16,1000,,no-h,16.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+e53dc816f6d6,no-parl-2029,1,default,True,Opinion,,2026-03-09,2026-03-16,1000,,no-krf,3.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+e53dc816f6d6,no-parl-2029,1,default,True,Opinion,,2026-03-09,2026-03-16,1000,,no-mdg,5.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+e53dc816f6d6,no-parl-2029,1,default,True,Opinion,,2026-03-09,2026-03-16,1000,,no-r,7.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+e53dc816f6d6,no-parl-2029,1,default,True,Opinion,,2026-03-09,2026-03-16,1000,,no-sp,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+e53dc816f6d6,no-parl-2029,1,default,True,Opinion,,2026-03-09,2026-03-16,1000,,no-sv,6.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+e53dc816f6d6,no-parl-2029,1,default,True,Opinion,,2026-03-09,2026-03-16,1000,,no-v,3.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+e53dc816f6d6,no-parl-2029,1,default,True,Opinion,,2026-03-09,2026-03-16,1000,,others,4.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+51875d9deb0a,no-parl-2029,1,default,True,Respons Analyse,,2026-03-04,2026-03-09,1000,,no-ap,24.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5633,wikipedia,1383761362,2026-11-23T13:08:58Z
+51875d9deb0a,no-parl-2029,1,default,True,Respons Analyse,,2026-03-04,2026-03-09,1000,,no-frp,25.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5633,wikipedia,1383761362,2026-11-23T13:08:58Z
+51875d9deb0a,no-parl-2029,1,default,True,Respons Analyse,,2026-03-04,2026-03-09,1000,,no-h,18.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5633,wikipedia,1383761362,2026-11-23T13:08:58Z
+51875d9deb0a,no-parl-2029,1,default,True,Respons Analyse,,2026-03-04,2026-03-09,1000,,no-krf,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5633,wikipedia,1383761362,2026-11-23T13:08:58Z
+51875d9deb0a,no-parl-2029,1,default,True,Respons Analyse,,2026-03-04,2026-03-09,1000,,no-mdg,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5633,wikipedia,1383761362,2026-11-23T13:08:58Z
+51875d9deb0a,no-parl-2029,1,default,True,Respons Analyse,,2026-03-04,2026-03-09,1000,,no-r,7.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5633,wikipedia,1383761362,2026-11-23T13:08:58Z
+51875d9deb0a,no-parl-2029,1,default,True,Respons Analyse,,2026-03-04,2026-03-09,1000,,no-sp,5.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5633,wikipedia,1383761362,2026-11-23T13:08:58Z
+51875d9deb0a,no-parl-2029,1,default,True,Respons Analyse,,2026-03-04,2026-03-09,1000,,no-sv,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5633,wikipedia,1383761362,2026-11-23T13:08:58Z
+51875d9deb0a,no-parl-2029,1,default,True,Respons Analyse,,2026-03-04,2026-03-09,1000,,no-v,4.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5633,wikipedia,1383761362,2026-11-23T13:08:58Z
+51875d9deb0a,no-parl-2029,1,default,True,Respons Analyse,,2026-03-04,2026-03-09,1000,,others,2.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5633,wikipedia,1383761362,2026-11-23T13:08:58Z
+6a9902a0e754,no-parl-2029,1,default,True,Norfakta,,2026-03-03,2026-03-04,1000,,no-ap,22.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5632,wikipedia,1383761362,2026-11-23T13:08:58Z
+6a9902a0e754,no-parl-2029,1,default,True,Norfakta,,2026-03-03,2026-03-04,1000,,no-frp,28.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5632,wikipedia,1383761362,2026-11-23T13:08:58Z
+6a9902a0e754,no-parl-2029,1,default,True,Norfakta,,2026-03-03,2026-03-04,1000,,no-h,17.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5632,wikipedia,1383761362,2026-11-23T13:08:58Z
+6a9902a0e754,no-parl-2029,1,default,True,Norfakta,,2026-03-03,2026-03-04,1000,,no-krf,4.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5632,wikipedia,1383761362,2026-11-23T13:08:58Z
+6a9902a0e754,no-parl-2029,1,default,True,Norfakta,,2026-03-03,2026-03-04,1000,,no-mdg,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5632,wikipedia,1383761362,2026-11-23T13:08:58Z
+6a9902a0e754,no-parl-2029,1,default,True,Norfakta,,2026-03-03,2026-03-04,1000,,no-r,6.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5632,wikipedia,1383761362,2026-11-23T13:08:58Z
+6a9902a0e754,no-parl-2029,1,default,True,Norfakta,,2026-03-03,2026-03-04,1000,,no-sp,4.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5632,wikipedia,1383761362,2026-11-23T13:08:58Z
+6a9902a0e754,no-parl-2029,1,default,True,Norfakta,,2026-03-03,2026-03-04,1000,,no-sv,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5632,wikipedia,1383761362,2026-11-23T13:08:58Z
+6a9902a0e754,no-parl-2029,1,default,True,Norfakta,,2026-03-03,2026-03-04,1000,,no-v,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5632,wikipedia,1383761362,2026-11-23T13:08:58Z
+6a9902a0e754,no-parl-2029,1,default,True,Norfakta,,2026-03-03,2026-03-04,1000,,others,3.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5632,wikipedia,1383761362,2026-11-23T13:08:58Z
+87777fe794d7,no-parl-2029,1,default,True,InFact,,,2026-03-02,1077,,no-ap,22.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5629,wikipedia,1383761362,2026-11-23T13:08:58Z
+87777fe794d7,no-parl-2029,1,default,True,InFact,,,2026-03-02,1077,,no-frp,30.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5629,wikipedia,1383761362,2026-11-23T13:08:58Z
+87777fe794d7,no-parl-2029,1,default,True,InFact,,,2026-03-02,1077,,no-h,16.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5629,wikipedia,1383761362,2026-11-23T13:08:58Z
+87777fe794d7,no-parl-2029,1,default,True,InFact,,,2026-03-02,1077,,no-krf,3.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5629,wikipedia,1383761362,2026-11-23T13:08:58Z
+87777fe794d7,no-parl-2029,1,default,True,InFact,,,2026-03-02,1077,,no-mdg,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5629,wikipedia,1383761362,2026-11-23T13:08:58Z
+87777fe794d7,no-parl-2029,1,default,True,InFact,,,2026-03-02,1077,,no-r,9.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5629,wikipedia,1383761362,2026-11-23T13:08:58Z
+87777fe794d7,no-parl-2029,1,default,True,InFact,,,2026-03-02,1077,,no-sp,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5629,wikipedia,1383761362,2026-11-23T13:08:58Z
+87777fe794d7,no-parl-2029,1,default,True,InFact,,,2026-03-02,1077,,no-sv,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5629,wikipedia,1383761362,2026-11-23T13:08:58Z
+87777fe794d7,no-parl-2029,1,default,True,InFact,,,2026-03-02,1077,,no-v,2.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5629,wikipedia,1383761362,2026-11-23T13:08:58Z
+87777fe794d7,no-parl-2029,1,default,True,InFact,,,2026-03-02,1077,,others,2.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5629,wikipedia,1383761362,2026-11-23T13:08:58Z
+bea8664ba981,no-parl-2029,1,default,True,Opinion,,2026-02-23,2026-03-02,,,no-ap,23.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5631,wikipedia,1383761362,2026-11-23T13:08:58Z
+bea8664ba981,no-parl-2029,1,default,True,Opinion,,2026-02-23,2026-03-02,,,no-frp,25.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5631,wikipedia,1383761362,2026-11-23T13:08:58Z
+bea8664ba981,no-parl-2029,1,default,True,Opinion,,2026-02-23,2026-03-02,,,no-h,19.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5631,wikipedia,1383761362,2026-11-23T13:08:58Z
+bea8664ba981,no-parl-2029,1,default,True,Opinion,,2026-02-23,2026-03-02,,,no-krf,3.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5631,wikipedia,1383761362,2026-11-23T13:08:58Z
+bea8664ba981,no-parl-2029,1,default,True,Opinion,,2026-02-23,2026-03-02,,,no-mdg,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5631,wikipedia,1383761362,2026-11-23T13:08:58Z
+bea8664ba981,no-parl-2029,1,default,True,Opinion,,2026-02-23,2026-03-02,,,no-r,8.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5631,wikipedia,1383761362,2026-11-23T13:08:58Z
+bea8664ba981,no-parl-2029,1,default,True,Opinion,,2026-02-23,2026-03-02,,,no-sp,5.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5631,wikipedia,1383761362,2026-11-23T13:08:58Z
+bea8664ba981,no-parl-2029,1,default,True,Opinion,,2026-02-23,2026-03-02,,,no-sv,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5631,wikipedia,1383761362,2026-11-23T13:08:58Z
+bea8664ba981,no-parl-2029,1,default,True,Opinion,,2026-02-23,2026-03-02,,,no-v,2.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5631,wikipedia,1383761362,2026-11-23T13:08:58Z
+bea8664ba981,no-parl-2029,1,default,True,Opinion,,2026-02-23,2026-03-02,,,others,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5631,wikipedia,1383761362,2026-11-23T13:08:58Z
+561f88857e98,no-parl-2029,1,default,True,Verian,,2026-02-23,2026-02-27,984,,no-ap,25.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5630,wikipedia,1383761362,2026-11-23T13:08:58Z
+561f88857e98,no-parl-2029,1,default,True,Verian,,2026-02-23,2026-02-27,984,,no-frp,23.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5630,wikipedia,1383761362,2026-11-23T13:08:58Z
+561f88857e98,no-parl-2029,1,default,True,Verian,,2026-02-23,2026-02-27,984,,no-h,18.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5630,wikipedia,1383761362,2026-11-23T13:08:58Z
+561f88857e98,no-parl-2029,1,default,True,Verian,,2026-02-23,2026-02-27,984,,no-krf,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5630,wikipedia,1383761362,2026-11-23T13:08:58Z
+561f88857e98,no-parl-2029,1,default,True,Verian,,2026-02-23,2026-02-27,984,,no-mdg,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5630,wikipedia,1383761362,2026-11-23T13:08:58Z
+561f88857e98,no-parl-2029,1,default,True,Verian,,2026-02-23,2026-02-27,984,,no-r,7.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5630,wikipedia,1383761362,2026-11-23T13:08:58Z
+561f88857e98,no-parl-2029,1,default,True,Verian,,2026-02-23,2026-02-27,984,,no-sp,5.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5630,wikipedia,1383761362,2026-11-23T13:08:58Z
+561f88857e98,no-parl-2029,1,default,True,Verian,,2026-02-23,2026-02-27,984,,no-sv,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5630,wikipedia,1383761362,2026-11-23T13:08:58Z
+561f88857e98,no-parl-2029,1,default,True,Verian,,2026-02-23,2026-02-27,984,,no-v,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5630,wikipedia,1383761362,2026-11-23T13:08:58Z
+561f88857e98,no-parl-2029,1,default,True,Verian,,2026-02-23,2026-02-27,984,,others,2.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5630,wikipedia,1383761362,2026-11-23T13:08:58Z
+0b1b115ca4b7,no-parl-2029,1,default,True,Norstat,,2026-02-16,2026-02-21,1003,,no-ap,21.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+0b1b115ca4b7,no-parl-2029,1,default,True,Norstat,,2026-02-16,2026-02-21,1003,,no-frp,26.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+0b1b115ca4b7,no-parl-2029,1,default,True,Norstat,,2026-02-16,2026-02-21,1003,,no-h,20.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+0b1b115ca4b7,no-parl-2029,1,default,True,Norstat,,2026-02-16,2026-02-21,1003,,no-krf,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+0b1b115ca4b7,no-parl-2029,1,default,True,Norstat,,2026-02-16,2026-02-21,1003,,no-mdg,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+0b1b115ca4b7,no-parl-2029,1,default,True,Norstat,,2026-02-16,2026-02-21,1003,,no-r,7.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+0b1b115ca4b7,no-parl-2029,1,default,True,Norstat,,2026-02-16,2026-02-21,1003,,no-sp,5.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+0b1b115ca4b7,no-parl-2029,1,default,True,Norstat,,2026-02-16,2026-02-21,1003,,no-sv,5.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+0b1b115ca4b7,no-parl-2029,1,default,True,Norstat,,2026-02-16,2026-02-21,1003,,no-v,2.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+0b1b115ca4b7,no-parl-2029,1,default,True,Norstat,,2026-02-16,2026-02-21,1003,,others,2.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5626,wikipedia,1383761362,2026-11-23T13:08:58Z
+5a524419238e,no-parl-2029,1,default,True,Opinion,,2026-02-09,2026-02-16,1000,,no-ap,23.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5624,wikipedia,1383761362,2026-11-23T13:08:58Z
+5a524419238e,no-parl-2029,1,default,True,Opinion,,2026-02-09,2026-02-16,1000,,no-frp,28.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5624,wikipedia,1383761362,2026-11-23T13:08:58Z
+5a524419238e,no-parl-2029,1,default,True,Opinion,,2026-02-09,2026-02-16,1000,,no-h,15.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5624,wikipedia,1383761362,2026-11-23T13:08:58Z
+5a524419238e,no-parl-2029,1,default,True,Opinion,,2026-02-09,2026-02-16,1000,,no-krf,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5624,wikipedia,1383761362,2026-11-23T13:08:58Z
+5a524419238e,no-parl-2029,1,default,True,Opinion,,2026-02-09,2026-02-16,1000,,no-mdg,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5624,wikipedia,1383761362,2026-11-23T13:08:58Z
+5a524419238e,no-parl-2029,1,default,True,Opinion,,2026-02-09,2026-02-16,1000,,no-r,7.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5624,wikipedia,1383761362,2026-11-23T13:08:58Z
+5a524419238e,no-parl-2029,1,default,True,Opinion,,2026-02-09,2026-02-16,1000,,no-sp,6.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5624,wikipedia,1383761362,2026-11-23T13:08:58Z
+5a524419238e,no-parl-2029,1,default,True,Opinion,,2026-02-09,2026-02-16,1000,,no-sv,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5624,wikipedia,1383761362,2026-11-23T13:08:58Z
+5a524419238e,no-parl-2029,1,default,True,Opinion,,2026-02-09,2026-02-16,1000,,no-v,3.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5624,wikipedia,1383761362,2026-11-23T13:08:58Z
+5a524419238e,no-parl-2029,1,default,True,Opinion,,2026-02-09,2026-02-16,1000,,others,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5624,wikipedia,1383761362,2026-11-23T13:08:58Z
+24c930eee047,no-parl-2029,1,default,True,Respons Analyse,,2026-02-04,2026-02-09,1002,,no-ap,24.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5623,wikipedia,1383761362,2026-11-23T13:08:58Z
+24c930eee047,no-parl-2029,1,default,True,Respons Analyse,,2026-02-04,2026-02-09,1002,,no-frp,26.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5623,wikipedia,1383761362,2026-11-23T13:08:58Z
+24c930eee047,no-parl-2029,1,default,True,Respons Analyse,,2026-02-04,2026-02-09,1002,,no-h,18.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5623,wikipedia,1383761362,2026-11-23T13:08:58Z
+24c930eee047,no-parl-2029,1,default,True,Respons Analyse,,2026-02-04,2026-02-09,1002,,no-krf,3.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5623,wikipedia,1383761362,2026-11-23T13:08:58Z
+24c930eee047,no-parl-2029,1,default,True,Respons Analyse,,2026-02-04,2026-02-09,1002,,no-mdg,3.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5623,wikipedia,1383761362,2026-11-23T13:08:58Z
+24c930eee047,no-parl-2029,1,default,True,Respons Analyse,,2026-02-04,2026-02-09,1002,,no-r,7.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5623,wikipedia,1383761362,2026-11-23T13:08:58Z
+24c930eee047,no-parl-2029,1,default,True,Respons Analyse,,2026-02-04,2026-02-09,1002,,no-sp,5.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5623,wikipedia,1383761362,2026-11-23T13:08:58Z
+24c930eee047,no-parl-2029,1,default,True,Respons Analyse,,2026-02-04,2026-02-09,1002,,no-sv,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5623,wikipedia,1383761362,2026-11-23T13:08:58Z
+24c930eee047,no-parl-2029,1,default,True,Respons Analyse,,2026-02-04,2026-02-09,1002,,no-v,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5623,wikipedia,1383761362,2026-11-23T13:08:58Z
+24c930eee047,no-parl-2029,1,default,True,Respons Analyse,,2026-02-04,2026-02-09,1002,,others,2.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5623,wikipedia,1383761362,2026-11-23T13:08:58Z
+f0f513605b89,no-parl-2029,1,default,True,Norfakta,,2026-02-03,2026-02-04,1001,,no-ap,25.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5622,wikipedia,1383761362,2026-11-23T13:08:58Z
+f0f513605b89,no-parl-2029,1,default,True,Norfakta,,2026-02-03,2026-02-04,1001,,no-frp,26.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5622,wikipedia,1383761362,2026-11-23T13:08:58Z
+f0f513605b89,no-parl-2029,1,default,True,Norfakta,,2026-02-03,2026-02-04,1001,,no-h,19.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5622,wikipedia,1383761362,2026-11-23T13:08:58Z
+f0f513605b89,no-parl-2029,1,default,True,Norfakta,,2026-02-03,2026-02-04,1001,,no-krf,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5622,wikipedia,1383761362,2026-11-23T13:08:58Z
+f0f513605b89,no-parl-2029,1,default,True,Norfakta,,2026-02-03,2026-02-04,1001,,no-mdg,3.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5622,wikipedia,1383761362,2026-11-23T13:08:58Z
+f0f513605b89,no-parl-2029,1,default,True,Norfakta,,2026-02-03,2026-02-04,1001,,no-r,6.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5622,wikipedia,1383761362,2026-11-23T13:08:58Z
+f0f513605b89,no-parl-2029,1,default,True,Norfakta,,2026-02-03,2026-02-04,1001,,no-sp,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5622,wikipedia,1383761362,2026-11-23T13:08:58Z
+f0f513605b89,no-parl-2029,1,default,True,Norfakta,,2026-02-03,2026-02-04,1001,,no-sv,5.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5622,wikipedia,1383761362,2026-11-23T13:08:58Z
+f0f513605b89,no-parl-2029,1,default,True,Norfakta,,2026-02-03,2026-02-04,1001,,no-v,3.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5622,wikipedia,1383761362,2026-11-23T13:08:58Z
+f0f513605b89,no-parl-2029,1,default,True,Norfakta,,2026-02-03,2026-02-04,1001,,others,2.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5622,wikipedia,1383761362,2026-11-23T13:08:58Z
+b2859197676a,no-parl-2029,1,default,True,InFact,,,2026-02-02,1121,,no-ap,22.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5621,wikipedia,1383761362,2026-11-23T13:08:58Z
+b2859197676a,no-parl-2029,1,default,True,InFact,,,2026-02-02,1121,,no-frp,28.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5621,wikipedia,1383761362,2026-11-23T13:08:58Z
+b2859197676a,no-parl-2029,1,default,True,InFact,,,2026-02-02,1121,,no-h,16.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5621,wikipedia,1383761362,2026-11-23T13:08:58Z
+b2859197676a,no-parl-2029,1,default,True,InFact,,,2026-02-02,1121,,no-krf,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5621,wikipedia,1383761362,2026-11-23T13:08:58Z
+b2859197676a,no-parl-2029,1,default,True,InFact,,,2026-02-02,1121,,no-mdg,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5621,wikipedia,1383761362,2026-11-23T13:08:58Z
+b2859197676a,no-parl-2029,1,default,True,InFact,,,2026-02-02,1121,,no-r,7.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5621,wikipedia,1383761362,2026-11-23T13:08:58Z
+b2859197676a,no-parl-2029,1,default,True,InFact,,,2026-02-02,1121,,no-sp,5.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5621,wikipedia,1383761362,2026-11-23T13:08:58Z
+b2859197676a,no-parl-2029,1,default,True,InFact,,,2026-02-02,1121,,no-sv,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5621,wikipedia,1383761362,2026-11-23T13:08:58Z
+b2859197676a,no-parl-2029,1,default,True,InFact,,,2026-02-02,1121,,no-v,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5621,wikipedia,1383761362,2026-11-23T13:08:58Z
+b2859197676a,no-parl-2029,1,default,True,InFact,,,2026-02-02,1121,,others,3.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5621,wikipedia,1383761362,2026-11-23T13:08:58Z
+9d81bb7e11db,no-parl-2029,1,default,True,Opinion,,2026-01-26,2026-01-31,1000,,no-ap,27.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5620,wikipedia,1383761362,2026-11-23T13:08:58Z
+9d81bb7e11db,no-parl-2029,1,default,True,Opinion,,2026-01-26,2026-01-31,1000,,no-frp,23.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5620,wikipedia,1383761362,2026-11-23T13:08:58Z
+9d81bb7e11db,no-parl-2029,1,default,True,Opinion,,2026-01-26,2026-01-31,1000,,no-h,17.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5620,wikipedia,1383761362,2026-11-23T13:08:58Z
+9d81bb7e11db,no-parl-2029,1,default,True,Opinion,,2026-01-26,2026-01-31,1000,,no-krf,3.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5620,wikipedia,1383761362,2026-11-23T13:08:58Z
+9d81bb7e11db,no-parl-2029,1,default,True,Opinion,,2026-01-26,2026-01-31,1000,,no-mdg,3.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5620,wikipedia,1383761362,2026-11-23T13:08:58Z
+9d81bb7e11db,no-parl-2029,1,default,True,Opinion,,2026-01-26,2026-01-31,1000,,no-r,7.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5620,wikipedia,1383761362,2026-11-23T13:08:58Z
+9d81bb7e11db,no-parl-2029,1,default,True,Opinion,,2026-01-26,2026-01-31,1000,,no-sp,5.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5620,wikipedia,1383761362,2026-11-23T13:08:58Z
+9d81bb7e11db,no-parl-2029,1,default,True,Opinion,,2026-01-26,2026-01-31,1000,,no-sv,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5620,wikipedia,1383761362,2026-11-23T13:08:58Z
+9d81bb7e11db,no-parl-2029,1,default,True,Opinion,,2026-01-26,2026-01-31,1000,,no-v,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5620,wikipedia,1383761362,2026-11-23T13:08:58Z
+9d81bb7e11db,no-parl-2029,1,default,True,Opinion,,2026-01-26,2026-01-31,1000,,others,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5620,wikipedia,1383761362,2026-11-23T13:08:58Z
+d26f15c93b17,no-parl-2029,1,default,True,Verian,,2026-01-26,2026-01-30,990,,no-ap,27.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5619,wikipedia,1383761362,2026-11-23T13:08:58Z
+d26f15c93b17,no-parl-2029,1,default,True,Verian,,2026-01-26,2026-01-30,990,,no-frp,25.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5619,wikipedia,1383761362,2026-11-23T13:08:58Z
+d26f15c93b17,no-parl-2029,1,default,True,Verian,,2026-01-26,2026-01-30,990,,no-h,16.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5619,wikipedia,1383761362,2026-11-23T13:08:58Z
+d26f15c93b17,no-parl-2029,1,default,True,Verian,,2026-01-26,2026-01-30,990,,no-krf,3.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5619,wikipedia,1383761362,2026-11-23T13:08:58Z
+d26f15c93b17,no-parl-2029,1,default,True,Verian,,2026-01-26,2026-01-30,990,,no-mdg,3.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5619,wikipedia,1383761362,2026-11-23T13:08:58Z
+d26f15c93b17,no-parl-2029,1,default,True,Verian,,2026-01-26,2026-01-30,990,,no-r,6.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5619,wikipedia,1383761362,2026-11-23T13:08:58Z
+d26f15c93b17,no-parl-2029,1,default,True,Verian,,2026-01-26,2026-01-30,990,,no-sp,5.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5619,wikipedia,1383761362,2026-11-23T13:08:58Z
+d26f15c93b17,no-parl-2029,1,default,True,Verian,,2026-01-26,2026-01-30,990,,no-sv,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5619,wikipedia,1383761362,2026-11-23T13:08:58Z
+d26f15c93b17,no-parl-2029,1,default,True,Verian,,2026-01-26,2026-01-30,990,,no-v,3.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5619,wikipedia,1383761362,2026-11-23T13:08:58Z
+d26f15c93b17,no-parl-2029,1,default,True,Verian,,2026-01-26,2026-01-30,990,,others,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5619,wikipedia,1383761362,2026-11-23T13:08:58Z
+9f656e84e102,no-parl-2029,1,default,True,Norstat,,,2026-01-27,1000,,no-ap,26.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5617,wikipedia,1383761362,2026-11-23T13:08:58Z
+9f656e84e102,no-parl-2029,1,default,True,Norstat,,,2026-01-27,1000,,no-frp,25.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5617,wikipedia,1383761362,2026-11-23T13:08:58Z
+9f656e84e102,no-parl-2029,1,default,True,Norstat,,,2026-01-27,1000,,no-h,16.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5617,wikipedia,1383761362,2026-11-23T13:08:58Z
+9f656e84e102,no-parl-2029,1,default,True,Norstat,,,2026-01-27,1000,,no-krf,4.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5617,wikipedia,1383761362,2026-11-23T13:08:58Z
+9f656e84e102,no-parl-2029,1,default,True,Norstat,,,2026-01-27,1000,,no-mdg,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5617,wikipedia,1383761362,2026-11-23T13:08:58Z
+9f656e84e102,no-parl-2029,1,default,True,Norstat,,,2026-01-27,1000,,no-r,7.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5617,wikipedia,1383761362,2026-11-23T13:08:58Z
+9f656e84e102,no-parl-2029,1,default,True,Norstat,,,2026-01-27,1000,,no-sp,6.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5617,wikipedia,1383761362,2026-11-23T13:08:58Z
+9f656e84e102,no-parl-2029,1,default,True,Norstat,,,2026-01-27,1000,,no-sv,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5617,wikipedia,1383761362,2026-11-23T13:08:58Z
+9f656e84e102,no-parl-2029,1,default,True,Norstat,,,2026-01-27,1000,,no-v,2.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5617,wikipedia,1383761362,2026-11-23T13:08:58Z
+9f656e84e102,no-parl-2029,1,default,True,Norstat,,,2026-01-27,1000,,others,3.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5617,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c05bca137f4,no-parl-2029,1,default,True,Opinion,,2026-01-12,2026-01-19,1000,,no-ap,23.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5615,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c05bca137f4,no-parl-2029,1,default,True,Opinion,,2026-01-12,2026-01-19,1000,,no-frp,27.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5615,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c05bca137f4,no-parl-2029,1,default,True,Opinion,,2026-01-12,2026-01-19,1000,,no-h,18.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5615,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c05bca137f4,no-parl-2029,1,default,True,Opinion,,2026-01-12,2026-01-19,1000,,no-krf,3.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5615,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c05bca137f4,no-parl-2029,1,default,True,Opinion,,2026-01-12,2026-01-19,1000,,no-mdg,4.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5615,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c05bca137f4,no-parl-2029,1,default,True,Opinion,,2026-01-12,2026-01-19,1000,,no-r,6.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5615,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c05bca137f4,no-parl-2029,1,default,True,Opinion,,2026-01-12,2026-01-19,1000,,no-sp,5.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5615,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c05bca137f4,no-parl-2029,1,default,True,Opinion,,2026-01-12,2026-01-19,1000,,no-sv,5.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5615,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c05bca137f4,no-parl-2029,1,default,True,Opinion,,2026-01-12,2026-01-19,1000,,no-v,2.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5615,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c05bca137f4,no-parl-2029,1,default,True,Opinion,,2026-01-12,2026-01-19,1000,,others,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5615,wikipedia,1383761362,2026-11-23T13:08:58Z
+b0ec83b1f105,no-parl-2029,1,default,True,Respons Analyse,,2026-01-07,2026-01-09,1001,,no-ap,25.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5614,wikipedia,1383761362,2026-11-23T13:08:58Z
+b0ec83b1f105,no-parl-2029,1,default,True,Respons Analyse,,2026-01-07,2026-01-09,1001,,no-frp,27.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5614,wikipedia,1383761362,2026-11-23T13:08:58Z
+b0ec83b1f105,no-parl-2029,1,default,True,Respons Analyse,,2026-01-07,2026-01-09,1001,,no-h,17.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5614,wikipedia,1383761362,2026-11-23T13:08:58Z
+b0ec83b1f105,no-parl-2029,1,default,True,Respons Analyse,,2026-01-07,2026-01-09,1001,,no-krf,3.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5614,wikipedia,1383761362,2026-11-23T13:08:58Z
+b0ec83b1f105,no-parl-2029,1,default,True,Respons Analyse,,2026-01-07,2026-01-09,1001,,no-mdg,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5614,wikipedia,1383761362,2026-11-23T13:08:58Z
+b0ec83b1f105,no-parl-2029,1,default,True,Respons Analyse,,2026-01-07,2026-01-09,1001,,no-r,6.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5614,wikipedia,1383761362,2026-11-23T13:08:58Z
+b0ec83b1f105,no-parl-2029,1,default,True,Respons Analyse,,2026-01-07,2026-01-09,1001,,no-sp,4.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5614,wikipedia,1383761362,2026-11-23T13:08:58Z
+b0ec83b1f105,no-parl-2029,1,default,True,Respons Analyse,,2026-01-07,2026-01-09,1001,,no-sv,5.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5614,wikipedia,1383761362,2026-11-23T13:08:58Z
+b0ec83b1f105,no-parl-2029,1,default,True,Respons Analyse,,2026-01-07,2026-01-09,1001,,no-v,3.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5614,wikipedia,1383761362,2026-11-23T13:08:58Z
+b0ec83b1f105,no-parl-2029,1,default,True,Respons Analyse,,2026-01-07,2026-01-09,1001,,others,2.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5614,wikipedia,1383761362,2026-11-23T13:08:58Z
+693584f9de89,no-parl-2029,1,default,True,Verian,,2026-01-05,2026-01-08,984,,no-ap,25.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5613,wikipedia,1383761362,2026-11-23T13:08:58Z
+693584f9de89,no-parl-2029,1,default,True,Verian,,2026-01-05,2026-01-08,984,,no-frp,23.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5613,wikipedia,1383761362,2026-11-23T13:08:58Z
+693584f9de89,no-parl-2029,1,default,True,Verian,,2026-01-05,2026-01-08,984,,no-h,18.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5613,wikipedia,1383761362,2026-11-23T13:08:58Z
+693584f9de89,no-parl-2029,1,default,True,Verian,,2026-01-05,2026-01-08,984,,no-krf,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5613,wikipedia,1383761362,2026-11-23T13:08:58Z
+693584f9de89,no-parl-2029,1,default,True,Verian,,2026-01-05,2026-01-08,984,,no-mdg,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5613,wikipedia,1383761362,2026-11-23T13:08:58Z
+693584f9de89,no-parl-2029,1,default,True,Verian,,2026-01-05,2026-01-08,984,,no-r,6.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5613,wikipedia,1383761362,2026-11-23T13:08:58Z
+693584f9de89,no-parl-2029,1,default,True,Verian,,2026-01-05,2026-01-08,984,,no-sp,4.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5613,wikipedia,1383761362,2026-11-23T13:08:58Z
+693584f9de89,no-parl-2029,1,default,True,Verian,,2026-01-05,2026-01-08,984,,no-sv,6.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5613,wikipedia,1383761362,2026-11-23T13:08:58Z
+693584f9de89,no-parl-2029,1,default,True,Verian,,2026-01-05,2026-01-08,984,,no-v,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5613,wikipedia,1383761362,2026-11-23T13:08:58Z
+693584f9de89,no-parl-2029,1,default,True,Verian,,2026-01-05,2026-01-08,984,,others,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5613,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c2755b27f04,no-parl-2029,1,default,True,Norfakta,,2026-01-06,2026-01-07,1005,,no-ap,24.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5612,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c2755b27f04,no-parl-2029,1,default,True,Norfakta,,2026-01-06,2026-01-07,1005,,no-frp,25.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5612,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c2755b27f04,no-parl-2029,1,default,True,Norfakta,,2026-01-06,2026-01-07,1005,,no-h,17.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5612,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c2755b27f04,no-parl-2029,1,default,True,Norfakta,,2026-01-06,2026-01-07,1005,,no-krf,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5612,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c2755b27f04,no-parl-2029,1,default,True,Norfakta,,2026-01-06,2026-01-07,1005,,no-mdg,4.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5612,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c2755b27f04,no-parl-2029,1,default,True,Norfakta,,2026-01-06,2026-01-07,1005,,no-r,6.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5612,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c2755b27f04,no-parl-2029,1,default,True,Norfakta,,2026-01-06,2026-01-07,1005,,no-sp,4.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5612,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c2755b27f04,no-parl-2029,1,default,True,Norfakta,,2026-01-06,2026-01-07,1005,,no-sv,5.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5612,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c2755b27f04,no-parl-2029,1,default,True,Norfakta,,2026-01-06,2026-01-07,1005,,no-v,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5612,wikipedia,1383761362,2026-11-23T13:08:58Z
+2c2755b27f04,no-parl-2029,1,default,True,Norfakta,,2026-01-06,2026-01-07,1005,,others,2.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5612,wikipedia,1383761362,2026-11-23T13:08:58Z
+ce05903dedbb,no-parl-2029,1,default,True,InFact,,,2026-01-06,1018,,no-ap,21.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5611,wikipedia,1383761362,2026-11-23T13:08:58Z
+ce05903dedbb,no-parl-2029,1,default,True,InFact,,,2026-01-06,1018,,no-frp,31.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5611,wikipedia,1383761362,2026-11-23T13:08:58Z
+ce05903dedbb,no-parl-2029,1,default,True,InFact,,,2026-01-06,1018,,no-h,15.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5611,wikipedia,1383761362,2026-11-23T13:08:58Z
+ce05903dedbb,no-parl-2029,1,default,True,InFact,,,2026-01-06,1018,,no-krf,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5611,wikipedia,1383761362,2026-11-23T13:08:58Z
+ce05903dedbb,no-parl-2029,1,default,True,InFact,,,2026-01-06,1018,,no-mdg,4.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5611,wikipedia,1383761362,2026-11-23T13:08:58Z
+ce05903dedbb,no-parl-2029,1,default,True,InFact,,,2026-01-06,1018,,no-r,6.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5611,wikipedia,1383761362,2026-11-23T13:08:58Z
+ce05903dedbb,no-parl-2029,1,default,True,InFact,,,2026-01-06,1018,,no-sp,5.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5611,wikipedia,1383761362,2026-11-23T13:08:58Z
+ce05903dedbb,no-parl-2029,1,default,True,InFact,,,2026-01-06,1018,,no-sv,5.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5611,wikipedia,1383761362,2026-11-23T13:08:58Z
+ce05903dedbb,no-parl-2029,1,default,True,InFact,,,2026-01-06,1018,,no-v,3.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5611,wikipedia,1383761362,2026-11-23T13:08:58Z
+ce05903dedbb,no-parl-2029,1,default,True,InFact,,,2026-01-06,1018,,others,3.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5611,wikipedia,1383761362,2026-11-23T13:08:58Z
+3703fa6782d7,no-parl-2029,1,default,True,Opinion,,2025-12-08,2025-12-15,1000,,no-ap,25.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5609,wikipedia,1383761362,2026-11-23T13:08:58Z
+3703fa6782d7,no-parl-2029,1,default,True,Opinion,,2025-12-08,2025-12-15,1000,,no-frp,25.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5609,wikipedia,1383761362,2026-11-23T13:08:58Z
+3703fa6782d7,no-parl-2029,1,default,True,Opinion,,2025-12-08,2025-12-15,1000,,no-h,18.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5609,wikipedia,1383761362,2026-11-23T13:08:58Z
+3703fa6782d7,no-parl-2029,1,default,True,Opinion,,2025-12-08,2025-12-15,1000,,no-krf,2.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5609,wikipedia,1383761362,2026-11-23T13:08:58Z
+3703fa6782d7,no-parl-2029,1,default,True,Opinion,,2025-12-08,2025-12-15,1000,,no-mdg,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5609,wikipedia,1383761362,2026-11-23T13:08:58Z
+3703fa6782d7,no-parl-2029,1,default,True,Opinion,,2025-12-08,2025-12-15,1000,,no-r,7.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5609,wikipedia,1383761362,2026-11-23T13:08:58Z
+3703fa6782d7,no-parl-2029,1,default,True,Opinion,,2025-12-08,2025-12-15,1000,,no-sp,5.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5609,wikipedia,1383761362,2026-11-23T13:08:58Z
+3703fa6782d7,no-parl-2029,1,default,True,Opinion,,2025-12-08,2025-12-15,1000,,no-sv,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5609,wikipedia,1383761362,2026-11-23T13:08:58Z
+3703fa6782d7,no-parl-2029,1,default,True,Opinion,,2025-12-08,2025-12-15,1000,,no-v,3.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5609,wikipedia,1383761362,2026-11-23T13:08:58Z
+3703fa6782d7,no-parl-2029,1,default,True,Opinion,,2025-12-08,2025-12-15,1000,,others,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5609,wikipedia,1383761362,2026-11-23T13:08:58Z
+23ab67339195,no-parl-2029,1,default,True,Norstat,,2025-12-08,2025-12-13,1000,,no-ap,24.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5610,wikipedia,1383761362,2026-11-23T13:08:58Z
+23ab67339195,no-parl-2029,1,default,True,Norstat,,2025-12-08,2025-12-13,1000,,no-frp,27.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5610,wikipedia,1383761362,2026-11-23T13:08:58Z
+23ab67339195,no-parl-2029,1,default,True,Norstat,,2025-12-08,2025-12-13,1000,,no-h,17.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5610,wikipedia,1383761362,2026-11-23T13:08:58Z
+23ab67339195,no-parl-2029,1,default,True,Norstat,,2025-12-08,2025-12-13,1000,,no-krf,3.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5610,wikipedia,1383761362,2026-11-23T13:08:58Z
+23ab67339195,no-parl-2029,1,default,True,Norstat,,2025-12-08,2025-12-13,1000,,no-mdg,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5610,wikipedia,1383761362,2026-11-23T13:08:58Z
+23ab67339195,no-parl-2029,1,default,True,Norstat,,2025-12-08,2025-12-13,1000,,no-r,6.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5610,wikipedia,1383761362,2026-11-23T13:08:58Z
+23ab67339195,no-parl-2029,1,default,True,Norstat,,2025-12-08,2025-12-13,1000,,no-sp,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5610,wikipedia,1383761362,2026-11-23T13:08:58Z
+23ab67339195,no-parl-2029,1,default,True,Norstat,,2025-12-08,2025-12-13,1000,,no-sv,5.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5610,wikipedia,1383761362,2026-11-23T13:08:58Z
+23ab67339195,no-parl-2029,1,default,True,Norstat,,2025-12-08,2025-12-13,1000,,no-v,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5610,wikipedia,1383761362,2026-11-23T13:08:58Z
+23ab67339195,no-parl-2029,1,default,True,Norstat,,2025-12-08,2025-12-13,1000,,others,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5610,wikipedia,1383761362,2026-11-23T13:08:58Z
+018f20f6026d,no-parl-2029,1,default,True,Respons Analyse,,2025-12-03,2025-12-08,1000,,no-ap,22.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5606,wikipedia,1383761362,2026-11-23T13:08:58Z
+018f20f6026d,no-parl-2029,1,default,True,Respons Analyse,,2025-12-03,2025-12-08,1000,,no-frp,27.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5606,wikipedia,1383761362,2026-11-23T13:08:58Z
+018f20f6026d,no-parl-2029,1,default,True,Respons Analyse,,2025-12-03,2025-12-08,1000,,no-h,17.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5606,wikipedia,1383761362,2026-11-23T13:08:58Z
+018f20f6026d,no-parl-2029,1,default,True,Respons Analyse,,2025-12-03,2025-12-08,1000,,no-krf,3.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5606,wikipedia,1383761362,2026-11-23T13:08:58Z
+018f20f6026d,no-parl-2029,1,default,True,Respons Analyse,,2025-12-03,2025-12-08,1000,,no-mdg,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5606,wikipedia,1383761362,2026-11-23T13:08:58Z
+018f20f6026d,no-parl-2029,1,default,True,Respons Analyse,,2025-12-03,2025-12-08,1000,,no-r,7.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5606,wikipedia,1383761362,2026-11-23T13:08:58Z
+018f20f6026d,no-parl-2029,1,default,True,Respons Analyse,,2025-12-03,2025-12-08,1000,,no-sp,6.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5606,wikipedia,1383761362,2026-11-23T13:08:58Z
+018f20f6026d,no-parl-2029,1,default,True,Respons Analyse,,2025-12-03,2025-12-08,1000,,no-sv,5.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5606,wikipedia,1383761362,2026-11-23T13:08:58Z
+018f20f6026d,no-parl-2029,1,default,True,Respons Analyse,,2025-12-03,2025-12-08,1000,,no-v,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5606,wikipedia,1383761362,2026-11-23T13:08:58Z
+018f20f6026d,no-parl-2029,1,default,True,Respons Analyse,,2025-12-03,2025-12-08,1000,,others,2.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5606,wikipedia,1383761362,2026-11-23T13:08:58Z
+026088d20d58,no-parl-2029,1,default,True,Norfakta,,2025-12-02,2025-12-03,1000,,no-ap,25.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5605,wikipedia,1383761362,2026-11-23T13:08:58Z
+026088d20d58,no-parl-2029,1,default,True,Norfakta,,2025-12-02,2025-12-03,1000,,no-frp,26.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5605,wikipedia,1383761362,2026-11-23T13:08:58Z
+026088d20d58,no-parl-2029,1,default,True,Norfakta,,2025-12-02,2025-12-03,1000,,no-h,17.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5605,wikipedia,1383761362,2026-11-23T13:08:58Z
+026088d20d58,no-parl-2029,1,default,True,Norfakta,,2025-12-02,2025-12-03,1000,,no-krf,3.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5605,wikipedia,1383761362,2026-11-23T13:08:58Z
+026088d20d58,no-parl-2029,1,default,True,Norfakta,,2025-12-02,2025-12-03,1000,,no-mdg,5.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5605,wikipedia,1383761362,2026-11-23T13:08:58Z
+026088d20d58,no-parl-2029,1,default,True,Norfakta,,2025-12-02,2025-12-03,1000,,no-r,6.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5605,wikipedia,1383761362,2026-11-23T13:08:58Z
+026088d20d58,no-parl-2029,1,default,True,Norfakta,,2025-12-02,2025-12-03,1000,,no-sp,6.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5605,wikipedia,1383761362,2026-11-23T13:08:58Z
+026088d20d58,no-parl-2029,1,default,True,Norfakta,,2025-12-02,2025-12-03,1000,,no-sv,5.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5605,wikipedia,1383761362,2026-11-23T13:08:58Z
+026088d20d58,no-parl-2029,1,default,True,Norfakta,,2025-12-02,2025-12-03,1000,,no-v,2.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5605,wikipedia,1383761362,2026-11-23T13:08:58Z
+026088d20d58,no-parl-2029,1,default,True,Norfakta,,2025-12-02,2025-12-03,1000,,others,2.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5605,wikipedia,1383761362,2026-11-23T13:08:58Z
+a32029dd6ed8,no-parl-2029,1,default,True,Opinion,,2025-11-24,2025-12-02,1201,,no-ap,22.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5604,wikipedia,1383761362,2026-11-23T13:08:58Z
+a32029dd6ed8,no-parl-2029,1,default,True,Opinion,,2025-11-24,2025-12-02,1201,,no-frp,26.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5604,wikipedia,1383761362,2026-11-23T13:08:58Z
+a32029dd6ed8,no-parl-2029,1,default,True,Opinion,,2025-11-24,2025-12-02,1201,,no-h,17.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5604,wikipedia,1383761362,2026-11-23T13:08:58Z
+a32029dd6ed8,no-parl-2029,1,default,True,Opinion,,2025-11-24,2025-12-02,1201,,no-krf,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5604,wikipedia,1383761362,2026-11-23T13:08:58Z
+a32029dd6ed8,no-parl-2029,1,default,True,Opinion,,2025-11-24,2025-12-02,1201,,no-mdg,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5604,wikipedia,1383761362,2026-11-23T13:08:58Z
+a32029dd6ed8,no-parl-2029,1,default,True,Opinion,,2025-11-24,2025-12-02,1201,,no-r,6.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5604,wikipedia,1383761362,2026-11-23T13:08:58Z
+a32029dd6ed8,no-parl-2029,1,default,True,Opinion,,2025-11-24,2025-12-02,1201,,no-sp,6.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5604,wikipedia,1383761362,2026-11-23T13:08:58Z
+a32029dd6ed8,no-parl-2029,1,default,True,Opinion,,2025-11-24,2025-12-02,1201,,no-sv,5.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5604,wikipedia,1383761362,2026-11-23T13:08:58Z
+a32029dd6ed8,no-parl-2029,1,default,True,Opinion,,2025-11-24,2025-12-02,1201,,no-v,4.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5604,wikipedia,1383761362,2026-11-23T13:08:58Z
+a32029dd6ed8,no-parl-2029,1,default,True,Opinion,,2025-11-24,2025-12-02,1201,,others,2.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5604,wikipedia,1383761362,2026-11-23T13:08:58Z
+43700d282434,no-parl-2029,1,default,True,InFact,,,2025-12-01,1096,,no-ap,21.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5603,wikipedia,1383761362,2026-11-23T13:08:58Z
+43700d282434,no-parl-2029,1,default,True,InFact,,,2025-12-01,1096,,no-frp,27.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5603,wikipedia,1383761362,2026-11-23T13:08:58Z
+43700d282434,no-parl-2029,1,default,True,InFact,,,2025-12-01,1096,,no-h,17.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5603,wikipedia,1383761362,2026-11-23T13:08:58Z
+43700d282434,no-parl-2029,1,default,True,InFact,,,2025-12-01,1096,,no-krf,4.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5603,wikipedia,1383761362,2026-11-23T13:08:58Z
+43700d282434,no-parl-2029,1,default,True,InFact,,,2025-12-01,1096,,no-mdg,4.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5603,wikipedia,1383761362,2026-11-23T13:08:58Z
+43700d282434,no-parl-2029,1,default,True,InFact,,,2025-12-01,1096,,no-r,7.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5603,wikipedia,1383761362,2026-11-23T13:08:58Z
+43700d282434,no-parl-2029,1,default,True,InFact,,,2025-12-01,1096,,no-sp,5.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5603,wikipedia,1383761362,2026-11-23T13:08:58Z
+43700d282434,no-parl-2029,1,default,True,InFact,,,2025-12-01,1096,,no-sv,5.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5603,wikipedia,1383761362,2026-11-23T13:08:58Z
+43700d282434,no-parl-2029,1,default,True,InFact,,,2025-12-01,1096,,no-v,3.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5603,wikipedia,1383761362,2026-11-23T13:08:58Z
+43700d282434,no-parl-2029,1,default,True,InFact,,,2025-12-01,1096,,others,2.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5603,wikipedia,1383761362,2026-11-23T13:08:58Z
+1faea670386a,no-parl-2029,1,default,True,Verian,,,2025-12-01,,,no-ap,23.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5602,wikipedia,1383761362,2026-11-23T13:08:58Z
+1faea670386a,no-parl-2029,1,default,True,Verian,,,2025-12-01,,,no-frp,25.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5602,wikipedia,1383761362,2026-11-23T13:08:58Z
+1faea670386a,no-parl-2029,1,default,True,Verian,,,2025-12-01,,,no-h,17.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5602,wikipedia,1383761362,2026-11-23T13:08:58Z
+1faea670386a,no-parl-2029,1,default,True,Verian,,,2025-12-01,,,no-krf,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5602,wikipedia,1383761362,2026-11-23T13:08:58Z
+1faea670386a,no-parl-2029,1,default,True,Verian,,,2025-12-01,,,no-mdg,5.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5602,wikipedia,1383761362,2026-11-23T13:08:58Z
+1faea670386a,no-parl-2029,1,default,True,Verian,,,2025-12-01,,,no-r,5.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5602,wikipedia,1383761362,2026-11-23T13:08:58Z
+1faea670386a,no-parl-2029,1,default,True,Verian,,,2025-12-01,,,no-sp,6.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5602,wikipedia,1383761362,2026-11-23T13:08:58Z
+1faea670386a,no-parl-2029,1,default,True,Verian,,,2025-12-01,,,no-sv,5.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5602,wikipedia,1383761362,2026-11-23T13:08:58Z
+1faea670386a,no-parl-2029,1,default,True,Verian,,,2025-12-01,,,no-v,3.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5602,wikipedia,1383761362,2026-11-23T13:08:58Z
+1faea670386a,no-parl-2029,1,default,True,Verian,,,2025-12-01,,,others,3.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5602,wikipedia,1383761362,2026-11-23T13:08:58Z
+7973b28848b6,no-parl-2029,1,default,True,Norstat,,,2025-11-18,999,,no-ap,24.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5600,wikipedia,1383761362,2026-11-23T13:08:58Z
+7973b28848b6,no-parl-2029,1,default,True,Norstat,,,2025-11-18,999,,no-frp,25.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5600,wikipedia,1383761362,2026-11-23T13:08:58Z
+7973b28848b6,no-parl-2029,1,default,True,Norstat,,,2025-11-18,999,,no-h,16.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5600,wikipedia,1383761362,2026-11-23T13:08:58Z
+7973b28848b6,no-parl-2029,1,default,True,Norstat,,,2025-11-18,999,,no-krf,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5600,wikipedia,1383761362,2026-11-23T13:08:58Z
+7973b28848b6,no-parl-2029,1,default,True,Norstat,,,2025-11-18,999,,no-mdg,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5600,wikipedia,1383761362,2026-11-23T13:08:58Z
+7973b28848b6,no-parl-2029,1,default,True,Norstat,,,2025-11-18,999,,no-r,7.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5600,wikipedia,1383761362,2026-11-23T13:08:58Z
+7973b28848b6,no-parl-2029,1,default,True,Norstat,,,2025-11-18,999,,no-sp,5.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5600,wikipedia,1383761362,2026-11-23T13:08:58Z
+7973b28848b6,no-parl-2029,1,default,True,Norstat,,,2025-11-18,999,,no-sv,5.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5600,wikipedia,1383761362,2026-11-23T13:08:58Z
+7973b28848b6,no-parl-2029,1,default,True,Norstat,,,2025-11-18,999,,no-v,2.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5600,wikipedia,1383761362,2026-11-23T13:08:58Z
+7973b28848b6,no-parl-2029,1,default,True,Norstat,,,2025-11-18,999,,others,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5600,wikipedia,1383761362,2026-11-23T13:08:58Z
+9e82f25aa47c,no-parl-2029,1,default,True,Opinion,,2025-11-10,2025-11-17,1000,,no-ap,22.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+9e82f25aa47c,no-parl-2029,1,default,True,Opinion,,2025-11-10,2025-11-17,1000,,no-frp,25.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+9e82f25aa47c,no-parl-2029,1,default,True,Opinion,,2025-11-10,2025-11-17,1000,,no-h,19.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+9e82f25aa47c,no-parl-2029,1,default,True,Opinion,,2025-11-10,2025-11-17,1000,,no-krf,3.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+9e82f25aa47c,no-parl-2029,1,default,True,Opinion,,2025-11-10,2025-11-17,1000,,no-mdg,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+9e82f25aa47c,no-parl-2029,1,default,True,Opinion,,2025-11-10,2025-11-17,1000,,no-r,6.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+9e82f25aa47c,no-parl-2029,1,default,True,Opinion,,2025-11-10,2025-11-17,1000,,no-sp,6.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+9e82f25aa47c,no-parl-2029,1,default,True,Opinion,,2025-11-10,2025-11-17,1000,,no-sv,6.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+9e82f25aa47c,no-parl-2029,1,default,True,Opinion,,2025-11-10,2025-11-17,1000,,no-v,3.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+9e82f25aa47c,no-parl-2029,1,default,True,Opinion,,2025-11-10,2025-11-17,1000,,others,2.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+3fe04b9a9f17,no-parl-2029,1,default,True,Respons Analyse,,2025-11-04,2025-11-07,1000,,no-ap,22.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5598,wikipedia,1383761362,2026-11-23T13:08:58Z
+3fe04b9a9f17,no-parl-2029,1,default,True,Respons Analyse,,2025-11-04,2025-11-07,1000,,no-frp,25.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5598,wikipedia,1383761362,2026-11-23T13:08:58Z
+3fe04b9a9f17,no-parl-2029,1,default,True,Respons Analyse,,2025-11-04,2025-11-07,1000,,no-h,18.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5598,wikipedia,1383761362,2026-11-23T13:08:58Z
+3fe04b9a9f17,no-parl-2029,1,default,True,Respons Analyse,,2025-11-04,2025-11-07,1000,,no-krf,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5598,wikipedia,1383761362,2026-11-23T13:08:58Z
+3fe04b9a9f17,no-parl-2029,1,default,True,Respons Analyse,,2025-11-04,2025-11-07,1000,,no-mdg,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5598,wikipedia,1383761362,2026-11-23T13:08:58Z
+3fe04b9a9f17,no-parl-2029,1,default,True,Respons Analyse,,2025-11-04,2025-11-07,1000,,no-r,6.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5598,wikipedia,1383761362,2026-11-23T13:08:58Z
+3fe04b9a9f17,no-parl-2029,1,default,True,Respons Analyse,,2025-11-04,2025-11-07,1000,,no-sp,6.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5598,wikipedia,1383761362,2026-11-23T13:08:58Z
+3fe04b9a9f17,no-parl-2029,1,default,True,Respons Analyse,,2025-11-04,2025-11-07,1000,,no-sv,5.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5598,wikipedia,1383761362,2026-11-23T13:08:58Z
+3fe04b9a9f17,no-parl-2029,1,default,True,Respons Analyse,,2025-11-04,2025-11-07,1000,,no-v,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5598,wikipedia,1383761362,2026-11-23T13:08:58Z
+3fe04b9a9f17,no-parl-2029,1,default,True,Respons Analyse,,2025-11-04,2025-11-07,1000,,others,3.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5598,wikipedia,1383761362,2026-11-23T13:08:58Z
+4b4ae64b015e,no-parl-2029,1,default,True,InFact,,,2025-11-05,,,no-ap,22.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5596,wikipedia,1383761362,2026-11-23T13:08:58Z
+4b4ae64b015e,no-parl-2029,1,default,True,InFact,,,2025-11-05,,,no-frp,27.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5596,wikipedia,1383761362,2026-11-23T13:08:58Z
+4b4ae64b015e,no-parl-2029,1,default,True,InFact,,,2025-11-05,,,no-h,16.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5596,wikipedia,1383761362,2026-11-23T13:08:58Z
+4b4ae64b015e,no-parl-2029,1,default,True,InFact,,,2025-11-05,,,no-krf,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5596,wikipedia,1383761362,2026-11-23T13:08:58Z
+4b4ae64b015e,no-parl-2029,1,default,True,InFact,,,2025-11-05,,,no-mdg,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5596,wikipedia,1383761362,2026-11-23T13:08:58Z
+4b4ae64b015e,no-parl-2029,1,default,True,InFact,,,2025-11-05,,,no-r,7.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5596,wikipedia,1383761362,2026-11-23T13:08:58Z
+4b4ae64b015e,no-parl-2029,1,default,True,InFact,,,2025-11-05,,,no-sp,5.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5596,wikipedia,1383761362,2026-11-23T13:08:58Z
+4b4ae64b015e,no-parl-2029,1,default,True,InFact,,,2025-11-05,,,no-sv,4.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5596,wikipedia,1383761362,2026-11-23T13:08:58Z
+4b4ae64b015e,no-parl-2029,1,default,True,InFact,,,2025-11-05,,,no-v,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5596,wikipedia,1383761362,2026-11-23T13:08:58Z
+4b4ae64b015e,no-parl-2029,1,default,True,InFact,,,2025-11-05,,,others,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5596,wikipedia,1383761362,2026-11-23T13:08:58Z
+4cddfa12ebc0,no-parl-2029,1,default,True,Norfakta,,2025-11-04,2025-11-05,1003,,no-ap,24.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5597,wikipedia,1383761362,2026-11-23T13:08:58Z
+4cddfa12ebc0,no-parl-2029,1,default,True,Norfakta,,2025-11-04,2025-11-05,1003,,no-frp,27.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5597,wikipedia,1383761362,2026-11-23T13:08:58Z
+4cddfa12ebc0,no-parl-2029,1,default,True,Norfakta,,2025-11-04,2025-11-05,1003,,no-h,16.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5597,wikipedia,1383761362,2026-11-23T13:08:58Z
+4cddfa12ebc0,no-parl-2029,1,default,True,Norfakta,,2025-11-04,2025-11-05,1003,,no-krf,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5597,wikipedia,1383761362,2026-11-23T13:08:58Z
+4cddfa12ebc0,no-parl-2029,1,default,True,Norfakta,,2025-11-04,2025-11-05,1003,,no-mdg,5.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5597,wikipedia,1383761362,2026-11-23T13:08:58Z
+4cddfa12ebc0,no-parl-2029,1,default,True,Norfakta,,2025-11-04,2025-11-05,1003,,no-r,6.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5597,wikipedia,1383761362,2026-11-23T13:08:58Z
+4cddfa12ebc0,no-parl-2029,1,default,True,Norfakta,,2025-11-04,2025-11-05,1003,,no-sp,5.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5597,wikipedia,1383761362,2026-11-23T13:08:58Z
+4cddfa12ebc0,no-parl-2029,1,default,True,Norfakta,,2025-11-04,2025-11-05,1003,,no-sv,4.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5597,wikipedia,1383761362,2026-11-23T13:08:58Z
+4cddfa12ebc0,no-parl-2029,1,default,True,Norfakta,,2025-11-04,2025-11-05,1003,,no-v,3.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5597,wikipedia,1383761362,2026-11-23T13:08:58Z
+4cddfa12ebc0,no-parl-2029,1,default,True,Norfakta,,2025-11-04,2025-11-05,1003,,others,3.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5597,wikipedia,1383761362,2026-11-23T13:08:58Z
+30c2ee0facc6,no-parl-2029,1,default,True,Opinion,,2025-10-27,2025-11-03,1001,,no-ap,23.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+30c2ee0facc6,no-parl-2029,1,default,True,Opinion,,2025-10-27,2025-11-03,1001,,no-frp,26.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+30c2ee0facc6,no-parl-2029,1,default,True,Opinion,,2025-10-27,2025-11-03,1001,,no-h,17.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+30c2ee0facc6,no-parl-2029,1,default,True,Opinion,,2025-10-27,2025-11-03,1001,,no-krf,3.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+30c2ee0facc6,no-parl-2029,1,default,True,Opinion,,2025-10-27,2025-11-03,1001,,no-mdg,4.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+30c2ee0facc6,no-parl-2029,1,default,True,Opinion,,2025-10-27,2025-11-03,1001,,no-r,6.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+30c2ee0facc6,no-parl-2029,1,default,True,Opinion,,2025-10-27,2025-11-03,1001,,no-sp,6.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+30c2ee0facc6,no-parl-2029,1,default,True,Opinion,,2025-10-27,2025-11-03,1001,,no-sv,5.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+30c2ee0facc6,no-parl-2029,1,default,True,Opinion,,2025-10-27,2025-11-03,1001,,no-v,2.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+30c2ee0facc6,no-parl-2029,1,default,True,Opinion,,2025-10-27,2025-11-03,1001,,others,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5595,wikipedia,1383761362,2026-11-23T13:08:58Z
+ef316618d4b5,no-parl-2029,1,default,True,Verian,,2025-10-27,2025-10-31,1194,,no-ap,25.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5594,wikipedia,1383761362,2026-11-23T13:08:58Z
+ef316618d4b5,no-parl-2029,1,default,True,Verian,,2025-10-27,2025-10-31,1194,,no-frp,23.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5594,wikipedia,1383761362,2026-11-23T13:08:58Z
+ef316618d4b5,no-parl-2029,1,default,True,Verian,,2025-10-27,2025-10-31,1194,,no-h,15.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5594,wikipedia,1383761362,2026-11-23T13:08:58Z
+ef316618d4b5,no-parl-2029,1,default,True,Verian,,2025-10-27,2025-10-31,1194,,no-krf,5.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5594,wikipedia,1383761362,2026-11-23T13:08:58Z
+ef316618d4b5,no-parl-2029,1,default,True,Verian,,2025-10-27,2025-10-31,1194,,no-mdg,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5594,wikipedia,1383761362,2026-11-23T13:08:58Z
+ef316618d4b5,no-parl-2029,1,default,True,Verian,,2025-10-27,2025-10-31,1194,,no-r,6.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5594,wikipedia,1383761362,2026-11-23T13:08:58Z
+ef316618d4b5,no-parl-2029,1,default,True,Verian,,2025-10-27,2025-10-31,1194,,no-sp,5.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5594,wikipedia,1383761362,2026-11-23T13:08:58Z
+ef316618d4b5,no-parl-2029,1,default,True,Verian,,2025-10-27,2025-10-31,1194,,no-sv,5.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5594,wikipedia,1383761362,2026-11-23T13:08:58Z
+ef316618d4b5,no-parl-2029,1,default,True,Verian,,2025-10-27,2025-10-31,1194,,no-v,4.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5594,wikipedia,1383761362,2026-11-23T13:08:58Z
+ef316618d4b5,no-parl-2029,1,default,True,Verian,,2025-10-27,2025-10-31,1194,,others,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5594,wikipedia,1383761362,2026-11-23T13:08:58Z
+5eb80f6268cc,no-parl-2029,1,default,True,Norstat,,,2025-10-21,,,no-ap,26.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5593,wikipedia,1383761362,2026-11-23T13:08:58Z
+5eb80f6268cc,no-parl-2029,1,default,True,Norstat,,,2025-10-21,,,no-frp,23.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5593,wikipedia,1383761362,2026-11-23T13:08:58Z
+5eb80f6268cc,no-parl-2029,1,default,True,Norstat,,,2025-10-21,,,no-h,16.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5593,wikipedia,1383761362,2026-11-23T13:08:58Z
+5eb80f6268cc,no-parl-2029,1,default,True,Norstat,,,2025-10-21,,,no-krf,3.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5593,wikipedia,1383761362,2026-11-23T13:08:58Z
+5eb80f6268cc,no-parl-2029,1,default,True,Norstat,,,2025-10-21,,,no-mdg,4.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5593,wikipedia,1383761362,2026-11-23T13:08:58Z
+5eb80f6268cc,no-parl-2029,1,default,True,Norstat,,,2025-10-21,,,no-r,6.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5593,wikipedia,1383761362,2026-11-23T13:08:58Z
+5eb80f6268cc,no-parl-2029,1,default,True,Norstat,,,2025-10-21,,,no-sp,5.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5593,wikipedia,1383761362,2026-11-23T13:08:58Z
+5eb80f6268cc,no-parl-2029,1,default,True,Norstat,,,2025-10-21,,,no-sv,5.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5593,wikipedia,1383761362,2026-11-23T13:08:58Z
+5eb80f6268cc,no-parl-2029,1,default,True,Norstat,,,2025-10-21,,,no-v,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5593,wikipedia,1383761362,2026-11-23T13:08:58Z
+5eb80f6268cc,no-parl-2029,1,default,True,Norstat,,,2025-10-21,,,others,3.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5593,wikipedia,1383761362,2026-11-23T13:08:58Z
+8ce1c9dd3074,no-parl-2029,1,default,True,Opinion,,2025-10-13,2025-10-20,1000,,no-ap,24.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5592,wikipedia,1383761362,2026-11-23T13:08:58Z
+8ce1c9dd3074,no-parl-2029,1,default,True,Opinion,,2025-10-13,2025-10-20,1000,,no-frp,23.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5592,wikipedia,1383761362,2026-11-23T13:08:58Z
+8ce1c9dd3074,no-parl-2029,1,default,True,Opinion,,2025-10-13,2025-10-20,1000,,no-h,16.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5592,wikipedia,1383761362,2026-11-23T13:08:58Z
+8ce1c9dd3074,no-parl-2029,1,default,True,Opinion,,2025-10-13,2025-10-20,1000,,no-krf,4.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5592,wikipedia,1383761362,2026-11-23T13:08:58Z
+8ce1c9dd3074,no-parl-2029,1,default,True,Opinion,,2025-10-13,2025-10-20,1000,,no-mdg,3.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5592,wikipedia,1383761362,2026-11-23T13:08:58Z
+8ce1c9dd3074,no-parl-2029,1,default,True,Opinion,,2025-10-13,2025-10-20,1000,,no-r,6.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5592,wikipedia,1383761362,2026-11-23T13:08:58Z
+8ce1c9dd3074,no-parl-2029,1,default,True,Opinion,,2025-10-13,2025-10-20,1000,,no-sp,5.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5592,wikipedia,1383761362,2026-11-23T13:08:58Z
+8ce1c9dd3074,no-parl-2029,1,default,True,Opinion,,2025-10-13,2025-10-20,1000,,no-sv,7.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5592,wikipedia,1383761362,2026-11-23T13:08:58Z
+8ce1c9dd3074,no-parl-2029,1,default,True,Opinion,,2025-10-13,2025-10-20,1000,,no-v,4.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5592,wikipedia,1383761362,2026-11-23T13:08:58Z
+8ce1c9dd3074,no-parl-2029,1,default,True,Opinion,,2025-10-13,2025-10-20,1000,,others,3.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5592,wikipedia,1383761362,2026-11-23T13:08:58Z
+d22dc438a7c0,no-parl-2029,1,default,True,Respons Analyse,,2025-10-08,2025-10-13,1002,,no-ap,28.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5591,wikipedia,1383761362,2026-11-23T13:08:58Z
+d22dc438a7c0,no-parl-2029,1,default,True,Respons Analyse,,2025-10-08,2025-10-13,1002,,no-frp,25.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5591,wikipedia,1383761362,2026-11-23T13:08:58Z
+d22dc438a7c0,no-parl-2029,1,default,True,Respons Analyse,,2025-10-08,2025-10-13,1002,,no-h,14.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5591,wikipedia,1383761362,2026-11-23T13:08:58Z
+d22dc438a7c0,no-parl-2029,1,default,True,Respons Analyse,,2025-10-08,2025-10-13,1002,,no-krf,3.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5591,wikipedia,1383761362,2026-11-23T13:08:58Z
+d22dc438a7c0,no-parl-2029,1,default,True,Respons Analyse,,2025-10-08,2025-10-13,1002,,no-mdg,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5591,wikipedia,1383761362,2026-11-23T13:08:58Z
+d22dc438a7c0,no-parl-2029,1,default,True,Respons Analyse,,2025-10-08,2025-10-13,1002,,no-r,5.7,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5591,wikipedia,1383761362,2026-11-23T13:08:58Z
+d22dc438a7c0,no-parl-2029,1,default,True,Respons Analyse,,2025-10-08,2025-10-13,1002,,no-sp,5.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5591,wikipedia,1383761362,2026-11-23T13:08:58Z
+d22dc438a7c0,no-parl-2029,1,default,True,Respons Analyse,,2025-10-08,2025-10-13,1002,,no-sv,6.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5591,wikipedia,1383761362,2026-11-23T13:08:58Z
+d22dc438a7c0,no-parl-2029,1,default,True,Respons Analyse,,2025-10-08,2025-10-13,1002,,no-v,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5591,wikipedia,1383761362,2026-11-23T13:08:58Z
+d22dc438a7c0,no-parl-2029,1,default,True,Respons Analyse,,2025-10-08,2025-10-13,1002,,others,3.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5591,wikipedia,1383761362,2026-11-23T13:08:58Z
+73025cf2ec0c,no-parl-2029,1,default,True,Norfakta,,2025-10-07,2025-10-08,1006,,no-ap,29.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5590,wikipedia,1383761362,2026-11-23T13:08:58Z
+73025cf2ec0c,no-parl-2029,1,default,True,Norfakta,,2025-10-07,2025-10-08,1006,,no-frp,25.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5590,wikipedia,1383761362,2026-11-23T13:08:58Z
+73025cf2ec0c,no-parl-2029,1,default,True,Norfakta,,2025-10-07,2025-10-08,1006,,no-h,15.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5590,wikipedia,1383761362,2026-11-23T13:08:58Z
+73025cf2ec0c,no-parl-2029,1,default,True,Norfakta,,2025-10-07,2025-10-08,1006,,no-krf,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5590,wikipedia,1383761362,2026-11-23T13:08:58Z
+73025cf2ec0c,no-parl-2029,1,default,True,Norfakta,,2025-10-07,2025-10-08,1006,,no-mdg,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5590,wikipedia,1383761362,2026-11-23T13:08:58Z
+73025cf2ec0c,no-parl-2029,1,default,True,Norfakta,,2025-10-07,2025-10-08,1006,,no-r,5.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5590,wikipedia,1383761362,2026-11-23T13:08:58Z
+73025cf2ec0c,no-parl-2029,1,default,True,Norfakta,,2025-10-07,2025-10-08,1006,,no-sp,4.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5590,wikipedia,1383761362,2026-11-23T13:08:58Z
+73025cf2ec0c,no-parl-2029,1,default,True,Norfakta,,2025-10-07,2025-10-08,1006,,no-sv,4.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5590,wikipedia,1383761362,2026-11-23T13:08:58Z
+73025cf2ec0c,no-parl-2029,1,default,True,Norfakta,,2025-10-07,2025-10-08,1006,,no-v,3.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5590,wikipedia,1383761362,2026-11-23T13:08:58Z
+73025cf2ec0c,no-parl-2029,1,default,True,Norfakta,,2025-10-07,2025-10-08,1006,,others,4.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5590,wikipedia,1383761362,2026-11-23T13:08:58Z
+f76ca7878571,no-parl-2029,1,default,True,InFact,,,2025-10-06,1094,,no-ap,28.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5589,wikipedia,1383761362,2026-11-23T13:08:58Z
+f76ca7878571,no-parl-2029,1,default,True,InFact,,,2025-10-06,1094,,no-frp,25.3,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5589,wikipedia,1383761362,2026-11-23T13:08:58Z
+f76ca7878571,no-parl-2029,1,default,True,InFact,,,2025-10-06,1094,,no-h,13.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5589,wikipedia,1383761362,2026-11-23T13:08:58Z
+f76ca7878571,no-parl-2029,1,default,True,InFact,,,2025-10-06,1094,,no-krf,4.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5589,wikipedia,1383761362,2026-11-23T13:08:58Z
+f76ca7878571,no-parl-2029,1,default,True,InFact,,,2025-10-06,1094,,no-mdg,5.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5589,wikipedia,1383761362,2026-11-23T13:08:58Z
+f76ca7878571,no-parl-2029,1,default,True,InFact,,,2025-10-06,1094,,no-r,5.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5589,wikipedia,1383761362,2026-11-23T13:08:58Z
+f76ca7878571,no-parl-2029,1,default,True,InFact,,,2025-10-06,1094,,no-sp,4.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5589,wikipedia,1383761362,2026-11-23T13:08:58Z
+f76ca7878571,no-parl-2029,1,default,True,InFact,,,2025-10-06,1094,,no-sv,5.5,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5589,wikipedia,1383761362,2026-11-23T13:08:58Z
+f76ca7878571,no-parl-2029,1,default,True,InFact,,,2025-10-06,1094,,no-v,2.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5589,wikipedia,1383761362,2026-11-23T13:08:58Z
+f76ca7878571,no-parl-2029,1,default,True,InFact,,,2025-10-06,1094,,others,3.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5589,wikipedia,1383761362,2026-11-23T13:08:58Z
+2148800ef7f3,no-parl-2029,1,default,True,Verian,,2025-09-29,2025-10-03,992,,no-ap,29.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5588,wikipedia,1383761362,2026-11-23T13:08:58Z
+2148800ef7f3,no-parl-2029,1,default,True,Verian,,2025-09-29,2025-10-03,992,,no-frp,21.6,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5588,wikipedia,1383761362,2026-11-23T13:08:58Z
+2148800ef7f3,no-parl-2029,1,default,True,Verian,,2025-09-29,2025-10-03,992,,no-h,15.0,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5588,wikipedia,1383761362,2026-11-23T13:08:58Z
+2148800ef7f3,no-parl-2029,1,default,True,Verian,,2025-09-29,2025-10-03,992,,no-krf,4.1,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5588,wikipedia,1383761362,2026-11-23T13:08:58Z
+2148800ef7f3,no-parl-2029,1,default,True,Verian,,2025-09-29,2025-10-03,992,,no-mdg,4.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5588,wikipedia,1383761362,2026-11-23T13:08:58Z
+2148800ef7f3,no-parl-2029,1,default,True,Verian,,2025-09-29,2025-10-03,992,,no-r,6.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5588,wikipedia,1383761362,2026-11-23T13:08:58Z
+2148800ef7f3,no-parl-2029,1,default,True,Verian,,2025-09-29,2025-10-03,992,,no-sp,5.9,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5588,wikipedia,1383761362,2026-11-23T13:08:58Z
+2148800ef7f3,no-parl-2029,1,default,True,Verian,,2025-09-29,2025-10-03,992,,no-sv,5.8,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5588,wikipedia,1383761362,2026-11-23T13:08:58Z
+2148800ef7f3,no-parl-2029,1,default,True,Verian,,2025-09-29,2025-10-03,992,,no-v,4.2,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5588,wikipedia,1383761362,2026-11-23T13:08:58Z
+2148800ef7f3,no-parl-2029,1,default,True,Verian,,2025-09-29,2025-10-03,992,,others,3.4,pct,,,https://www.pollofpolls.no/?cmd=Maling&gallupid=5588,wikipedia,1383761362,2026-11-23T13:08:58Z

@@ -127,7 +127,8 @@ countries:
     headline_kind: parliamentary
     parliament: Riksdag
     subnational_tier: Regions
-    notes: Government-formation banner while no government is in place.
+    special: government_formation
+    notes: Government-formation banner while no government is in place. Remove `special` once one is.
   - code: FI
     name: Finland
     tab_order: 16

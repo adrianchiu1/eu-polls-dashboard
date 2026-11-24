@@ -1,7 +1,8 @@
 # Data notice (draft)
 
-> Phase 1 status: `data/` now holds DAWUM-derived rows (`polls_DE.csv`) and Wikipedia-derived rows
-> (`polls_FR.csv`, `polls_IT.csv`, `polls_ES.csv`, `polls_UK.csv`). No file mixes the two. Party
+> Phase 2 status: `data/` holds DAWUM-derived rows (`polls_DE.csv`), SwedishPolls-derived rows
+> (`polls_SE.csv`) and Wikipedia-derived rows (the other 16 `polls_<CC>.csv` files). No poll file
+> mixes sources. Party
 > files under `config/parties/` reuse Europolls' Party Facts ids and take names and colours from
 > Wikipedia table headers; `tests/fixtures/wikipedia/` holds reduced copies of five article
 > revisions and `tests/fixtures/dawum/` a cut of the DAWUM database, each under its source's licence.

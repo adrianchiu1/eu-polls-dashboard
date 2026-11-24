@@ -13,56 +13,56 @@ parties:
     name: Labour Party
     colour: '#E41C3E'
     partyfacts_id: 1516
-    lr_score: null
-    lr_source: pending
+    lr_score: 3.81
+    lr_source: ches2024
   - party_id: uk-con
     type: party
     short: Con
     name: Conservative Party
     colour: '#0087DC'
     partyfacts_id: 1567
-    lr_score: null
-    lr_source: pending
+    lr_score: 7.67
+    lr_source: ches2024
   - party_id: uk-ref
     type: party
     short: Ref
     name: Reform UK
     colour: '#1EB8D0'
     partyfacts_id: null
-    lr_score: null
-    lr_source: pending
+    lr_score: 9.24
+    lr_source: ches2024
   - party_id: uk-ld
     type: party
     short: LD
     name: Liberal Democrats
     colour: '#FF6400'
     partyfacts_id: 1388
-    lr_score: null
-    lr_source: pending
+    lr_score: 3.86
+    lr_source: ches2024
   - party_id: uk-grn
     type: party
     short: Grn
     name: Green parties in the United Kingdom
     colour: '#02A95B'
     partyfacts_id: 1794
-    lr_score: null
-    lr_source: pending
+    lr_score: 2.05
+    lr_source: ches2024
   - party_id: uk-snp
     type: party
     short: SNP
     name: Scottish National Party
     colour: '#FDF38E'
     partyfacts_id: 986
-    lr_score: null
-    lr_source: pending
+    lr_score: 3.32
+    lr_source: ches2024
   - party_id: uk-pc
     type: party
     short: PC
     name: Plaid Cymru
     colour: '#008672'
     partyfacts_id: 1002
-    lr_score: null
-    lr_source: pending
+    lr_score: 3.12
+    lr_source: ches2024
   - party_id: uk-rb
     type: party
     short: RB

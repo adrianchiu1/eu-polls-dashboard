@@ -4,7 +4,7 @@
 # config/party_mappings/IT.yaml; CC BY-SA 4.0) and are not yet checked against Party Facts itself.
 # Left-right scores are pending: see docs/DATA_SOURCES.md, Chapel Hill Expert Survey.
 # An alliance row with members is a joint list: one figure a pollster gives for several columns.
-# Coalition totals (CSX, CDX) are not defined here yet: membership is judgement IT-001 and waits for AC.
+# Coalition totals: it-cdx and it-csx below (coalition: true). Membership is judgement IT-001.
 schema_version: 1
 country: IT
 parties:
@@ -14,48 +14,48 @@ parties:
     name: Brothers of Italy
     colour: '#03386A'
     partyfacts_id: 2280
-    lr_score: null
-    lr_source: pending
+    lr_score: 8.47
+    lr_source: ches2024
   - party_id: it-pd
     type: party
     short: PD
     name: Democratic Party
     colour: '#EF1C27'
     partyfacts_id: 802
-    lr_score: null
-    lr_source: pending
+    lr_score: 2.93
+    lr_source: ches2024
   - party_id: it-m5s
     type: party
     short: M5S
     name: Five Star Movement
     colour: '#FFEB3B'
     partyfacts_id: 2046
-    lr_score: null
-    lr_source: pending
+    lr_score: 3.33
+    lr_source: ches2024
   - party_id: it-lega
     type: party
     short: Lega
     name: Lega
     colour: '#008000'
     partyfacts_id: 1221
-    lr_score: null
-    lr_source: pending
+    lr_score: 8.67
+    lr_source: ches2024
   - party_id: it-fi
     type: party
     short: FI
     name: Forza Italia
     colour: '#0087DC'
     partyfacts_id: 8058
-    lr_score: null
-    lr_source: pending
+    lr_score: 6.73
+    lr_source: ches2024
   - party_id: it-a
     type: party
     short: A
     name: Action
     colour: '#0039AA'
     partyfacts_id: 9082
-    lr_score: null
-    lr_source: pending
+    lr_score: 4.43
+    lr_source: ches2024
   - party_id: it-iv
     type: party
     short: IV
@@ -78,8 +78,8 @@ parties:
     name: More Europe
     colour: '#888888'
     partyfacts_id: 6155
-    lr_score: null
-    lr_source: pending
+    lr_score: 4.33
+    lr_source: ches2024
   - party_id: it-nm
     type: party
     short: NM
@@ -187,3 +187,33 @@ parties:
     partyfacts_id: 9127
     lr_score: null
     lr_source: pending
+  - party_id: it-cdx
+    type: alliance
+    short: CDX
+    name: Centre-right coalition
+    colour: '#0A6BE1'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    coalition: true
+    members:
+    - it-fdi
+    - it-lega
+    - it-fi
+    - it-nm
+    - it-scn
+  - party_id: it-csx
+    type: alliance
+    short: CSX
+    name: Centre-left coalition
+    colour: '#EF3E3E'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    coalition: true
+    members:
+    - it-pd
+    - it-m5s
+    - it-iv
+    - it-avs
+    - it-pluse

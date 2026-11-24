@@ -1,0 +1,123 @@
+# Denmark. Drafted by tools/propose_parties.py from the pinned Wikipedia fixture for dk-parl-next:
+# short names, full names and colours are read from the polling table's header (CC BY-SA 4.0).
+# Party Facts ids, where present, come from Europolls (github.com/gfrt0/europolls,
+# config/party_mappings/DK.yaml; CC BY-SA 4.0) and are not yet checked against Party Facts itself.
+# Left-right scores are pending. An alliance row with members is a joint list: one figure a pollster
+# gives for several columns.
+schema_version: 1
+country: DK
+parties:
+  - party_id: dk-social-democrats
+    type: party
+    short: Social Democrats
+    name: Social Democrats
+    colour: '#C82518'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Social Democrats (Denmark)
+  - party_id: dk-danish-social-liberal-party
+    type: party
+    short: Danish Social Liberal Party
+    name: Danish Social Liberal Party
+    colour: '#733280'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: dk-conservative-peoples-party
+    type: party
+    short: Conservative People's Party
+    name: Conservative People's Party
+    colour: '#6B9249'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Conservative People's Party (Denmark)
+  - party_id: dk-green-left
+    type: party
+    short: Green Left
+    name: Green Left
+    colour: '#EB94D1'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Green Left (Denmark)
+  - party_id: dk-citizens-party
+    type: party
+    short: Citizens' Party
+    name: Citizens' Party
+    colour: '#2B72FD'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Citizens' Party (Denmark)
+  - party_id: dk-liberal-alliance
+    type: party
+    short: Liberal Alliance
+    name: Liberal Alliance
+    colour: '#3FB2BE'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Liberal Alliance (Denmark)
+  - party_id: dk-moderates
+    type: party
+    short: Moderates
+    name: Moderates
+    colour: '#B48CD2'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Moderates (Denmark)
+  - party_id: dk-danish-peoples-party
+    type: party
+    short: Danish People's Party
+    name: Danish People's Party
+    colour: '#FCD03B'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: dk-venstre
+    type: party
+    short: Venstre
+    name: Venstre
+    colour: '#01438E'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Venstre (Denmark)
+  - party_id: dk-denmark-democrats
+    type: party
+    short: Denmark Democrats
+    name: Denmark Democrats
+    colour: '#668DD1'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: dk-red-green-alliance
+    type: party
+    short: Red–Green Alliance
+    name: Red–Green Alliance
+    colour: '#F7660D'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - Red–Green Alliance (Denmark)
+  - party_id: dk-the-alternative
+    type: party
+    short: The Alternative
+    name: The Alternative
+    colour: '#18942D'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    aliases:
+    - The Alternative (Denmark)

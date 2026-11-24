@@ -32,8 +32,20 @@ Researched on 23 Nov 2026. Re-check anything marked unverified before relying on
   party columns is a joint list and maps to an alliance row in the party file. A row whose pollster cell
   names an election is the official result and goes to `data/results.csv`. A table without a date
   column, a pollster column or two party columns fails the pull.
-- **Not read yet:** seat figures printed under vote shares (Spain), the Italian coalition columns, and
-  polling for Spain before 2025, which sits in a separate article.
+- **Phase 2 additions:** a table can be read in seats (Netherlands), as named regional panels of one
+  contest (Belgium: Flanders, Wallonia, Brussels), with the publication link in a Ref or Sources
+  column, with a Method column, and with the year printed on only some rows. Column groups headed
+  Coalitions or Blocs are never read.
+- **Articles found by search, not by title pattern:** Belgium's current article is "Opinion polling
+  for the 2029 Belgian elections"; the "next Belgian federal election" titles redirect elsewhere.
+  The Czech "next parliamentary election" polling title redirects to the 2025 article; the current
+  tables sit in "Next Czech parliamentary election".
+- **No source for five presidential contests.** Austria, Portugal, Ireland, Poland and Finland have no
+  polling tables on Wikipedia yet, so their headlines read "not yet polled". The Czech presidential
+  article has first-round tables, but respondents could name several candidates and the figures sum
+  to about 135, so it is not read as voting intention.
+- **Not read yet:** seat figures printed under vote shares (Spain, Denmark, Norway, Greece, Czechia),
+  and polling for Spain before 2025, which sits in a separate article.
 
 ### Europolls (reuse of code and mappings, not of output)
 

@@ -15,6 +15,7 @@ import pandas as pd
 from app import charts, components, data, logic
 from app.blocks import Columns, Expander, Figure, Html, Table
 from pipeline import config, model, parties
+from pipeline.config import panel_id
 
 RECENT_POLLS = 10
 
@@ -44,6 +45,10 @@ def status_strip(country: dict, contests: list[dict], quality: dict, results: pd
         elif ph == "post_election":
             blocks.append(_rg(f'<p class="rg-banner">{escape(k["body"])} voted on {escape(when)}. '
                               "Showing the result against the final polls.</p>"))
+    if country.get("special") == "government_formation":
+        for k in national:
+            if k["kind"] == "parliamentary" and k.get("notes"):
+                blocks.append(_rg(f'<p class="rg-banner"><b>Government formation.</b> {escape(k["notes"])}</p>'))
     cells = []
     for k in national:
         target = k.get("date") or k.get("deadline")
@@ -101,11 +106,25 @@ def _recent_polls_html(polls: pd.DataFrame, cc: str, party_ids: list[str], unit:
     return "".join(out)
 
 
-def contest_panel(contest: dict, country: dict, bundle: dict, today: dt.date, order: str, small: bool = False) -> list:
-    """Zones 2 and 3 for one contest: standings, trend, spectrum strip, match-ups, recent polls, data."""
+def contest_panel(contest: dict, country: dict, bundle: dict, today: dt.date, order: str, small: bool = False,
+                  panel: str | None = None) -> list:
+    """Zones 2 and 3 for one contest: standings, trend, spectrum strip, match-ups, recent polls, data.
+
+    `panel` limits it to one regional panel of the contest (Belgium), whose rows carry the panel as
+    their line-up and whose previous result is stored under the contest id plus the panel.
+    """
     cid, cc, unit = contest["contest_id"], contest["country"], country["unit"]
     polls = bundle["polls"][bundle["polls"]["contest_id"] == cid]
     averages, results = bundle["averages"], bundle["results"]
+    key = cid
+    if panel:
+        lineup = panel_id(panel)
+        key = f"{cid}-{lineup}"
+        polls = polls[polls["lineup_id"] == lineup]
+        averages = averages[(averages["contest_id"] == cid) & (averages["lineup_id"] == lineup)]
+        prev = config.previous_contest_id(contest)
+        if prev:
+            results = results[results["contest_id"] == f"{prev}-{lineup}"].assign(contest_id=prev)
     ph = logic.phase(contest, today, results)
     if polls.empty:
         return [_rg(f'<p class="rg-muted">Not yet polled. Next: {escape(components.contest_when(contest))}.</p>')]
@@ -130,16 +149,25 @@ def contest_panel(contest: dict, country: dict, bundle: dict, today: dt.date, or
         res = results[results["contest_id"] == cid].set_index("party_id")["vote_share"]
         rows["compare"] = rows["party_id"].map(res)
         compare_label = "Result"
+    if unit == "seats":
+        caption_unit = f" Figures are seats out of {country['chamber_size']}."
+    else:
+        caption_unit = ""
     weighting = "weighted by pollster volatility" if meta["weighting"] == "volatility" else "unweighted"
     lead = "Final polls" if ph != "upcoming" else "Average"
-    caption = (f'{lead} for {components.fmt_date(meta["date"])}: {meta["n_polls"]} polls by {meta["n_pollsters"]} '
-               f'pollsters in {meta["window_days"]} days, {weighting}.')
+    polls_n = "1 poll" if meta["n_polls"] == 1 else f'{meta["n_polls"]} polls'
+    firms_n = "1 pollster" if meta["n_pollsters"] == 1 else f'{meta["n_pollsters"]} pollsters'
+    caption = (f'{lead} for {components.fmt_date(meta["date"])}: {polls_n} by {firms_n} '
+               f'in {meta["window_days"]} days, {weighting}.')
+    caption += caption_unit
     if compare_label:
         caption += " The black tick marks the official result."
     notes = "".join(f'<p class="rg-flag">{escape(n)}</p>' for n in logic.flag_notes(meta["flags"]))
     if meta.get("folded"):
         floor = config.settings()["parties"]["own_line_min_average_pct"]
-        notes += f'<p class="rg-muted">{meta["folded"]} parties under {floor:g}% are summed into Others.</p>'
+        limit = f"{floor * country['chamber_size'] / 100:g} seats" if unit == "seats" else f"{floor:g}%"
+        small_n = "1 party" if meta["folded"] == 1 else f'{meta["folded"]} parties'
+        notes += f'<p class="rg-muted">{small_n} under {limit} {"is" if meta["folded"] == 1 else "are"} summed into Others.</p>'
 
     party_ids = list(rows["party_id"])
     shown = [dict(party_id=r.party_id, short=r.short, name=r.name, colour=r.colour) for r in rows.itertuples()
@@ -152,10 +180,10 @@ def contest_panel(contest: dict, country: dict, bundle: dict, today: dt.date, or
     has_delta = rows["delta_election"].notna().any()
     deltas = ("Hover a bar for the change since the last election and over 30 days."
               if has_delta else "Hover a bar for the change over 30 days. No previous result is in the data for this contest.")
-    left = [Figure(charts.ranked_bars(rows, unit, compare_label), f"bars-{cid}"),
+    left = [Figure(charts.ranked_bars(rows, unit, compare_label), f"bars-{key}"),
             _rg(f'<p class="rg-muted">{deltas}</p>')]
     right = [Figure(charts.trend(points[["date", "party_id", "value", "pollster"]],
-                                 series[["date", "party_id", "average"]], shown, unit), f"trend-{cid}")]
+                                 series[["date", "party_id", "average"]], shown, unit), f"trend-{key}")]
     blocks.append(_rg(f"<p>{escape(caption)}</p>{notes}"))
     blocks.append(Columns([left, right], [2, 3]) if not small else Columns([left, right], [1, 1]))
 
@@ -174,7 +202,7 @@ def contest_panel(contest: dict, country: dict, bundle: dict, today: dt.date, or
     own = rows[rows["party_id"] != model.OTHERS]
     n_scored = int(own["lr_score"].notna().sum())
     strip = pd.DataFrame(logic.spectrum_order(rows.to_dict("records"))) if n_scored else rows
-    blocks.append(Figure(charts.spectrum_strip(strip, unit), f"strip-{cid}"))
+    blocks.append(Figure(charts.spectrum_strip(strip, unit), f"strip-{key}"))
     if n_scored == 0:
         note = "Spectrum strip in order of support: none of these has a left-right score yet."
     else:
@@ -189,14 +217,14 @@ def contest_panel(contest: dict, country: dict, bundle: dict, today: dt.date, or
         blocks.append(_rg("<h4>Second-round match-ups</h4>"
                           '<p class="rg-muted">Each bar is one tested pairing, averaged like the headline. '
                           "Pairings without a poll in the window are left out.</p>"))
-        blocks.append(Figure(charts.matchups(pairs), f"pairs-{cid}"))
+        blocks.append(Figure(charts.matchups(pairs), f"pairs-{key}"))
 
     blocks.append(_rg(f"<h4>Recent polls</h4>{_recent_polls_html(polls, cc, party_ids[:9], unit)}"))
     show = polls.drop(columns=["poll_id", "retrieved_at"]).copy()
     for col in ("fieldwork_start", "fieldwork_end"):
         show[col] = show[col].dt.strftime("%Y-%m-%d")
     blocks.append(Expander(f"Show data ({polls['poll_id'].nunique():,} polls, {len(show):,} rows)",
-                           [Table(show, f"data-{cid}", f"{cid}.csv")]))
+                           [Table(show, f"data-{key}", f"{key}.csv")]))
     return blocks
 
 
@@ -210,6 +238,9 @@ def definitions(country: dict, contests: list[dict], bundle: dict) -> list:
     if "dawum" in adapters:
         lines.append('Daten von <a href="https://dawum.de/">dawum.de</a> '
                      '(<a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database License (ODbL)</a>).')
+    if "swedishpolls" in adapters:
+        lines.append('Polls from <a href="https://github.com/MansMeg/SwedishPolls">SwedishPolls</a> '
+                     "(Måns Magnusson and contributors; MIT and CC0).")
     if "wikipedia" in adapters:
         used = sorted({(s["locator"]) for k in contests for s in config.sources(k["contest_id"])
                        if s["adapter"] == "wikipedia" and "=" in s["selector"]})
@@ -257,6 +288,12 @@ def build(code: str, today: dt.date | None = None, order: str = "support", data_
                               f"{escape(components.contest_when(pres))}.</p>"))
         blocks.append(Expander(f"{parl['body']} · {components.contest_when(parl)}",
                                contest_panel(parl, country, bundle, today, order, small=True), open=True))
+    elif country.get("special") == "regional_headline":
+        blocks.append(_rg(f"<h3>{escape(parl['body'])}</h3>"
+                          '<p class="rg-muted">No national percentage exists, so the headline is one panel per region.</p>'))
+        for region in country["headline_regions"]:
+            blocks.append(_rg(f"<h4>{escape(region)}</h4>"))
+            blocks += contest_panel(parl, country, bundle, today, order, small=True, panel=region)
     else:
         blocks.append(_rg(f"<h3>{escape(parl['body'])}</h3>"))
         blocks += contest_panel(parl, country, bundle, today, order)

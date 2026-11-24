@@ -858,15 +858,17 @@ contests:
     body: Folketing
     territory: Denmark
     date: null
-    deadline: 2030-03-24
+    deadline: 2030-03-23
     date_status: deadline
     rounds: 1
     status: upcoming
     previous_date: 2026-03-24
-    source_url: https://www.robert-schuman.eu/en/observatoire/6772
+    source_url: https://en.wikipedia.org/wiki/Next_Danish_general_election
     last_verified: 2026-11-23
-    verification: search
-    notes: Previous date from search results; the deadline is the four-year legal term, to confirm.
+    verification: opened
+    notes: >-
+      "On or before 23 March 2030" in the Wikipedia article's lead (revision 1386265953), one day before
+      the fourth anniversary of the 24 March 2026 election. Not yet checked against a Danish authority.
 
   # ---------------------------------------------------------------- United Kingdom
   - contest_id: uk-parl-next
@@ -904,26 +906,32 @@ contests:
     kind: regional
     body: Scottish Parliament
     territory: Scotland
-    date: null
-    date_status: unknown
+    date: 2031-05-01
+    date_status: expected
     rounds: 1
     status: upcoming
     previous_date: 2026-05-07
-    source_url: null
+    source_url: https://en.wikipedia.org/wiki/Next_Scottish_Parliament_election
     last_verified: 2026-11-23
-    verification: search
-    notes: Constituency and regional-list votes are polled separately; carry both as line-ups.
+    verification: opened
+    notes: >-
+      "Due to be held on 1 May 2031" in the Wikipedia article's lead (revision 1383555228); an
+      extraordinary election can come earlier. Not yet checked against the Scottish Parliament.
+      Constituency and regional-list votes are polled separately; carry both as line-ups.
   - contest_id: uk-sub-wales-next
     country: UK
     tier: subnational
     kind: regional
     body: Senedd
     territory: Wales
-    date: null
-    date_status: unknown
+    date: 2030-05-02
+    date_status: expected
     rounds: 1
     status: upcoming
     previous_date: 2026-05-07
-    source_url: null
+    source_url: https://en.wikipedia.org/wiki/Next_Senedd_election
     last_verified: 2026-11-23
-    verification: search
+    verification: opened
+    notes: >-
+      "Due to be held on 2 May 2030" in the Wikipedia article's lead (revision 1386573063): Senedd terms
+      are four years since the 2026 election. Not yet checked against the Senedd.
