@@ -8,33 +8,42 @@
     "1 row(s) under 'Opinion polls / Nationwide / 2025' had figures but an unreadable date or pollster and were skipped",
     "dropped Market-Lazarsfeld 2025-04-15: duplicate of another poll by the same pollster and end date"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-10",
    "polls_90d": 14,
    "pollsters_90d": 4,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "at-sub-tirol-2027": {
    "contest_id": "at-sub-tirol-2027",
    "parser_status": "ok",
-   "validation_warnings": [
-    "no previous election date in config/contests.yaml; polls from the last 12 months are used"
-   ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "validation_warnings": [],
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-07-06",
    "polls_90d": 0,
    "pollsters_90d": 0,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "be-parl-2029": {
    "contest_id": "be-parl-2029",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-09-15",
    "polls_90d": 1,
    "pollsters_90d": 1,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "cz-parl-2029": {
    "contest_id": "cz-parl-2029",
@@ -45,31 +54,42 @@
     "label 'SPD + Svobodní + PRO + Tricolour' under 'Opinion polls / Party polls' is not in config/parties/CZ.yaml; 1 figure(s) folded into others",
     "label 'Stačilo! + KSČM + SOCDEM' under 'Opinion polls / Party polls' is not in config/parties/CZ.yaml; 1 figure(s) folded into others"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-03",
    "polls_90d": 10,
    "pollsters_90d": 5,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "de-parl-2029": {
    "contest_id": "de-parl-2029",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-20",
    "polls_90d": 60,
    "pollsters_90d": 10,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "de-sub-baden-wuerttemberg-2031": {
    "contest_id": "de-sub-baden-wuerttemberg-2031",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-10-13",
    "polls_90d": 1,
    "pollsters_90d": 1,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": false
   },
   "de-sub-bayern-2028": {
    "contest_id": "de-sub-bayern-2028",
@@ -77,11 +97,22 @@
    "validation_warnings": [
     "label 'Bayernpartei' is not in config/parties/DE.yaml; 7 figure(s) folded into others"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-12",
    "polls_90d": 5,
    "pollsters_90d": 3,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {
+    "Bayernpartei": {
+     "figures": 7,
+     "at_trigger_share": 0,
+     "max": 2.0
+    }
+   },
+   "visible_since": null,
+   "subnational_visible": true
   },
   "de-sub-berlin-next": {
    "contest_id": "de-sub-berlin-next",
@@ -89,11 +120,22 @@
    "validation_warnings": [
     "label 'Volt' is not in config/parties/DE.yaml; 1 figure(s) folded into others"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-10-06",
    "polls_90d": 1,
    "pollsters_90d": 1,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {
+    "Volt": {
+     "figures": 1,
+     "at_trigger_share": 0,
+     "max": 2.0
+    }
+   },
+   "visible_since": null,
+   "subnational_visible": false
   },
   "de-sub-brandenburg-2029": {
    "contest_id": "de-sub-brandenburg-2029",
@@ -101,11 +143,22 @@
    "validation_warnings": [
     "label 'BVB/FW' is not in config/parties/DE.yaml; 2 figure(s) folded into others"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-10-06",
    "polls_90d": 1,
    "pollsters_90d": 1,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {
+    "BVB/FW": {
+     "figures": 2,
+     "at_trigger_share": 0,
+     "max": 2.0
+    }
+   },
+   "visible_since": null,
+   "subnational_visible": true
   },
   "de-sub-bremen-2027": {
    "contest_id": "de-sub-bremen-2027",
@@ -113,11 +166,22 @@
    "validation_warnings": [
     "label 'BIW' is not in config/parties/DE.yaml; 2 figure(s) folded into others"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-08-04",
    "polls_90d": 0,
    "pollsters_90d": 0,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {
+    "BIW": {
+     "figures": 2,
+     "at_trigger_share": 2,
+     "max": 3.0
+    }
+   },
+   "visible_since": null,
+   "subnational_visible": true
   },
   "de-sub-hamburg-2030": {
    "contest_id": "de-sub-hamburg-2030",
@@ -125,61 +189,97 @@
    "validation_warnings": [
     "label 'Volt' is not in config/parties/DE.yaml; 1 figure(s) folded into others"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-09-27",
    "polls_90d": 1,
    "pollsters_90d": 1,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {
+    "Volt": {
+     "figures": 1,
+     "at_trigger_share": 0,
+     "max": 2.0
+    }
+   },
+   "visible_since": null,
+   "subnational_visible": true
   },
   "de-sub-hessen-2028": {
    "contest_id": "de-sub-hessen-2028",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-10-22",
    "polls_90d": 1,
    "pollsters_90d": 1,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "de-sub-mecklenburg-vorpommern-next": {
    "contest_id": "de-sub-mecklenburg-vorpommern-next",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-10-27",
    "polls_90d": 1,
    "pollsters_90d": 1,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": false
   },
   "de-sub-niedersachsen-2027": {
    "contest_id": "de-sub-niedersachsen-2027",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-17",
    "polls_90d": 2,
    "pollsters_90d": 2,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "de-sub-nordrhein-westfalen-2027": {
    "contest_id": "de-sub-nordrhein-westfalen-2027",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-12",
    "polls_90d": 3,
    "pollsters_90d": 3,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "de-sub-rheinland-pfalz-next": {
    "contest_id": "de-sub-rheinland-pfalz-next",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-08-18",
    "polls_90d": 0,
    "pollsters_90d": 0,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": false
   },
   "de-sub-saarland-2027": {
    "contest_id": "de-sub-saarland-2027",
@@ -187,21 +287,31 @@
    "validation_warnings": [
     "2 poll(s) flagged for a swing above 10 points from the pollster's previous poll"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-01",
    "polls_90d": 1,
    "pollsters_90d": 1,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "de-sub-sachsen-2029": {
    "contest_id": "de-sub-sachsen-2029",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-10",
    "polls_90d": 1,
    "pollsters_90d": 1,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "de-sub-sachsen-anhalt-next": {
    "contest_id": "de-sub-sachsen-anhalt-next",
@@ -209,11 +319,16 @@
    "validation_warnings": [
     "no poll in this electoral cycle yet"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": null,
    "polls_90d": 0,
    "pollsters_90d": 0,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": false
   },
   "de-sub-schleswig-holstein-2027": {
    "contest_id": "de-sub-schleswig-holstein-2027",
@@ -221,11 +336,16 @@
    "validation_warnings": [
     "1 poll(s) flagged for a swing above 10 points from the pollster's previous poll"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-07-14",
    "polls_90d": 0,
    "pollsters_90d": 0,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "de-sub-thueringen-2029": {
    "contest_id": "de-sub-thueringen-2029",
@@ -233,21 +353,35 @@
    "validation_warnings": [
     "label 'Thüringen.Gerecht' is not in config/parties/DE.yaml; 1 figure(s) folded into others"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-10-27",
    "polls_90d": 1,
    "pollsters_90d": 1,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {
+    "Thüringen.Gerecht": {
+     "figures": 1,
+     "at_trigger_share": 0,
+     "max": 2.0
+    }
+   },
+   "visible_since": null,
+   "subnational_visible": true
   },
   "dk-parl-next": {
    "contest_id": "dk-parl-next",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-22",
    "polls_90d": 19,
    "pollsters_90d": 4,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "es-parl-2026": {
    "contest_id": "es-parl-2026",
@@ -256,154 +390,195 @@
     "dropped 40dB 2026-11-21: duplicate of another poll by the same pollster and end date",
     "dropped Data10 2026-11-20: duplicate of another poll by the same pollster and end date"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-23",
    "polls_90d": 180,
    "pollsters_90d": 33,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "es-sub-asturias-2027": {
    "contest_id": "es-sub-asturias-2027",
    "parser_status": "ok",
-   "validation_warnings": [
-    "no previous election date in config/contests.yaml; polls from the last 12 months are used"
-   ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "validation_warnings": [],
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-09-03",
    "polls_90d": 1,
    "pollsters_90d": 1,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "es-sub-canarias-2027": {
    "contest_id": "es-sub-canarias-2027",
    "parser_status": "ok",
-   "validation_warnings": [
-    "no previous election date in config/contests.yaml; polls from the last 12 months are used"
-   ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "validation_warnings": [],
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-06-05",
    "polls_90d": 0,
    "pollsters_90d": 0,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "es-sub-cantabria-2027": {
    "contest_id": "es-sub-cantabria-2027",
    "parser_status": "ok",
-   "validation_warnings": [
-    "no previous election date in config/contests.yaml; polls from the last 12 months are used"
-   ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "validation_warnings": [],
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-06-05",
    "polls_90d": 0,
    "pollsters_90d": 0,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "es-sub-castilla-la-mancha-2027": {
    "contest_id": "es-sub-castilla-la-mancha-2027",
    "parser_status": "ok",
-   "validation_warnings": [
-    "no previous election date in config/contests.yaml; polls from the last 12 months are used"
-   ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "validation_warnings": [],
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-09-17",
    "polls_90d": 1,
    "pollsters_90d": 1,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "es-sub-comunitat-valenciana-2027": {
    "contest_id": "es-sub-comunitat-valenciana-2027",
    "parser_status": "ok",
    "validation_warnings": [
-    "no previous election date in config/contests.yaml; polls from the last 12 months are used",
     "1 row(s) under 'Opinion polls / Voting intention estimates' had figures but an unreadable date or pollster and were skipped",
     "2 poll(s) flagged for a swing above 10 points from the pollster's previous poll"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-10-16",
    "polls_90d": 5,
    "pollsters_90d": 5,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "es-sub-illes-balears-2027": {
    "contest_id": "es-sub-illes-balears-2027",
    "parser_status": "ok",
-   "validation_warnings": [
-    "no previous election date in config/contests.yaml; polls from the last 12 months are used"
-   ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "validation_warnings": [],
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-06-05",
    "polls_90d": 0,
    "pollsters_90d": 0,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "es-sub-la-rioja-2027": {
    "contest_id": "es-sub-la-rioja-2027",
    "parser_status": "ok",
    "validation_warnings": [
-    "no previous election date in config/contests.yaml; polls from the last 12 months are used",
     "1 poll(s) flagged for a swing above 10 points from the pollster's previous poll"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-09-29",
    "polls_90d": 1,
    "pollsters_90d": 1,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "es-sub-madrid-2027": {
    "contest_id": "es-sub-madrid-2027",
    "parser_status": "ok",
-   "validation_warnings": [
-    "no previous election date in config/contests.yaml; polls from the last 12 months are used"
-   ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "validation_warnings": [],
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-06-12",
    "polls_90d": 0,
    "pollsters_90d": 0,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "es-sub-murcia-2027": {
    "contest_id": "es-sub-murcia-2027",
    "parser_status": "ok",
-   "validation_warnings": [
-    "no previous election date in config/contests.yaml; polls from the last 12 months are used"
-   ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "validation_warnings": [],
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-09-17",
    "polls_90d": 1,
    "pollsters_90d": 1,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "es-sub-navarra-2027": {
    "contest_id": "es-sub-navarra-2027",
    "parser_status": "ok",
-   "validation_warnings": [
-    "no previous election date in config/contests.yaml; polls from the last 12 months are used"
-   ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "validation_warnings": [],
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-10-29",
    "polls_90d": 1,
    "pollsters_90d": 1,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "fi-parl-2027": {
    "contest_id": "fi-parl-2027",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-11",
    "polls_90d": 6,
    "pollsters_90d": 2,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "fr-parl-next": {
    "contest_id": "fr-parl-next",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2025-10-08",
    "polls_90d": 0,
    "pollsters_90d": 0,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "fr-pres-2027": {
    "contest_id": "fr-pres-2027",
@@ -411,11 +586,14 @@
    "validation_warnings": [
     "dropped Ifop 2026-08-25 [f-d80edeb9, round 1]: shares sum to 94.0%"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-19",
    "polls_90d": 40,
    "pollsters_90d": 8,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "gr-parl-2027": {
    "contest_id": "gr-parl-2027",
@@ -424,31 +602,40 @@
     "2 row(s) under 'Voting intention estimates / Polling' had figures but an unreadable date or pollster and were skipped",
     "2 poll(s) flagged for a swing above 10 points from the pollster's previous poll"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-19",
    "polls_90d": 30,
    "pollsters_90d": 11,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "hu-parl-2030": {
    "contest_id": "hu-parl-2030",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-13",
    "polls_90d": 14,
    "pollsters_90d": 7,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "ie-parl-next": {
    "contest_id": "ie-parl-next",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-10-30",
    "polls_90d": 6,
    "pollsters_90d": 3,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "it-parl-2027": {
    "contest_id": "it-parl-2027",
@@ -468,31 +655,40 @@
     "dropped Demopolis 2022-12-31: shares sum to 89.5%",
     "dropped Eumetra 2025-10-15: duplicate of another poll by the same pollster and end date"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-23",
    "polls_90d": 91,
    "pollsters_90d": 18,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "nl-parl-next": {
    "contest_id": "nl-parl-next",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-20",
    "polls_90d": 12,
    "pollsters_90d": 3,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "no-parl-2029": {
    "contest_id": "no-parl-2029",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-02",
    "polls_90d": 17,
    "pollsters_90d": 6,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "pl-parl-2027": {
    "contest_id": "pl-parl-2027",
@@ -506,21 +702,27 @@
     "dropped IBRiS 2025-08-30: duplicate of another poll by the same pollster and end date",
     "4 poll(s) flagged for a swing above 10 points from the pollster's previous poll"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-19",
    "polls_90d": 34,
    "pollsters_90d": 10,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "pt-parl-2029": {
    "contest_id": "pt-parl-2029",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-23",
    "polls_90d": 22,
    "pollsters_90d": 5,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "se-parl-next": {
    "contest_id": "se-parl-next",
@@ -528,11 +730,14 @@
    "validation_warnings": [
     "336 row(s) without a collection end date or a pollster were skipped"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-19",
-   "polls_90d": 10,
-   "pollsters_90d": 6,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "polls_90d": 11,
+   "pollsters_90d": 7,
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "uk-parl-next": {
    "contest_id": "uk-parl-next",
@@ -543,45 +748,62 @@
     "dropped More in Common 2025-07-07: duplicate of another poll by the same pollster and end date",
     "dropped More in Common 2026-06-22: duplicate of another poll by the same pollster and end date"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-11-20",
    "polls_90d": 78,
    "pollsters_90d": 15,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {}
   },
   "uk-sub-northern-ireland-2027": {
    "contest_id": "uk-sub-northern-ireland-2027",
    "parser_status": "ok",
    "validation_warnings": [
-    "no previous election date in config/contests.yaml; polls from the last 12 months are used",
     "1 row(s) under 'Opinion polling / Voting intention' had figures but an unreadable date or pollster and were skipped"
    ],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-10-31",
    "polls_90d": 2,
    "pollsters_90d": 2,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "uk-sub-scotland-next": {
    "contest_id": "uk-sub-scotland-next",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-10-23",
    "polls_90d": 7,
    "pollsters_90d": 3,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   },
   "uk-sub-wales-next": {
    "contest_id": "uk-sub-wales-next",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-24T08:07:48Z",
+   "last_successful_pull": "2026-11-24T10:28:56Z",
    "latest_poll_date": "2026-09-30",
    "polls_90d": 2,
    "pollsters_90d": 2,
-   "data_as_of": "2026-11-24T08:07:48Z"
+   "data_as_of": "2026-11-24T10:28:56Z",
+   "last_error": null,
+   "consecutive_failures": 0,
+   "unmapped_labels": {},
+   "visible_since": null,
+   "subnational_visible": true
   }
  },
- "data_as_of": "2026-11-24T08:07:48Z"
+ "data_as_of": "2026-11-24T10:28:56Z"
 }
