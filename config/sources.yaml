@@ -61,6 +61,60 @@ sources:
     selector: "Parliaments block: Hessen"
     priority: 1
     verified: true
+  - contest_id: de-sub-baden-wuerttemberg-2031
+    adapter: dawum
+    locator: https://api.dawum.de/
+    selector: "Parliaments block: Baden-Württemberg"
+    priority: 1
+    verified: true
+  - contest_id: de-sub-rheinland-pfalz-next
+    adapter: dawum
+    locator: https://api.dawum.de/
+    selector: "Parliaments block: Rheinland-Pfalz"
+    priority: 1
+    verified: true
+  - contest_id: de-sub-sachsen-anhalt-next
+    adapter: dawum
+    locator: https://api.dawum.de/
+    selector: "Parliaments block: Sachsen-Anhalt"
+    priority: 1
+    verified: true
+  - contest_id: de-sub-berlin-next
+    adapter: dawum
+    locator: https://api.dawum.de/
+    selector: "Parliaments block: Berlin"
+    priority: 1
+    verified: true
+  - contest_id: de-sub-mecklenburg-vorpommern-next
+    adapter: dawum
+    locator: https://api.dawum.de/
+    selector: "Parliaments block: Mecklenburg-Vorpommern"
+    priority: 1
+    verified: true
+  - contest_id: de-sub-brandenburg-2029
+    adapter: dawum
+    locator: https://api.dawum.de/
+    selector: "Parliaments block: Brandenburg"
+    priority: 1
+    verified: true
+  - contest_id: de-sub-sachsen-2029
+    adapter: dawum
+    locator: https://api.dawum.de/
+    selector: "Parliaments block: Sachsen"
+    priority: 1
+    verified: true
+  - contest_id: de-sub-thueringen-2029
+    adapter: dawum
+    locator: https://api.dawum.de/
+    selector: "Parliaments block: Thüringen"
+    priority: 1
+    verified: true
+  - contest_id: de-sub-hamburg-2030
+    adapter: dawum
+    locator: https://api.dawum.de/
+    selector: "Parliaments block: Hamburg"
+    priority: 1
+    verified: true
 
   # ---------------------------------------------------------------- France (Wikipedia)
   - contest_id: fr-pres-2027

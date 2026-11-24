@@ -38,6 +38,7 @@ contests:
     date_status: fixed
     rounds: 1
     status: upcoming
+    previous_date: 2022-03-27
     source_url: https://www.bundeswahlleiterin.de/service/wahltermine.html
     last_verified: 2026-11-23
     verification: opened
@@ -51,6 +52,7 @@ contests:
     date_status: fixed
     rounds: 1
     status: upcoming
+    previous_date: 2022-05-08
     source_url: https://www.bundeswahlleiterin.de/service/wahltermine.html
     last_verified: 2026-11-23
     verification: opened
@@ -64,6 +66,7 @@ contests:
     date_status: fixed
     rounds: 1
     status: upcoming
+    previous_date: 2022-05-15
     source_url: https://www.bundeswahlleiterin.de/service/wahltermine.html
     last_verified: 2026-11-23
     verification: opened
@@ -77,6 +80,7 @@ contests:
     date_status: fixed
     rounds: 1
     status: upcoming
+    previous_date: 2023-05-14
     source_url: https://www.bundeswahlleiterin.de/service/wahltermine.html
     last_verified: 2026-11-23
     verification: opened
@@ -90,6 +94,7 @@ contests:
     date_status: fixed
     rounds: 1
     status: upcoming
+    previous_date: 2022-10-09
     source_url: https://www.bundeswahlleiterin.de/service/wahltermine.html
     last_verified: 2026-11-23
     verification: opened
@@ -104,6 +109,7 @@ contests:
     date_status: expected
     rounds: 1
     status: upcoming
+    previous_date: 2023-10-08
     source_url: https://www.bundeswahlleiterin.de/service/wahltermine.html
     last_verified: 2026-11-23
     verification: opened
@@ -118,10 +124,145 @@ contests:
     date_status: expected
     rounds: 1
     status: upcoming
+    previous_date: 2023-10-08
     source_url: https://www.bundeswahlleiterin.de/service/wahltermine.html
     last_verified: 2026-11-23
     verification: opened
-    notes: The other nine Länder are not seeded. Add them from DAWUM's parliament list in Phase 1.
+  - contest_id: de-sub-baden-wuerttemberg-2031
+    country: DE
+    tier: subnational
+    kind: regional
+    body: Landtag
+    territory: Baden-Württemberg
+    date: null
+    expected_window: spring 2031
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    previous_date: 2026-03-08
+    source_url: https://www.wahlrecht.de/termine.htm
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: de-sub-rheinland-pfalz-next
+    country: DE
+    tier: subnational
+    kind: regional
+    body: Landtag
+    territory: Rheinland-Pfalz
+    date: null
+    date_status: unknown
+    rounds: 1
+    status: upcoming
+    previous_date: 2026-03-22
+    source_url: https://www.wahlrecht.de/termine.htm
+    last_verified: 2026-11-23
+    verification: opened
+    notes: Next date not on the source page yet; the term is five years from the previous election.
+  - contest_id: de-sub-sachsen-anhalt-next
+    country: DE
+    tier: subnational
+    kind: regional
+    body: Landtag
+    territory: Sachsen-Anhalt
+    date: null
+    date_status: unknown
+    rounds: 1
+    status: upcoming
+    previous_date: 2026-09-06
+    source_url: https://www.wahlrecht.de/termine.htm
+    last_verified: 2026-11-23
+    verification: opened
+    notes: Next date not on the source page yet; the term is five years from the previous election.
+  - contest_id: de-sub-berlin-next
+    country: DE
+    tier: subnational
+    kind: regional
+    body: Abgeordnetenhaus
+    territory: Berlin
+    date: null
+    date_status: unknown
+    rounds: 1
+    status: upcoming
+    previous_date: 2026-09-20
+    source_url: https://www.wahlrecht.de/termine.htm
+    last_verified: 2026-11-23
+    verification: opened
+    notes: Next date not on the source page yet; the term is five years from the previous election.
+  - contest_id: de-sub-mecklenburg-vorpommern-next
+    country: DE
+    tier: subnational
+    kind: regional
+    body: Landtag
+    territory: Mecklenburg-Vorpommern
+    date: null
+    date_status: unknown
+    rounds: 1
+    status: upcoming
+    previous_date: 2026-09-20
+    source_url: https://www.wahlrecht.de/termine.htm
+    last_verified: 2026-11-23
+    verification: opened
+    notes: Next date not on the source page yet; the term is five years from the previous election.
+  - contest_id: de-sub-brandenburg-2029
+    country: DE
+    tier: subnational
+    kind: regional
+    body: Landtag
+    territory: Brandenburg
+    date: null
+    expected_window: autumn 2029
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    previous_date: 2024-09-22
+    source_url: https://www.bundeswahlleiterin.de/service/wahltermine.html
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: de-sub-sachsen-2029
+    country: DE
+    tier: subnational
+    kind: regional
+    body: Landtag
+    territory: Sachsen
+    date: null
+    expected_window: autumn 2029
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    previous_date: 2024-09-01
+    source_url: https://www.bundeswahlleiterin.de/service/wahltermine.html
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: de-sub-thueringen-2029
+    country: DE
+    tier: subnational
+    kind: regional
+    body: Landtag
+    territory: Thüringen
+    date: null
+    expected_window: autumn 2029
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    previous_date: 2024-09-01
+    source_url: https://www.bundeswahlleiterin.de/service/wahltermine.html
+    last_verified: 2026-11-23
+    verification: opened
+  - contest_id: de-sub-hamburg-2030
+    country: DE
+    tier: subnational
+    kind: regional
+    body: Bürgerschaft
+    territory: Hamburg
+    date: null
+    expected_window: winter 2030
+    date_status: expected
+    rounds: 1
+    status: upcoming
+    previous_date: 2025-03-02
+    source_url: https://www.wahlrecht.de/termine.htm
+    last_verified: 2026-11-23
+    verification: opened
 
   # ---------------------------------------------------------------- France
   - contest_id: fr-pres-2027
