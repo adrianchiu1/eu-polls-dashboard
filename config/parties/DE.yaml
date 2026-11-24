@@ -23,8 +23,8 @@ parties:
     name_en: Christian Democratic Union
     colour: "#000000"
     partyfacts_id: 1375
-    lr_score: null
-    lr_source: pending
+    lr_score: 6.58
+    lr_source: ches2024
   - party_id: de-csu
     type: party
     short: CSU
@@ -32,8 +32,8 @@ parties:
     name_en: Christian Social Union
     colour: "#008AC5"
     partyfacts_id: 1731
-    lr_score: null
-    lr_source: pending
+    lr_score: 7.57
+    lr_source: ches2024
   - party_id: de-afd
     type: party
     short: AfD
@@ -41,8 +41,8 @@ parties:
     name_en: Alternative for Germany
     colour: "#009EE0"
     partyfacts_id: 1976
-    lr_score: null
-    lr_source: pending
+    lr_score: 9.26
+    lr_source: ches2024
   - party_id: de-spd
     type: party
     short: SPD
@@ -50,8 +50,8 @@ parties:
     name_en: Social Democratic Party
     colour: "#E3000F"
     partyfacts_id: 383
-    lr_score: null
-    lr_source: pending
+    lr_score: 3.47
+    lr_source: ches2024
   - party_id: de-gruene
     type: party
     short: Grüne
@@ -59,8 +59,8 @@ parties:
     name_en: Greens
     colour: "#46962B"
     partyfacts_id: 1816
-    lr_score: null
-    lr_source: pending
+    lr_score: 3.06
+    lr_source: ches2024
     aliases: [Die Grünen, B90/Grüne]
   - party_id: de-linke
     type: party
@@ -69,8 +69,8 @@ parties:
     name_en: The Left
     colour: "#BE3075"
     partyfacts_id: 1545
-    lr_score: null
-    lr_source: pending
+    lr_score: 1.42
+    lr_source: ches2024
   - party_id: de-bsw
     type: party
     short: BSW
@@ -78,8 +78,8 @@ parties:
     name_en: BSW
     colour: "#7A1A6F"
     partyfacts_id: 9646
-    lr_score: null
-    lr_source: pending
+    lr_score: 3.62
+    lr_source: ches2024
     aliases: [Bündnis Sahra Wagenknecht]
   - party_id: de-fdp
     type: party
@@ -88,8 +88,8 @@ parties:
     name_en: Free Democratic Party
     colour: "#FFED00"
     partyfacts_id: 573
-    lr_score: null
-    lr_source: pending
+    lr_score: 6.06
+    lr_source: ches2024
   - party_id: de-fw
     type: party
     short: Freie Wähler
@@ -97,8 +97,8 @@ parties:
     name_en: Free Voters
     colour: "#F29204"
     partyfacts_id: 1090
-    lr_score: null
-    lr_source: pending
+    lr_score: 6.75
+    lr_source: ches2024
     aliases: [FW]
   - party_id: de-ssw
     type: party
