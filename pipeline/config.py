@@ -76,3 +76,14 @@ def panel_id(panel: str) -> str:
     import re
 
     return re.sub(r"[^a-z0-9]+", "-", panel.lower()).strip("-")
+
+
+def panels(contest_id: str) -> list[str]:
+    """The named panels a contest is polled in (Belgium's regions, Scotland's two votes), in source
+    order; empty for an ordinary contest. Read from the `panels=` key of the contest's selector."""
+    for source in sources(contest_id):
+        for part in source["selector"].split(";"):
+            key, _, value = part.partition("=")
+            if key.strip() == "panels":
+                return [v.strip() for v in value.split("|") if v.strip()]
+    return []

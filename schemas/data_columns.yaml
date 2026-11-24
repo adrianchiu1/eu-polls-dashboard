@@ -21,7 +21,7 @@ files:
       value: float
       unit: str               # pct | seats
       flags: str              # semicolon-separated: party_commissioned; small_sample; swing; regional_cut
-      region: str?            # set only for a regional cut of a national contest
+      region: str?            # a regional cut of a national contest, or the named panel of a contest polled in parts
       source_url: str         # the publication the figure comes from
       adapter: str            # wikipedia | dawum | swedishpolls
       source_rev: str         # pinned revision: Wikipedia oldid, DAWUM Last_Update, git commit

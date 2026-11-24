@@ -228,6 +228,18 @@ def contest_panel(contest: dict, country: dict, bundle: dict, today: dt.date, or
     return blocks
 
 
+def contest_blocks(contest: dict, country: dict, bundle: dict, today: dt.date, order: str, small: bool = False) -> list:
+    """A contest's panel, or one panel per named part when it is polled in parts."""
+    names = config.panels(contest["contest_id"])
+    if not names:
+        return contest_panel(contest, country, bundle, today, order, small=small)
+    blocks: list = []
+    for name in names:
+        blocks.append(_rg(f"<h4>{escape(name)}</h4>"))
+        blocks += contest_panel(contest, country, bundle, today, order, small=True, panel=name)
+    return blocks
+
+
 # ----------------------------------------------------------------------------- zone 6
 def definitions(country: dict, contests: list[dict], bundle: dict) -> list:
     code = country["code"]
@@ -291,9 +303,7 @@ def build(code: str, today: dt.date | None = None, order: str = "support", data_
     elif country.get("special") == "regional_headline":
         blocks.append(_rg(f"<h3>{escape(parl['body'])}</h3>"
                           '<p class="rg-muted">No national percentage exists, so the headline is one panel per region.</p>'))
-        for region in country["headline_regions"]:
-            blocks.append(_rg(f"<h4>{escape(region)}</h4>"))
-            blocks += contest_panel(parl, country, bundle, today, order, small=True, panel=region)
+        blocks += contest_blocks(parl, country, bundle, today, order)
     else:
         blocks.append(_rg(f"<h3>{escape(parl['body'])}</h3>"))
         blocks += contest_panel(parl, country, bundle, today, order)
@@ -312,7 +322,7 @@ def build(code: str, today: dt.date | None = None, order: str = "support", data_
         latest = polls["fieldwork_end"].max().date()
         title = (f"{k['territory']} · {components.contest_when(k)} · {polls['poll_id'].nunique()} polls · "
                  f"latest {components.fmt_date(latest)}")
-        blocks.append(Expander(title, contest_panel(k, country, bundle, today, order, small=True)))
+        blocks.append(Expander(title, contest_blocks(k, country, bundle, today, order, small=True)))
     if unpolled:
         names = ", ".join(f"{k['territory']} ({components.contest_when(k)})" for k, _ in unpolled)
         blocks.append(_rg(f'<p class="rg-muted">Not yet polled: {escape(names)}.</p>'))

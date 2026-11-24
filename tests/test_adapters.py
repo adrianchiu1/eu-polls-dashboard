@@ -19,7 +19,9 @@ NOW = dt.datetime(2026, 11, 23, 9, 0, tzinfo=dt.timezone.utc)
 PILOT = ["fr-pres-2027", "fr-parl-next", "it-parl-2027", "es-parl-2026", "uk-parl-next"]
 PHASE2 = ["nl-parl-next", "be-parl-2029", "at-parl-2029", "pt-parl-2029", "ie-parl-next", "gr-parl-2027",
           "pl-parl-2027", "hu-parl-2030", "cz-parl-2029", "no-parl-2029", "fi-parl-2027", "dk-parl-next"]
-WIKI = PILOT + PHASE2
+PHASE3 = [k["contest_id"] for k in config.contests() if k["tier"] == "subnational" and k["country"] != "DE"
+          and config.sources(k["contest_id"])]
+WIKI = PILOT + PHASE2 + PHASE3
 
 
 def contest(cid):
@@ -106,6 +108,20 @@ EXPECT = {   # polls, pollsters, first and last fieldwork end in the pinned revi
     "no-parl-2029": (88, 6, dt.date(2025, 10, 3), dt.date(2026, 11, 2)),
     "fi-parl-2027": (83, 3, dt.date(2023, 5, 2), dt.date(2026, 11, 11)),
     "dk-parl-next": (41, 4, dt.date(2026, 4, 5), dt.date(2026, 11, 22)),
+    "uk-sub-northern-ireland-2027": (23, 3, dt.date(2022, 7, 10), dt.date(2026, 10, 31)),
+    "es-sub-asturias-2027": (10, 4, dt.date(2023, 10, 29), dt.date(2026, 9, 3)),
+    "es-sub-canarias-2027": (8, 5, dt.date(2024, 5, 24), dt.date(2026, 6, 5)),
+    "es-sub-cantabria-2027": (3, 2, dt.date(2023, 6, 29), dt.date(2026, 6, 5)),
+    "es-sub-castilla-la-mancha-2027": (18, 7, dt.date(2023, 12, 23), dt.date(2026, 9, 17)),
+    "es-sub-comunitat-valenciana-2027": (41, 15, dt.date(2023, 10, 7), dt.date(2026, 10, 16)),
+    "es-sub-illes-balears-2027": (6, 3, dt.date(2024, 5, 17), dt.date(2026, 6, 5)),
+    "es-sub-la-rioja-2027": (5, 3, dt.date(2025, 3, 31), dt.date(2026, 9, 29)),
+    "es-sub-madrid-2027": (16, 7, dt.date(2023, 7, 7), dt.date(2026, 6, 12)),
+    "es-sub-murcia-2027": (24, 7, dt.date(2023, 7, 13), dt.date(2026, 9, 17)),
+    "es-sub-navarra-2027": (10, 5, dt.date(2024, 4, 17), dt.date(2026, 10, 29)),
+    "uk-sub-wales-next": (3, 3, dt.date(2026, 8, 24), dt.date(2026, 9, 30)),
+    "uk-sub-scotland-next": (11, 4, dt.date(2026, 6, 26), dt.date(2026, 10, 23)),
+    "at-sub-tirol-2027": (4, 3, dt.date(2024, 12, 15), dt.date(2026, 7, 6)),
 }
 
 
@@ -315,3 +331,27 @@ def test_swedishpolls():
     assert (d["source_rev"] == commit).all() and d["source_url"].str.contains(commit).all()
     with pytest.raises(AdapterError, match="missing columns"):
         swedishpolls.parse("a,b\n1,2\n", commit, k, Resolver("SE"), NOW, k["previous_date"])
+
+
+# ------------------------------------------------------------------ Phase 3 layouts
+def test_fourteen_subnational_contests_have_a_source():
+    assert len(PHASE3) == 14
+
+
+def test_scotland_has_constituency_and_regional_panels(pulls):
+    d = pulls["uk-sub-scotland-next"].polls
+    assert set(d["lineup_id"]) == {"constituency-vote", "regional-vote"}
+    norstat = d[(d["pollster"] == "Norstat") & (d["fieldwork_end"] == dt.date(2026, 10, 23)) & (d["party_id"] == "uk-snp")]
+    assert dict(zip(norstat["lineup_id"], norstat["value"])) == {"constituency-vote": 34, "regional-vote": 28}
+    assert config.panels("uk-sub-scotland-next") == ["Constituency vote", "Regional vote"]
+
+
+def test_northern_ireland_skips_designation_totals(pulls):
+    d = pulls["uk-sub-northern-ireland-2027"].polls
+    lucid = d[(d["pollster"] == "LucidTalk") & (d["fieldwork_end"] == dt.date(2026, 10, 31))].set_index("party_id")["value"]
+    assert lucid["uk-sf"] == 28 and lucid["uk-dup"] == 14 and lucid.sum() == 100      # N, U and O totals not read
+
+
+def test_spanish_regional_federations_count_as_the_national_party(pulls):
+    d = pulls["es-sub-comunitat-valenciana-2027"].polls
+    assert "es-psoe" in set(d["party_id"]) and "es-compromis" in set(d["party_id"])    # PSPV is the PSOE
