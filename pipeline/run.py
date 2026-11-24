@@ -130,6 +130,9 @@ def pull_contest(contest: dict, source: dict, ctx: Context) -> ContestPull:
     if contest.get("date"):
         polls = pull.polls
         pull.polls = polls[pd.to_datetime(polls["fieldwork_end"]).dt.date <= contest["date"]]
+    if note and source["adapter"] == "wikipedia":
+        # the article's tables are the cycle, so nothing is cut by date
+        note = "no previous election date in config/contests.yaml; every poll in the article's tables is used"
     if note:
         pull.warnings.insert(0, note)
     return pull
