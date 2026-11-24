@@ -1,0 +1,78 @@
+# Sweden. Short names are the column names of SwedishPolls' Data/Polls.csv (github.com/MansMeg/SwedishPolls).
+# Colours and Party Facts ids come from Europolls (github.com/gfrt0/europolls; CC BY-SA 4.0).
+# Left-right scores are pending. The FI column has no row here; its figures fold into Others.
+schema_version: 1
+country: SE
+parties:
+  - party_id: se-s
+    type: party
+    short: S
+    name: Socialdemokraterna
+    name_en: Social Democrats
+    colour: '#CB1B25'
+    partyfacts_id: 487
+    lr_score: null
+    lr_source: pending
+  - party_id: se-m
+    type: party
+    short: M
+    name: Moderaterna
+    name_en: Moderates
+    colour: '#52BDEC'
+    partyfacts_id: 690
+    lr_score: null
+    lr_source: pending
+  - party_id: se-sd
+    type: party
+    short: SD
+    name: Sverigedemokraterna
+    name_en: Sweden Democrats
+    colour: '#0E274C'
+    partyfacts_id: 409
+    lr_score: null
+    lr_source: pending
+  - party_id: se-c
+    type: party
+    short: C
+    name: Centerpartiet
+    name_en: Centre Party
+    colour: '#006A33'
+    partyfacts_id: 199
+    lr_score: null
+    lr_source: pending
+  - party_id: se-v
+    type: party
+    short: V
+    name: Vänsterpartiet
+    name_en: Left Party
+    colour: '#BC2026'
+    partyfacts_id: 830
+    lr_score: null
+    lr_source: pending
+  - party_id: se-kd
+    type: party
+    short: KD
+    name: Kristdemokraterna
+    name_en: Christian Democrats
+    colour: '#072D5B'
+    partyfacts_id: 651
+    lr_score: null
+    lr_source: pending
+  - party_id: se-l
+    type: party
+    short: L
+    name: Liberalerna
+    name_en: Liberals
+    colour: '#006AB4'
+    partyfacts_id: 1274
+    lr_score: null
+    lr_source: pending
+  - party_id: se-mp
+    type: party
+    short: MP
+    name: Miljöpartiet
+    name_en: Green Party
+    colour: '#538234'
+    partyfacts_id: 456
+    lr_score: null
+    lr_source: pending

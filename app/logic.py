@@ -80,9 +80,14 @@ def standings(contest: dict, averages: pd.DataFrame, results: pd.DataFrame, as_o
     before_day = day - pd.Timedelta(days=s["average"]["window_days"])
     before = series[series["date"] == before_day].set_index("party_id")["average"]
     prev_id = previous_contest_id(contest)
-    last = results[results["contest_id"] == prev_id].set_index("party_id")["vote_share"] if prev_id else pd.Series(dtype=float)
+    country = config.country(cc)
+    seats = country["unit"] == "seats"
+    last = (results[results["contest_id"] == prev_id].set_index("party_id")["seats" if seats else "vote_share"].dropna()
+            if prev_id else pd.Series(dtype=float))
 
     floor = s["parties"]["own_line_min_average_pct"]
+    if seats:                                              # the same share, expressed in seats of the chamber
+        floor = floor * country["chamber_size"] / 100
     own = [p for p, v in now.items() if p != model.OTHERS and v >= floor]
     small = [p for p in now.index if p not in own]
     rows = []

@@ -22,7 +22,7 @@ from pathlib import Path
 import pandas as pd
 
 from pipeline import average, config, model
-from pipeline.adapters import dawum, wikipedia
+from pipeline.adapters import dawum, swedishpolls, wikipedia
 from pipeline.adapters.base import AdapterError, ContestPull, session
 from pipeline.parties import Resolver, load as load_parties
 from pipeline.validate import validate
@@ -37,7 +37,7 @@ def _add_months(day: dt.date, months: int) -> dt.date:
 
 def runnable(source: dict) -> bool:
     """A source the pipeline can read today."""
-    if source["adapter"] == "dawum":
+    if source["adapter"] in ("dawum", "swedishpolls"):
         return True
     return source["adapter"] == "wikipedia" and "=" in source["selector"]
 
@@ -60,6 +60,7 @@ class Context:
         self.today = now.date()
         self._session = None
         self._dawum = None
+        self._swedish = None
 
     @property
     def http(self):
@@ -77,6 +78,18 @@ class Context:
             else:
                 self._dawum = dawum.fetch(self.http)
         return self._dawum
+
+    def swedish_polls(self) -> tuple[str, str]:
+        """(commit, csv text) of SwedishPolls' Data/Polls.csv."""
+        if self._swedish is None:
+            if self.offline:
+                files = sorted((self.offline / "swedishpolls").glob("Polls.*.csv.gz"))
+                if not files:
+                    raise AdapterError("no SwedishPolls fixture")
+                self._swedish = (files[-1].name.split(".")[1], gzip.open(files[-1], "rt", encoding="utf-8").read())
+            else:
+                self._swedish = swedishpolls.fetch(self.http)
+        return self._swedish
 
     def wikipedia_page(self, contest_id: str, title: str) -> tuple[str, str]:
         """(revision id, reduced html) for an article."""
@@ -106,10 +119,14 @@ def pull_contest(contest: dict, source: dict, ctx: Context) -> ContestPull:
     since, note = cycle_start(contest, ctx.today)
     if source["adapter"] == "dawum":
         pull = dawum.parse(ctx.dawum_db(), contest, resolver, ctx.now, since)
+    elif source["adapter"] == "swedishpolls":
+        commit, text = ctx.swedish_polls()
+        pull = swedishpolls.parse(text, commit, contest, resolver, ctx.now, since)
     else:
         revision, html = ctx.wikipedia_page(cid, source["locator"])
         pull = wikipedia.parse(html, contest, source, resolver, revision, ctx.now,
-                               window_days=config.settings()["average"]["window_days"])
+                               window_days=config.settings()["average"]["window_days"],
+                               unit=config.country(contest["country"])["unit"])
     if contest.get("date"):
         polls = pull.polls
         pull.polls = polls[pd.to_datetime(polls["fieldwork_end"]).dt.date <= contest["date"]]
@@ -122,7 +139,9 @@ def check_pull(pull: ContestPull, contest: dict, source: dict, country: dict, la
                today: dt.date):
     """Validate one pull. Returns (rows, warnings); raises AdapterError when it must not be published."""
     v = config.settings()["validation"]
-    partial = source["adapter"] == "wikipedia" and wikipedia.parse_selector(source["selector"]).get("sums") == "partial"
+    # SwedishPolls has no Others column, so its rows never add up to 100.
+    partial = source["adapter"] == "swedishpolls" or (
+        source["adapter"] == "wikipedia" and wikipedia.parse_selector(source["selector"]).get("sums") == "partial")
     rep = validate(pull.polls, chamber_size=country.get("chamber_size"), today=today, check_sums=not partial)
     cid = contest["contest_id"]
     n = rep.polls["poll_id"].nunique() if not rep.polls.empty else 0
@@ -186,6 +205,9 @@ def series_groups(polls: pd.DataFrame) -> list[tuple[str, int, pd.DataFrame]]:
     """The series to average in one contest: the headline line-up, then each second-round match-up."""
     out = []
     first = polls[(polls["round"] == 1) & polls["is_headline_lineup"].astype(bool)]
+    regional = first[first["region"].notna() & (first["region"].astype(str) != "")]
+    if not regional.empty:                                 # regional panels (Belgium): one series each
+        return [(lineup, 1, group) for lineup, group in regional.groupby("lineup_id", sort=True)]
     if not first.empty:
         varied = first["lineup_id"].nunique() > 1
         out.append(("headline" if varied else first["lineup_id"].iloc[0], 1, first))
@@ -200,13 +222,14 @@ def averages_for(contest: dict, polls: pd.DataFrame, today: dt.date):
     frames, weights = [], []
     last_day = min(today, contest["date"]) if contest.get("date") else today
     for lineup, round_, group in series_groups(polls):
-        wide = average.eligible_wide(group, s)
+        regional = bool(group["region"].notna().all() and (group["region"].astype(str) != "").all())
+        wide = average.eligible_wide(group, s, keep_regions=regional)
         if wide.empty:
             continue
         averager = average.Averager(wide, s, tier=contest["tier"])
         series = averager.series(wide["fieldwork_end"].min(), last_day)
         frames.append(average.average_rows(contest["contest_id"], lineup, round_, series))
-        if round_ == 1 and series:
+        if round_ == 1 and series and not weights:
             weights.append(average.weight_rows(contest["contest_id"], series[-1]))
     avg = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(columns=model.AVERAGE_COLUMNS)
     wts = pd.concat(weights, ignore_index=True) if weights else pd.DataFrame(columns=model.WEIGHT_COLUMNS)

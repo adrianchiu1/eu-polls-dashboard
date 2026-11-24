@@ -41,11 +41,21 @@ class Resolver:
     def __init__(self, country: str, others_labels: tuple[str, ...] = ()):
         self.country = country
         self._index: dict[str, list[dict]] = {}
+        self._exact: set[str] = set()
         for p in load(country):
+            if p["type"] != "candidate":
+                self._exact |= {x for x in (p["short"], p["name"], p.get("name_en") or "", *p.get("aliases", [])) if x}
             for label in {p["short"], p["name"], p.get("name_en") or "", *p.get("aliases", [])}:
                 if label:
                     self._index.setdefault(norm_label(label), []).append(p)
         self._others = {norm_label(x) for x in ("others", "other", "oth", *others_labels)}
+
+    def is_party_name(self, text: str) -> bool:
+        """True when the text is exactly a party's short name, name or alias, case and accents included.
+
+        Used for clients: 'Le Soir' is a newspaper although LE is a party, so folding case is wrong here.
+        """
+        return text.strip() in self._exact
 
     def alliance(self, members: set[str]) -> str | None:
         """The alliance whose members are exactly these party ids (a joint list in a source table)."""

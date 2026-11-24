@@ -1,10 +1,10 @@
 # European election polling dashboard
 
 A Streamlit dashboard of election polling in 17 European countries plus the UK, built by Claude Code
-from the agreed spec. The Phase 1 pilot is in place for Germany, France, Italy, Spain and the UK: a
-daily pipeline fetches polls from DAWUM and Wikipedia, validates them and computes the
-volatility-weighted average, and the app shows each country in six zones. The other 13 tabs show
-their calendar and judgement entries until Phase 2.
+from the agreed spec. Phase 2 is in place: every one of the 18 tabs has its national panel. A daily
+pipeline fetches polls from DAWUM, Wikipedia and SwedishPolls, validates them and computes the
+volatility-weighted average, and the app shows each country in six zones. Sub-national contests
+outside Germany arrive in Phase 3.
 
 ## Run it
 

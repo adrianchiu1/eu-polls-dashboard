@@ -1,0 +1,149 @@
+# Poland. Drafted by tools/propose_parties.py from the pinned Wikipedia fixture for pl-parl-2027:
+# short names, full names and colours are read from the polling table's header (CC BY-SA 4.0).
+# Party Facts ids, where present, come from Europolls (github.com/gfrt0/europolls,
+# config/party_mappings/PL.yaml; CC BY-SA 4.0) and are not yet checked against Party Facts itself.
+# Left-right scores are pending. An alliance row with members is a joint list: one figure a pollster
+# gives for several columns.
+schema_version: 1
+country: PL
+parties:
+  - party_id: pl-pis
+    type: party
+    short: PiS
+    name: Law and Justice
+    colour: '#263778'
+    partyfacts_id: 1565
+    lr_score: null
+    lr_source: pending
+  - party_id: pl-ko
+    type: party
+    short: KO
+    name: Civic Coalition
+    colour: '#F68F2D'
+    partyfacts_id: 9122
+    lr_score: null
+    lr_source: pending
+  - party_id: pl-polska-2050
+    type: party
+    short: Polska 2050
+    name: Poland 2050
+    colour: '#FAC300'
+    partyfacts_id: 9027
+    lr_score: null
+    lr_source: pending
+  - party_id: pl-psl
+    type: party
+    short: PSL
+    name: Polish People's Party
+    colour: '#2ED397'
+    partyfacts_id: 602
+    lr_score: null
+    lr_source: pending
+  - party_id: pl-lewica
+    type: party
+    short: Lewica
+    name: The Left
+    colour: '#AC145A'
+    partyfacts_id: 3999
+    lr_score: null
+    lr_source: pending
+  - party_id: pl-razem
+    type: party
+    short: Razem
+    name: Left Together
+    colour: '#870F57'
+    partyfacts_id: 4871
+    lr_score: null
+    lr_source: pending
+  - party_id: pl-konfederacja
+    type: party
+    short: Konfederacja
+    name: Confederation Liberty and Independence
+    colour: '#122746'
+    partyfacts_id: 9026
+    lr_score: null
+    lr_source: pending
+  - party_id: pl-kkp
+    type: party
+    short: KKP
+    name: Confederation of the Polish Crown
+    colour: '#A37919'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: pl-rplus
+    type: party
+    short: R+
+    name: Development Plus
+    colour: '#75BAFF'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: pl-td
+    type: party
+    short: TD
+    name: Third Way
+    colour: '#3DB53A'
+    partyfacts_id: 602
+    lr_score: null
+    lr_source: pending
+  - party_id: pl-pjj
+    type: party
+    short: PJJ
+    name: There is One Poland
+    colour: '#0054A5'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: pl-bs
+    type: party
+    short: BS
+    name: Bezpartyjni Samorządowcy
+    colour: '#E6001A'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: pl-lewica-razem
+    type: alliance
+    short: Lewica+Razem
+    name: 'Joint list: Lewica, Razem'
+    colour: '#AC145A'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    members:
+    - pl-lewica
+    - pl-razem
+  - party_id: pl-polska-2050-psl
+    type: alliance
+    short: Polska 2050+PSL
+    name: 'Joint list: Polska 2050, PSL'
+    colour: '#FAC300'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    members:
+    - pl-polska-2050
+    - pl-psl
+  - party_id: pl-konfederacja-kkp
+    type: alliance
+    short: Konfederacja+KKP
+    name: 'Joint list: Konfederacja, KKP'
+    colour: '#122746'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    members:
+    - pl-konfederacja
+    - pl-kkp
+  - party_id: pl-konfederacja-pjj
+    type: alliance
+    short: Konfederacja+PJJ
+    name: 'Joint list: Konfederacja, PJJ'
+    colour: '#122746'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    members:
+    - pl-konfederacja
+    - pl-pjj

@@ -1,0 +1,145 @@
+# Belgium. Drafted by tools/propose_parties.py from the pinned Wikipedia fixture for be-parl-2029:
+# short names, full names and colours are read from the polling table's header (CC BY-SA 4.0).
+# Party Facts ids, where present, come from Europolls (github.com/gfrt0/europolls,
+# config/party_mappings/BE.yaml; CC BY-SA 4.0) and are not yet checked against Party Facts itself.
+# Left-right scores are pending. An alliance row with members is a joint list: one figure a pollster
+# gives for several columns.
+schema_version: 1
+country: BE
+parties:
+  - party_id: be-n-va
+    type: party
+    short: N-VA
+    name: New Flemish Alliance
+    colour: '#F9CE19'
+    partyfacts_id: 36
+    lr_score: null
+    lr_source: pending
+  - party_id: be-vb
+    type: party
+    short: VB
+    name: Vlaams Belang
+    colour: '#FFE500'
+    partyfacts_id: 553
+    lr_score: null
+    lr_source: pending
+  - party_id: be-vooruit
+    type: party
+    short: Vooruit
+    name: Vooruit
+    colour: '#FF2900'
+    partyfacts_id: 1680
+    lr_score: null
+    lr_source: pending
+  - party_id: be-cd-v
+    type: party
+    short: CD&V
+    name: Christian Democratic and Flemish
+    colour: '#FF6200'
+    partyfacts_id: 604
+    lr_score: null
+    lr_source: pending
+  - party_id: be-anders
+    type: party
+    short: Anders
+    name: Anders
+    colour: '#3D35FF'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: be-pvda
+    type: party
+    short: PVDA
+    name: Workers' Party of Belgium
+    colour: '#8B0000'
+    partyfacts_id: 1753
+    lr_score: null
+    lr_source: pending
+  - party_id: be-groen
+    type: party
+    short: Groen
+    name: Groen
+    colour: '#01796F'
+    partyfacts_id: 528
+    lr_score: null
+    lr_source: pending
+  - party_id: be-mr
+    type: party
+    short: MR
+    name: Reformist Movement
+    colour: '#0047AB'
+    partyfacts_id: 789
+    lr_score: null
+    lr_source: pending
+  - party_id: be-ps
+    type: party
+    short: PS
+    name: Socialist Party
+    colour: '#FF0000'
+    partyfacts_id: 500
+    lr_score: null
+    lr_source: pending
+  - party_id: be-le
+    type: party
+    short: LE
+    name: Les Engagés
+    colour: '#02E5D2'
+    partyfacts_id: 633
+    lr_score: null
+    lr_source: pending
+  - party_id: be-ptb
+    type: party
+    short: PTB
+    name: Workers' Party of Belgium
+    colour: '#8B0000'
+    partyfacts_id: 1753
+    lr_score: null
+    lr_source: pending
+  - party_id: be-eco
+    type: party
+    short: Eco
+    name: Ecolo
+    colour: '#5AAD39'
+    partyfacts_id: 1563
+    lr_score: null
+    lr_source: pending
+  - party_id: be-defi
+    type: party
+    short: DéFI
+    name: DéFI
+    colour: '#DD0081'
+    partyfacts_id: 698
+    lr_score: null
+    lr_source: pending
+  - party_id: be-grn
+    type: party
+    short: Grn
+    name: Groen
+    colour: '#01796F'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: be-tfa
+    type: party
+    short: TFA
+    name: Team Fouad Ahidar
+    colour: '#5E17EC'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: be-and
+    type: party
+    short: And
+    name: Anders
+    colour: '#3D35FF'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+  - party_id: be-vrt
+    type: party
+    short: Vrt
+    name: Vooruit
+    colour: '#FF2900'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending

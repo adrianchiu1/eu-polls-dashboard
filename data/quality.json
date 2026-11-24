@@ -1,14 +1,53 @@
 {
  "contests": {
+  "at-parl-2029": {
+   "contest_id": "at-parl-2029",
+   "parser_status": "ok",
+   "validation_warnings": [
+    "2 row(s) under 'Opinion polls / Nationwide / 2026' had figures but an unreadable date or pollster and were skipped",
+    "1 row(s) under 'Opinion polls / Nationwide / 2025' had figures but an unreadable date or pollster and were skipped",
+    "dropped Market-Lazarsfeld 2025-04-15: duplicate of another poll by the same pollster and end date"
+   ],
+   "last_successful_pull": "2026-11-23T13:08:58Z",
+   "latest_poll_date": "2026-11-10",
+   "polls_90d": 14,
+   "pollsters_90d": 4,
+   "data_as_of": "2026-11-23T13:08:58Z"
+  },
+  "be-parl-2029": {
+   "contest_id": "be-parl-2029",
+   "parser_status": "ok",
+   "validation_warnings": [],
+   "last_successful_pull": "2026-11-23T13:08:58Z",
+   "latest_poll_date": "2026-09-15",
+   "polls_90d": 1,
+   "pollsters_90d": 1,
+   "data_as_of": "2026-11-23T13:08:58Z"
+  },
+  "cz-parl-2029": {
+   "contest_id": "cz-parl-2029",
+   "parser_status": "ok",
+   "validation_warnings": [
+    "label 'ODS + KDU–ČSL + TOP 09' under 'Opinion polls / Party polls' is not in config/parties/CZ.yaml; 1 figure(s) folded into others",
+    "label 'Piráti + Z' under 'Opinion polls / Party polls' is not in config/parties/CZ.yaml; 1 figure(s) folded into others",
+    "label 'SPD + Svobodní + PRO + Tricolour' under 'Opinion polls / Party polls' is not in config/parties/CZ.yaml; 1 figure(s) folded into others",
+    "label 'Stačilo! + KSČM + SOCDEM' under 'Opinion polls / Party polls' is not in config/parties/CZ.yaml; 1 figure(s) folded into others"
+   ],
+   "last_successful_pull": "2026-11-23T13:08:58Z",
+   "latest_poll_date": "2026-11-03",
+   "polls_90d": 10,
+   "pollsters_90d": 5,
+   "data_as_of": "2026-11-23T13:08:58Z"
+  },
   "de-parl-2029": {
    "contest_id": "de-parl-2029",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-23T09:15:44Z",
+   "last_successful_pull": "2026-11-23T13:08:58Z",
    "latest_poll_date": "2026-11-20",
    "polls_90d": 60,
    "pollsters_90d": 10,
-   "data_as_of": "2026-11-23T09:15:44Z"
+   "data_as_of": "2026-11-23T13:08:58Z"
   },
   "de-sub-bayern-2028": {
    "contest_id": "de-sub-bayern-2028",
@@ -17,11 +56,11 @@
     "no previous election date in config/contests.yaml; polls from the last 12 months are used",
     "label 'Bayernpartei' is not in config/parties/DE.yaml; 2 figure(s) folded into others"
    ],
-   "last_successful_pull": "2026-11-23T09:15:44Z",
+   "last_successful_pull": "2026-11-23T13:08:58Z",
    "latest_poll_date": "2026-11-12",
    "polls_90d": 5,
    "pollsters_90d": 3,
-   "data_as_of": "2026-11-23T09:15:44Z"
+   "data_as_of": "2026-11-23T13:08:58Z"
   },
   "de-sub-bremen-2027": {
    "contest_id": "de-sub-bremen-2027",
@@ -30,11 +69,11 @@
     "no previous election date in config/contests.yaml; polls from the last 12 months are used",
     "label 'BIW' is not in config/parties/DE.yaml; 1 figure(s) folded into others"
    ],
-   "last_successful_pull": "2026-11-23T09:15:44Z",
+   "last_successful_pull": "2026-11-23T13:08:58Z",
    "latest_poll_date": "2026-08-04",
    "polls_90d": 0,
    "pollsters_90d": 0,
-   "data_as_of": "2026-11-23T09:15:44Z"
+   "data_as_of": "2026-11-23T13:08:58Z"
   },
   "de-sub-hessen-2028": {
    "contest_id": "de-sub-hessen-2028",
@@ -42,11 +81,11 @@
    "validation_warnings": [
     "no previous election date in config/contests.yaml; polls from the last 12 months are used"
    ],
-   "last_successful_pull": "2026-11-23T09:15:44Z",
+   "last_successful_pull": "2026-11-23T13:08:58Z",
    "latest_poll_date": "2026-10-22",
    "polls_90d": 1,
    "pollsters_90d": 1,
-   "data_as_of": "2026-11-23T09:15:44Z"
+   "data_as_of": "2026-11-23T13:08:58Z"
   },
   "de-sub-niedersachsen-2027": {
    "contest_id": "de-sub-niedersachsen-2027",
@@ -54,11 +93,11 @@
    "validation_warnings": [
     "no previous election date in config/contests.yaml; polls from the last 12 months are used"
    ],
-   "last_successful_pull": "2026-11-23T09:15:44Z",
+   "last_successful_pull": "2026-11-23T13:08:58Z",
    "latest_poll_date": "2026-11-17",
    "polls_90d": 2,
    "pollsters_90d": 2,
-   "data_as_of": "2026-11-23T09:15:44Z"
+   "data_as_of": "2026-11-23T13:08:58Z"
   },
   "de-sub-nordrhein-westfalen-2027": {
    "contest_id": "de-sub-nordrhein-westfalen-2027",
@@ -66,11 +105,11 @@
    "validation_warnings": [
     "no previous election date in config/contests.yaml; polls from the last 12 months are used"
    ],
-   "last_successful_pull": "2026-11-23T09:15:44Z",
+   "last_successful_pull": "2026-11-23T13:08:58Z",
    "latest_poll_date": "2026-11-12",
    "polls_90d": 3,
    "pollsters_90d": 3,
-   "data_as_of": "2026-11-23T09:15:44Z"
+   "data_as_of": "2026-11-23T13:08:58Z"
   },
   "de-sub-saarland-2027": {
    "contest_id": "de-sub-saarland-2027",
@@ -78,11 +117,11 @@
    "validation_warnings": [
     "no previous election date in config/contests.yaml; polls from the last 12 months are used"
    ],
-   "last_successful_pull": "2026-11-23T09:15:44Z",
+   "last_successful_pull": "2026-11-23T13:08:58Z",
    "latest_poll_date": "2026-11-01",
    "polls_90d": 1,
    "pollsters_90d": 1,
-   "data_as_of": "2026-11-23T09:15:44Z"
+   "data_as_of": "2026-11-23T13:08:58Z"
   },
   "de-sub-schleswig-holstein-2027": {
    "contest_id": "de-sub-schleswig-holstein-2027",
@@ -90,11 +129,21 @@
    "validation_warnings": [
     "no previous election date in config/contests.yaml; polls from the last 12 months are used"
    ],
-   "last_successful_pull": "2026-11-23T09:15:44Z",
+   "last_successful_pull": "2026-11-23T13:08:58Z",
    "latest_poll_date": "2026-07-14",
    "polls_90d": 0,
    "pollsters_90d": 0,
-   "data_as_of": "2026-11-23T09:15:44Z"
+   "data_as_of": "2026-11-23T13:08:58Z"
+  },
+  "dk-parl-next": {
+   "contest_id": "dk-parl-next",
+   "parser_status": "ok",
+   "validation_warnings": [],
+   "last_successful_pull": "2026-11-23T13:08:58Z",
+   "latest_poll_date": "2026-11-22",
+   "polls_90d": 19,
+   "pollsters_90d": 4,
+   "data_as_of": "2026-11-23T13:08:58Z"
   },
   "es-parl-2026": {
    "contest_id": "es-parl-2026",
@@ -102,21 +151,31 @@
    "validation_warnings": [
     "dropped 40dB 2026-11-21: duplicate of another poll by the same pollster and end date"
    ],
-   "last_successful_pull": "2026-11-23T09:15:44Z",
+   "last_successful_pull": "2026-11-23T13:08:58Z",
    "latest_poll_date": "2026-11-22",
-   "polls_90d": 167,
-   "pollsters_90d": 31,
-   "data_as_of": "2026-11-23T09:15:44Z"
+   "polls_90d": 171,
+   "pollsters_90d": 32,
+   "data_as_of": "2026-11-23T13:08:58Z"
+  },
+  "fi-parl-2027": {
+   "contest_id": "fi-parl-2027",
+   "parser_status": "ok",
+   "validation_warnings": [],
+   "last_successful_pull": "2026-11-23T13:08:58Z",
+   "latest_poll_date": "2026-11-11",
+   "polls_90d": 6,
+   "pollsters_90d": 2,
+   "data_as_of": "2026-11-23T13:08:58Z"
   },
   "fr-parl-next": {
    "contest_id": "fr-parl-next",
    "parser_status": "ok",
    "validation_warnings": [],
-   "last_successful_pull": "2026-11-23T09:15:44Z",
+   "last_successful_pull": "2026-11-23T13:08:58Z",
    "latest_poll_date": "2025-10-08",
    "polls_90d": 0,
    "pollsters_90d": 0,
-   "data_as_of": "2026-11-23T09:15:44Z"
+   "data_as_of": "2026-11-23T13:08:58Z"
   },
   "fr-pres-2027": {
    "contest_id": "fr-pres-2027",
@@ -124,16 +183,50 @@
    "validation_warnings": [
     "dropped Ifop 2026-08-25 [f-d80edeb9, round 1]: shares sum to 94.0%"
    ],
-   "last_successful_pull": "2026-11-23T09:15:44Z",
+   "last_successful_pull": "2026-11-23T13:08:58Z",
    "latest_poll_date": "2026-11-19",
    "polls_90d": 39,
    "pollsters_90d": 8,
-   "data_as_of": "2026-11-23T09:15:44Z"
+   "data_as_of": "2026-11-23T13:08:58Z"
+  },
+  "gr-parl-2027": {
+   "contest_id": "gr-parl-2027",
+   "parser_status": "ok",
+   "validation_warnings": [
+    "2 row(s) under 'Voting intention estimates / Polling' had figures but an unreadable date or pollster and were skipped",
+    "2 poll(s) flagged for a swing above 10 points from the pollster's previous poll"
+   ],
+   "last_successful_pull": "2026-11-23T13:08:58Z",
+   "latest_poll_date": "2026-11-19",
+   "polls_90d": 30,
+   "pollsters_90d": 11,
+   "data_as_of": "2026-11-23T13:08:58Z"
+  },
+  "hu-parl-2030": {
+   "contest_id": "hu-parl-2030",
+   "parser_status": "ok",
+   "validation_warnings": [],
+   "last_successful_pull": "2026-11-23T13:08:58Z",
+   "latest_poll_date": "2026-11-13",
+   "polls_90d": 14,
+   "pollsters_90d": 7,
+   "data_as_of": "2026-11-23T13:08:58Z"
+  },
+  "ie-parl-next": {
+   "contest_id": "ie-parl-next",
+   "parser_status": "ok",
+   "validation_warnings": [],
+   "last_successful_pull": "2026-11-23T13:08:58Z",
+   "latest_poll_date": "2026-10-30",
+   "polls_90d": 6,
+   "pollsters_90d": 3,
+   "data_as_of": "2026-11-23T13:08:58Z"
   },
   "it-parl-2027": {
    "contest_id": "it-parl-2027",
    "parser_status": "ok",
    "validation_warnings": [
+    "1 row(s) under 'Party vote / 2026' had figures but an unreadable date or pollster and were skipped",
     "1 row(s) under 'Party vote / 2025' had figures but an unreadable date or pollster and were skipped",
     "dropped Ipsos 2026-02-26: shares sum to 94.8%",
     "dropped Demopolis 2025-10-14: shares sum to 94.9%",
@@ -148,11 +241,71 @@
     "dropped Demopolis 2022-12-31: shares sum to 89.5%",
     "dropped Eumetra 2025-10-15: duplicate of another poll by the same pollster and end date"
    ],
-   "last_successful_pull": "2026-11-23T09:15:44Z",
+   "last_successful_pull": "2026-11-23T13:08:58Z",
    "latest_poll_date": "2026-11-19",
-   "polls_90d": 90,
+   "polls_90d": 89,
    "pollsters_90d": 18,
-   "data_as_of": "2026-11-23T09:15:44Z"
+   "data_as_of": "2026-11-23T13:08:58Z"
+  },
+  "nl-parl-next": {
+   "contest_id": "nl-parl-next",
+   "parser_status": "ok",
+   "validation_warnings": [],
+   "last_successful_pull": "2026-11-23T13:08:58Z",
+   "latest_poll_date": "2026-11-20",
+   "polls_90d": 12,
+   "pollsters_90d": 3,
+   "data_as_of": "2026-11-23T13:08:58Z"
+  },
+  "no-parl-2029": {
+   "contest_id": "no-parl-2029",
+   "parser_status": "ok",
+   "validation_warnings": [],
+   "last_successful_pull": "2026-11-23T13:08:58Z",
+   "latest_poll_date": "2026-11-02",
+   "polls_90d": 17,
+   "pollsters_90d": 6,
+   "data_as_of": "2026-11-23T13:08:58Z"
+  },
+  "pl-parl-2027": {
+   "contest_id": "pl-parl-2027",
+   "parser_status": "ok",
+   "validation_warnings": [
+    "6 row(s) under 'Poll results / 2026' had figures but an unreadable date or pollster and were skipped",
+    "3 row(s) under 'Poll results / 2025' had figures but an unreadable date or pollster and were skipped",
+    "dropped Opinia24 2025-05-07: duplicate of another poll by the same pollster and end date",
+    "dropped Pollster 2024-09-08: duplicate of another poll by the same pollster and end date",
+    "dropped United Surveys 2024-11-10: duplicate of another poll by the same pollster and end date",
+    "dropped IBRiS 2025-08-30: duplicate of another poll by the same pollster and end date",
+    "4 poll(s) flagged for a swing above 10 points from the pollster's previous poll"
+   ],
+   "last_successful_pull": "2026-11-23T13:08:58Z",
+   "latest_poll_date": "2026-11-19",
+   "polls_90d": 34,
+   "pollsters_90d": 10,
+   "data_as_of": "2026-11-23T13:08:58Z"
+  },
+  "pt-parl-2029": {
+   "contest_id": "pt-parl-2029",
+   "parser_status": "ok",
+   "validation_warnings": [],
+   "last_successful_pull": "2026-11-23T13:08:58Z",
+   "latest_poll_date": "2026-11-18",
+   "polls_90d": 20,
+   "pollsters_90d": 4,
+   "data_as_of": "2026-11-23T13:08:58Z"
+  },
+  "se-parl-next": {
+   "contest_id": "se-parl-next",
+   "parser_status": "ok",
+   "validation_warnings": [
+    "336 row(s) without a collection end date or a pollster were skipped"
+   ],
+   "last_successful_pull": "2026-11-23T13:08:58Z",
+   "latest_poll_date": "2026-11-19",
+   "polls_90d": 10,
+   "pollsters_90d": 6,
+   "data_as_of": "2026-11-23T13:08:58Z"
   },
   "uk-parl-next": {
    "contest_id": "uk-parl-next",
@@ -163,12 +316,12 @@
     "dropped More in Common 2025-07-07: duplicate of another poll by the same pollster and end date",
     "dropped More in Common 2026-06-22: duplicate of another poll by the same pollster and end date"
    ],
-   "last_successful_pull": "2026-11-23T09:15:44Z",
+   "last_successful_pull": "2026-11-23T13:08:58Z",
    "latest_poll_date": "2026-11-20",
    "polls_90d": 80,
    "pollsters_90d": 15,
-   "data_as_of": "2026-11-23T09:15:44Z"
+   "data_as_of": "2026-11-23T13:08:58Z"
   }
  },
- "data_as_of": "2026-11-23T09:15:44Z"
+ "data_as_of": "2026-11-23T13:08:58Z"
 }

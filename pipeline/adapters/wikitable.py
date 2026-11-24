@@ -48,6 +48,16 @@ class Table:
                 out.append(cell.text)
         return tuple(out)
 
+    def leaf(self, col: int) -> Cell | None:
+        """The lowest header cell above a column that says something (text or a link).
+
+        Colour bars under a header are skipped; a logo-only header is found through its link.
+        """
+        for cell in reversed(self.header_cells(col)):
+            if cell.text or cell.links:
+                return cell
+        return None
+
     def header_cells(self, col: int) -> list[Cell]:
         return [row[col] for row in self.grid[: self.n_header_rows] if col < len(row) and row[col] is not None]
 
