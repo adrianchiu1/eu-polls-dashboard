@@ -215,7 +215,8 @@ def test_reduce_keeps_what_the_parser_reads():
 # ------------------------------------------------------------------ DAWUM
 def test_dawum_parliament_ids_are_read_from_the_file(dawum_db):
     ids = {k["contest_id"]: dawum.parliament_id(dawum_db, k) for k in config.contests("DE")}
-    assert ids["de-parl-2029"] == "0" and ids["de-sub-nordrhein-westfalen-2027"] == "10" and len(set(ids.values())) == 8
+    assert ids["de-parl-2029"] == "0" and ids["de-sub-nordrhein-westfalen-2027"] == "10"
+    assert len(set(ids.values())) == len(ids)            # every German contest has its own parliament
     with pytest.raises(AdapterError):
         dawum.parliament_id(dawum_db, dict(contest("de-sub-bayern-2028"), territory="Atlantis"))
 
