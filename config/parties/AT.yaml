@@ -4,6 +4,8 @@
 # config/party_mappings/AT.yaml; CC BY-SA 4.0) and are not yet checked against Party Facts itself.
 # Left-right scores are pending. An alliance row with members is a joint list: one figure a pollster
 # gives for several columns.
+# Colour note: the ÖVP is shown in its traditional black, not the turquoise of the table header (owner's
+# instruction of 24 Nov 2026: traditional party colours).
 schema_version: 1
 country: AT
 parties:
@@ -19,7 +21,7 @@ parties:
     type: party
     short: ÖVP
     name: Austrian People's Party
-    colour: '#63C3D0'
+    colour: '#000000'
     partyfacts_id: 1329
     lr_score: null
     lr_source: pending

@@ -4,6 +4,8 @@
 # config/party_mappings/PT.yaml; CC BY-SA 4.0) and are not yet checked against Party Facts itself.
 # Left-right scores are pending. An alliance row with members is a joint list: one figure a pollster
 # gives for several columns.
+# Colour note: AD is shown in the PSD's traditional orange, not the blue of the table header (owner's
+# instruction of 24 Nov 2026: traditional party colours).
 schema_version: 1
 country: PT
 parties:
@@ -11,7 +13,7 @@ parties:
     type: party
     short: AD
     name: AD
-    colour: '#3777BC'
+    colour: '#FF9900'
     partyfacts_id: 1742
     lr_score: null
     lr_source: pending
