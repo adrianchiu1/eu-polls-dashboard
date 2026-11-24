@@ -101,14 +101,16 @@
       "additionalProperties": false,
       "required": [
         "default_review_months", "on_watch_review_months", "new_party_trigger_pct",
-        "new_party_trigger_polls", "pollster_silent_days"
+        "new_party_trigger_polls", "pollster_silent_days", "event_trigger_days", "review_due_notice_days"
       ],
       "properties": {
         "default_review_months": { "$ref": "#/$defs/posint" },
         "on_watch_review_months": { "$ref": "#/$defs/posint" },
         "new_party_trigger_pct": { "$ref": "#/$defs/posnum" },
         "new_party_trigger_polls": { "$ref": "#/$defs/posint" },
-        "pollster_silent_days": { "$ref": "#/$defs/posint" }
+        "pollster_silent_days": { "$ref": "#/$defs/posint" },
+        "event_trigger_days": { "$ref": "#/$defs/posint" },
+        "review_due_notice_days": { "$ref": "#/$defs/posint" }
       }
     },
     "spectrum": {

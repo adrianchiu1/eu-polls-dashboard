@@ -308,6 +308,7 @@ def parse_table(table: wikitable.Table, contest: dict, source: dict, resolver: R
     col = {r: roles.index(r) for r in set(roles) if r != "party"}
     p_col = col.get("pollster", col.get("pollster+client"))
     unmapped: dict[str, int] = {}
+    figures: dict[str, list[float]] = {}
     warnings: list[str] = []
     polls: list[dict] = []
     results: list[dict] = []
@@ -336,6 +337,7 @@ def parse_table(table: wikitable.Table, contest: dict, source: dict, resolver: R
         if p_cell is d_cell:                              # '2026 election' stretched over firm and date
             dates = (None, since) if since else None
         values: dict[str, float] = {}
+        row_unmapped: list[tuple[str, float]] = []
         done: set[int] = set()
         any_value = False
         for c in party_cols:
@@ -352,6 +354,7 @@ def parse_table(table: wikitable.Table, contest: dict, source: dict, resolver: R
                 party = cols[c][1]
                 if party is None:
                     unmapped[_label(table, c)] = unmapped.get(_label(table, c), 0) + 1
+                    row_unmapped.append((_label(table, c), value))
                     party = model.OTHERS
             else:
                 members = {cols[k][1] for k in span}
@@ -359,6 +362,7 @@ def parse_table(table: wikitable.Table, contest: dict, source: dict, resolver: R
                 if party is None:
                     label = " + ".join(_label(table, k) for k in span)
                     unmapped[label] = unmapped.get(label, 0) + 1
+                    row_unmapped.append((label, value))
                     party = model.OTHERS
             values[party] = round(values.get(party, 0.0) + value, 4)
         if not any_value:
@@ -394,6 +398,8 @@ def parse_table(table: wikitable.Table, contest: dict, source: dict, resolver: R
         method = row[col["method"]].text.strip() if "method" in col and row[col["method"]] is not None else ""
         if url and url.startswith("//"):
             url = "https:" + url
+        for label, figure in row_unmapped:                # only polls of this cycle count toward a trigger
+            figures.setdefault(label, []).append(figure)
         group = (id(p_cell), id(d_cell)) if p_cell.rowspan > 1 else (id(p_cell), id(d_cell), len(polls))
         index = seen_rows.get(group, 0)
         seen_rows[group] = index + 1
@@ -415,7 +421,7 @@ def parse_table(table: wikitable.Table, contest: dict, source: dict, resolver: R
     for label, n in sorted(unmapped.items()):
         warnings.append(f"label '{label}' under '{where}' is not in config/parties/{resolver.country}.yaml; "
                         f"{n} figure(s) folded into others")
-    return polls, results, warnings
+    return polls, results, warnings, figures
 
 
 def _is_party(client: str, resolver: Resolver) -> bool:
@@ -470,6 +476,7 @@ def parse(html: str, contest: dict, source: dict, resolver: Resolver, revision: 
     if not chosen:
         raise AdapterError(f"{cid}: no table matches selector '{source['selector']}' in '{title}'")
     polls, results, warnings = [], [], []
+    unmapped: dict[str, list[float]] = {}
     chosen = [t for t in chosen if t.n_header_rows > 0]      # a legend or key table has no header row
     panels = sel.get("panels")
     if panels:
@@ -480,14 +487,16 @@ def parse(html: str, contest: dict, source: dict, resolver: Resolver, revision: 
     if not chosen:
         raise AdapterError(f"{cid}: the tables selected by '{source['selector']}' in '{title}' have no header")
     for t in chosen:
-        p, r, w = parse_table(t, contest, source, resolver, sel, cites, title, revision, retrieved_at,
-                              unit=unit, panel=t.path[-1] if panels else None)
+        p, r, w, f = parse_table(t, contest, source, resolver, sel, cites, title, revision, retrieved_at,
+                                 unit=unit, panel=t.path[-1] if panels else None)
         polls += p; results += r; warnings += w
+        for label, values in f.items():
+            unmapped.setdefault(label, []).extend(values)
     if sel.get("lineups") == "field":
         _assign_fields(polls, window_days)
     if "round2_top" in sel:
         for t in select(all_tables, sel, "round2_top"):
-            p, _, w = parse_table(t, contest, source, resolver, sel, cites, title, revision, retrieved_at, round_=2)
+            p, _, w, _ = parse_table(t, contest, source, resolver, sel, cites, title, revision, retrieved_at, round_=2)
             for row in p:
                 row["lineup_id"] = "r2-" + "-vs-".join(sorted(k.split("-", 2)[-1] for k in row["_values"]))
                 row["is_headline_lineup"] = False
@@ -514,4 +523,4 @@ def parse(html: str, contest: dict, source: dict, resolver: Resolver, revision: 
                      for party, value in r["values"].items()]
         res = pd.DataFrame(rows, columns=model.RESULT_COLUMNS).drop_duplicates(["contest_id", "round", "party_id"])
         res = res if len(res) else None
-    return ContestPull(cid, frame, results=res, warnings=warnings)
+    return ContestPull(cid, frame, results=res, warnings=warnings, unmapped=unmapped)

@@ -5,7 +5,7 @@ import datetime as dt
 
 import pandas as pd
 
-from pipeline import config, model, parties
+from pipeline import config, model, parties, triggers
 from pipeline.config import previous_contest_id
 
 FLAG_TEXT = {
@@ -49,12 +49,22 @@ def presidential_polled(polls: pd.DataFrame, today: dt.date) -> bool:
 
 def subnational_visible(contest: dict, polls: pd.DataFrame, today: dt.date) -> bool:
     """Within the configured months of its election, or polled often enough in the last 12 months."""
-    c = config.settings()["contests"]
-    when = config.contest_sort_date(contest)
-    if today <= when <= add_months(today, c["subnational_window_months"]):
+    return triggers.subnational_visible(contest, polls["fieldwork_end"], polls["poll_id"], today)
+
+
+def is_stale(entry: dict | None, today: dt.date) -> bool:
+    """A contest is stale when its last pull failed, or its last good pull is older than the configured
+    multiple of the fetch interval."""
+    if not entry:
+        return False
+    if entry.get("parser_status") in ("stale", "failed"):
         return True
-    recent = polls[polls["fieldwork_end"] > pd.Timestamp(add_months(today, -12))]
-    return recent["poll_id"].nunique() >= c["subnational_min_polls_12m"]
+    last = entry.get("last_successful_pull")
+    if not last:
+        return False
+    st = config.settings()["staleness"]
+    age_hours = (today - dt.date.fromisoformat(last[:10])).days * 24
+    return age_hours > st["fetch_interval_hours"] * st["stale_after_multiple_of_interval"]
 
 
 def headline_series(averages: pd.DataFrame, contest_id: str) -> pd.DataFrame:

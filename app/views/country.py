@@ -67,12 +67,13 @@ def status_strip(country: dict, contests: list[dict], quality: dict, results: pd
                  f'<b>{components.fmt_date(latest) if latest else "None yet"}</b>'
                  f'<span>Data as of {escape(as_of[:16].replace("T", " ") + " UTC") if as_of else "no fetch yet"}</span></div>')
     blocks.append(_rg(f'<div class="rg-status">{"".join(cells)}</div>'))
-    stale = [e for e in entries if e.get("parser_status") in ("stale", "failed")]
+    stale = [e for e in entries if logic.is_stale(e, today)]
     names = {k["contest_id"]: f'{k["body"]}, {k["territory"]}' for k in contests}
     for e in stale:
         last = e.get("last_successful_pull")
+        why = "failed" if e.get("parser_status") in ("stale", "failed") else "has not run on schedule"
         blocks.append(_rg(f'<p class="rg-banner rg-warn"><b>Stale.</b> The last fetch for {escape(names[e["contest_id"]])} '
-                          f'failed, so the figures are from {escape(last[:10]) if last else "no successful fetch"}.</p>'))
+                          f'{why}, so the figures are from {escape(last[:10]) if last else "no successful fetch"}.</p>'))
     return blocks
 
 

@@ -21,6 +21,7 @@ class ContestPull:
     polls: pd.DataFrame
     results: pd.DataFrame | None = None       # official result rows found in the source, if any
     warnings: list[str] = field(default_factory=list)
+    unmapped: dict[str, list[float]] = field(default_factory=dict)   # label not in the party file -> its figures
 
 
 def session() -> requests.Session:
