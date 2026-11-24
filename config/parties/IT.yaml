@@ -4,7 +4,7 @@
 # config/party_mappings/IT.yaml; CC BY-SA 4.0) and are not yet checked against Party Facts itself.
 # Left-right scores are pending: see docs/DATA_SOURCES.md, Chapel Hill Expert Survey.
 # An alliance row with members is a joint list: one figure a pollster gives for several columns.
-# Coalition totals (CSX, CDX) are not defined here yet: membership is judgement IT-001 and waits for AC.
+# Coalition totals: it-cdx and it-csx below (coalition: true). Membership is judgement IT-001.
 schema_version: 1
 country: IT
 parties:
@@ -187,3 +187,33 @@ parties:
     partyfacts_id: 9127
     lr_score: null
     lr_source: pending
+  - party_id: it-cdx
+    type: alliance
+    short: CDX
+    name: Centre-right coalition
+    colour: '#0A6BE1'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    coalition: true
+    members:
+    - it-fdi
+    - it-lega
+    - it-fi
+    - it-nm
+    - it-scn
+  - party_id: it-csx
+    type: alliance
+    short: CSX
+    name: Centre-left coalition
+    colour: '#EF3E3E'
+    partyfacts_id: null
+    lr_score: null
+    lr_source: pending
+    coalition: true
+    members:
+    - it-pd
+    - it-m5s
+    - it-iv
+    - it-avs
+    - it-pluse
