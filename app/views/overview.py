@@ -1,14 +1,14 @@
-"""Overview tab. Phase 0 shows the contests ahead and the entries due for review.
-
-The freshness grid joins in Phase 2, once there is polling data to be fresh.
-"""
+"""Overview tab: the election calendar, data freshness, the review queue and the monthly review list."""
 from __future__ import annotations
 
 import datetime as dt
 from html import escape
 from pathlib import Path
 
-from app import components, data, logic
+import pandas as pd
+
+from app import charts, components, data, logic
+from app.blocks import Expander, Figure, Html, to_html, to_streamlit
 from pipeline import config
 
 
@@ -77,35 +77,69 @@ def queue_html(data_dir: Path) -> str:
             + body + "</div>")
 
 
-def page_html(today: dt.date | None = None, data_dir: Path = data.DATA) -> str:
+def calendar_marks(ahead: list[dict], today: dt.date) -> pd.DataFrame:
+    """One mark per country, day and kind of contest; contests sharing all three share a mark."""
+    names = {c["code"]: c["name"] for c in config.countries()}
+    groups: dict[tuple, list[tuple[dict, dt.date, str]]] = {}
+    for k in ahead:
+        days = k.get("round_dates") or [config.contest_sort_date(k)]
+        for i, day in enumerate(days):
+            if day < today:
+                continue
+            note = f"Round {i + 1}" if len(days) > 1 else ""
+            groups.setdefault((k["country"], day, k["kind"], bool(k.get("date"))), []).append((k, day, note))
+    rows = []
+    for (cc, day, kind, firm), items in groups.items():
+        first = items[0][0]
+        if len(items) == 1:
+            title = first["body"] + ("" if first["territory"] == names[cc] else f", {first['territory']}")
+        else:
+            title = f"{len(items)} contests: " + ", ".join(k["territory"] for k, _, _ in items)
+        lines = [names[cc], components.contest_when(first) + (f" · {items[0][2]}" if items[0][2] else ""),
+                 f"{(day - today).days} days from today" + ("" if firm else " at the latest"),
+                 components.DATE_STATUS_LABEL[first["date_status"]]
+                 + (" · election called" if first["status"] == "called" else "")]
+        rows.append({"country": names[cc], "date": pd.Timestamp(day), "kind": kind, "firm": firm,
+                     "title": title, "detail": "<br>".join(escape(x) for x in lines)})
+    return pd.DataFrame(rows, columns=["country", "date", "kind", "firm", "title", "detail"])
+
+
+def build(today: dt.date | None = None, data_dir: Path = data.DATA) -> list:
+    """The Overview tab as blocks: the calendar chart, its table, then the lists."""
     today = today or dt.datetime.now(dt.timezone.utc).date()
     s = config.settings()
-    horizon = _add_months(today, s["contests"]["subnational_window_months"])
+    months = s["contests"]["subnational_window_months"]
+    horizon = _add_months(today, months)
     countries = config.countries()
     ahead = [k for k in config.contests() if today <= config.contest_sort_date(k) <= horizon]
     ahead.sort(key=lambda k: (config.contest_sort_date(k), k["contest_id"]))
     due = [j for j in config.judgements() if j["review_by"] <= _add_months(today, 1)]
     due.sort(key=lambda j: (j["review_by"], j["id"]))
     watch = [j for j in config.judgements() if j["status"] == "on_watch" and j not in due]
-    months = s["contests"]["subnational_window_months"]
-    return (
-        f'<div class="rg"><h2>Contests in the next {months} months</h2>'
-        f'<p class="rg-muted">{len(ahead)} contests with a date or legal deadline up to '
-        f"{components.fmt_date(horizon)}, soonest first.</p></div>"
-        + components.calendar_html(ahead, countries)
-        + freshness_html(data_dir, today)
-        + queue_html(data_dir)
-        + f'<div class="rg"><h2>Monthly review list</h2>'
-        f"<h3>Due for review within a month ({len(due)})</h3>"
-        + components.judgement_list_html(due)
+    marks = calendar_marks(ahead, today)
+    blocks: list = [Html(
+        f'<div class="rg"><h2>Election calendar: the next {months} months</h2>'
+        f'<p class="rg-muted">{len(ahead)} contests with a date, a legal deadline or an expected window up to '
+        f"{components.fmt_date(horizon)}. Hover a mark for the contest. A hollow mark is a deadline or an "
+        "expected window, not a fixed date.</p></div>")]
+    if not marks.empty:
+        blocks.append(Figure(charts.election_calendar(marks, today, horizon), "calendar"))
+    blocks.append(Expander(f"Show the calendar as a table ({len(ahead)} contests)",
+                           [Html(components.calendar_html(ahead, countries))]))
+    blocks.append(Html(
+        freshness_html(data_dir, today) + queue_html(data_dir)
+        + '<div class="rg"><h2>Monthly review list</h2>'
+        f"<h3>Due for review within a month ({len(due)})</h3>" + components.judgement_list_html(due)
         + f"<h3>On watch ({len(watch)})</h3>"
         '<p class="rg-muted">On-watch entries are reviewed every month whether or not anything fired.</p>'
-        + components.judgement_list_html(watch)
-        + "</div>"
-    )
+        + components.judgement_list_html(watch) + "</div>"))
+    return blocks
+
+
+def page_html(today: dt.date | None = None, data_dir: Path = data.DATA) -> str:
+    """The Overview tab as static HTML (charts need Plotly on the page; scripts/snapshot.py adds it)."""
+    return to_html(build(today, data_dir))
 
 
 def render() -> None:
-    import streamlit as st
-
-    st.html(page_html())
+    to_streamlit(build())

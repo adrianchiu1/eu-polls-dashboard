@@ -49,7 +49,7 @@ def commit() -> str:
 
 def page_blocks(name: str, today: dt.date, data_dir: Path) -> list:
     if name == "overview":
-        return [Html(overview.page_html(today, data_dir))]
+        return overview.build(today, data_dir)
     if name == "method":
         return [Html(method.page_html(data_dir))]
     codes = {c["code"] for c in config.countries()}
