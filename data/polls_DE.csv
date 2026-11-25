@@ -1,4 +1,19 @@
 poll_id,contest_id,round,lineup_id,is_headline_lineup,pollster,client,fieldwork_start,fieldwork_end,sample_size,method,party_id,value,unit,flags,region,source_url,adapter,source_rev,retrieved_at
+071a6930967c,de-parl-2029,1,default,True,Forsa,RTL / n-tv,2026-11-17,2026-11-23,2500,Telefonisch,de-afd,26.0,pct,,,https://dawum.de/Bundestag/,dawum,2026-11-24T18:20:06+01:00,2026-11-25T03:19:46Z
+071a6930967c,de-parl-2029,1,default,True,Forsa,RTL / n-tv,2026-11-17,2026-11-23,2500,Telefonisch,de-fdp,4.0,pct,,,https://dawum.de/Bundestag/,dawum,2026-11-24T18:20:06+01:00,2026-11-25T03:19:46Z
+071a6930967c,de-parl-2029,1,default,True,Forsa,RTL / n-tv,2026-11-17,2026-11-23,2500,Telefonisch,de-gruene,16.0,pct,,,https://dawum.de/Bundestag/,dawum,2026-11-24T18:20:06+01:00,2026-11-25T03:19:46Z
+071a6930967c,de-parl-2029,1,default,True,Forsa,RTL / n-tv,2026-11-17,2026-11-23,2500,Telefonisch,de-linke,11.0,pct,,,https://dawum.de/Bundestag/,dawum,2026-11-24T18:20:06+01:00,2026-11-25T03:19:46Z
+071a6930967c,de-parl-2029,1,default,True,Forsa,RTL / n-tv,2026-11-17,2026-11-23,2500,Telefonisch,de-spd,13.0,pct,,,https://dawum.de/Bundestag/,dawum,2026-11-24T18:20:06+01:00,2026-11-25T03:19:46Z
+071a6930967c,de-parl-2029,1,default,True,Forsa,RTL / n-tv,2026-11-17,2026-11-23,2500,Telefonisch,de-union,21.0,pct,,,https://dawum.de/Bundestag/,dawum,2026-11-24T18:20:06+01:00,2026-11-25T03:19:46Z
+071a6930967c,de-parl-2029,1,default,True,Forsa,RTL / n-tv,2026-11-17,2026-11-23,2500,Telefonisch,others,9.0,pct,,,https://dawum.de/Bundestag/,dawum,2026-11-24T18:20:06+01:00,2026-11-25T03:19:46Z
+37819104ac47,de-parl-2029,1,default,True,INSA,BILD,2026-11-20,2026-11-23,2002,Online,de-afd,28.0,pct,,,https://dawum.de/Bundestag/,dawum,2026-11-24T18:20:06+01:00,2026-11-25T03:19:46Z
+37819104ac47,de-parl-2029,1,default,True,INSA,BILD,2026-11-20,2026-11-23,2002,Online,de-bsw,4.0,pct,,,https://dawum.de/Bundestag/,dawum,2026-11-24T18:20:06+01:00,2026-11-25T03:19:46Z
+37819104ac47,de-parl-2029,1,default,True,INSA,BILD,2026-11-20,2026-11-23,2002,Online,de-fdp,5.0,pct,,,https://dawum.de/Bundestag/,dawum,2026-11-24T18:20:06+01:00,2026-11-25T03:19:46Z
+37819104ac47,de-parl-2029,1,default,True,INSA,BILD,2026-11-20,2026-11-23,2002,Online,de-gruene,14.5,pct,,,https://dawum.de/Bundestag/,dawum,2026-11-24T18:20:06+01:00,2026-11-25T03:19:46Z
+37819104ac47,de-parl-2029,1,default,True,INSA,BILD,2026-11-20,2026-11-23,2002,Online,de-linke,9.0,pct,,,https://dawum.de/Bundestag/,dawum,2026-11-24T18:20:06+01:00,2026-11-25T03:19:46Z
+37819104ac47,de-parl-2029,1,default,True,INSA,BILD,2026-11-20,2026-11-23,2002,Online,de-spd,14.0,pct,,,https://dawum.de/Bundestag/,dawum,2026-11-24T18:20:06+01:00,2026-11-25T03:19:46Z
+37819104ac47,de-parl-2029,1,default,True,INSA,BILD,2026-11-20,2026-11-23,2002,Online,de-union,19.5,pct,,,https://dawum.de/Bundestag/,dawum,2026-11-24T18:20:06+01:00,2026-11-25T03:19:46Z
+37819104ac47,de-parl-2029,1,default,True,INSA,BILD,2026-11-20,2026-11-23,2002,Online,others,6.0,pct,,,https://dawum.de/Bundestag/,dawum,2026-11-24T18:20:06+01:00,2026-11-25T03:19:46Z
 139c14716b74,de-parl-2029,1,default,True,INSA,BILD am Sonntag,2026-11-16,2026-11-20,1201,Telefon & Online,de-afd,28.0,pct,,,https://dawum.de/Bundestag/,dawum,2026-11-21T18:49:22+01:00,2026-11-23T09:15:44Z
 139c14716b74,de-parl-2029,1,default,True,INSA,BILD am Sonntag,2026-11-16,2026-11-20,1201,Telefon & Online,de-bsw,3.0,pct,,,https://dawum.de/Bundestag/,dawum,2026-11-21T18:49:22+01:00,2026-11-23T09:15:44Z
 139c14716b74,de-parl-2029,1,default,True,INSA,BILD am Sonntag,2026-11-16,2026-11-20,1201,Telefon & Online,de-fdp,5.0,pct,,,https://dawum.de/Bundestag/,dawum,2026-11-21T18:49:22+01:00,2026-11-23T09:15:44Z

@@ -13029,3 +13029,13 @@ fi-parl-2027,default,1,2026-11-24,fi-sfp,4.05,2,2,60,unweighted,low_coverage;unw
 fi-parl-2027,default,1,2026-11-24,fi-vas,12.3,2,2,60,unweighted,low_coverage;unweighted_no_volatility
 fi-parl-2027,default,1,2026-11-24,fi-vihr,8.85,2,2,60,unweighted,low_coverage;unweighted_no_volatility
 fi-parl-2027,default,1,2026-11-24,others,1.95,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+fi-parl-2027,default,1,2026-11-25,fi-kd,3.25,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+fi-parl-2027,default,1,2026-11-25,fi-kesk,12.85,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+fi-parl-2027,default,1,2026-11-25,fi-kok,15.5,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+fi-parl-2027,default,1,2026-11-25,fi-liik,2.25,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+fi-parl-2027,default,1,2026-11-25,fi-ps,16.05,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+fi-parl-2027,default,1,2026-11-25,fi-sdp,22.95,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+fi-parl-2027,default,1,2026-11-25,fi-sfp,4.05,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+fi-parl-2027,default,1,2026-11-25,fi-vas,12.3,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+fi-parl-2027,default,1,2026-11-25,fi-vihr,8.85,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+fi-parl-2027,default,1,2026-11-25,others,1.95,2,2,60,unweighted,low_coverage;unweighted_no_volatility
