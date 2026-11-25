@@ -85,6 +85,7 @@ files:
       trigger: str            # new_party | pollster_new | pollster_silent | subnational_in_window | layout_change | validation_failed | source_disagreement | review_due
       country: str
       contest_id: str?
+      subject: str?           # the party label, pollster or judgement the trigger is about
       judgement_ids: list     # entries the trigger may reopen
       evidence: str           # what fired it, with numbers
       first_seen: date

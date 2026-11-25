@@ -70,7 +70,7 @@ def parse(db: dict, contest: dict, resolver: Resolver, retrieved_at: dt.datetime
     source_rev = db["Database"]["Last_Update"]
     others_keys = {k for k, p in db["Parties"].items() if norm_label(p["Shortcut"]) == "sonstige"}
 
-    rows, unmapped = [], {}
+    rows, unmapped, figures = [], {}, {}
     for sid, sv in db["Surveys"].items():
         if sv["Parliament_ID"] != pid:
             continue
@@ -89,6 +89,7 @@ def parse(db: dict, contest: dict, resolver: Resolver, retrieved_at: dt.datetime
             party = model.OTHERS if key in others_keys else resolver.resolve(label, end)
             if party is None:
                 unmapped[label] = unmapped.get(label, 0) + 1
+                figures.setdefault(label, []).append(float(value))
                 party = model.OTHERS
             values[party] = values.get(party, 0.0) + float(value)
         base = {
@@ -105,4 +106,4 @@ def parse(db: dict, contest: dict, resolver: Resolver, retrieved_at: dt.datetime
     warnings = [f"label '{label}' is not in config/parties/DE.yaml; {n} figure(s) folded into others"
                 for label, n in sorted(unmapped.items())]
     polls = pd.DataFrame(rows, columns=model.POLL_COLUMNS)
-    return ContestPull(cid, polls, warnings=warnings)
+    return ContestPull(cid, polls, warnings=warnings, unmapped=figures)

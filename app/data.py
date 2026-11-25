@@ -60,6 +60,12 @@ def _quality(path: str, mtime: float) -> dict:
     return json.loads(p.read_text(encoding="utf-8"))
 
 
+def review_queue(data_dir: Path = DATA) -> list[dict]:
+    """Triggers fired by the last daily scan; empty before the first one."""
+    path = data_dir / "review_queue.json"
+    return list(_quality(str(path), _mtime(path))) if path.exists() else []
+
+
 def quality(data_dir: Path = DATA) -> dict:
     path = data_dir / "quality.json"
     return _quality(str(path), _mtime(path))

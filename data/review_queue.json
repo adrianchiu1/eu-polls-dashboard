@@ -1,0 +1,76 @@
+[
+ {
+  "trigger": "pollster_new",
+  "country": "ES",
+  "contest_id": "es-parl-2026",
+  "subject": "AtlasIntel",
+  "judgement_ids": [
+   "G-009",
+   "G-010",
+   "G-017",
+   "ES-001"
+  ],
+  "evidence": "AtlasIntel published its first poll of Congress of Deputies and Senate, Spain with fieldwork to 2026-11-23.",
+  "first_seen": "2026-11-24",
+  "last_seen": "2026-11-25"
+ },
+ {
+  "trigger": "pollster_new",
+  "country": "ES",
+  "contest_id": "es-parl-2026",
+  "subject": "Convergent Opinion",
+  "judgement_ids": [
+   "G-009",
+   "G-010",
+   "G-017",
+   "ES-001"
+  ],
+  "evidence": "Convergent Opinion published its first poll of Congress of Deputies and Senate, Spain with fieldwork to 2026-11-21.",
+  "first_seen": "2026-11-24",
+  "last_seen": "2026-11-25"
+ },
+ {
+  "trigger": "pollster_new",
+  "country": "ES",
+  "contest_id": "es-parl-2026",
+  "subject": "Metroscopia",
+  "judgement_ids": [
+   "G-009",
+   "G-010",
+   "G-017",
+   "ES-001"
+  ],
+  "evidence": "Metroscopia published its first poll of Congress of Deputies and Senate, Spain with fieldwork to 2026-11-19.",
+  "first_seen": "2026-11-24",
+  "last_seen": "2026-11-25"
+ },
+ {
+  "trigger": "pollster_new",
+  "country": "ES",
+  "contest_id": "es-parl-2026",
+  "subject": "Public First",
+  "judgement_ids": [
+   "G-009",
+   "G-010",
+   "G-017",
+   "ES-001"
+  ],
+  "evidence": "Public First published its first poll of Congress of Deputies and Senate, Spain with fieldwork to 2026-11-17.",
+  "first_seen": "2026-11-24",
+  "last_seen": "2026-11-25"
+ },
+ {
+  "trigger": "pollster_new",
+  "country": "SE",
+  "contest_id": "se-parl-next",
+  "subject": "Demoskop",
+  "judgement_ids": [
+   "G-009",
+   "G-010",
+   "G-017"
+  ],
+  "evidence": "Demoskop published its first poll of Riksdag, Sweden with fieldwork to 2026-11-19.",
+  "first_seen": "2026-11-24",
+  "last_seen": "2026-11-25"
+ }
+]

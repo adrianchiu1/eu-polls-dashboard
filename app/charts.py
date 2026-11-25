@@ -153,3 +153,49 @@ def matchups(rows: pd.DataFrame) -> go.Figure:
     fig.update_xaxes(visible=False, range=[0, 100], fixedrange=True)
     fig.update_yaxes(showgrid=False, tickfont=dict(color=INK, size=13), fixedrange=True, ticksuffix="  ")
     return _base(fig, 40 * len(rows) + 24, barmode="stack", bargap=0.28)
+
+
+# The election calendar has no parties, so its three colours are the chart's own: they separate the
+# kind of contest and were checked for colour-blind separation and contrast on the chart surface.
+CALENDAR_KINDS = {
+    "parliamentary": {"label": "Parliament", "colour": "#2a78d6", "symbol": "circle", "size": 15},
+    "presidential": {"label": "President", "colour": "#c2410c", "symbol": "square", "size": 14},
+    "regional": {"label": "Sub-national", "colour": "#0d9488", "symbol": "diamond", "size": 11},
+}
+
+
+def election_calendar(marks: pd.DataFrame, start, end) -> go.Figure:
+    """A calendar of contests: one row per country, one mark per election day, months along the top.
+
+    marks: country, date, kind (a key of CALENDAR_KINDS), firm (True when the date is fixed, False for
+    a deadline or an expected window, drawn hollow), title (the mark's hover heading) and detail
+    (hover lines, already joined with <br>). `start` and `end` bound the axis; a line marks `start`.
+    """
+    order = list(dict.fromkeys(marks.sort_values("date")["country"]))[::-1]
+    fig = go.Figure()
+    for kind, look in CALENDAR_KINDS.items():
+        for firm in (True, False):
+            rows = marks[(marks["kind"] == kind) & (marks["firm"] == firm)]
+            if rows.empty:
+                continue
+            fig.add_trace(go.Scatter(
+                x=rows["date"], y=rows["country"], mode="markers",
+                name=look["label"] + ("" if firm else ", date not fixed"), legendgroup=kind,
+                marker=dict(symbol=look["symbol"] + ("" if firm else "-open"), size=look["size"],
+                            color=look["colour"], line=dict(color=look["colour"] if not firm else SURFACE, width=2)),
+                customdata=rows[["title", "detail"]],
+                hovertemplate="<b>%{customdata[0]}</b><br>%{customdata[1]}<extra></extra>"))
+    fig.add_vline(x=pd.Timestamp(start), line=dict(color=MUTED, width=1, dash="dot"))
+    fig.add_annotation(x=pd.Timestamp(start), y=0, yref="paper", text="today", showarrow=False, yanchor="top",
+                       xanchor="center", font=dict(color=MUTED, size=11))
+    fig.update_xaxes(range=[pd.Timestamp(start) - pd.Timedelta(days=12), pd.Timestamp(end) + pd.Timedelta(days=12)],
+                     side="top", dtick="M1", tickformat="%b<br>%Y", ticklabelmode="period", showgrid=True,
+                     gridcolor=GRID, tickfont=dict(color=MUTED, size=11), zeroline=False)
+    fig.update_yaxes(categoryorder="array", categoryarray=order, showgrid=True, gridcolor=GRID,
+                     tickfont=dict(color=INK, size=13), ticksuffix="  ", fixedrange=True)
+    _base(fig, 34 * len(order) + 120, hovermode="closest")
+    fig.update_layout(showlegend=True, margin=dict(l=8, r=8, t=56, b=40),
+                      legend=dict(orientation="h", yanchor="top", y=-0.02, x=0, font=dict(color=INK, size=12)),
+                      hoverlabel=dict(align="left", bgcolor=SURFACE, bordercolor=GRID,
+                                      font=dict(family=FONT, size=13, color=INK)))
+    return fig

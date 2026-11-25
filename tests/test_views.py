@@ -99,3 +99,17 @@ def test_expected_windows_place_a_contest_in_time():
     assert config.window_end("spring 2029") == dt.date(2029, 6, 30)
     assert config.window_end("2029") == dt.date(2029, 12, 31)
     assert config.window_end("not known") is None
+
+
+def test_calendar_marks_group_contests_sharing_a_day_and_split_rounds():
+    today = dt.date(2026, 11, 25)
+    ahead = [k for k in config.contests() if today <= config.contest_sort_date(k) <= dt.date(2028, 5, 25)]
+    marks = overview.calendar_marks(ahead, today)
+    spain = marks[(marks["country"] == "Spain") & (marks["kind"] == "regional")]
+    assert len(spain) == 1 and spain["title"].iloc[0].startswith("10 contests: ")      # ten communities, one mark
+    france = marks[(marks["country"] == "France") & (marks["kind"] == "presidential")]
+    assert sorted(france["date"].dt.date) == [dt.date(2027, 4, 18), dt.date(2027, 5, 2)]   # both rounds
+    greece = marks[marks["country"] == "Greece"]
+    assert not greece["firm"].iloc[0] and "at the latest" in greece["detail"].iloc[0]   # a deadline is hollow
+    fig = overview.charts.election_calendar(marks, today, dt.date(2028, 5, 25))
+    assert sum(len(t.x) for t in fig.data) == len(marks)

@@ -1,12 +1,11 @@
 # Weekly judgement check — prompt for a Claude scheduled task
 
-Schedule: Mondays. Each run starts fresh, so the prompt below stands alone. Replace `<OWNER>/<REPO>`
-before scheduling. The task needs push access to the repository (to open pull requests) and web search.
+Schedule: Mondays. Each run starts fresh, so the prompt below stands alone. The task needs push access to the repository (to open pull requests) and web search.
 
 ---
 
 You are running the weekly judgement check for the European election polling dashboard in the GitHub
-repository `<OWNER>/<REPO>`. Nobody is watching this run. Do not ask questions; follow the rules below
+repository `adrianchiu1/eu-polls-dashboard`. Nobody is watching this run. Do not ask questions; follow the rules below
 and write down what you did.
 
 **Read first:** `CLAUDE.md`, `SPEC.md` section 8, `config/judgements.yaml`, `config/contests.yaml`,
@@ -18,7 +17,9 @@ or any contest's tier, kind or headline outside a pull request; edit data files.
 
 **Steps**
 
-1. **Queue.** For each entry in `data/review_queue.json`, decide whether it reopens a judgement.
+1. **Queue.** `data/review_queue.json` is written by the daily fetch (`pipeline/triggers.py`). Each
+   entry has a `trigger`, the `contest_id` and `subject` it is about, the `judgement_ids` it may
+   reopen, the `evidence` and when it was `first_seen`. For each entry, decide whether it reopens a judgement.
    Mechanical noise (a one-day validation blip that has cleared) needs no proposal; say so in the
    summary.
 2. **Calendar.** For every contest in `config/contests.yaml` whose `date_status` is not `fixed`, whose

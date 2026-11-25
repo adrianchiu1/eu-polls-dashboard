@@ -21,7 +21,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from pipeline import average, config, model
+from pipeline import average, config, model, triggers
 from pipeline.adapters import dawum, swedishpolls, wikipedia
 from pipeline.adapters.base import AdapterError, ContestPull, session
 from pipeline.parties import Resolver, load as load_parties
@@ -267,7 +267,10 @@ def run(countries: list[str] | None = None, data_dir: Path = model.DATA, *, now:
                 pull = pull_contest(contest, source, ctx)
                 rows, warnings = check_pull(pull, contest, source, country, last_good, ctx.today)
                 rows = keep_provenance(normalise(rows), normalise(last_good) if not last_good.empty else last_good)
-                entry.update(parser_status="ok", validation_warnings=warnings, last_successful_pull=stamp)
+                entry.update(parser_status="ok", validation_warnings=warnings, last_successful_pull=stamp,
+                             last_error=None, consecutive_failures=0,
+                             unmapped_labels=triggers.unmapped_summary(pull.unmapped, country["unit"],
+                                                                       country.get("chamber_size")))
                 if pull.results is not None and not pull.results.empty:
                     ids = set(pull.results["contest_id"])
                     all_results = pd.concat([all_results[~all_results["contest_id"].isin(ids)], pull.results],
@@ -276,6 +279,7 @@ def run(countries: list[str] | None = None, data_dir: Path = model.DATA, *, now:
             except AdapterError as exc:
                 failures.append(cid)
                 rows = normalise(last_good) if not last_good.empty else last_good
+                entry.update(last_error=str(exc), consecutive_failures=entry.get("consecutive_failures", 0) + 1)
                 entry.update(parser_status="stale" if not last_good.empty else "failed",
                              validation_warnings=[f"pull failed: {exc}"],
                              last_successful_pull=entry.get("last_successful_pull"))
@@ -291,6 +295,17 @@ def run(countries: list[str] | None = None, data_dir: Path = model.DATA, *, now:
                 all_weights = pd.concat([all_weights[all_weights["contest_id"] != cid], wts], ignore_index=True)
             else:
                 entry.update(latest_poll_date=None, polls_90d=0, pollsters_90d=0)
+            if contest["tier"] == "subnational":
+                shows = (triggers.subnational_visible(contest, rows["fieldwork_end"], rows["poll_id"], ctx.today)
+                         if not rows.empty else
+                         triggers.subnational_visible(contest, pd.Series(dtype="datetime64[ns]"), pd.Series(dtype=str), ctx.today))
+                known = "visible_since" in entry or "subnational_visible" in entry
+                if shows and not entry.get("subnational_visible"):
+                    # on the first run for a contest nobody knows when it started to show
+                    entry["visible_since"] = ctx.today.isoformat() if known else None
+                elif not shows:
+                    entry["visible_since"] = None
+                entry["subnational_visible"] = shows
             entry["data_as_of"] = stamp
             quality["contests"][cid] = entry
         if kept:
@@ -311,7 +326,12 @@ def run(countries: list[str] | None = None, data_dir: Path = model.DATA, *, now:
     quality["data_as_of"] = stamp
     quality["contests"] = dict(sorted(quality["contests"].items()))
     write_if_changed(quality_path, json.dumps(quality, indent=1, ensure_ascii=False) + "\n")
-    return {"changed": changed, "failures": failures, "quality": quality}
+    queue_path = data_dir / "review_queue.json"
+    previous = json.loads(queue_path.read_text(encoding="utf-8")) if queue_path.exists() else []
+    queue = triggers.scan(data_dir, ctx.today, quality, previous)
+    if write_if_changed(queue_path, json.dumps(queue, indent=1, ensure_ascii=False) + "\n"):
+        changed.append("review_queue.json")
+    return {"changed": changed, "failures": failures, "quality": quality, "queue": queue}
 
 
 def main() -> int:

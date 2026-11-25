@@ -49,6 +49,8 @@ review:
   new_party_trigger_pct: 3.0
   new_party_trigger_polls: 3
   pollster_silent_days: 90
+  event_trigger_days: 14                # how long a one-off event (new pollster, section opened) stays in the review queue
+  review_due_notice_days: 14            # a judgement joins the queue this many days before its review_by
 
 spectrum:
   scale_min: 0

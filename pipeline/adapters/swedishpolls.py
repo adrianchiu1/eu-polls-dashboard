@@ -52,7 +52,7 @@ def parse(csv_text: str, commit: str, contest: dict, resolver: Resolver, retriev
     if len(party_cols) < 2:
         raise AdapterError("SwedishPolls: fewer than two party columns")
     source_url = f"{REPO}/blob/{commit}/{PATH}"
-    rows, unmapped, undated = [], {}, 0
+    rows, unmapped, undated, figures = [], {}, 0, {}
     for i, r in enumerate(frame.to_dict("records")):
         try:
             end = dt.date.fromisoformat(r["collectPeriodTo"])
@@ -76,6 +76,7 @@ def parse(csv_text: str, commit: str, contest: dict, resolver: Resolver, retriev
             party = resolver.resolve(col, end)
             if party is None:
                 unmapped[col] = unmapped.get(col, 0) + 1
+                figures.setdefault(col, []).append(float(r[col]))
                 party = model.OTHERS
             values[party] = round(values.get(party, 0.0) + float(r[col]), 2)
         if not values:
@@ -93,4 +94,4 @@ def parse(csv_text: str, commit: str, contest: dict, resolver: Resolver, retriev
                 for c, n in sorted(unmapped.items())]
     if undated:
         warnings.append(f"{undated} row(s) without a collection end date or a pollster were skipped")
-    return ContestPull(cid, pd.DataFrame(rows, columns=model.POLL_COLUMNS), warnings=warnings)
+    return ContestPull(cid, pd.DataFrame(rows, columns=model.POLL_COLUMNS), warnings=warnings, unmapped=figures)
