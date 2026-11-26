@@ -12,7 +12,7 @@
   ],
   "evidence": "AtlasIntel published its first poll of Congress of Deputies and Senate, Spain with fieldwork to 2026-11-23.",
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25"
+  "last_seen": "2026-11-26"
  },
  {
   "trigger": "pollster_new",
@@ -27,7 +27,7 @@
   ],
   "evidence": "Convergent Opinion published its first poll of Congress of Deputies and Senate, Spain with fieldwork to 2026-11-21.",
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25"
+  "last_seen": "2026-11-26"
  },
  {
   "trigger": "pollster_new",
@@ -42,7 +42,7 @@
   ],
   "evidence": "Metroscopia published its first poll of Congress of Deputies and Senate, Spain with fieldwork to 2026-11-19.",
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25"
+  "last_seen": "2026-11-26"
  },
  {
   "trigger": "pollster_new",
@@ -57,7 +57,7 @@
   ],
   "evidence": "Public First published its first poll of Congress of Deputies and Senate, Spain with fieldwork to 2026-11-17.",
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25"
+  "last_seen": "2026-11-26"
  },
  {
   "trigger": "pollster_new",
@@ -71,6 +71,20 @@
   ],
   "evidence": "Demoskop published its first poll of Riksdag, Sweden with fieldwork to 2026-11-19.",
   "first_seen": "2026-11-24",
-  "last_seen": "2026-11-25"
+  "last_seen": "2026-11-26"
+ },
+ {
+  "trigger": "pollster_new",
+  "country": "UK",
+  "contest_id": "uk-sub-scotland-next",
+  "subject": "Ipsos",
+  "judgement_ids": [
+   "G-009",
+   "G-010",
+   "G-017"
+  ],
+  "evidence": "Ipsos published its first poll of Scottish Parliament, Scotland with fieldwork to 2026-11-18.",
+  "first_seen": "2026-11-26",
+  "last_seen": "2026-11-26"
  }
 ]
