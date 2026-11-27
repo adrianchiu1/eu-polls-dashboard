@@ -5508,6 +5508,13 @@ at-parl-2029,default,1,2026-11-26,at-neos,7.0,4,4,60,unweighted,low_coverage;unw
 at-parl-2029,default,1,2026-11-26,at-ovp,20.0,4,4,60,unweighted,low_coverage;unweighted_no_volatility
 at-parl-2029,default,1,2026-11-26,at-spo,13.75,4,4,60,unweighted,low_coverage;unweighted_no_volatility
 at-parl-2029,default,1,2026-11-26,others,2.25,4,4,60,unweighted,low_coverage;unweighted_no_volatility
+at-parl-2029,default,1,2026-11-27,at-fpo,39.25,4,4,60,unweighted,low_coverage;unweighted_no_volatility
+at-parl-2029,default,1,2026-11-27,at-grune,13.5,4,4,60,unweighted,low_coverage;unweighted_no_volatility
+at-parl-2029,default,1,2026-11-27,at-kpo,4.25,4,4,60,unweighted,low_coverage;unweighted_no_volatility
+at-parl-2029,default,1,2026-11-27,at-neos,7.0,4,4,60,unweighted,low_coverage;unweighted_no_volatility
+at-parl-2029,default,1,2026-11-27,at-ovp,20.0,4,4,60,unweighted,low_coverage;unweighted_no_volatility
+at-parl-2029,default,1,2026-11-27,at-spo,13.75,4,4,60,unweighted,low_coverage;unweighted_no_volatility
+at-parl-2029,default,1,2026-11-27,others,2.25,4,4,60,unweighted,low_coverage;unweighted_no_volatility
 at-sub-tirol-2027,default,1,2024-12-15,at-fpo,21.0,1,1,90,unweighted,thin_polling
 at-sub-tirol-2027,default,1,2024-12-15,at-fritz,12.0,1,1,90,unweighted,thin_polling
 at-sub-tirol-2027,default,1,2024-12-15,at-grune,9.0,1,1,90,unweighted,thin_polling

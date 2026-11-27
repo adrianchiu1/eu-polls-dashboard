@@ -1,4 +1,12 @@
 poll_id,contest_id,round,lineup_id,is_headline_lineup,pollster,client,fieldwork_start,fieldwork_end,sample_size,method,party_id,value,unit,flags,region,source_url,adapter,source_rev,retrieved_at
+898f481196f3,uk-parl-next,1,default,True,Deltapoll,,2026-11-20,2026-11-23,1933,,others,3.0,pct,,,https://deltapoll.co.uk/wp-content/uploads/2026/11/261126_Deltapoll-VI.pdf,wikipedia,1388113309,2026-11-27T15:04:25Z
+898f481196f3,uk-parl-next,1,default,True,Deltapoll,,2026-11-20,2026-11-23,1933,,uk-con,22.0,pct,,,https://deltapoll.co.uk/wp-content/uploads/2026/11/261126_Deltapoll-VI.pdf,wikipedia,1388113309,2026-11-27T15:04:25Z
+898f481196f3,uk-parl-next,1,default,True,Deltapoll,,2026-11-20,2026-11-23,1933,,uk-grn,8.0,pct,,,https://deltapoll.co.uk/wp-content/uploads/2026/11/261126_Deltapoll-VI.pdf,wikipedia,1388113309,2026-11-27T15:04:25Z
+898f481196f3,uk-parl-next,1,default,True,Deltapoll,,2026-11-20,2026-11-23,1933,,uk-lab,32.0,pct,,,https://deltapoll.co.uk/wp-content/uploads/2026/11/261126_Deltapoll-VI.pdf,wikipedia,1388113309,2026-11-27T15:04:25Z
+898f481196f3,uk-parl-next,1,default,True,Deltapoll,,2026-11-20,2026-11-23,1933,,uk-ld,7.0,pct,,,https://deltapoll.co.uk/wp-content/uploads/2026/11/261126_Deltapoll-VI.pdf,wikipedia,1388113309,2026-11-27T15:04:25Z
+898f481196f3,uk-parl-next,1,default,True,Deltapoll,,2026-11-20,2026-11-23,1933,,uk-pc,1.0,pct,,,https://deltapoll.co.uk/wp-content/uploads/2026/11/261126_Deltapoll-VI.pdf,wikipedia,1388113309,2026-11-27T15:04:25Z
+898f481196f3,uk-parl-next,1,default,True,Deltapoll,,2026-11-20,2026-11-23,1933,,uk-ref,24.0,pct,,,https://deltapoll.co.uk/wp-content/uploads/2026/11/261126_Deltapoll-VI.pdf,wikipedia,1388113309,2026-11-27T15:04:25Z
+898f481196f3,uk-parl-next,1,default,True,Deltapoll,,2026-11-20,2026-11-23,1933,,uk-snp,3.0,pct,,,https://deltapoll.co.uk/wp-content/uploads/2026/11/261126_Deltapoll-VI.pdf,wikipedia,1388113309,2026-11-27T15:04:25Z
 f5497af69269,uk-parl-next,1,default,True,More in Common,,2026-11-20,2026-11-23,2533,,others,2.0,pct,,,https://x.com/LukeTryl/status/2125504290618060984,wikipedia,1387756673,2026-11-25T15:36:25Z
 f5497af69269,uk-parl-next,1,default,True,More in Common,,2026-11-20,2026-11-23,2533,,uk-con,25.0,pct,,,https://x.com/LukeTryl/status/2125504290618060984,wikipedia,1387756673,2026-11-25T15:36:25Z
 f5497af69269,uk-parl-next,1,default,True,More in Common,,2026-11-20,2026-11-23,2533,,uk-grn,7.0,pct,,,https://x.com/LukeTryl/status/2125504290618060984,wikipedia,1387756673,2026-11-25T15:36:25Z
