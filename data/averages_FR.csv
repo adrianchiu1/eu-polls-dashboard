@@ -14688,6 +14688,21 @@ fr-pres-2027,headline,1,2026-11-27,fr-cand-riner,3.4844,11,6,30,volatility,
 fr-pres-2027,headline,1,2026-11-27,fr-cand-roussel,1.8669,11,6,30,volatility,
 fr-pres-2027,headline,1,2026-11-27,fr-cand-tondelier,2.4543,11,6,30,volatility,
 fr-pres-2027,headline,1,2026-11-27,fr-cand-zemmour,3.4426,11,6,30,volatility,
+fr-pres-2027,headline,1,2026-11-28,fr-cand-arthaud,0.7695,10,6,30,volatility,
+fr-pres-2027,headline,1,2026-11-28,fr-cand-attal,4.8986,10,6,30,volatility,
+fr-pres-2027,headline,1,2026-11-28,fr-cand-bouamrane,1.0,10,6,30,volatility,
+fr-pres-2027,headline,1,2026-11-28,fr-cand-de-villepin,1.2578,10,6,30,volatility,
+fr-pres-2027,headline,1,2026-11-28,fr-cand-dupont-aignan,2.2023,10,6,30,volatility,
+fr-pres-2027,headline,1,2026-11-28,fr-cand-glucksmann,10.9466,10,6,30,volatility,
+fr-pres-2027,headline,1,2026-11-28,fr-cand-le-pen,32.5349,10,6,30,volatility,
+fr-pres-2027,headline,1,2026-11-28,fr-cand-lisnard,10.0117,10,6,30,volatility,
+fr-pres-2027,headline,1,2026-11-28,fr-cand-melenchon,18.3645,10,6,30,volatility,
+fr-pres-2027,headline,1,2026-11-28,fr-cand-philippe,11.1638,10,6,30,volatility,
+fr-pres-2027,headline,1,2026-11-28,fr-cand-retailleau,5.352,10,6,30,volatility,
+fr-pres-2027,headline,1,2026-11-28,fr-cand-riner,3.4844,10,6,30,volatility,
+fr-pres-2027,headline,1,2026-11-28,fr-cand-roussel,1.8826,10,6,30,volatility,
+fr-pres-2027,headline,1,2026-11-28,fr-cand-tondelier,2.4543,10,6,30,volatility,
+fr-pres-2027,headline,1,2026-11-28,fr-cand-zemmour,3.4321,10,6,30,volatility,
 fr-pres-2027,r2-attal-vs-le-pen,2,2024-02-01,fr-cand-attal,49.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-attal-vs-le-pen,2,2024-02-01,fr-cand-le-pen,51.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-attal-vs-le-pen,2,2024-02-02,fr-cand-attal,49.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
@@ -15418,6 +15433,8 @@ fr-pres-2027,r2-attal-vs-le-pen,2,2026-11-26,fr-cand-attal,43.5,2,2,60,unweighte
 fr-pres-2027,r2-attal-vs-le-pen,2,2026-11-26,fr-cand-le-pen,56.5,2,2,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-attal-vs-le-pen,2,2026-11-27,fr-cand-attal,43.5,2,2,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-attal-vs-le-pen,2,2026-11-27,fr-cand-le-pen,56.5,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+fr-pres-2027,r2-attal-vs-le-pen,2,2026-11-28,fr-cand-attal,43.5,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+fr-pres-2027,r2-attal-vs-le-pen,2,2026-11-28,fr-cand-le-pen,56.5,2,2,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-glucksmann-vs-le-pen,2,2026-07-24,fr-cand-glucksmann,44.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-glucksmann-vs-le-pen,2,2026-07-24,fr-cand-le-pen,56.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-glucksmann-vs-le-pen,2,2026-07-25,fr-cand-glucksmann,44.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
@@ -15672,6 +15689,8 @@ fr-pres-2027,r2-glucksmann-vs-le-pen,2,2026-11-26,fr-cand-glucksmann,43.7,5,5,60
 fr-pres-2027,r2-glucksmann-vs-le-pen,2,2026-11-26,fr-cand-le-pen,56.3,5,5,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-glucksmann-vs-le-pen,2,2026-11-27,fr-cand-glucksmann,43.7,5,5,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-glucksmann-vs-le-pen,2,2026-11-27,fr-cand-le-pen,56.3,5,5,60,unweighted,low_coverage;unweighted_no_volatility
+fr-pres-2027,r2-glucksmann-vs-le-pen,2,2026-11-28,fr-cand-glucksmann,43.7,5,5,60,unweighted,low_coverage;unweighted_no_volatility
+fr-pres-2027,r2-glucksmann-vs-le-pen,2,2026-11-28,fr-cand-le-pen,56.3,5,5,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-hollande-vs-le-pen,2,2026-08-25,fr-cand-hollande,46.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-hollande-vs-le-pen,2,2026-08-25,fr-cand-le-pen,54.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-hollande-vs-le-pen,2,2026-08-26,fr-cand-hollande,46.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
@@ -15862,6 +15881,8 @@ fr-pres-2027,r2-hollande-vs-le-pen,2,2026-11-26,fr-cand-hollande,41.0,1,1,60,unw
 fr-pres-2027,r2-hollande-vs-le-pen,2,2026-11-26,fr-cand-le-pen,59.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-hollande-vs-le-pen,2,2026-11-27,fr-cand-hollande,41.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-hollande-vs-le-pen,2,2026-11-27,fr-cand-le-pen,59.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
+fr-pres-2027,r2-hollande-vs-le-pen,2,2026-11-28,fr-cand-hollande,41.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
+fr-pres-2027,r2-hollande-vs-le-pen,2,2026-11-28,fr-cand-le-pen,59.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-le-pen-vs-melenchon,2,2024-02-01,fr-cand-le-pen,64.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-le-pen-vs-melenchon,2,2024-02-01,fr-cand-melenchon,36.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-le-pen-vs-melenchon,2,2024-02-02,fr-cand-le-pen,64.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
@@ -16472,6 +16493,8 @@ fr-pres-2027,r2-le-pen-vs-melenchon,2,2026-11-26,fr-cand-le-pen,67.0,6,6,60,unwe
 fr-pres-2027,r2-le-pen-vs-melenchon,2,2026-11-26,fr-cand-melenchon,33.0,6,6,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-le-pen-vs-melenchon,2,2026-11-27,fr-cand-le-pen,67.0,6,6,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-le-pen-vs-melenchon,2,2026-11-27,fr-cand-melenchon,33.0,6,6,60,unweighted,low_coverage;unweighted_no_volatility
+fr-pres-2027,r2-le-pen-vs-melenchon,2,2026-11-28,fr-cand-le-pen,67.0,6,6,60,unweighted,low_coverage;unweighted_no_volatility
+fr-pres-2027,r2-le-pen-vs-melenchon,2,2026-11-28,fr-cand-melenchon,33.0,6,6,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-le-pen-vs-philippe,2,2024-02-01,fr-cand-le-pen,50.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-le-pen-vs-philippe,2,2024-02-01,fr-cand-philippe,50.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-le-pen-vs-philippe,2,2024-02-02,fr-cand-le-pen,50.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
@@ -17334,6 +17357,8 @@ fr-pres-2027,r2-le-pen-vs-philippe,2,2026-11-26,fr-cand-le-pen,54.5833,6,6,60,un
 fr-pres-2027,r2-le-pen-vs-philippe,2,2026-11-26,fr-cand-philippe,45.4167,6,6,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-le-pen-vs-philippe,2,2026-11-27,fr-cand-le-pen,54.5833,6,6,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-le-pen-vs-philippe,2,2026-11-27,fr-cand-philippe,45.4167,6,6,60,unweighted,low_coverage;unweighted_no_volatility
+fr-pres-2027,r2-le-pen-vs-philippe,2,2026-11-28,fr-cand-le-pen,54.5833,6,6,60,unweighted,low_coverage;unweighted_no_volatility
+fr-pres-2027,r2-le-pen-vs-philippe,2,2026-11-28,fr-cand-philippe,45.4167,6,6,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-le-pen-vs-retailleau,2,2026-07-24,fr-cand-le-pen,57.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-le-pen-vs-retailleau,2,2026-07-24,fr-cand-retailleau,43.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility
 fr-pres-2027,r2-le-pen-vs-retailleau,2,2026-07-25,fr-cand-le-pen,57.0,1,1,60,unweighted,low_coverage;unweighted_no_volatility

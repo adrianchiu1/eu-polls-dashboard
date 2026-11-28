@@ -6859,3 +6859,13 @@ ie-parl-next,default,1,2026-11-27,ie-pbp-s,3.5,2,2,60,unweighted,low_coverage;un
 ie-parl-next,default,1,2026-11-27,ie-sd,10.0,2,2,60,unweighted,low_coverage;unweighted_no_volatility
 ie-parl-next,default,1,2026-11-27,ie-sf,21.5,2,2,60,unweighted,low_coverage;unweighted_no_volatility
 ie-parl-next,default,1,2026-11-27,others,11.0,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+ie-parl-next,default,1,2026-11-28,ie-aon,8.5,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+ie-parl-next,default,1,2026-11-28,ie-ff,15.5,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+ie-parl-next,default,1,2026-11-28,ie-fg,16.5,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+ie-parl-next,default,1,2026-11-28,ie-gp,3.0,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+ie-parl-next,default,1,2026-11-28,ie-ii,7.5,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+ie-parl-next,default,1,2026-11-28,ie-lab,3.5,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+ie-parl-next,default,1,2026-11-28,ie-pbp-s,3.5,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+ie-parl-next,default,1,2026-11-28,ie-sd,10.0,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+ie-parl-next,default,1,2026-11-28,ie-sf,21.5,2,2,60,unweighted,low_coverage;unweighted_no_volatility
+ie-parl-next,default,1,2026-11-28,others,11.0,2,2,60,unweighted,low_coverage;unweighted_no_volatility
